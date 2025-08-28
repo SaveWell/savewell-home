@@ -21,7 +21,20 @@
         <a class="hover:text-saveWine" href="payers.html">For Payers</a>
         <a class="hover:text-saveWine" href="brokers.html">For Brokers</a>
       </nav>
-      <a href="#" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveTealDark">Login</a>
+      <div class="flex items-center gap-2">
+        <a href="#" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</a>
+        <button class="md:hidden inline-flex items-center p-2" id="menuBtn" aria-label="Open Menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="px-4 py-3 space-y-2">
+        <a class="block py-2" href="providers.html">For Providers</a>
+        <a class="block py-2" href="payers.html">For Payers</a>
+        <a class="block py-2" href="brokers.html">For Brokers</a>
+      </div>
     </div>
   </header>
 
@@ -71,6 +84,10 @@
 
   <script>
     const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
     // Demo dataset (static) — replace with real API later
     const DOCTORS = [
