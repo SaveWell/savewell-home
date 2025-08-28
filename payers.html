@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SaveWell for Payers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{saveTeal:'#0b7a7c',saveWine:'#8a0052',saveTealDark:'#065e60'},fontFamily:{sans:["Inter","ui-sans-serif","system-ui"]}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/savewell-logo.png" />
+</head>
+<body class="font-sans text-slate-800">
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-3"><img src="assets/savewell-logo.png" class="h-8" alt="SaveWell"/></a>
+      <nav class="hidden md:flex items-center gap-6 text-[15px]">
+        <a class="hover:text-saveWine" href="providers.html">For Providers</a>
+        <a class="text-saveWine font-semibold" href="payers.html">For Payers</a>
+        <a class="hover:text-saveWine" href="brokers.html">For Brokers</a>
+      </nav>
+      <a href="#" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveTealDark">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-b from-white to-slate-50 border-b">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-3xl sm:text-4xl font-extrabold">Reduce MedSupp MLR with SaveWell</h1>
+        <p class="mt-3 text-lg text-slate-600 max-w-3xl">SaveWell negotiates Part A & B discounts with VBC providers and shares the savings with patients and plans—lowering MLR without disrupting member choice.</p>
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">3–5% MLR savings</h3><p class="text-sm text-slate-600 mt-1">Direct discounts and care shifting to VBC providers.</p></div>
+          <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">Member savings</h3><p class="text-sm text-slate-600 mt-1">$5 premium reduction per visit to SaveWell providers.</p></div>
+          <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">No disruption</h3><p class="text-sm text-slate-600 mt-1">Members keep existing PCP relationships; no referrals required.</p></div>
+        </div>
+        <a href="mailto:hello@savewellnow.com?subject=Payer%20partnership" class="inline-flex mt-8 rounded-xl bg-saveTeal px-5 py-3 text-white font-semibold hover:bg-saveTealDark">Talk to our team</a>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">How it works</h2>
+        <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+          <li class="rounded-2xl border bg-white p-5"><span class="block font-semibold">Negotiate</span>SaveWell contracts discounts with specialists.</li>
+          <li class="rounded-2xl border bg-white p-5"><span class="block font-semibold">Apply</span>Plan applies discounts at claims processing.</li>
+          <li class="rounded-2xl border bg-white p-5"><span class="block font-semibold">Share</span>Plan disburses member & SaveWell savings.</li>
+          <li class="rounded-2xl border bg-white p-5"><span class="block font-semibold">Promote</span>SaveWell and plan promote the Network to members.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-slate-600">© <span id="year"></span> SaveWell</div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

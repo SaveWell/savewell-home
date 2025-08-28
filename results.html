@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SaveWell – Search results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { saveTeal: '#0b7a7c', saveWine: '#8a0052', saveTealDark:'#065e60' }, fontFamily: { sans: ["Inter","ui-sans-serif","system-ui"] } } } }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/savewell-logo.png" />
+</head>
+<body class="font-sans text-slate-800">
+  <!-- Navbar (same as index) -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-3"><img src="assets/savewell-logo.png" class="h-8" alt="SaveWell"/></a>
+      <nav class="hidden md:flex items-center gap-6 text-[15px]">
+        <a class="hover:text-saveWine" href="providers.html">For Providers</a>
+        <a class="hover:text-saveWine" href="payers.html">For Payers</a>
+        <a class="hover:text-saveWine" href="brokers.html">For Brokers</a>
+      </nav>
+      <a href="#" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveTealDark">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Search again bar -->
+    <section class="bg-slate-50 border-b border-slate-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+        <form action="results.html" method="get" class="bg-white border rounded-2xl p-3 grid grid-cols-1 sm:grid-cols-5 gap-3">
+          <select name="specialty" id="specialty" class="sm:col-span-2 rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine py-3">
+            <option value="">All specialties</option>
+            <option>Cardiology</option>
+            <option>Rheumatology</option>
+            <option>Skilled Nursing Facility</option>
+            <option>Imaging</option>
+            <option>Physical Therapy</option>
+            <option>Primary Care</option>
+            <option>Orthopedics</option>
+          </select>
+          <input name="zip" id="zip" placeholder="ZIP code" pattern="\d{5}" class="sm:col-span-2 rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine py-3 px-3" />
+          <button class="sm:col-span-1 rounded-xl bg-saveTeal text-white font-semibold px-5 py-3 hover:bg-saveTealDark">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="py-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h1 class="text-2xl sm:text-3xl font-bold">Doctors near you</h1>
+        <p id="resultSummary" class="text-slate-600 mt-1"></p>
+
+        <div id="results" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+        <div id="noResults" class="hidden mt-10 rounded-2xl border bg-slate-50 p-6">
+          <h2 class="font-semibold text-lg">No providers found</h2>
+          <p class="text-slate-600 mt-1">We’re expanding quickly. Try a nearby ZIP, broaden your specialty, or check back soon.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-slate-600">
+      © <span id="year"></span> SaveWell
+    </div>
+  </footer>
+
+  <script>
+    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+    // Demo dataset (static) — replace with real API later
+    const DOCTORS = [
+      { id:1, name:'Dr. Aisha Chen', specialty:'Cardiology', zip:'94612', city:'Oakland', state:'CA', address:'1234 Grand Ave', phone:'(510) 555‑2011' },
+      { id:2, name:'Dr. Mateo Ruiz', specialty:'Rheumatology', zip:'73301', city:'Austin', state:'TX', address:'9 Barton Springs Rd', phone:'(512) 555‑3388' },
+      { id:3, name:'Dr. Priya Patel', specialty:'Imaging', zip:'60601', city:'Chicago', state:'IL', address:'200 Lakeshore Dr', phone:'(312) 555‑2222' },
+      { id:4, name:'Dr. Daniel Lee', specialty:'Physical Therapy', zip:'98101', city:'Seattle', state:'WA', address:'151 Pine St', phone:'(206) 555‑1090' },
+      { id:5, name:'Dr. Grace Kim', specialty:'Orthopedics', zip:'10012', city:'New York', state:'NY', address:'25 Houston St', phone:'(212) 555‑4444' },
+      { id:6, name:'Dr. Devon Brooks', specialty:'Skilled Nursing Facility', zip:'10012', city:'New York', state:'NY', address:'560 Broadway', phone:'(212) 555‑7777' },
+      { id:7, name:'Dr. Alicia Gomez', specialty:'Cardiology', zip:'10012', city:'New York', state:'NY', address:'88 Prince St', phone:'(212) 555‑0101' },
+    ];
+
+    function getParams() {
+      const u = new URLSearchParams(location.search);
+      return {
+        specialty: u.get('specialty') || '',
+        zip: (u.get('zip') || '').replace(/[^0-9]/g, '').slice(0,5)
+      };
+    }
+
+    function render() {
+      const { specialty, zip } = getParams();
+      const results = document.getElementById('results');
+      const summary = document.getElementById('resultSummary');
+      const noResults = document.getElementById('noResults');
+
+      // Set form defaults
+      const specSel = document.getElementById('specialty');
+      if (specialty) { for (const o of specSel.options) if (o.value === specialty) o.selected = true; }
+      document.getElementById('zip').value = zip || '';
+
+      // Very simple matching: exact ZIP match when provided; specialty filter when provided
+      let items = DOCTORS.slice();
+      if (specialty) items = items.filter(d => d.specialty === specialty);
+      if (zip) items = items.filter(d => d.zip === zip);
+
+      summary.textContent = `${items.length} result${items.length===1?'':'s'}${specialty?` · ${specialty}`:''}${zip?` · ${zip}`:''}`;
+
+      results.innerHTML = '';
+      noResults.classList.toggle('hidden', items.length !== 0);
+
+      items.forEach(d => {
+        const el = document.createElement('article');
+        el.className = 'rounded-2xl border bg-white p-5 shadow-sm';
+        el.innerHTML = `
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h2 class="font-semibold text-lg">${d.name}</h2>
+              <p class="text-sm text-slate-600">${d.specialty}</p>
+              <p class="text-sm text-slate-500">${d.address}, ${d.city}, ${d.state} ${d.zip}</p>
+              <p class="text-sm mt-1"><span class="inline-flex items-center bg-saveWine text-white text-xs font-semibold px-2 py-0.5 rounded-full">$5 premium savings per visit</span></p>
+            </div>
+            <a href="tel:${d.phone.replace(/[^0-9]/g,'')}" class="shrink-0 rounded-xl bg-saveTeal px-4 py-2 text-white text-sm font-semibold hover:bg-saveTealDark">Call</a>
+          </div>`;
+        results.appendChild(el);
+      });
+    }
+
+    render();
+  </script>
+</body>
+</html>
