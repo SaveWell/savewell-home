@@ -91,16 +91,17 @@
     const mobileMenu = document.getElementById('mobileMenu');
     if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-    // Demo dataset (static) — replace with real API later
-    const DOCTORS = [
-      { id:1, name:'Dr. Aisha Chen', specialty:'Cardiology', zip:'94612', city:'Oakland', state:'CA', address:'1234 Grand Ave', phone:'(510) 555‑2011' },
-      { id:2, name:'Dr. Mateo Ruiz', specialty:'Rheumatology', zip:'73301', city:'Austin', state:'TX', address:'9 Barton Springs Rd', phone:'(512) 555‑3388' },
-      { id:3, name:'Dr. Priya Patel', specialty:'Imaging', zip:'60601', city:'Chicago', state:'IL', address:'200 Lakeshore Dr', phone:'(312) 555‑2222' },
-      { id:4, name:'Dr. Daniel Lee', specialty:'Physical Therapy', zip:'98101', city:'Seattle', state:'WA', address:'151 Pine St', phone:'(206) 555‑1090' },
-      { id:5, name:'Dr. Grace Kim', specialty:'Orthopedics', zip:'10012', city:'New York', state:'NY', address:'25 Houston St', phone:'(212) 555‑4444' },
-      { id:6, name:'Dr. Devon Brooks', specialty:'Skilled Nursing Facility', zip:'10012', city:'New York', state:'NY', address:'560 Broadway', phone:'(212) 555‑7777' },
-      { id:7, name:'Dr. Alicia Gomez', specialty:'Cardiology', zip:'10012', city:'New York', state:'NY', address:'88 Prince St', phone:'(212) 555‑0101' },
-    ];
+    // Load provider data from external JSON file
+    let DOCTORS = [];
+    async function loadDoctors() {
+      try {
+        const res = await fetch('data/providers.json');
+        DOCTORS = await res.json();
+        render();
+      } catch (err) {
+        console.error('Failed to load providers', err);
+      }
+    }
 
     function getParams() {
       const u = new URLSearchParams(location.search);
@@ -148,7 +149,7 @@
       });
     }
 
-    render();
+    loadDoctors();
   </script>
 </body>
 </html>
