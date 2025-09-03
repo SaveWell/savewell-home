@@ -233,6 +233,17 @@
 
     // Footer year
     const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+    // Check subdomain for second logo
+    const subdomain = window.location.hostname.split('.')[0];
+    if (subdomain.includes('belong')) {
+      const logoContainer = document.querySelector('header a');
+      const secondLogo = document.createElement('img');
+      secondLogo.src = 'assets/belong-health-logo.png';
+      secondLogo.alt = 'Second Logo';
+      secondLogo.className = 'h-8 w-auto';
+      logoContainer.appendChild(secondLogo);
+    }
   </script>
 </body>
 </html>
