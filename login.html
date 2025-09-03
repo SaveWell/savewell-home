@@ -38,9 +38,9 @@
       </a>
       <div class="flex items-center gap-6">
         <nav class="hidden md:flex items-center gap-6 text-[15px]">
-          <a class="hover:text-saveWine" href="providers.html">For Providers</a>
+          <a class="hover:text-saveWine" href="providers.html">Join the Network</a>
           <!-- <a class="hover:text-saveWine" href="payers.html">For Payers</a> -->
-          <a class="hover:text-saveWine" href="brokers.html">For Brokers</a>
+          <!-- <a class="hover:text-saveWine" href="brokers.html">For Brokers</a> -->
         </nav>
         <div class="flex items-center gap-2">
           <a href="login.html" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</a>
@@ -53,38 +53,15 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
       <div class="px-4 py-3 space-y-2">
-        <a class="block py-2" href="providers.html">For Providers</a>
+        <a class="block py-2" href="providers.html">Join the Network</a>
         <!-- <a class="block py-2" href="payers.html">For Payers</a> -->
-        <a class="block py-2" href="brokers.html">For Brokers</a>
+        <!-- <a class="block py-2" href="brokers.html">For Brokers</a> -->
       </div>
     </div>
   </header>
-
+  
     <!-- Script to update navbar for 'belong' subdomain -->
-    <script>
-      (function() {
-        var subdomain = window.location.hostname.split('.')[0];
-        if (subdomain && subdomain.toLowerCase().includes('belong')) {
-          // Desktop navbar
-          var providerLink = Array.from(document.querySelectorAll('nav a')).find(a => a.textContent.trim() === 'For Providers');
-          if (providerLink) providerLink.textContent = 'Join the Network';
-          var brokerLink = Array.from(document.querySelectorAll('nav a')).find(a => a.textContent.trim().includes('For Brokers'));
-          if (brokerLink) brokerLink.style.display = 'none';
-
-          // Mobile menu
-          var mobileProviderLink = Array.from(document.querySelectorAll('#mobileMenu a')).find(a => a.textContent.trim() === 'For Providers');
-          if (mobileProviderLink) mobileProviderLink.textContent = 'Join the Network';
-          var mobileBrokerLink = Array.from(document.querySelectorAll('#mobileMenu a')).find(a => a.textContent.trim().includes('For Brokers'));
-          if (mobileBrokerLink) mobileBrokerLink.style.display = 'none';
-
-          // Footer links
-          var footerProviderLink = Array.from(document.querySelectorAll('footer a')).find(a => a.textContent.trim() === 'For Providers');
-          if (footerProviderLink) footerProviderLink.textContent = 'Join the Network';
-          var footerBrokerLink = Array.from(document.querySelectorAll('footer a')).find(a => a.textContent.trim().includes('For Brokers'));
-          if (footerBrokerLink) footerBrokerLink.style.display = 'none';
-        }
-      })();
-    </script>
+  <!-- Removed script that changes text for 'belong' subdomain -->
 
   <main class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-saveTeal/10 px-4">
     <div class="w-full max-w-sm">
