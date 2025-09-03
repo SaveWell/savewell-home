@@ -78,9 +78,38 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-white border-t border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-slate-600">
-      © <span id="year"></span> SaveWell
+  <footer class="bg-white border-t border-slate-200" id="site-footer">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
+          <p class="text-sm text-slate-600 mt-3 max-w-xs">SaveWell negotiates discounts with value‑based care providers and shares savings with patients, ACOs, and MedSupp plans.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Learn</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-saveWine" href="providers.html">For Providers</a></li>
+            <!-- <li><a class="hover:text-saveWine" href="payers.html">For Payers</a></li> -->
+            <li><a class="hover:text-saveWine" href="brokers.html">For Brokers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-saveWine" href="#">About</a></li>
+            <li><a class="hover:text-saveWine" href="#footer-terms" id="footer-terms">Terms & Conditions</a></li>
+            <li><a class="hover:text-saveWine" href="#footer-privacy" id="footer-privacy">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Contact</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:hello@savewellnow.com" class="hover:text-saveWine">hello@savewellnow.com</a></li>
+            <li>(510) 736‑4332</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500 mt-8">© <span id="year"></span> SaveWell. All rights reserved.</p>
     </div>
   </footer>
 
@@ -90,6 +119,15 @@
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    const subdomain = window.location.hostname.split('.')[0];
+    if (subdomain.includes('belong')) {
+      const logoContainer = document.querySelector('header a');
+      const secondLogo = document.createElement('img');
+      secondLogo.src = 'assets/belong-health-logo.png';
+      secondLogo.alt = 'Second Logo';
+      secondLogo.className = 'h-8 w-auto';
+      logoContainer.appendChild(secondLogo);
+    }
 
     // Load provider data from external JSON file
     let DOCTORS = [];
