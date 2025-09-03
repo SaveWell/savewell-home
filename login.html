@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login – SaveWell</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saveTeal: '#0b7a7c',
+            saveWine: '#8a0052',
+            saveWineDark: '#6c0041',
+            saveTealDark: '#065e60',
+          },
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body class="font-sans text-slate-800 antialiased">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
+      </a>
+      <div class="flex items-center gap-6">
+        <nav class="hidden md:flex items-center gap-6 text-[15px]">
+          <a class="hover:text-saveWine" href="providers.html">For Providers</a>
+          <!-- <a class="hover:text-saveWine" href="payers.html">For Payers</a> -->
+          <a class="hover:text-saveWine" href="brokers.html">For Brokers</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a href="login.html" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</a>
+          <button class="md:hidden inline-flex items-center p-2" id="menuBtn" aria-label="Open Menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="px-4 py-3 space-y-2">
+        <a class="block py-2" href="providers.html">For Providers</a>
+        <!-- <a class="block py-2" href="payers.html">For Payers</a> -->
+        <a class="block py-2" href="brokers.html">For Brokers</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="min-h-screen flex items-center justify-center bg-slate-50 px-4">
+    <div class="w-full max-w-sm">
+      <form id="loginForm" class="bg-white p-8 rounded-2xl shadow space-y-4">
+        <div>
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="Email" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 px-4" />
+        </div>
+        <div>
+          <label class="sr-only" for="password">Password</label>
+          <input id="password" type="password" placeholder="Password" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 px-4" />
+        </div>
+        <button type="submit" class="w-full inline-flex justify-center items-center rounded-xl bg-saveWine px-4 py-3 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</button>
+      </form>
+      <p id="loginMessage" class="text-center text-saveWine mt-4 hidden">contact us to get an account</p>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Footer year
+    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+    // Check subdomain for second logo
+    const subdomain = window.location.hostname.split('.')[0];
+    if (subdomain.includes('belong')) {
+      const logoContainer = document.querySelector('header a');
+      const secondLogo = document.createElement('img');
+      secondLogo.src = 'assets/belong-health-logo.png';
+      secondLogo.alt = 'Second Logo';
+      secondLogo.className = 'h-8 w-auto';
+      logoContainer.appendChild(secondLogo);
+    }
+
+    // Login form handler
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+      loginForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const msg = document.getElementById('loginMessage');
+        if (msg) msg.classList.remove('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
