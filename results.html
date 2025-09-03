@@ -164,6 +164,7 @@
       let items = DOCTORS.slice();
       if (specialty) items = items.filter(d => d.specialty === specialty);
       if (zip) items = items.filter(d => d.zip === zip);
+      items.sort((a, b) => (b.premium_savings || 0) - (a.premium_savings || 0));
 
       summary.textContent = `${items.length} result${items.length===1?'':'s'}${specialty?` · ${specialty}`:''}${zip?` · ${zip}`:''}`;
 
@@ -173,13 +174,14 @@
       items.forEach(d => {
         const el = document.createElement('article');
         el.className = 'rounded-2xl border bg-white p-5 shadow-sm';
+        const savingsTag = d.premium_savings ? `<p class="text-sm mt-1"><span class="inline-flex items-center bg-saveWine text-white text-xs font-semibold px-2 py-0.5 rounded-full">$${d.premium_savings} premium savings per visit</span></p>` : '';
         el.innerHTML = `
           <div class="flex items-start justify-between gap-4">
             <div>
               <h2 class="font-semibold text-lg">${d.name}</h2>
               <p class="text-sm text-slate-600">${d.specialty}</p>
               <p class="text-sm text-slate-500">${d.address}<br>${d.city}, ${d.state} ${d.zip}</p>
-              <p class="text-sm mt-1"><span class="inline-flex items-center bg-saveWine text-white text-xs font-semibold px-2 py-0.5 rounded-full">$5 premium savings per visit</span></p>
+              ${savingsTag}
             </div>
             <a href="tel:${d.phone.replace(/[^0-9]/g,'')}" class="shrink-0 rounded-xl bg-saveTeal px-4 py-2 text-white text-sm font-semibold hover:bg-saveTealDark">Call</a>
           </div>`;
