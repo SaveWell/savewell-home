@@ -140,7 +140,7 @@
             <div>
               <h2 class="font-semibold text-lg">${d.name}</h2>
               <p class="text-sm text-slate-600">${d.specialty}</p>
-              <p class="text-sm text-slate-500">${d.address}, ${d.city}, ${d.state} ${d.zip}</p>
+              <p class="text-sm text-slate-500">${d.address}<br>${d.city}, ${d.state} ${d.zip}</p>
               <p class="text-sm mt-1"><span class="inline-flex items-center bg-saveWine text-white text-xs font-semibold px-2 py-0.5 rounded-full">$5 premium savings per visit</span></p>
             </div>
             <a href="tel:${d.phone.replace(/[^0-9]/g,'')}" class="shrink-0 rounded-xl bg-saveTeal px-4 py-2 text-white text-sm font-semibold hover:bg-saveTealDark">Call</a>
