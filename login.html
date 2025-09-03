@@ -60,6 +60,32 @@
     </div>
   </header>
 
+    <!-- Script to update navbar for 'belong' subdomain -->
+    <script>
+      (function() {
+        var subdomain = window.location.hostname.split('.')[0];
+        if (subdomain && subdomain.toLowerCase().includes('belong')) {
+          // Desktop navbar
+          var providerLink = Array.from(document.querySelectorAll('nav a')).find(a => a.textContent.trim() === 'For Providers');
+          if (providerLink) providerLink.textContent = 'Join the Network';
+          var brokerLink = Array.from(document.querySelectorAll('nav a')).find(a => a.textContent.trim().includes('For Brokers'));
+          if (brokerLink) brokerLink.style.display = 'none';
+
+          // Mobile menu
+          var mobileProviderLink = Array.from(document.querySelectorAll('#mobileMenu a')).find(a => a.textContent.trim() === 'For Providers');
+          if (mobileProviderLink) mobileProviderLink.textContent = 'Join the Network';
+          var mobileBrokerLink = Array.from(document.querySelectorAll('#mobileMenu a')).find(a => a.textContent.trim().includes('For Brokers'));
+          if (mobileBrokerLink) mobileBrokerLink.style.display = 'none';
+
+          // Footer links
+          var footerProviderLink = Array.from(document.querySelectorAll('footer a')).find(a => a.textContent.trim() === 'For Providers');
+          if (footerProviderLink) footerProviderLink.textContent = 'Join the Network';
+          var footerBrokerLink = Array.from(document.querySelectorAll('footer a')).find(a => a.textContent.trim().includes('For Brokers'));
+          if (footerBrokerLink) footerBrokerLink.style.display = 'none';
+        }
+      })();
+    </script>
+
   <main class="min-h-screen flex items-center justify-center bg-slate-50 px-4">
     <div class="w-full max-w-sm">
       <form id="loginForm" class="bg-white p-8 rounded-2xl shadow space-y-4">
