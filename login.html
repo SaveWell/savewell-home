@@ -63,12 +63,13 @@
   <main class="min-h-screen flex items-center justify-center bg-slate-50 px-4">
     <div class="w-full max-w-sm">
       <form id="loginForm" class="bg-white p-8 rounded-2xl shadow space-y-4">
+        <h2 class="text-center text-xl font-semibold">Log in to SaveWell</h2>
         <div>
-          <label class="sr-only" for="email">Email</label>
+          <label for="email" class="block text-sm font-medium mb-1">Email</label>
           <input id="email" type="email" placeholder="Email" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 px-4" />
         </div>
         <div>
-          <label class="sr-only" for="password">Password</label>
+          <label for="password" class="block text-sm font-medium mb-1">Password</label>
           <input id="password" type="password" placeholder="Password" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 px-4" />
         </div>
         <button type="submit" class="w-full inline-flex justify-center items-center rounded-xl bg-saveWine px-4 py-3 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</button>
