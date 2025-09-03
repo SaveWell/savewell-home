@@ -73,7 +73,7 @@
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
       <div class="relative z-10 lg:w-1/2">
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
-          <span class="text-saveWine">Earn rewards</span> for choosing trusted doctors.
+          <span class="text-saveWine">Earn rewards</span>&nbsp;<span class="text-blackblock">for choosing trusted doctors.</span>
         </h1>
         <p class="mt-4 text-lg text-slate-600 max-w-xl">Save money on your health plan premium when you receive care from preferred, high-quality doctors in your area.</p>
 
@@ -141,10 +141,11 @@
             // Hero text changes
             var heroTitle = document.querySelector('h1 span.text-saveWine');
             if (heroTitle) heroTitle.textContent = 'Patients earn rewards';
-            var heroSubtitle = document.querySelector('h1 + p');
-            if (heroSubtitle && heroSubtitle.textContent.includes('for choosing trusted doctors')) {
-              heroSubtitle.textContent = heroSubtitle.textContent.replace('for choosing trusted doctors.', 'for referrals to trusted doctors.');
-            }
+            var heroSubtitle = document.querySelector('h1 span.text-blackblock');
+            if (heroSubtitle) heroSubtitle.textContent = 'when you refer to trusted doctors.';
+            // Update hero subtitle paragraph as requested
+            var heroParagraph = Array.from(document.querySelectorAll('section.hero-bg p')).find(p => p.textContent.trim() === 'Save money on your health plan premium when you receive care from preferred, high-quality doctors in your area.');
+            if (heroParagraph) heroParagraph.textContent = 'Patients save money on health plan premiums when they receive care from preferred, high-quality doctors in your area.';
 
             // Footer text changes
             var footerText = Array.from(document.querySelectorAll('footer p.text-sm')).find(p => p.textContent.includes('Earn rewards for choosing trusted doctors'));
