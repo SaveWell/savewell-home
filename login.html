@@ -86,19 +86,29 @@
       })();
     </script>
 
-  <main class="min-h-screen flex items-center justify-center bg-slate-50 px-4">
+  <main class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-saveTeal/10 px-4">
     <div class="w-full max-w-sm">
-      <form id="loginForm" class="bg-white p-8 rounded-2xl shadow space-y-4">
-        <h2 class="text-center text-xl font-semibold">Log in to SaveWell</h2>
+      <form id="loginForm" class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 space-y-6">
+        <h2 class="text-center text-2xl font-semibold text-saveWine">Log in to SaveWell</h2>
+        <div class="text-center text-sm text-slate-500">Welcome back! Please enter your details.</div>
         <div>
           <label for="email" class="block text-sm font-medium mb-1">Email</label>
-          <input id="email" type="email" placeholder="Email" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 px-4" />
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400"><i class="fa-regular fa-envelope"></i></span>
+            <input id="email" type="email" placeholder="Email" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 pl-10 pr-4" />
+          </div>
         </div>
         <div>
           <label for="password" class="block text-sm font-medium mb-1">Password</label>
-          <input id="password" type="password" placeholder="Password" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 px-4" />
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400"><i class="fa-solid fa-lock"></i></span>
+            <input id="password" type="password" placeholder="Password" required class="w-full rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-sm py-3 pl-10 pr-4" />
+          </div>
         </div>
-        <button type="submit" class="w-full inline-flex justify-center items-center rounded-xl bg-saveWine px-4 py-3 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</button>
+        <button type="submit" class="w-full inline-flex justify-center items-center gap-2 rounded-xl bg-saveWine px-4 py-3 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">
+          Login
+          <i class="fa-solid fa-arrow-right-long text-sm"></i>
+        </button>
       </form>
       <p id="loginMessage" class="text-center text-saveWine mt-4 hidden">contact us to get an account</p>
     </div>
