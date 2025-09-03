@@ -74,7 +74,7 @@
     "state": "WI",
     "address": "3802 OAKWOOD MALL DR",
     "phone": "(715) 839-9280",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 8,
@@ -206,7 +206,7 @@
     "state": "WI",
     "address": "202 S PARK ST",
     "phone": "(608) 267-5970",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 20,
@@ -228,7 +228,7 @@
     "state": "WI",
     "address": "36500 AURORA DR",
     "phone": "(262) 434-5000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 22,
@@ -316,7 +316,7 @@
     "state": "WI",
     "address": "2116 CRAIG ROAD",
     "phone": "(715) 858-4747",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 30,
@@ -338,7 +338,7 @@
     "state": "WI",
     "address": "36500 AURORA DR",
     "phone": "(262) 434-5000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 32,
@@ -404,7 +404,7 @@
     "state": "WI",
     "address": "2845 GREENBRIER RD, SUITE 140",
     "phone": "(920) 288-8100",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 38,
@@ -426,7 +426,7 @@
     "state": "WI",
     "address": "1900 WOODLAND DR",
     "phone": "(920) 320-6212",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 40,
@@ -712,7 +712,7 @@
     "state": "WI",
     "address": "2116 CRAIG ROAD",
     "phone": "(715) 858-4630",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 66,
@@ -800,7 +800,7 @@
     "state": "WI",
     "address": "500 VINCENT ST",
     "phone": "(715) 344-0701",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 74,
@@ -921,7 +921,7 @@
     "state": "WI",
     "address": "500 VINCENT ST",
     "phone": "(715) 344-0701",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 85,
@@ -1097,7 +1097,7 @@
     "state": "WI",
     "address": "705 S UNIVERSITY AVE STE 150",
     "phone": "(920) 219-4009",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 101,
@@ -1218,7 +1218,7 @@
     "state": "WI",
     "address": "2105 E. ENTERPRISE AVE., SUITE 101",
     "phone": "(920) 560-1100",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 112,
@@ -1273,7 +1273,7 @@
     "state": "WI",
     "address": "5045 W GRANDE MARKET DR",
     "phone": "(920) 886-9380",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 117,
@@ -1416,7 +1416,7 @@
     "state": "WI",
     "address": "2105 E ENTERPRISE AVE, STE 111",
     "phone": "(920) 731-6611",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 130,
@@ -1427,7 +1427,7 @@
     "state": "WI",
     "address": "2105 E ENTERPRISE AVE # 111",
     "phone": "(920) 731-6611",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 131,
@@ -1460,7 +1460,7 @@
     "state": "WI",
     "address": "1205 W AMERICAN DR",
     "phone": "(920) 430-8113",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 134,
@@ -1581,7 +1581,7 @@
     "state": "WI",
     "address": "1200 OAKLEAF WAY, SUITE A",
     "phone": "(715) 832-1400",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 145,
@@ -1812,7 +1812,7 @@
     "state": "WI",
     "address": "2845 GREENBRIER RD",
     "phone": "(920) 288-8000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 166,
@@ -1922,7 +1922,7 @@
     "state": "WI",
     "address": "725 S WEBSTER AVE",
     "phone": "(920) 431-5650",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 176,
@@ -2054,7 +2054,7 @@
     "state": "WI",
     "address": "3130 SHORE DR STE 111, BAY AREA NEUROLOGY CONSULTATNTS",
     "phone": "(715) 732-8212",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 188,
@@ -2153,7 +2153,7 @@
     "state": "WI",
     "address": "2223 LIME KILN RD, SUITE 1",
     "phone": "(920) 468-0246",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 197,
@@ -2197,7 +2197,7 @@
     "state": "WI",
     "address": "1726 SHAWANO AVE",
     "phone": "(920) 496-4700",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 201,
@@ -2230,7 +2230,7 @@
     "state": "WI",
     "address": "1110 KEPLER DR",
     "phone": "(920) 288-5555",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 204,
@@ -2505,7 +2505,7 @@
     "state": "WI",
     "address": "1836 SOUTH AVE",
     "phone": "(608) 782-7300",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 229,
@@ -2604,7 +2604,7 @@
     "state": "WI",
     "address": "1836 SOUTH AVE",
     "phone": "(608) 782-7300",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 238,
@@ -2868,7 +2868,7 @@
     "state": "WI",
     "address": "6815 118TH AVE",
     "phone": "(262) 857-5600",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 262,
@@ -2879,7 +2879,7 @@
     "state": "WI",
     "address": "1020 35TH ST",
     "phone": "(262) 652-3500",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 263,
@@ -2912,7 +2912,7 @@
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
     "phone": "(414) 805-2901",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 266,
@@ -2978,7 +2978,7 @@
     "state": "WI",
     "address": "7401 104TH AVE, SUITE 110",
     "phone": "(262) 764-5595",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 272,
@@ -3154,7 +3154,7 @@
     "state": "WI",
     "address": "515 22ND AVE",
     "phone": "(608) 324-2000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 288,
@@ -3297,7 +3297,7 @@
     "state": "WI",
     "address": "451 JUNCTION RD",
     "phone": "(608) 265-7670",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 301,
@@ -3330,7 +3330,7 @@
     "state": "WI",
     "address": "451 JUNCTION RD",
     "phone": "(608) 263-5010",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 304,
@@ -3385,7 +3385,7 @@
     "state": "WI",
     "address": "451 JUNCTION RD",
     "phone": "(608) 263-5010",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 309,
@@ -3407,7 +3407,7 @@
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
     "phone": "(608) 260-6000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 311,
@@ -3418,7 +3418,7 @@
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
     "phone": "(608) 260-6000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 312,
@@ -3473,7 +3473,7 @@
     "state": "WI",
     "address": "451 JUNCTION RD",
     "phone": "(608) 263-8094",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 317,
@@ -3528,7 +3528,7 @@
     "state": "WI",
     "address": "700 S PARK ST",
     "phone": "(608) 260-2900",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 322,
@@ -3550,7 +3550,7 @@
     "state": "WI",
     "address": "20 S PARK ST, SUITE 207",
     "phone": "(608) 287-2680",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 324,
@@ -3561,7 +3561,7 @@
     "state": "WI",
     "address": "451 JUNCTION RD",
     "phone": "(608) 263-8094",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 325,
@@ -3616,7 +3616,7 @@
     "state": "WI",
     "address": "3200 E RACINE ST",
     "phone": "(608) 371-8000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 330,
@@ -3627,7 +3627,7 @@
     "state": "WI",
     "address": "410 DEWEY STREET",
     "phone": "(715) 421-7442",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 331,
@@ -3638,7 +3638,7 @@
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
     "phone": "(608) 252-8000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 332,
@@ -3682,7 +3682,7 @@
     "state": "WI",
     "address": "20 S PARK ST STE 202",
     "phone": "(608) 287-2090",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 336,
@@ -3693,7 +3693,7 @@
     "state": "WI",
     "address": "700 S PARK ST STE A",
     "phone": "(608) 260-2900",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 337,
@@ -3715,7 +3715,7 @@
     "state": "WI",
     "address": "700 S PARK ST",
     "phone": "(608) 260-2900",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 339,
@@ -3803,7 +3803,7 @@
     "state": "WI",
     "address": "621 SCIENCE DR",
     "phone": "(608) 265-3207",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 347,
@@ -4177,7 +4177,7 @@
     "state": "WI",
     "address": "W180N11070 RIVER LIN",
     "phone": "(262) 532-8441",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 381,
@@ -4518,7 +4518,7 @@
     "state": "WI",
     "address": "N112W15415 MEQUON RD",
     "phone": "(262) 255-2112",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 412,
@@ -4606,7 +4606,7 @@
     "state": "WI",
     "address": "10000 W BLUEMOUND RD",
     "phone": "(414) 454-8000",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 420,
@@ -4815,7 +4815,7 @@
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF ENDOCRINOLOGY",
     "phone": "(414) 456-6722",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 439,
@@ -4837,7 +4837,7 @@
     "state": "WI",
     "address": "788 N JEFFERSON ST STE 300",
     "phone": "(414) 272-8950",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 441,
@@ -4892,7 +4892,7 @@
     "state": "WI",
     "address": "201 N MAYFAIR ROAD",
     "phone": "(414) 771-8228",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 446,
@@ -4936,7 +4936,7 @@
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY",
     "phone": "(414) 649-6780",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 450,
@@ -4958,7 +4958,7 @@
     "state": "WI",
     "address": "W129N7055 NORTHFIELD DR",
     "phone": "(262) 253-7155",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 452,
@@ -5266,7 +5266,7 @@
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF GASTROENTEROLOGY AND HEPATOLOGY",
     "phone": "(414) 805-0516",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 480,
@@ -5332,7 +5332,7 @@
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, SUITE 930",
     "phone": "(262) 857-5750",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 486,
@@ -5673,7 +5673,7 @@
     "state": "WI",
     "address": "6026 W LISBON AVE",
     "phone": "(414) 442-3630",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 517,
@@ -5948,7 +5948,7 @@
     "state": "WI",
     "address": "8905 W LINCOLN AVE, STE 405",
     "phone": "(414) 329-5650",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 542,
@@ -6102,7 +6102,7 @@
     "state": "WI",
     "address": "2323 N MAYFAIR RD, SUITE 300",
     "phone": "(414) 384-6700",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 556,
@@ -6212,7 +6212,7 @@
     "state": "WI",
     "address": "525 W RIVER WOODS PKWY STE 100",
     "phone": "(414) 332-6262",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 566,
@@ -6223,7 +6223,7 @@
     "state": "WI",
     "address": "N15W28300 GOLF RD",
     "phone": "(262) 303-5055",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 567,
@@ -6267,7 +6267,7 @@
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 370",
     "phone": "(414) 649-7900",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 571,
@@ -6333,7 +6333,7 @@
     "state": "WI",
     "address": "N15W28300 GOLF RD",
     "phone": "(262) 544-5311",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 577,
@@ -6399,7 +6399,7 @@
     "state": "WI",
     "address": "525 W RIVER WOODS PARKWAY, STE 130",
     "phone": "(414) 961-0304",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 583,
@@ -6410,7 +6410,7 @@
     "state": "WI",
     "address": "525 W RIVER WOODS PKWY, SUITE 230",
     "phone": "(414) 453-7418",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 584,
@@ -6432,7 +6432,7 @@
     "state": "WI",
     "address": "N15W28300 GOLF RD",
     "phone": "(262) 303-5055",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 586,
@@ -6498,7 +6498,7 @@
     "state": null,
     "address": null,
     "phone": null,
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 592,
@@ -6553,7 +6553,7 @@
     "state": "WI",
     "address": "7080 N PORT WASHINGTON RD, RHEUMATIC DISEASE CENTER",
     "phone": "(414) 351-4009",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 597,
@@ -7092,7 +7092,7 @@
     "state": "WI",
     "address": "8400 WASHINGTON AVE",
     "phone": "(262) 884-8340",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 646,
@@ -7114,7 +7114,7 @@
     "state": "WI",
     "address": "3805B SPRING ST",
     "phone": "(262) 687-8322",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 648,
@@ -7202,7 +7202,7 @@
     "state": "WI",
     "address": "451 JUNCTION RD",
     "phone": "(608) 263-5010",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 656,
@@ -7389,7 +7389,7 @@
     "state": "WI",
     "address": "411 WESTWOOD DR",
     "phone": "(715) 847-2558",
-    "premium_savings": 5
+    "premium_savings": 10
   },
   {
     "id": 673,
