@@ -7,8 +7,7 @@
     "city": "WISCONSIN RAPIDS",
     "state": "WI",
     "address": "140 24TH ST S",
-    "phone": "(715) 424-1881",
-    "premium_savings": 5
+    "phone": "(715) 424-1881"
   },
   {
     "id": 2,
@@ -18,8 +17,7 @@
     "city": "RICE LAKE",
     "state": "WI",
     "address": "2200 CEDARCREST DRIVE, SUITE B",
-    "phone": "(586) 864-6006",
-    "premium_savings": 10
+    "phone": "(586) 864-6006"
   },
   {
     "id": 3,
@@ -29,8 +27,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT STREET, SUITE A",
-    "phone": "(715) 345-0500",
-    "premium_savings": 15
+    "phone": "(715) 345-0500"
   },
   {
     "id": 4,
@@ -40,8 +37,7 @@
     "city": "OCONOMOWOC",
     "state": "WI",
     "address": "1185 CORPORATE CENTER DR, SUITE 125",
-    "phone": "(414) 454-0600",
-    "premium_savings": 20
+    "phone": "(414) 454-0600"
   },
   {
     "id": 5,
@@ -51,8 +47,7 @@
     "city": "BURLINGTON",
     "state": "WI",
     "address": "248 MCHENRY ST",
-    "phone": "(262) 767-8000",
-    "premium_savings": 0
+    "phone": "(262) 767-8000"
   },
   {
     "id": 6,
@@ -62,8 +57,7 @@
     "city": "MARINETTE",
     "state": "WI",
     "address": "1281 MARINETTE AVE",
-    "phone": "(715) 330-7090",
-    "premium_savings": 5
+    "phone": "(715) 330-7090"
   },
   {
     "id": 7,
@@ -73,8 +67,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "3802 OAKWOOD MALL DR",
-    "phone": "(715) 839-9280",
-    "premium_savings": 10
+    "phone": "(715) 839-9280"
   },
   {
     "id": 8,
@@ -84,8 +77,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "744 S WEBSTER AVE, 2ND FLOOR",
-    "phone": "(920) 433-3640",
-    "premium_savings": 15
+    "phone": "(920) 433-3640"
   },
   {
     "id": 9,
@@ -95,8 +87,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, #840",
-    "phone": "(414) 649-3530",
-    "premium_savings": 20
+    "phone": "(414) 649-3530"
   },
   {
     "id": 10,
@@ -106,8 +97,7 @@
     "city": "MARINETTE",
     "state": "WI",
     "address": "3003 UNIVERSITY DR",
-    "phone": "(715) 735-4200",
-    "premium_savings": 0
+    "phone": "(715) 735-4200"
   },
   {
     "id": 11,
@@ -117,8 +107,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "659 W HAMILTON AVE",
-    "phone": "(715) 831-4444",
-    "premium_savings": 5
+    "phone": "(715) 831-4444"
   },
   {
     "id": 12,
@@ -128,8 +117,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "659 W HAMILTON AVE",
-    "phone": "(715) 831-4444",
-    "premium_savings": 10
+    "phone": "(715) 831-4444"
   },
   {
     "id": 13,
@@ -139,8 +127,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3267 S 16TH ST, SUITE 104",
-    "phone": "(414) 643-8500",
-    "premium_savings": 15
+    "phone": "(414) 643-8500"
   },
   {
     "id": 14,
@@ -150,8 +137,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 20
+    "phone": "(715) 838-5222"
   },
   {
     "id": 15,
@@ -161,8 +147,7 @@
     "city": "OAK CREEK",
     "state": "WI",
     "address": "7901 S 6TH ST",
-    "phone": "(414) 346-8000",
-    "premium_savings": 0
+    "phone": "(414) 346-8000"
   },
   {
     "id": 16,
@@ -172,8 +157,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 5
+    "phone": "(715) 838-5222"
   },
   {
     "id": 17,
@@ -183,8 +167,7 @@
     "city": "MINOCQUA",
     "state": "WI",
     "address": "9601 TOWNLINE RD",
-    "phone": "(715) 358-1000",
-    "premium_savings": 10
+    "phone": "(715) 358-1000"
   },
   {
     "id": 18,
@@ -194,8 +177,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5511",
-    "premium_savings": 15
+    "phone": "(715) 387-5511"
   },
   {
     "id": 19,
@@ -205,8 +187,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "202 S PARK ST",
-    "phone": "(608) 267-5970",
-    "premium_savings": 20
+    "phone": "(608) 267-5970"
   },
   {
     "id": 20,
@@ -216,8 +197,7 @@
     "city": "WISCONSIN RAPIDS",
     "state": "WI",
     "address": "420 DEWEY ST",
-    "phone": "(715) 421-4500",
-    "premium_savings": 0
+    "phone": "(715) 421-4500"
   },
   {
     "id": 21,
@@ -227,8 +207,7 @@
     "city": "SUMMIT",
     "state": "WI",
     "address": "36500 AURORA DR",
-    "phone": "(262) 434-5000",
-    "premium_savings": 5
+    "phone": "(262) 434-5000"
   },
   {
     "id": 22,
@@ -238,8 +217,7 @@
     "city": "MANITOWOC",
     "state": "WI",
     "address": "1515 RANDOLPH CT",
-    "phone": "(920) 683-5278",
-    "premium_savings": 10
+    "phone": "(920) 683-5278"
   },
   {
     "id": 23,
@@ -249,8 +227,7 @@
     "city": "MARINETTE",
     "state": "WI",
     "address": "3515 MURRAY STREET",
-    "phone": "(715) 732-0699",
-    "premium_savings": 15
+    "phone": "(715) 732-0699"
   },
   {
     "id": 24,
@@ -260,8 +237,7 @@
     "city": "MANITOWOC",
     "state": "WI",
     "address": "801 YORK ST",
-    "phone": "(920) 683-5278",
-    "premium_savings": 20
+    "phone": "(920) 683-5278"
   },
   {
     "id": 25,
@@ -271,8 +247,7 @@
     "city": "BURLINGTON",
     "state": "WI",
     "address": "248 MCHENRY ST",
-    "phone": "(262) 767-8267",
-    "premium_savings": 0
+    "phone": "(262) 767-8267"
   },
   {
     "id": 26,
@@ -282,8 +257,7 @@
     "city": "STURGEON BAY",
     "state": "WI",
     "address": "33 GREEN BAY RD",
-    "phone": "(920) 683-5278",
-    "premium_savings": 5
+    "phone": "(920) 683-5278"
   },
   {
     "id": 27,
@@ -293,8 +267,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "5501A VERN HOLMES DR",
-    "phone": "(715) 849-5333",
-    "premium_savings": 10
+    "phone": "(715) 849-5333"
   },
   {
     "id": 28,
@@ -304,8 +277,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "733 W CLAIREMONT AVE, PEDIATRIC DERMATOLOGY",
-    "phone": "(715) 838-5222",
-    "premium_savings": 15
+    "phone": "(715) 838-5222"
   },
   {
     "id": 29,
@@ -315,8 +287,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "2116 CRAIG ROAD",
-    "phone": "(715) 858-4747",
-    "premium_savings": 20
+    "phone": "(715) 858-4747"
   },
   {
     "id": 30,
@@ -326,8 +297,7 @@
     "city": "OCONTO FALLS",
     "state": "WI",
     "address": "835 S MAIN ST, SUITE 1",
-    "phone": "(920) 846-4864",
-    "premium_savings": 0
+    "phone": "(920) 846-4864"
   },
   {
     "id": 31,
@@ -337,8 +307,7 @@
     "city": "SUMMIT",
     "state": "WI",
     "address": "36500 AURORA DR",
-    "phone": "(262) 434-5000",
-    "premium_savings": 5
+    "phone": "(262) 434-5000"
   },
   {
     "id": 32,
@@ -348,8 +317,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "2116 CRAIG RD",
-    "phone": "(715) 858-4500",
-    "premium_savings": 10
+    "phone": "(715) 858-4500"
   },
   {
     "id": 33,
@@ -359,8 +327,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5511",
-    "premium_savings": 15
+    "phone": "(715) 387-5511"
   },
   {
     "id": 34,
@@ -370,8 +337,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 20
+    "phone": "(715) 838-5222"
   },
   {
     "id": 35,
@@ -381,8 +347,7 @@
     "city": "ASHLAND",
     "state": "WI",
     "address": "1615 MAPLE LN STE 1",
-    "phone": "(715) 685-7500",
-    "premium_savings": 0
+    "phone": "(715) 685-7500"
   },
   {
     "id": 36,
@@ -392,8 +357,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5511",
-    "premium_savings": 5
+    "phone": "(715) 387-5511"
   },
   {
     "id": 37,
@@ -403,8 +367,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD, SUITE 140",
-    "phone": "(920) 288-8100",
-    "premium_savings": 10
+    "phone": "(920) 288-8100"
   },
   {
     "id": 38,
@@ -414,8 +377,7 @@
     "city": "TWO RIVERS",
     "state": "WI",
     "address": "5300 MEMORIAL DR",
-    "phone": "(920) 793-7548",
-    "premium_savings": 15
+    "phone": "(920) 793-7548"
   },
   {
     "id": 39,
@@ -425,8 +387,7 @@
     "city": "MANITOWOC",
     "state": "WI",
     "address": "1900 WOODLAND DR",
-    "phone": "(920) 320-6212",
-    "premium_savings": 20
+    "phone": "(920) 320-6212"
   },
   {
     "id": 40,
@@ -436,8 +397,7 @@
     "city": "WISCONSIN RAPIDS",
     "state": "WI",
     "address": "420 DEWEY STREET",
-    "phone": "(715) 421-1001",
-    "premium_savings": 0
+    "phone": "(715) 421-1001"
   },
   {
     "id": 41,
@@ -447,8 +407,7 @@
     "city": "SUMMIT",
     "state": "WI",
     "address": "36500 AURORA DR",
-    "phone": "(262) 434-1000",
-    "premium_savings": 5
+    "phone": "(262) 434-1000"
   },
   {
     "id": 42,
@@ -458,8 +417,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1221 WHIPPLE ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 10
+    "phone": "(715) 838-5222"
   },
   {
     "id": 43,
@@ -469,8 +427,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "1033 N MAYFAIR RD, SUITE 101",
-    "phone": "(414) 454-0600",
-    "premium_savings": 15
+    "phone": "(414) 454-0600"
   },
   {
     "id": 44,
@@ -480,8 +437,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 20
+    "phone": null
   },
   {
     "id": 45,
@@ -491,8 +447,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6615",
-    "premium_savings": 0
+    "phone": "(414) 908-6615"
   },
   {
     "id": 46,
@@ -502,8 +457,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 5
+    "phone": "(715) 847-2558"
   },
   {
     "id": 47,
@@ -513,8 +467,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD.",
-    "phone": "(608) 252-8000",
-    "premium_savings": 10
+    "phone": "(608) 252-8000"
   },
   {
     "id": 48,
@@ -524,8 +477,7 @@
     "city": "PLEASANT PRAIRIE",
     "state": "WI",
     "address": "9555 76TH ST STE 1200",
-    "phone": "(262) 671-7300",
-    "premium_savings": 15
+    "phone": "(262) 671-7300"
   },
   {
     "id": 49,
@@ -535,8 +487,7 @@
     "city": "MARINETTE",
     "state": "WI",
     "address": "3003 UNIVERSITY DR",
-    "phone": "(715) 735-4200",
-    "premium_savings": 20
+    "phone": "(715) 735-4200"
   },
   {
     "id": 50,
@@ -546,8 +497,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON RD",
-    "phone": "(262) 329-5000",
-    "premium_savings": 0
+    "phone": "(262) 329-5000"
   },
   {
     "id": 51,
@@ -557,8 +507,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5426",
-    "premium_savings": 5
+    "phone": "(715) 387-5426"
   },
   {
     "id": 52,
@@ -568,8 +517,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "900 W CLAIREMONT AVE",
-    "phone": "(715) 839-3956",
-    "premium_savings": 10
+    "phone": "(715) 839-3956"
   },
   {
     "id": 53,
@@ -579,8 +527,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-3000",
-    "premium_savings": 15
+    "phone": "(414) 805-3000"
   },
   {
     "id": 54,
@@ -590,8 +537,7 @@
     "city": "RICE LAKE",
     "state": "WI",
     "address": "1700 W. STOUT ST.",
-    "phone": "(715) 236-8100",
-    "premium_savings": 20
+    "phone": "(715) 236-8100"
   },
   {
     "id": 55,
@@ -601,8 +547,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "3506 OAKWOOD MALL DR STE A",
-    "phone": "(715) 831-0811",
-    "premium_savings": 0
+    "phone": "(715) 831-0811"
   },
   {
     "id": 56,
@@ -612,8 +557,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 5
+    "phone": null
   },
   {
     "id": 57,
@@ -623,8 +567,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "950 W CLAIREMONT AVE, SUITE B",
-    "phone": "(715) 831-0811",
-    "premium_savings": 10
+    "phone": "(715) 831-0811"
   },
   {
     "id": 58,
@@ -634,8 +577,7 @@
     "city": "SUMMIT",
     "state": "WI",
     "address": "36500 AURORA DR",
-    "phone": "(262) 434-5000",
-    "premium_savings": 15
+    "phone": "(262) 434-5000"
   },
   {
     "id": 59,
@@ -645,8 +587,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 20
+    "phone": "(715) 838-5222"
   },
   {
     "id": 60,
@@ -656,8 +597,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 0
+    "phone": "(715) 838-5222"
   },
   {
     "id": 61,
@@ -667,8 +607,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "1111 DELAFIELD ST STE 105",
-    "phone": "(262) 542-9503",
-    "premium_savings": 5
+    "phone": "(262) 542-9503"
   },
   {
     "id": 62,
@@ -678,8 +617,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "733 W CLAIREMONT AVE",
-    "phone": "(715) 838-5222",
-    "premium_savings": 10
+    "phone": "(715) 838-5222"
   },
   {
     "id": 63,
@@ -689,8 +627,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 15
+    "phone": null
   },
   {
     "id": 64,
@@ -700,8 +637,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1221 WHIPPLE ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 20
+    "phone": "(715) 838-5222"
   },
   {
     "id": 65,
@@ -711,8 +647,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "2116 CRAIG ROAD",
-    "phone": "(715) 858-4630",
-    "premium_savings": 0
+    "phone": "(715) 858-4630"
   },
   {
     "id": 66,
@@ -722,8 +657,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "824 ILLINOIS AVENUE",
-    "phone": "(715) 342-7500",
-    "premium_savings": 5
+    "phone": "(715) 342-7500"
   },
   {
     "id": 67,
@@ -733,8 +667,7 @@
     "city": "BARABOO",
     "state": "WI",
     "address": "1700 TUTTLE ST.",
-    "phone": "(608) 355-3800",
-    "premium_savings": 10
+    "phone": "(608) 355-3800"
   },
   {
     "id": 68,
@@ -744,8 +677,7 @@
     "city": "LAKE GENEVA",
     "state": "WI",
     "address": "146 E GENEVA SQ",
-    "phone": "(262) 249-5005",
-    "premium_savings": 15
+    "phone": "(262) 249-5005"
   },
   {
     "id": 69,
@@ -755,8 +687,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 20
+    "phone": "(715) 838-5222"
   },
   {
     "id": 70,
@@ -766,8 +697,7 @@
     "city": "MAUSTON",
     "state": "WI",
     "address": "1040 DIVISION ST",
-    "phone": "(608) 847-5000",
-    "premium_savings": 0
+    "phone": "(608) 847-5000"
   },
   {
     "id": 71,
@@ -777,8 +707,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "3213 STEIN BLVD",
-    "phone": "(715) 836-9242",
-    "premium_savings": 5
+    "phone": "(715) 836-9242"
   },
   {
     "id": 72,
@@ -788,8 +717,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 10
+    "phone": "(715) 838-5222"
   },
   {
     "id": 73,
@@ -799,8 +727,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 344-0701",
-    "premium_savings": 15
+    "phone": "(715) 344-0701"
   },
   {
     "id": 74,
@@ -810,8 +737,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5202",
-    "premium_savings": 20
+    "phone": "(715) 387-5202"
   },
   {
     "id": 75,
@@ -821,8 +747,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 344-0701",
-    "premium_savings": 0
+    "phone": "(715) 344-0701"
   },
   {
     "id": 76,
@@ -832,8 +757,7 @@
     "city": "SUMMIT",
     "state": "WI",
     "address": "36500 AURORA DR",
-    "phone": "(262) 434-1000",
-    "premium_savings": 5
+    "phone": "(262) 434-1000"
   },
   {
     "id": 77,
@@ -843,8 +767,7 @@
     "city": "BURLINGTON",
     "state": "WI",
     "address": "709 SPRING VALLEY RD",
-    "phone": "(262) 767-6020",
-    "premium_savings": 10
+    "phone": "(262) 767-6020"
   },
   {
     "id": 78,
@@ -854,8 +777,7 @@
     "city": "BEAVER DAM",
     "state": "WI",
     "address": "118 W MAPLE AVE",
-    "phone": "(920) 356-1000",
-    "premium_savings": 15
+    "phone": "(920) 356-1000"
   },
   {
     "id": 79,
@@ -865,8 +787,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 997-9813",
-    "premium_savings": 20
+    "phone": "(715) 997-9813"
   },
   {
     "id": 80,
@@ -876,8 +797,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 344-0701",
-    "premium_savings": 0
+    "phone": "(715) 344-0701"
   },
   {
     "id": 81,
@@ -887,8 +807,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 5
+    "phone": "(715) 838-5222"
   },
   {
     "id": 82,
@@ -898,8 +817,7 @@
     "city": "SUMMIT",
     "state": "WI",
     "address": "36500 AURORA DR",
-    "phone": "(262) 434-1000",
-    "premium_savings": 10
+    "phone": "(262) 434-1000"
   },
   {
     "id": 83,
@@ -909,8 +827,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2400 E CAPITOL DR",
-    "phone": "(920) 831-5050",
-    "premium_savings": 15
+    "phone": "(920) 831-5050"
   },
   {
     "id": 84,
@@ -920,8 +837,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 344-0701",
-    "premium_savings": 20
+    "phone": "(715) 344-0701"
   },
   {
     "id": 85,
@@ -931,8 +847,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 344-0701",
-    "premium_savings": 0
+    "phone": "(715) 344-0701"
   },
   {
     "id": 86,
@@ -942,8 +857,7 @@
     "city": "WISCONSIN RAPIDS",
     "state": "WI",
     "address": "140 24TH ST S",
-    "phone": "(715) 424-1881",
-    "premium_savings": 5
+    "phone": "(715) 424-1881"
   },
   {
     "id": 87,
@@ -953,8 +867,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7400",
-    "premium_savings": 10
+    "phone": "(414) 805-7400"
   },
   {
     "id": 88,
@@ -964,8 +877,7 @@
     "city": "HARTFORD",
     "state": "WI",
     "address": "1640 E SUMNER ST",
-    "phone": "(262) 670-4000",
-    "premium_savings": 15
+    "phone": "(262) 670-4000"
   },
   {
     "id": 89,
@@ -975,8 +887,7 @@
     "city": "VIROQUA",
     "state": "WI",
     "address": "407 S MAIN ST",
-    "phone": "(608) 637-3195",
-    "premium_savings": 20
+    "phone": "(608) 637-3195"
   },
   {
     "id": 90,
@@ -986,8 +897,7 @@
     "city": "STEVENS POINT",
     "state": "WI",
     "address": "500 VINCENT ST",
-    "phone": "(715) 344-0701",
-    "premium_savings": 0
+    "phone": "(715) 344-0701"
   },
   {
     "id": 91,
@@ -997,8 +907,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2501 W BELTLINE HWY STE 601",
-    "phone": "(608) 234-7436",
-    "premium_savings": 5
+    "phone": "(608) 234-7436"
   },
   {
     "id": 92,
@@ -1008,8 +917,7 @@
     "city": "MANITOWOC",
     "state": "WI",
     "address": "1111 BAYSHORE DR",
-    "phone": "(920) 682-6376",
-    "premium_savings": 10
+    "phone": "(920) 682-6376"
   },
   {
     "id": 93,
@@ -1019,8 +927,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 15
+    "phone": null
   },
   {
     "id": 94,
@@ -1030,8 +937,7 @@
     "city": "MANITOWOC",
     "state": "WI",
     "address": "1111 BAYSHORE DR",
-    "phone": "(920) 682-6376",
-    "premium_savings": 20
+    "phone": "(920) 682-6376"
   },
   {
     "id": 95,
@@ -1041,8 +947,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5511",
-    "premium_savings": 0
+    "phone": "(715) 387-5511"
   },
   {
     "id": 96,
@@ -1052,8 +957,7 @@
     "city": "STURGEON BAY",
     "state": "WI",
     "address": "323 S 18TH AVE",
-    "phone": "(920) 746-0510",
-    "premium_savings": 5
+    "phone": "(920) 746-0510"
   },
   {
     "id": 97,
@@ -1063,8 +967,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "5320 W MICHAELS DR",
-    "phone": "(920) 882-8200",
-    "premium_savings": 10
+    "phone": "(920) 882-8200"
   },
   {
     "id": 98,
@@ -1074,8 +977,7 @@
     "city": "WATERTOWN",
     "state": "WI",
     "address": "123 HOSPITAL DR, SUITE 1008",
-    "phone": "(920) 206-6500",
-    "premium_savings": 15
+    "phone": "(920) 206-6500"
   },
   {
     "id": 99,
@@ -1085,8 +987,7 @@
     "city": "WISCONSIN RAPIDS",
     "state": "WI",
     "address": "140 24TH ST S",
-    "phone": "(715) 424-1881",
-    "premium_savings": 20
+    "phone": "(715) 424-1881"
   },
   {
     "id": 100,
@@ -1096,8 +997,7 @@
     "city": "BEAVER DAM",
     "state": "WI",
     "address": "705 S UNIVERSITY AVE STE 150",
-    "phone": "(920) 219-4009",
-    "premium_savings": 0
+    "phone": "(920) 219-4009"
   },
   {
     "id": 101,
@@ -1107,8 +1007,7 @@
     "city": "VIROQUA",
     "state": "WI",
     "address": "407 S MAIN ST",
-    "phone": "(608) 637-3195",
-    "premium_savings": 5
+    "phone": "(608) 637-3195"
   },
   {
     "id": 102,
@@ -1118,8 +1017,7 @@
     "city": "MAUSTON",
     "state": "WI",
     "address": "1040 DIVISION ST",
-    "phone": "(608) 847-5000",
-    "premium_savings": 10
+    "phone": "(608) 847-5000"
   },
   {
     "id": 103,
@@ -1129,8 +1027,7 @@
     "city": "MAUSTON",
     "state": "WI",
     "address": "1040 DIVISION ST",
-    "phone": "(608) 847-5000",
-    "premium_savings": 15
+    "phone": "(608) 847-5000"
   },
   {
     "id": 104,
@@ -1140,8 +1037,7 @@
     "city": "PORTAGE",
     "state": "WI",
     "address": "2817 NEW PINERY RD",
-    "phone": "(608) 742-4131",
-    "premium_savings": 20
+    "phone": "(608) 742-4131"
   },
   {
     "id": 105,
@@ -1151,8 +1047,7 @@
     "city": "STOUGHTON",
     "state": "WI",
     "address": "225 CHURCH ST, DEAN MEDICAL CENTER",
-    "phone": "(608) 877-2700",
-    "premium_savings": 0
+    "phone": "(608) 877-2700"
   },
   {
     "id": 106,
@@ -1162,8 +1057,7 @@
     "city": "RHINELANDER",
     "state": "WI",
     "address": "2251 N SHORE DR",
-    "phone": "(715) 361-4700",
-    "premium_savings": 5
+    "phone": "(715) 361-4700"
   },
   {
     "id": 107,
@@ -1173,8 +1067,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD, 1ST FLOOR",
-    "phone": "(920) 288-8100",
-    "premium_savings": 10
+    "phone": "(920) 288-8100"
   },
   {
     "id": 108,
@@ -1184,8 +1077,7 @@
     "city": "WATERFORD",
     "state": "WI",
     "address": "818 FOREST LN",
-    "phone": "(262) 514-3700",
-    "premium_savings": 15
+    "phone": "(262) 514-3700"
   },
   {
     "id": 109,
@@ -1195,8 +1087,7 @@
     "city": "MARSHFIELD",
     "state": "WI",
     "address": "1000 N OAK AVE",
-    "phone": "(715) 387-5682",
-    "premium_savings": 20
+    "phone": "(715) 387-5682"
   },
   {
     "id": 110,
@@ -1206,8 +1097,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "250 N METRO DR",
-    "phone": "(920) 830-2020",
-    "premium_savings": 0
+    "phone": "(920) 830-2020"
   },
   {
     "id": 111,
@@ -1217,8 +1107,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2105 E. ENTERPRISE AVE., SUITE 101",
-    "phone": "(920) 560-1100",
-    "premium_savings": 5
+    "phone": "(920) 560-1100"
   },
   {
     "id": 112,
@@ -1228,8 +1117,7 @@
     "city": "KAUKAUNA",
     "state": "WI",
     "address": "1500 ARBOR WAY",
-    "phone": "(920) 372-7150",
-    "premium_savings": 10
+    "phone": "(920) 372-7150"
   },
   {
     "id": 113,
@@ -1239,8 +1127,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2325 N CASALOMA DR",
-    "phone": "(920) 730-2885",
-    "premium_savings": 15
+    "phone": "(920) 730-2885"
   },
   {
     "id": 114,
@@ -1250,8 +1137,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "4652 S BILTMORE LN",
-    "phone": "(608) 924-5655",
-    "premium_savings": 20
+    "phone": "(608) 924-5655"
   },
   {
     "id": 115,
@@ -1261,8 +1147,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "1818 N MEADE ST",
-    "phone": "(920) 731-8900",
-    "premium_savings": 0
+    "phone": "(920) 731-8900"
   },
   {
     "id": 116,
@@ -1272,8 +1157,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "5045 W GRANDE MARKET DR",
-    "phone": "(920) 886-9380",
-    "premium_savings": 5
+    "phone": "(920) 886-9380"
   },
   {
     "id": 117,
@@ -1283,8 +1167,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "5045 W GRANDE MARKET DR",
-    "phone": "(920) 886-9380",
-    "premium_savings": 10
+    "phone": "(920) 886-9380"
   },
   {
     "id": 118,
@@ -1294,8 +1177,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "5045 W GRANDE MARKET DR",
-    "phone": "(920) 886-9380",
-    "premium_savings": 15
+    "phone": "(920) 886-9380"
   },
   {
     "id": 119,
@@ -1305,8 +1187,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "100 W LAWRENCE ST, SUITE 409",
-    "phone": "(920) 733-5138",
-    "premium_savings": 20
+    "phone": "(920) 733-5138"
   },
   {
     "id": 120,
@@ -1316,8 +1197,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "3935 N LIGHTNING DR",
-    "phone": "(920) 968-1790",
-    "premium_savings": 0
+    "phone": "(920) 968-1790"
   },
   {
     "id": 121,
@@ -1327,8 +1207,7 @@
     "city": "MENASHA",
     "state": "WI",
     "address": "1550 MIDWAY PL",
-    "phone": "(920) 727-8030",
-    "premium_savings": 5
+    "phone": "(920) 727-8030"
   },
   {
     "id": 122,
@@ -1338,8 +1217,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2500 E CAPITOL DR STE 1700",
-    "phone": "(920) 731-8131",
-    "premium_savings": 10
+    "phone": "(920) 731-8131"
   },
   {
     "id": 123,
@@ -1349,8 +1227,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2500 E CAPITOL DR",
-    "phone": "(920) 364-3600",
-    "premium_savings": 15
+    "phone": "(920) 364-3600"
   },
   {
     "id": 124,
@@ -1360,8 +1237,7 @@
     "city": "WESTON",
     "state": "WI",
     "address": "3301 CRANBERRY BLVD",
-    "phone": "(715) 393-3900",
-    "premium_savings": 20
+    "phone": "(715) 393-3900"
   },
   {
     "id": 125,
@@ -1371,8 +1247,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2500 E CAPITOL DR",
-    "phone": "(920) 364-3600",
-    "premium_savings": 0
+    "phone": "(920) 364-3600"
   },
   {
     "id": 126,
@@ -1382,8 +1257,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "1818 N MEADE ST",
-    "phone": "(920) 749-4000",
-    "premium_savings": 5
+    "phone": "(920) 749-4000"
   },
   {
     "id": 127,
@@ -1393,8 +1267,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2105 E ENTERPRISE AVE",
-    "phone": "(920) 560-1000",
-    "premium_savings": 10
+    "phone": "(920) 560-1000"
   },
   {
     "id": 128,
@@ -1404,8 +1277,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2323 N CASALOMA DR",
-    "phone": "(920) 730-8833",
-    "premium_savings": 15
+    "phone": "(920) 730-8833"
   },
   {
     "id": 129,
@@ -1415,8 +1287,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2105 E ENTERPRISE AVE, STE 111",
-    "phone": "(920) 731-6611",
-    "premium_savings": 20
+    "phone": "(920) 731-6611"
   },
   {
     "id": 130,
@@ -1426,8 +1297,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2105 E ENTERPRISE AVE # 111",
-    "phone": "(920) 731-6611",
-    "premium_savings": 0
+    "phone": "(920) 731-6611"
   },
   {
     "id": 131,
@@ -1437,8 +1307,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2105 E ENTERPRISE AVE",
-    "phone": "(920) 560-1000",
-    "premium_savings": 5
+    "phone": "(920) 560-1000"
   },
   {
     "id": 132,
@@ -1448,8 +1317,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "820 E GRANT ST",
-    "phone": "(920) 831-5050",
-    "premium_savings": 10
+    "phone": "(920) 831-5050"
   },
   {
     "id": 133,
@@ -1459,8 +1327,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "1205 W AMERICAN DR",
-    "phone": "(920) 430-8113",
-    "premium_savings": 15
+    "phone": "(920) 430-8113"
   },
   {
     "id": 134,
@@ -1470,8 +1337,7 @@
     "city": "CHIPPEWA FALLS",
     "state": "WI",
     "address": "2751 COMMERCIAL BLVD, SUITE 7",
-    "phone": "(715) 797-8310",
-    "premium_savings": 20
+    "phone": "(715) 797-8310"
   },
   {
     "id": 135,
@@ -1481,8 +1347,7 @@
     "city": "ALTOONA",
     "state": "WI",
     "address": "1470 RIVERS EDGE TRL STE B",
-    "phone": "(715) 379-8718",
-    "premium_savings": 0
+    "phone": "(715) 379-8718"
   },
   {
     "id": 136,
@@ -1492,8 +1357,7 @@
     "city": "CHIPPEWA FALLS",
     "state": "WI",
     "address": "855 LAKELAND DR",
-    "phone": "(715) 839-9280",
-    "premium_savings": 5
+    "phone": "(715) 839-9280"
   },
   {
     "id": 137,
@@ -1503,8 +1367,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 10
+    "phone": null
   },
   {
     "id": 138,
@@ -1514,8 +1377,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "714 W HAMILTON AVE",
-    "phone": "(715) 830-9990",
-    "premium_savings": 15
+    "phone": "(715) 830-9990"
   },
   {
     "id": 139,
@@ -1525,8 +1387,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "714 W HAMILTON AVE",
-    "phone": "(715) 830-9990",
-    "premium_savings": 20
+    "phone": "(715) 830-9990"
   },
   {
     "id": 140,
@@ -1536,8 +1397,7 @@
     "city": "ALTOONA",
     "state": "WI",
     "address": "1200 OAKLEAF WAY, SUITE A",
-    "phone": "(715) 832-1400",
-    "premium_savings": 0
+    "phone": "(715) 832-1400"
   },
   {
     "id": 141,
@@ -1547,8 +1407,7 @@
     "city": "ALTOONA",
     "state": "WI",
     "address": "1200 OAKLEAF WAY, SUITE A",
-    "phone": "(715) 832-1400",
-    "premium_savings": 5
+    "phone": "(715) 832-1400"
   },
   {
     "id": 142,
@@ -1558,8 +1417,7 @@
     "city": "ALTOONA",
     "state": "WI",
     "address": "1200 OAKLEAF WAY STE A",
-    "phone": "(715) 832-1400",
-    "premium_savings": 10
+    "phone": "(715) 832-1400"
   },
   {
     "id": 143,
@@ -1569,8 +1427,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 15
+    "phone": null
   },
   {
     "id": 144,
@@ -1580,8 +1437,7 @@
     "city": "ALTOONA",
     "state": "WI",
     "address": "1200 OAKLEAF WAY, SUITE A",
-    "phone": "(715) 832-1400",
-    "premium_savings": 20
+    "phone": "(715) 832-1400"
   },
   {
     "id": 145,
@@ -1591,8 +1447,7 @@
     "city": "CHILTON",
     "state": "WI",
     "address": "451 E BROOKLYN ST, STE. 5",
-    "phone": "(920) 849-2100",
-    "premium_savings": 0
+    "phone": "(920) 849-2100"
   },
   {
     "id": 146,
@@ -1602,8 +1457,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "2102 CONTINENTAL DR",
-    "phone": "(262) 558-4367",
-    "premium_savings": 5
+    "phone": "(262) 558-4367"
   },
   {
     "id": 147,
@@ -1613,8 +1467,7 @@
     "city": "FOND DU LAC",
     "state": "WI",
     "address": "420 E DIVISION ST",
-    "phone": "(920) 926-8570",
-    "premium_savings": 10
+    "phone": "(920) 926-8570"
   },
   {
     "id": 148,
@@ -1624,8 +1477,7 @@
     "city": "FOND DU LAC",
     "state": "WI",
     "address": "420 E DIVISION ST",
-    "phone": "(920) 926-8570",
-    "premium_savings": 15
+    "phone": "(920) 926-8570"
   },
   {
     "id": 149,
@@ -1635,8 +1487,7 @@
     "city": "FOND DU LAC",
     "state": "WI",
     "address": "480 E DIVISION ST",
-    "phone": "(920) 926-4100",
-    "premium_savings": 20
+    "phone": "(920) 926-4100"
   },
   {
     "id": 150,
@@ -1646,8 +1497,7 @@
     "city": "FOND DU LAC",
     "state": "WI",
     "address": "421 CAMELOT DR",
-    "phone": "(920) 926-8616",
-    "premium_savings": 0
+    "phone": "(920) 926-8616"
   },
   {
     "id": 151,
@@ -1657,8 +1507,7 @@
     "city": "FOND DU LAC",
     "state": "WI",
     "address": "421 CAMELOT DR",
-    "phone": "(920) 926-8616",
-    "premium_savings": 5
+    "phone": "(920) 926-8616"
   },
   {
     "id": 152,
@@ -1668,8 +1517,7 @@
     "city": "WAUPUN",
     "state": "WI",
     "address": "608 W BROWN ST",
-    "phone": "(920) 324-6802",
-    "premium_savings": 10
+    "phone": "(920) 324-6802"
   },
   {
     "id": 153,
@@ -1679,8 +1527,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "1531 S MADISON ST",
-    "phone": "(920) 996-3700",
-    "premium_savings": 15
+    "phone": "(920) 996-3700"
   },
   {
     "id": 154,
@@ -1690,8 +1537,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD STE 310",
-    "phone": "(920) 288-8300",
-    "premium_savings": 20
+    "phone": "(920) 288-8300"
   },
   {
     "id": 155,
@@ -1701,8 +1547,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD STE 310",
-    "phone": "(920) 288-8300",
-    "premium_savings": 0
+    "phone": "(920) 288-8300"
   },
   {
     "id": 156,
@@ -1712,8 +1557,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1821 S WEBSTER AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 5
+    "phone": "(920) 496-4700"
   },
   {
     "id": 157,
@@ -1723,8 +1567,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1727 SHAWANO AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 10
+    "phone": "(920) 496-4700"
   },
   {
     "id": 158,
@@ -1734,8 +1577,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1727 SHAWANO AVE, STE 201",
-    "phone": "(920) 272-1050",
-    "premium_savings": 15
+    "phone": "(920) 272-1050"
   },
   {
     "id": 159,
@@ -1745,8 +1587,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "744 S WEBSTER AVE",
-    "phone": "(920) 433-3640",
-    "premium_savings": 20
+    "phone": "(920) 433-3640"
   },
   {
     "id": 160,
@@ -1756,8 +1597,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1727 SHAWANO AVE, SUITE 201",
-    "phone": "(920) 496-8877",
-    "premium_savings": 0
+    "phone": "(920) 496-8877"
   },
   {
     "id": 161,
@@ -1767,8 +1607,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "744 S WEBSTER AVE, 2ND FLOOR",
-    "phone": "(920) 433-3640",
-    "premium_savings": 5
+    "phone": "(920) 433-3640"
   },
   {
     "id": 162,
@@ -1778,8 +1617,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "744 S WEBSTER AVE FL 2",
-    "phone": "(920) 433-3640",
-    "premium_savings": 10
+    "phone": "(920) 433-3640"
   },
   {
     "id": 163,
@@ -1789,8 +1627,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD, STE 310",
-    "phone": "(920) 288-8300",
-    "premium_savings": 15
+    "phone": "(920) 288-8300"
   },
   {
     "id": 164,
@@ -1800,8 +1637,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8300",
-    "premium_savings": 20
+    "phone": "(920) 288-8300"
   },
   {
     "id": 165,
@@ -1811,8 +1647,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8000",
-    "premium_savings": 0
+    "phone": "(920) 288-8000"
   },
   {
     "id": 166,
@@ -1822,8 +1657,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8100",
-    "premium_savings": 5
+    "phone": "(920) 288-8100"
   },
   {
     "id": 167,
@@ -1833,8 +1667,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 10
+    "phone": null
   },
   {
     "id": 168,
@@ -1844,8 +1677,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8100",
-    "premium_savings": 15
+    "phone": "(920) 288-8100"
   },
   {
     "id": 169,
@@ -1855,8 +1687,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2021 S WEBSTER AVE",
-    "phone": "(920) 965-0345",
-    "premium_savings": 20
+    "phone": "(920) 965-0345"
   },
   {
     "id": 170,
@@ -1866,8 +1697,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2806 RIVERVIEW DR",
-    "phone": "(920) 498-7546",
-    "premium_savings": 0
+    "phone": "(920) 498-7546"
   },
   {
     "id": 171,
@@ -1877,8 +1707,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2806 RIVERVIEW DR",
-    "phone": "(920) 498-7546",
-    "premium_savings": 5
+    "phone": "(920) 498-7546"
   },
   {
     "id": 172,
@@ -1888,8 +1717,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8000",
-    "premium_savings": 10
+    "phone": "(920) 288-8000"
   },
   {
     "id": 173,
@@ -1899,8 +1727,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "720 S VANBUREN ST, SUITE 104",
-    "phone": "(920) 433-6050",
-    "premium_savings": 15
+    "phone": "(920) 433-6050"
   },
   {
     "id": 174,
@@ -1910,8 +1737,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1860 SHAWANO AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 20
+    "phone": "(920) 496-4700"
   },
   {
     "id": 175,
@@ -1921,8 +1747,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "725 S WEBSTER AVE",
-    "phone": "(920) 431-5650",
-    "premium_savings": 0
+    "phone": "(920) 431-5650"
   },
   {
     "id": 176,
@@ -1932,8 +1757,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "725 S WEBSTER AVE STE 303",
-    "phone": "(920) 431-5650",
-    "premium_savings": 5
+    "phone": "(920) 431-5650"
   },
   {
     "id": 177,
@@ -1943,8 +1767,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1726 SHAWANO AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 10
+    "phone": "(920) 496-4700"
   },
   {
     "id": 178,
@@ -1954,8 +1777,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "725 S WEBSTER AVE",
-    "phone": "(920) 431-5650",
-    "premium_savings": 15
+    "phone": "(920) 431-5650"
   },
   {
     "id": 179,
@@ -1965,8 +1787,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8100",
-    "premium_savings": 20
+    "phone": "(920) 288-8100"
   },
   {
     "id": 180,
@@ -1976,8 +1797,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1580 COMMANCHE AVE",
-    "phone": "(920) 435-8326",
-    "premium_savings": 0
+    "phone": "(920) 435-8326"
   },
   {
     "id": 181,
@@ -1987,8 +1807,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1580 COMMANCHE AVE",
-    "phone": "(920) 435-8326",
-    "premium_savings": 5
+    "phone": "(920) 435-8326"
   },
   {
     "id": 182,
@@ -1998,8 +1817,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1580 COMMANCHE AVE",
-    "phone": "(920) 435-8326",
-    "premium_savings": 10
+    "phone": "(920) 435-8326"
   },
   {
     "id": 183,
@@ -2009,8 +1827,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8000",
-    "premium_savings": 15
+    "phone": "(920) 288-8000"
   },
   {
     "id": 184,
@@ -2020,8 +1837,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2845 GREENBRIER RD",
-    "phone": "(920) 288-8000",
-    "premium_savings": 20
+    "phone": "(920) 288-8000"
   },
   {
     "id": 185,
@@ -2031,8 +1847,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1726 SHAWANO AVE",
-    "phone": "(920) 884-3135",
-    "premium_savings": 0
+    "phone": "(920) 884-3135"
   },
   {
     "id": 186,
@@ -2042,8 +1857,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1821 S WEBSTER AVE",
-    "phone": "(920) 497-4600",
-    "premium_savings": 5
+    "phone": "(920) 497-4600"
   },
   {
     "id": 187,
@@ -2053,8 +1867,7 @@
     "city": "MARINETTE",
     "state": "WI",
     "address": "3130 SHORE DR STE 111, BAY AREA NEUROLOGY CONSULTATNTS",
-    "phone": "(715) 732-8212",
-    "premium_savings": 10
+    "phone": "(715) 732-8212"
   },
   {
     "id": 188,
@@ -2064,8 +1877,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1821 S WEBSTER AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 15
+    "phone": "(920) 496-4700"
   },
   {
     "id": 189,
@@ -2075,8 +1887,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "1000 MINERAL POINT AVE",
-    "phone": "(608) 756-6000",
-    "premium_savings": 20
+    "phone": "(608) 756-6000"
   },
   {
     "id": 190,
@@ -2086,8 +1897,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "725 S WEBSTER SUITE 201, NEUROLOGY CONSULTANTS",
-    "phone": "(920) 430-7100",
-    "premium_savings": 0
+    "phone": "(920) 430-7100"
   },
   {
     "id": 191,
@@ -2097,8 +1907,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1726 SHAWANO AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 5
+    "phone": "(920) 496-4700"
   },
   {
     "id": 192,
@@ -2108,8 +1917,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2502 S. ASHLAND AVE.",
-    "phone": "(920) 496-4700",
-    "premium_savings": 10
+    "phone": "(920) 496-4700"
   },
   {
     "id": 193,
@@ -2119,8 +1927,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "820 E GRANT ST, THEDACARE ORTHOPEDICS PLUS - AMC",
-    "phone": "(920) 831-5050",
-    "premium_savings": 15
+    "phone": "(920) 831-5050"
   },
   {
     "id": 194,
@@ -2130,8 +1937,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "835 S VAN BUREN ST",
-    "phone": "(920) 496-4700",
-    "premium_savings": 20
+    "phone": "(920) 496-4700"
   },
   {
     "id": 195,
@@ -2141,8 +1947,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1970 S RIDGE RD",
-    "phone": "(920) 430-4888",
-    "premium_savings": 0
+    "phone": "(920) 430-4888"
   },
   {
     "id": 196,
@@ -2152,8 +1957,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD, SUITE 1",
-    "phone": "(920) 468-0246",
-    "premium_savings": 5
+    "phone": "(920) 468-0246"
   },
   {
     "id": 197,
@@ -2163,8 +1967,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD STE 1",
-    "phone": "(920) 430-8113",
-    "premium_savings": 10
+    "phone": "(920) 430-8113"
   },
   {
     "id": 198,
@@ -2174,8 +1977,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD, SUITE 1",
-    "phone": "(920) 430-8120",
-    "premium_savings": 15
+    "phone": "(920) 430-8120"
   },
   {
     "id": 199,
@@ -2185,8 +1987,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1110 KEPLER DR",
-    "phone": "(920) 288-5555",
-    "premium_savings": 20
+    "phone": "(920) 288-5555"
   },
   {
     "id": 200,
@@ -2196,8 +1997,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1726 SHAWANO AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 0
+    "phone": "(920) 496-4700"
   },
   {
     "id": 201,
@@ -2207,8 +2007,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD, SUITE 1",
-    "phone": "(920) 430-8120",
-    "premium_savings": 5
+    "phone": "(920) 430-8120"
   },
   {
     "id": 202,
@@ -2218,8 +2017,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1970 S RIDGE RD",
-    "phone": "(920) 430-4888",
-    "premium_savings": 10
+    "phone": "(920) 430-4888"
   },
   {
     "id": 203,
@@ -2229,8 +2027,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1110 KEPLER DR",
-    "phone": "(920) 288-5555",
-    "premium_savings": 15
+    "phone": "(920) 288-5555"
   },
   {
     "id": 204,
@@ -2240,8 +2037,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "900 S WEBSTER AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 20
+    "phone": "(920) 496-4700"
   },
   {
     "id": 205,
@@ -2251,8 +2047,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD STE 1",
-    "phone": "(920) 430-8113",
-    "premium_savings": 0
+    "phone": "(920) 430-8113"
   },
   {
     "id": 206,
@@ -2262,8 +2057,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1970 S RIDGE RD",
-    "phone": "(920) 430-4888",
-    "premium_savings": 5
+    "phone": "(920) 430-4888"
   },
   {
     "id": 207,
@@ -2273,8 +2067,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD STE 1",
-    "phone": "(920) 430-8113",
-    "premium_savings": 10
+    "phone": "(920) 430-8113"
   },
   {
     "id": 208,
@@ -2284,8 +2077,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "3113 SAEMANN AVE",
-    "phone": "(920) 496-4700",
-    "premium_savings": 15
+    "phone": "(920) 496-4700"
   },
   {
     "id": 209,
@@ -2295,8 +2087,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "1715 DOUSMAN ST",
-    "phone": "(920) 496-4700",
-    "premium_savings": 20
+    "phone": "(920) 496-4700"
   },
   {
     "id": 210,
@@ -2306,8 +2097,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "3263 EATON RD",
-    "phone": "(920) 433-6700",
-    "premium_savings": 0
+    "phone": "(920) 433-6700"
   },
   {
     "id": 211,
@@ -2317,8 +2107,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "2223 LIME KILN RD STE 1",
-    "phone": "(920) 430-8113",
-    "premium_savings": 5
+    "phone": "(920) 430-8113"
   },
   {
     "id": 212,
@@ -2328,8 +2117,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "3263 EATON RD",
-    "phone": "(920) 433-6700",
-    "premium_savings": 10
+    "phone": "(920) 433-6700"
   },
   {
     "id": 213,
@@ -2339,8 +2127,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "1000 MINERAL POINT AVE",
-    "phone": "(608) 756-6868",
-    "premium_savings": 15
+    "phone": "(608) 756-6868"
   },
   {
     "id": 214,
@@ -2350,8 +2137,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3524 E MILWAUKEE ST",
-    "phone": "(608) 756-7217",
-    "premium_savings": 20
+    "phone": "(608) 756-7217"
   },
   {
     "id": 215,
@@ -2361,8 +2147,7 @@
     "city": "FORT ATKINSON",
     "state": "WI",
     "address": "611 SHERMAN AVE E, FORT HEALTHCARE CENTER FOR DERMATOLOGY",
-    "phone": "(920) 568-1000",
-    "premium_savings": 0
+    "phone": "(920) 568-1000"
   },
   {
     "id": 216,
@@ -2372,8 +2157,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3524 E MILWAUKEE ST",
-    "phone": "(608) 756-7100",
-    "premium_savings": 5
+    "phone": "(608) 756-7100"
   },
   {
     "id": 217,
@@ -2383,8 +2167,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "1000 MINERAL POINT AVE",
-    "phone": "(608) 756-6890",
-    "premium_savings": 10
+    "phone": "(608) 756-6890"
   },
   {
     "id": 218,
@@ -2394,8 +2177,7 @@
     "city": "BELOIT",
     "state": "WI",
     "address": "1905 E. HUEBBE PARKWAY, BELOIT HEALTH SYSTEM INC.",
-    "phone": "(608) 364-2200",
-    "premium_savings": 15
+    "phone": "(608) 364-2200"
   },
   {
     "id": 219,
@@ -2405,8 +2187,7 @@
     "city": "BELOIT",
     "state": "WI",
     "address": "1905 E. HUEBBE PARKWAY, BELOIT HEALTH SYSTEM (BELOIT CLINIC)",
-    "phone": "(608) 364-1460",
-    "premium_savings": 20
+    "phone": "(608) 364-1460"
   },
   {
     "id": 220,
@@ -2416,8 +2197,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3200 E RACINE ST",
-    "phone": "(608) 371-8000",
-    "premium_savings": 0
+    "phone": "(608) 371-8000"
   },
   {
     "id": 221,
@@ -2427,8 +2207,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "557 N WASHINGTON ST",
-    "phone": "(608) 754-6000",
-    "premium_savings": 5
+    "phone": "(608) 754-6000"
   },
   {
     "id": 222,
@@ -2438,8 +2217,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3524 E MILWAUKEE ST",
-    "phone": "(608) 756-7100",
-    "premium_savings": 10
+    "phone": "(608) 756-7100"
   },
   {
     "id": 223,
@@ -2449,8 +2227,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 392-9862",
-    "premium_savings": 15
+    "phone": "(608) 392-9862"
   },
   {
     "id": 224,
@@ -2460,8 +2237,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 392-9555",
-    "premium_savings": 20
+    "phone": "(608) 392-9555"
   },
   {
     "id": 225,
@@ -2471,8 +2247,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 0
+    "phone": "(608) 782-7300"
   },
   {
     "id": 226,
@@ -2482,8 +2257,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 5
+    "phone": "(608) 782-7300"
   },
   {
     "id": 227,
@@ -2493,8 +2267,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 10
+    "phone": "(608) 785-0940"
   },
   {
     "id": 228,
@@ -2504,8 +2277,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 15
+    "phone": "(608) 782-7300"
   },
   {
     "id": 229,
@@ -2515,8 +2287,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "700 WEST AVENUE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 20
+    "phone": "(608) 785-0940"
   },
   {
     "id": 230,
@@ -2526,8 +2297,7 @@
     "city": "ONALASKA",
     "state": "WI",
     "address": "3111 GUNDERSEN DR",
-    "phone": "(608) 775-8100",
-    "premium_savings": 0
+    "phone": "(608) 775-8100"
   },
   {
     "id": 231,
@@ -2537,8 +2307,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 5
+    "phone": "(608) 782-7300"
   },
   {
     "id": 232,
@@ -2548,8 +2317,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 10
+    "phone": "(608) 782-7300"
   },
   {
     "id": 233,
@@ -2559,8 +2327,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 15
+    "phone": "(608) 782-7300"
   },
   {
     "id": 234,
@@ -2570,8 +2337,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "1400 BELLINGER ST",
-    "phone": "(715) 838-5222",
-    "premium_savings": 20
+    "phone": "(715) 838-5222"
   },
   {
     "id": 235,
@@ -2581,8 +2347,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 0
+    "phone": "(608) 782-7300"
   },
   {
     "id": 236,
@@ -2592,8 +2357,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "700 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 5
+    "phone": "(608) 785-0940"
   },
   {
     "id": 237,
@@ -2603,8 +2367,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 10
+    "phone": "(608) 782-7300"
   },
   {
     "id": 238,
@@ -2614,8 +2377,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "700 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 15
+    "phone": "(608) 785-0940"
   },
   {
     "id": 239,
@@ -2625,8 +2387,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 20
+    "phone": "(608) 782-7300"
   },
   {
     "id": 240,
@@ -2636,8 +2397,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 0
+    "phone": "(608) 782-7300"
   },
   {
     "id": 241,
@@ -2647,8 +2407,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 5
+    "phone": "(608) 785-0940"
   },
   {
     "id": 242,
@@ -2658,8 +2417,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 10
+    "phone": "(608) 782-7300"
   },
   {
     "id": 243,
@@ -2669,8 +2427,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 15
+    "phone": "(608) 785-0940"
   },
   {
     "id": 244,
@@ -2680,8 +2437,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 20
+    "phone": "(608) 782-7300"
   },
   {
     "id": 245,
@@ -2691,8 +2447,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "700 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 0
+    "phone": "(608) 785-0940"
   },
   {
     "id": 246,
@@ -2702,8 +2457,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 5
+    "phone": "(608) 785-0940"
   },
   {
     "id": 247,
@@ -2713,8 +2467,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 10
+    "phone": "(608) 782-7300"
   },
   {
     "id": 248,
@@ -2724,8 +2477,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 15
+    "phone": "(608) 782-7300"
   },
   {
     "id": 249,
@@ -2735,8 +2487,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 392-9876",
-    "premium_savings": 20
+    "phone": "(608) 392-9876"
   },
   {
     "id": 250,
@@ -2746,8 +2497,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 0
+    "phone": "(608) 782-7300"
   },
   {
     "id": 251,
@@ -2757,8 +2507,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 5
+    "phone": "(608) 782-7300"
   },
   {
     "id": 252,
@@ -2768,8 +2517,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "700 WEST AVE S",
-    "phone": "(608) 392-5859",
-    "premium_savings": 10
+    "phone": "(608) 392-5859"
   },
   {
     "id": 253,
@@ -2779,8 +2527,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "1836 SOUTH AVE",
-    "phone": "(608) 782-7300",
-    "premium_savings": 15
+    "phone": "(608) 782-7300"
   },
   {
     "id": 254,
@@ -2790,8 +2537,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "7401 104TH AVE STE 100",
-    "phone": "(262) 697-1006",
-    "premium_savings": 20
+    "phone": "(262) 697-1006"
   },
   {
     "id": 255,
@@ -2801,8 +2547,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "8220 75TH ST",
-    "phone": "(414) 908-6500",
-    "premium_savings": 0
+    "phone": "(414) 908-6500"
   },
   {
     "id": 256,
@@ -2812,8 +2557,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, STE 840",
-    "phone": "(414) 649-3530",
-    "premium_savings": 5
+    "phone": "(414) 649-3530"
   },
   {
     "id": 257,
@@ -2823,8 +2567,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "10400 75TH ST",
-    "phone": "(262) 948-6630",
-    "premium_savings": 10
+    "phone": "(262) 948-6630"
   },
   {
     "id": 258,
@@ -2834,8 +2577,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "6308 8TH AVE",
-    "phone": "(262) 653-3650",
-    "premium_savings": 15
+    "phone": "(262) 653-3650"
   },
   {
     "id": 259,
@@ -2845,8 +2587,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "6308 8TH AVE, STE 3060",
-    "phone": "(262) 656-8271",
-    "premium_savings": 20
+    "phone": "(262) 656-8271"
   },
   {
     "id": 260,
@@ -2856,8 +2597,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "8501 75TH ST, SUITE J",
-    "phone": "(262) 898-4400",
-    "premium_savings": 0
+    "phone": "(262) 898-4400"
   },
   {
     "id": 261,
@@ -2867,8 +2607,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "6815 118TH AVE",
-    "phone": "(262) 857-5600",
-    "premium_savings": 5
+    "phone": "(262) 857-5600"
   },
   {
     "id": 262,
@@ -2878,8 +2617,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "1020 35TH ST",
-    "phone": "(262) 652-3500",
-    "premium_savings": 10
+    "phone": "(262) 652-3500"
   },
   {
     "id": 263,
@@ -2889,8 +2627,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "10400 75TH ST",
-    "phone": "(629) 487-0002",
-    "premium_savings": 15
+    "phone": "(629) 487-0002"
   },
   {
     "id": 264,
@@ -2900,8 +2637,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "6308 8TH AVE, STE 202",
-    "phone": "(262) 653-5330",
-    "premium_savings": 20
+    "phone": "(262) 653-5330"
   },
   {
     "id": 265,
@@ -2911,8 +2647,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-2901",
-    "premium_savings": 0
+    "phone": "(414) 805-2901"
   },
   {
     "id": 266,
@@ -2922,8 +2657,7 @@
     "city": "BURLINGTON",
     "state": "WI",
     "address": "709 SPRING VALLEY RD",
-    "phone": "(262) 767-6020",
-    "premium_savings": 5
+    "phone": "(262) 767-6020"
   },
   {
     "id": 267,
@@ -2933,8 +2667,7 @@
     "city": "BURLINGTON",
     "state": "WI",
     "address": "709 SPRING VALLEY RD",
-    "phone": "(262) 767-6020",
-    "premium_savings": 10
+    "phone": "(262) 767-6020"
   },
   {
     "id": 268,
@@ -2944,8 +2677,7 @@
     "city": "RACINE",
     "state": "WI",
     "address": "8400 WASHINGTON AVE",
-    "phone": "(262) 321-3000",
-    "premium_savings": 15
+    "phone": "(262) 321-3000"
   },
   {
     "id": 269,
@@ -2955,8 +2687,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "13250 WASHINGTON AVE",
-    "phone": "(888) 720-2012",
-    "premium_savings": 20
+    "phone": "(888) 720-2012"
   },
   {
     "id": 270,
@@ -2966,8 +2697,7 @@
     "city": "PLEASANT PRAIRIE",
     "state": "WI",
     "address": "9697 SAINT CATHERINES DR, SUITE 200",
-    "phone": "(262) 656-3590",
-    "premium_savings": 0
+    "phone": "(262) 656-3590"
   },
   {
     "id": 271,
@@ -2977,8 +2707,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "7401 104TH AVE, SUITE 110",
-    "phone": "(262) 764-5595",
-    "premium_savings": 5
+    "phone": "(262) 764-5595"
   },
   {
     "id": 272,
@@ -2988,8 +2717,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "7401 104TH AVE, SUITE 110",
-    "phone": "(262) 764-5595",
-    "premium_savings": 10
+    "phone": "(262) 764-5595"
   },
   {
     "id": 273,
@@ -2999,8 +2727,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7400",
-    "premium_savings": 15
+    "phone": "(414) 805-7400"
   },
   {
     "id": 274,
@@ -3010,8 +2737,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "7401 104TH AVE, SUITE 110",
-    "phone": "(262) 764-5595",
-    "premium_savings": 20
+    "phone": "(262) 764-5595"
   },
   {
     "id": 275,
@@ -3021,8 +2747,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "7401 104TH AVE STE 110",
-    "phone": "(262) 764-5595",
-    "premium_savings": 0
+    "phone": "(262) 764-5595"
   },
   {
     "id": 276,
@@ -3032,8 +2757,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, SUITE 345",
-    "phone": "(414) 649-7900",
-    "premium_savings": 5
+    "phone": "(414) 649-7900"
   },
   {
     "id": 277,
@@ -3043,8 +2767,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "7401 104TH AVE STE 110",
-    "phone": "(262) 764-5595",
-    "premium_savings": 10
+    "phone": "(262) 764-5595"
   },
   {
     "id": 278,
@@ -3054,8 +2777,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "6308 8TH AVENUE, SUITE 108",
-    "phone": "(262) 653-5300",
-    "premium_savings": 15
+    "phone": "(262) 653-5300"
   },
   {
     "id": 279,
@@ -3065,8 +2787,7 @@
     "city": "PLEASANT PRAIRIE",
     "state": "WI",
     "address": "9697 SAINT CATHERINES DR # 400",
-    "phone": "(262) 577-8300",
-    "premium_savings": 20
+    "phone": "(262) 577-8300"
   },
   {
     "id": 280,
@@ -3076,8 +2797,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST",
-    "phone": "(608) 287-2434",
-    "premium_savings": 0
+    "phone": "(608) 287-2434"
   },
   {
     "id": 281,
@@ -3087,8 +2807,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "4602 EASTPARK BLVD",
-    "phone": "(608) 263-1530",
-    "premium_savings": 5
+    "phone": "(608) 263-1530"
   },
   {
     "id": 282,
@@ -3098,8 +2817,7 @@
     "city": "MONROE",
     "state": "WI",
     "address": "2009 5TH ST",
-    "phone": "(608) 324-2000",
-    "premium_savings": 10
+    "phone": "(608) 324-2000"
   },
   {
     "id": 283,
@@ -3109,8 +2827,7 @@
     "city": "MONROE",
     "state": "WI",
     "address": "515 22ND AVE",
-    "phone": "(608) 324-2000",
-    "premium_savings": 15
+    "phone": "(608) 324-2000"
   },
   {
     "id": 284,
@@ -3120,8 +2837,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST",
-    "phone": "(608) 260-2900",
-    "premium_savings": 20
+    "phone": "(608) 260-2900"
   },
   {
     "id": 285,
@@ -3131,8 +2847,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "4602 EASTPARK BLVD",
-    "phone": "(608) 263-1530",
-    "premium_savings": 0
+    "phone": "(608) 263-1530"
   },
   {
     "id": 286,
@@ -3142,8 +2857,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2601 W BELTLINE HWY",
-    "phone": "(608) 417-2100",
-    "premium_savings": 5
+    "phone": "(608) 417-2100"
   },
   {
     "id": 287,
@@ -3153,8 +2867,7 @@
     "city": "MONROE",
     "state": "WI",
     "address": "515 22ND AVE",
-    "phone": "(608) 324-2000",
-    "premium_savings": 10
+    "phone": "(608) 324-2000"
   },
   {
     "id": 288,
@@ -3164,8 +2877,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST, DEAN & ST. MARY'S OUTPATIENT CENTER",
-    "phone": "(608) 260-2900",
-    "premium_savings": 15
+    "phone": "(608) 260-2900"
   },
   {
     "id": 289,
@@ -3175,8 +2887,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2601 W BELTLINE HWY STE 200",
-    "phone": "(608) 287-2434",
-    "premium_savings": 20
+    "phone": "(608) 287-2434"
   },
   {
     "id": 290,
@@ -3186,8 +2897,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2601 W BELTLINE HWY",
-    "phone": "(608) 287-2434",
-    "premium_savings": 0
+    "phone": "(608) 287-2434"
   },
   {
     "id": 291,
@@ -3197,8 +2907,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3200 E RACINE ST",
-    "phone": "(608) 371-8000",
-    "premium_savings": 5
+    "phone": "(608) 371-8000"
   },
   {
     "id": 292,
@@ -3208,8 +2917,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 10
+    "phone": "(608) 260-6000"
   },
   {
     "id": 293,
@@ -3219,8 +2927,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "752 N HIGH POINT RD",
-    "phone": "(608) 824-4000",
-    "premium_savings": 15
+    "phone": "(608) 824-4000"
   },
   {
     "id": 294,
@@ -3230,8 +2937,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST",
-    "phone": "(608) 287-2450",
-    "premium_savings": 20
+    "phone": "(608) 287-2450"
   },
   {
     "id": 295,
@@ -3241,8 +2947,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 265-7670",
-    "premium_savings": 0
+    "phone": "(608) 265-7670"
   },
   {
     "id": 296,
@@ -3252,8 +2957,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "752 N HIGH POINT RD",
-    "phone": "(608) 824-4000",
-    "premium_savings": 5
+    "phone": "(608) 824-4000"
   },
   {
     "id": 297,
@@ -3263,8 +2967,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 10
+    "phone": "(608) 260-6000"
   },
   {
     "id": 298,
@@ -3274,8 +2977,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST, 7TH FLOOR",
-    "phone": "(608) 287-2450",
-    "premium_savings": 15
+    "phone": "(608) 287-2450"
   },
   {
     "id": 299,
@@ -3285,8 +2987,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST, 7TH FLOOR, DEPARTMENT OF DERMATOLOGY,UNIVERSITY OF WISCONSIN",
-    "phone": "(608) 287-2620",
-    "premium_savings": 20
+    "phone": "(608) 287-2620"
   },
   {
     "id": 300,
@@ -3296,8 +2997,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 265-7670",
-    "premium_savings": 0
+    "phone": "(608) 265-7670"
   },
   {
     "id": 301,
@@ -3307,8 +3007,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST",
-    "phone": "(608) 287-2450",
-    "premium_savings": 5
+    "phone": "(608) 287-2450"
   },
   {
     "id": 302,
@@ -3318,8 +3017,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 265-0700",
-    "premium_savings": 10
+    "phone": "(608) 265-0700"
   },
   {
     "id": 303,
@@ -3329,8 +3027,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-5010",
-    "premium_savings": 15
+    "phone": "(608) 263-5010"
   },
   {
     "id": 304,
@@ -3340,8 +3037,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "345 W WASHINGTON AVE",
-    "phone": "(608) 417-8300",
-    "premium_savings": 20
+    "phone": "(608) 417-8300"
   },
   {
     "id": 305,
@@ -3351,8 +3047,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-7741",
-    "premium_savings": 0
+    "phone": "(608) 263-7741"
   },
   {
     "id": 306,
@@ -3362,8 +3057,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-5010",
-    "premium_savings": 5
+    "phone": "(608) 263-5010"
   },
   {
     "id": 307,
@@ -3373,8 +3067,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "345 W WASHINGTON AVE",
-    "phone": "(608) 417-8300",
-    "premium_savings": 10
+    "phone": "(608) 417-8300"
   },
   {
     "id": 308,
@@ -3384,8 +3077,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-5010",
-    "premium_savings": 15
+    "phone": "(608) 263-5010"
   },
   {
     "id": 309,
@@ -3395,8 +3087,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "5249 E TERRACE DR",
-    "phone": "(608) 265-7406",
-    "premium_savings": 20
+    "phone": "(608) 265-7406"
   },
   {
     "id": 310,
@@ -3406,8 +3097,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 0
+    "phone": "(608) 260-6000"
   },
   {
     "id": 311,
@@ -3417,8 +3107,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 5
+    "phone": "(608) 260-6000"
   },
   {
     "id": 312,
@@ -3428,8 +3117,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5090",
-    "premium_savings": 10
+    "phone": "(608) 890-5090"
   },
   {
     "id": 313,
@@ -3439,8 +3127,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5090",
-    "premium_savings": 15
+    "phone": "(608) 890-5090"
   },
   {
     "id": 314,
@@ -3450,8 +3137,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "20 S PARK ST",
-    "phone": "(608) 287-2680",
-    "premium_savings": 20
+    "phone": "(608) 287-2680"
   },
   {
     "id": 315,
@@ -3461,8 +3147,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5010",
-    "premium_savings": 0
+    "phone": "(608) 890-5010"
   },
   {
     "id": 316,
@@ -3472,8 +3157,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-8094",
-    "premium_savings": 5
+    "phone": "(608) 263-8094"
   },
   {
     "id": 317,
@@ -3483,8 +3167,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5010",
-    "premium_savings": 10
+    "phone": "(608) 890-5010"
   },
   {
     "id": 318,
@@ -3494,8 +3177,7 @@
     "city": "MONROE",
     "state": "WI",
     "address": "515 22ND AVENUE, MONROE CLINIC",
-    "phone": "(608) 324-2222",
-    "premium_savings": 15
+    "phone": "(608) 324-2222"
   },
   {
     "id": 319,
@@ -3505,8 +3187,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5000",
-    "premium_savings": 20
+    "phone": "(608) 890-5000"
   },
   {
     "id": 320,
@@ -3516,8 +3197,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST STE A",
-    "phone": "(608) 260-2900",
-    "premium_savings": 0
+    "phone": "(608) 260-2900"
   },
   {
     "id": 321,
@@ -3527,8 +3207,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST",
-    "phone": "(608) 260-2900",
-    "premium_savings": 5
+    "phone": "(608) 260-2900"
   },
   {
     "id": 322,
@@ -3538,8 +3217,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST",
-    "phone": "(608) 260-2900",
-    "premium_savings": 10
+    "phone": "(608) 260-2900"
   },
   {
     "id": 323,
@@ -3549,8 +3227,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "20 S PARK ST, SUITE 207",
-    "phone": "(608) 287-2680",
-    "premium_savings": 15
+    "phone": "(608) 287-2680"
   },
   {
     "id": 324,
@@ -3560,8 +3237,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-8094",
-    "premium_savings": 20
+    "phone": "(608) 263-8094"
   },
   {
     "id": 325,
@@ -3571,8 +3247,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5000",
-    "premium_savings": 0
+    "phone": "(608) 890-5000"
   },
   {
     "id": 326,
@@ -3582,8 +3257,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "202 S PARK ST",
-    "phone": "(608) 417-5454",
-    "premium_savings": 5
+    "phone": "(608) 417-5454"
   },
   {
     "id": 327,
@@ -3593,8 +3267,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "750 UNIVERSITY ROW",
-    "phone": "(608) 890-5090",
-    "premium_savings": 10
+    "phone": "(608) 890-5090"
   },
   {
     "id": 328,
@@ -3604,8 +3277,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 265-8528",
-    "premium_savings": 15
+    "phone": "(608) 265-8528"
   },
   {
     "id": 329,
@@ -3615,8 +3287,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3200 E RACINE ST",
-    "phone": "(608) 371-8000",
-    "premium_savings": 20
+    "phone": "(608) 371-8000"
   },
   {
     "id": 330,
@@ -3626,8 +3297,7 @@
     "city": "WISCONSIN RAPIDS",
     "state": "WI",
     "address": "410 DEWEY STREET",
-    "phone": "(715) 421-7442",
-    "premium_savings": 0
+    "phone": "(715) 421-7442"
   },
   {
     "id": 331,
@@ -3637,8 +3307,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
-    "phone": "(608) 252-8000",
-    "premium_savings": 5
+    "phone": "(608) 252-8000"
   },
   {
     "id": 332,
@@ -3648,8 +3317,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST",
-    "phone": "(608) 260-2900",
-    "premium_savings": 10
+    "phone": "(608) 260-2900"
   },
   {
     "id": 333,
@@ -3659,8 +3327,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST",
-    "phone": "(608) 260-2900",
-    "premium_savings": 15
+    "phone": "(608) 260-2900"
   },
   {
     "id": 334,
@@ -3670,8 +3337,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST STE A",
-    "phone": "(608) 260-2900",
-    "premium_savings": 20
+    "phone": "(608) 260-2900"
   },
   {
     "id": 335,
@@ -3681,8 +3347,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "20 S PARK ST STE 202",
-    "phone": "(608) 287-2090",
-    "premium_savings": 0
+    "phone": "(608) 287-2090"
   },
   {
     "id": 336,
@@ -3692,8 +3357,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST STE A",
-    "phone": "(608) 260-2900",
-    "premium_savings": 5
+    "phone": "(608) 260-2900"
   },
   {
     "id": 337,
@@ -3703,8 +3367,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "20 S PARK ST",
-    "phone": "(608) 287-2090",
-    "premium_savings": 10
+    "phone": "(608) 287-2090"
   },
   {
     "id": 338,
@@ -3714,8 +3377,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "700 S PARK ST",
-    "phone": "(608) 260-2900",
-    "premium_savings": 15
+    "phone": "(608) 260-2900"
   },
   {
     "id": 339,
@@ -3725,8 +3387,7 @@
     "city": "JANESVILLE",
     "state": "WI",
     "address": "3200 E RACINE ST",
-    "phone": "(608) 371-8000",
-    "premium_savings": 20
+    "phone": "(608) 371-8000"
   },
   {
     "id": 340,
@@ -3736,8 +3397,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2402 WINNEBAGO ST",
-    "phone": "(608) 242-6840",
-    "premium_savings": 0
+    "phone": "(608) 242-6840"
   },
   {
     "id": 341,
@@ -3747,8 +3407,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "752 N HIGH POINT RD",
-    "phone": "(608) 824-4000",
-    "premium_savings": 5
+    "phone": "(608) 824-4000"
   },
   {
     "id": 342,
@@ -3758,8 +3417,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
-    "phone": "(608) 252-8000",
-    "premium_savings": 10
+    "phone": "(608) 252-8000"
   },
   {
     "id": 343,
@@ -3769,8 +3427,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 15
+    "phone": null
   },
   {
     "id": 344,
@@ -3780,8 +3437,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
-    "phone": "(608) 252-8000",
-    "premium_savings": 20
+    "phone": "(608) 252-8000"
   },
   {
     "id": 345,
@@ -3791,8 +3447,7 @@
     "city": "ALTOONA",
     "state": "WI",
     "address": "3119 WOODMAN DR",
-    "phone": "(920) 496-4700",
-    "premium_savings": 0
+    "phone": "(920) 496-4700"
   },
   {
     "id": 346,
@@ -3802,8 +3457,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "621 SCIENCE DR",
-    "phone": "(608) 265-3207",
-    "premium_savings": 5
+    "phone": "(608) 265-3207"
   },
   {
     "id": 347,
@@ -3813,8 +3467,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2501 W BELTLINE HWY STE 601",
-    "phone": "(608) 234-7436",
-    "premium_savings": 10
+    "phone": "(608) 234-7436"
   },
   {
     "id": 348,
@@ -3824,8 +3477,7 @@
     "city": "SAUK CITY",
     "state": "WI",
     "address": "208 PHILLIPS BLVD",
-    "phone": "(608) 644-0109",
-    "premium_savings": 15
+    "phone": "(608) 644-0109"
   },
   {
     "id": 349,
@@ -3835,8 +3487,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST",
-    "phone": "(608) 287-2700",
-    "premium_savings": 20
+    "phone": "(608) 287-2700"
   },
   {
     "id": 350,
@@ -3846,8 +3497,7 @@
     "city": "PRAIRIE DU SAC",
     "state": "WI",
     "address": "260 26TH ST",
-    "phone": "(608) 643-2471",
-    "premium_savings": 0
+    "phone": "(608) 643-2471"
   },
   {
     "id": 351,
@@ -3857,8 +3507,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST, DIVISION OF HAND SURGERY",
-    "phone": "(608) 287-2700",
-    "premium_savings": 5
+    "phone": "(608) 287-2700"
   },
   {
     "id": 352,
@@ -3868,8 +3517,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "2501 W BELTLINE HWY STE 601",
-    "phone": "(608) 234-7436",
-    "premium_savings": 10
+    "phone": "(608) 234-7436"
   },
   {
     "id": 353,
@@ -3879,8 +3527,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "4602 EASTPARK BLVD",
-    "phone": "(608) 263-7540",
-    "premium_savings": 15
+    "phone": "(608) 263-7540"
   },
   {
     "id": 354,
@@ -3890,8 +3537,7 @@
     "city": "LA CROSSE",
     "state": "WI",
     "address": "800 WEST AVE S",
-    "phone": "(608) 785-0940",
-    "premium_savings": 20
+    "phone": "(608) 785-0940"
   },
   {
     "id": 355,
@@ -3901,8 +3547,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
-    "phone": "(608) 252-8000",
-    "premium_savings": 0
+    "phone": "(608) 252-8000"
   },
   {
     "id": 356,
@@ -3912,8 +3557,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
-    "phone": "(608) 252-8000",
-    "premium_savings": 5
+    "phone": "(608) 252-8000"
   },
   {
     "id": 357,
@@ -3923,8 +3567,7 @@
     "city": "PRAIRIE DU SAC",
     "state": "WI",
     "address": "260 26TH ST",
-    "phone": "(608) 643-2471",
-    "premium_savings": 10
+    "phone": "(608) 643-2471"
   },
   {
     "id": 358,
@@ -3934,8 +3577,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1624 S HIGH POINT RD",
-    "phone": "(608) 287-2700",
-    "premium_savings": 15
+    "phone": "(608) 287-2700"
   },
   {
     "id": 359,
@@ -3945,8 +3587,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "4602 EASTPARK BLVD",
-    "phone": "(608) 265-3207",
-    "premium_savings": 20
+    "phone": "(608) 265-3207"
   },
   {
     "id": 360,
@@ -3956,8 +3597,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1211 FISH HATCHERY RD",
-    "phone": "(608) 252-8000",
-    "premium_savings": 0
+    "phone": "(608) 252-8000"
   },
   {
     "id": 361,
@@ -3967,8 +3607,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 5
+    "phone": "(608) 260-6000"
   },
   {
     "id": 362,
@@ -3978,8 +3617,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 10
+    "phone": "(608) 260-6000"
   },
   {
     "id": 363,
@@ -3989,8 +3627,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST",
-    "phone": "(608) 287-2800",
-    "premium_savings": 15
+    "phone": "(608) 287-2800"
   },
   {
     "id": 364,
@@ -4000,8 +3637,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 S PARK ST",
-    "phone": "(608) 287-2800",
-    "premium_savings": 20
+    "phone": "(608) 287-2800"
   },
   {
     "id": 365,
@@ -4011,8 +3647,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1 SOUTH PARK ST",
-    "phone": "(608) 287-2800",
-    "premium_savings": 0
+    "phone": "(608) 287-2800"
   },
   {
     "id": 366,
@@ -4022,8 +3657,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-7577",
-    "premium_savings": 5
+    "phone": "(608) 263-7577"
   },
   {
     "id": 367,
@@ -4033,8 +3667,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "1821 S STOUGHTON RD",
-    "phone": "(608) 260-6000",
-    "premium_savings": 10
+    "phone": "(608) 260-6000"
   },
   {
     "id": 368,
@@ -4044,8 +3677,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2356 S 102ND ST",
-    "phone": "(262) 689-8710",
-    "premium_savings": 15
+    "phone": "(262) 689-8710"
   },
   {
     "id": 369,
@@ -4055,8 +3687,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "3212 PLEASANT VALLEY RD",
-    "phone": "(262) 334-6165",
-    "premium_savings": 20
+    "phone": "(262) 334-6165"
   },
   {
     "id": 370,
@@ -4066,8 +3697,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "1111 DELAFIELD ST, SUITE 322",
-    "phone": "(414) 454-0600",
-    "premium_savings": 0
+    "phone": "(414) 454-0600"
   },
   {
     "id": 371,
@@ -4077,8 +3707,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5000",
-    "premium_savings": 5
+    "phone": "(262) 303-5000"
   },
   {
     "id": 372,
@@ -4088,8 +3717,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2424 S 90TH ST",
-    "phone": "(414) 908-6500",
-    "premium_savings": 10
+    "phone": "(414) 908-6500"
   },
   {
     "id": 373,
@@ -4099,8 +3727,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W180N8045 TOWN HALL RD",
-    "phone": "(262) 250-0950",
-    "premium_savings": 15
+    "phone": "(262) 250-0950"
   },
   {
     "id": 374,
@@ -4110,8 +3737,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1060",
-    "phone": "(414) 908-6500",
-    "premium_savings": 20
+    "phone": "(414) 908-6500"
   },
   {
     "id": 375,
@@ -4121,8 +3747,7 @@
     "city": "CUDAHY",
     "state": "WI",
     "address": "5900 S. LAKE DRIVE, LAKESHORE MEDICAL CLINIC",
-    "phone": "(414) 489-4190",
-    "premium_savings": 0
+    "phone": "(414) 489-4190"
   },
   {
     "id": 376,
@@ -4132,8 +3757,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "960 N 12TH ST, SUITE 400",
-    "phone": "(414) 219-7653",
-    "premium_savings": 5
+    "phone": "(414) 219-7653"
   },
   {
     "id": 377,
@@ -4143,8 +3767,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W180N7950 TOWN HALL RD",
-    "phone": "(262) 255-2500",
-    "premium_savings": 10
+    "phone": "(262) 255-2500"
   },
   {
     "id": 378,
@@ -4154,8 +3777,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2025 W OKLAHOMA AVE STE 105",
-    "phone": "(414) 389-2797",
-    "premium_savings": 15
+    "phone": "(414) 389-2797"
   },
   {
     "id": 379,
@@ -4165,8 +3787,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF CARDIOLOGY",
-    "phone": "(414) 955-6777",
-    "premium_savings": 20
+    "phone": "(414) 955-6777"
   },
   {
     "id": 380,
@@ -4176,8 +3797,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LIN",
-    "phone": "(262) 532-8441",
-    "premium_savings": 0
+    "phone": "(262) 532-8441"
   },
   {
     "id": 381,
@@ -4187,8 +3807,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-6000",
-    "premium_savings": 5
+    "phone": "(414) 805-6000"
   },
   {
     "id": 382,
@@ -4198,8 +3817,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "N84W16889 MENOMONEE AVE",
-    "phone": "(262) 251-7500",
-    "premium_savings": 10
+    "phone": "(262) 251-7500"
   },
   {
     "id": 383,
@@ -4209,8 +3827,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, 840",
-    "phone": "(414) 649-3530",
-    "premium_savings": 15
+    "phone": "(414) 649-3530"
   },
   {
     "id": 384,
@@ -4220,8 +3837,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-6000",
-    "premium_savings": 20
+    "phone": "(414) 805-6000"
   },
   {
     "id": 385,
@@ -4231,8 +3847,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W. KINNICKINNIC RIVER PKWY., SUITE 925",
-    "phone": "(414) 385-2499",
-    "premium_savings": 0
+    "phone": "(414) 385-2499"
   },
   {
     "id": 386,
@@ -4242,8 +3857,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "16650 W BLUEMOUND RD, SUITE 200",
-    "phone": "(262) 827-9200",
-    "premium_savings": 5
+    "phone": "(262) 827-9200"
   },
   {
     "id": 387,
@@ -4253,8 +3867,7 @@
     "city": "FRANKLIN",
     "state": "WI",
     "address": "7400 W RAWSON AVE STE 143",
-    "phone": "(414) 425-7380",
-    "premium_savings": 10
+    "phone": "(414) 425-7380"
   },
   {
     "id": 388,
@@ -4264,8 +3877,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2900 W OKLAHOMA AVE",
-    "phone": "(414) 649-6000",
-    "premium_savings": 15
+    "phone": "(414) 649-6000"
   },
   {
     "id": 389,
@@ -4275,8 +3887,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF CARDIOLOGY",
-    "phone": "(414) 805-6633",
-    "premium_savings": 20
+    "phone": "(414) 805-6633"
   },
   {
     "id": 390,
@@ -4286,8 +3897,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "16650 W BLUEMOUND RD, SUITE 200",
-    "phone": "(262) 827-9200",
-    "premium_savings": 0
+    "phone": "(262) 827-9200"
   },
   {
     "id": 391,
@@ -4297,8 +3907,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2424 S 90TH ST",
-    "phone": "(414) 328-8150",
-    "premium_savings": 5
+    "phone": "(414) 328-8150"
   },
   {
     "id": 392,
@@ -4308,8 +3917,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 10
+    "phone": "(414) 352-3100"
   },
   {
     "id": 393,
@@ -4319,8 +3927,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, #840",
-    "phone": "(414) 649-3530",
-    "premium_savings": 15
+    "phone": "(414) 649-3530"
   },
   {
     "id": 394,
@@ -4330,8 +3937,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "960 N 12TH ST",
-    "phone": "(414) 219-7434",
-    "premium_savings": 20
+    "phone": "(414) 219-7434"
   },
   {
     "id": 395,
@@ -4341,8 +3947,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "601 N 99 ST, STE 201",
-    "phone": "(414) 266-9700",
-    "premium_savings": 0
+    "phone": "(414) 266-9700"
   },
   {
     "id": 396,
@@ -4352,8 +3957,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "725 AMERICAN AVE",
-    "phone": "(262) 928-8800",
-    "premium_savings": 5
+    "phone": "(262) 928-8800"
   },
   {
     "id": 397,
@@ -4363,8 +3967,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON RD",
-    "phone": "(262) 329-1000",
-    "premium_savings": 10
+    "phone": "(262) 329-1000"
   },
   {
     "id": 398,
@@ -4374,8 +3977,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DEPARTMENT OF CARDIOVASCULAR MEDICINE",
-    "phone": "(414) 805-6633",
-    "premium_savings": 15
+    "phone": "(414) 805-6633"
   },
   {
     "id": 399,
@@ -4385,8 +3987,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "721 AMERICAN AVE, SUITE 403",
-    "phone": "(262) 549-1516",
-    "premium_savings": 20
+    "phone": "(262) 549-1516"
   },
   {
     "id": 400,
@@ -4396,8 +3997,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LN",
-    "phone": "(262) 535-8400",
-    "premium_savings": 0
+    "phone": "(262) 535-8400"
   },
   {
     "id": 401,
@@ -4407,8 +4007,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, CARDIOLOGY",
-    "phone": "(414) 955-6777",
-    "premium_savings": 5
+    "phone": "(414) 955-6777"
   },
   {
     "id": 402,
@@ -4418,8 +4017,7 @@
     "city": "OCEANSIDE",
     "state": "CA",
     "address": "2424 VISTA WAY STE 300-301",
-    "phone": "(760) 630-1606",
-    "premium_savings": 10
+    "phone": "(760) 630-1606"
   },
   {
     "id": 403,
@@ -4429,8 +4027,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF CARDIOLOGY",
-    "phone": "(414) 805-6633",
-    "premium_savings": 15
+    "phone": "(414) 805-6633"
   },
   {
     "id": 404,
@@ -4440,8 +4037,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2350 N LAKE DR STE 400",
-    "phone": "(414) 271-1633",
-    "premium_savings": 20
+    "phone": "(414) 271-1633"
   },
   {
     "id": 405,
@@ -4451,8 +4047,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-6000",
-    "premium_savings": 0
+    "phone": "(414) 805-6000"
   },
   {
     "id": 406,
@@ -4462,8 +4057,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-6000",
-    "premium_savings": 5
+    "phone": "(414) 805-6000"
   },
   {
     "id": 407,
@@ -4473,8 +4067,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF CARDIOLOGY",
-    "phone": "(414) 805-6633",
-    "premium_savings": 10
+    "phone": "(414) 805-6633"
   },
   {
     "id": 408,
@@ -4484,8 +4077,7 @@
     "city": "MEQUON",
     "state": "WI",
     "address": "11725 N PORT WASHINGTON RD STE 250",
-    "phone": "(414) 207-4333",
-    "premium_savings": 15
+    "phone": "(414) 207-4333"
   },
   {
     "id": 409,
@@ -4495,8 +4087,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, CARDIOLOGY",
-    "phone": "(414) 805-3666",
-    "premium_savings": 20
+    "phone": "(414) 805-3666"
   },
   {
     "id": 410,
@@ -4506,8 +4097,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "5434 W CAPITOL DR",
-    "phone": "(414) 442-5400",
-    "premium_savings": 0
+    "phone": "(414) 442-5400"
   },
   {
     "id": 411,
@@ -4517,8 +4107,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "N112W15415 MEQUON RD",
-    "phone": "(262) 255-2112",
-    "premium_savings": 5
+    "phone": "(262) 255-2112"
   },
   {
     "id": 412,
@@ -4528,8 +4117,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2350 N LAKE DR STE 300",
-    "phone": "(414) 298-7100",
-    "premium_savings": 10
+    "phone": "(414) 298-7100"
   },
   {
     "id": 413,
@@ -4539,8 +4127,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13800 W NORTH AVE, STE 100",
-    "phone": "(262) 754-4488",
-    "premium_savings": 15
+    "phone": "(262) 754-4488"
   },
   {
     "id": 414,
@@ -4550,8 +4137,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "N84W16889 MENOMONEE AVE",
-    "phone": "(262) 251-7500",
-    "premium_savings": 20
+    "phone": "(262) 251-7500"
   },
   {
     "id": 415,
@@ -4561,8 +4147,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13800 W NORTH AVE STE 100",
-    "phone": "(262) 754-4488",
-    "premium_savings": 0
+    "phone": "(262) 754-4488"
   },
   {
     "id": 416,
@@ -4572,8 +4157,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13800 W NORTH AVE, STE 100",
-    "phone": "(262) 754-4488",
-    "premium_savings": 5
+    "phone": "(262) 754-4488"
   },
   {
     "id": 417,
@@ -4583,8 +4167,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-5320",
-    "premium_savings": 10
+    "phone": "(414) 805-5320"
   },
   {
     "id": 418,
@@ -4594,8 +4177,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 15
+    "phone": null
   },
   {
     "id": 419,
@@ -4605,8 +4187,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "10000 W BLUEMOUND RD",
-    "phone": "(414) 454-8000",
-    "premium_savings": 20
+    "phone": "(414) 454-8000"
   },
   {
     "id": 420,
@@ -4616,8 +4197,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13800 W NORTH AVE",
-    "phone": "(262) 754-4488",
-    "premium_savings": 0
+    "phone": "(262) 754-4488"
   },
   {
     "id": 421,
@@ -4627,8 +4207,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13800 W NORTH AVE, SUITE 100",
-    "phone": "(262) 754-4488",
-    "premium_savings": 5
+    "phone": "(262) 754-4488"
   },
   {
     "id": 422,
@@ -4638,8 +4217,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2350 N LAKE DR STE 300",
-    "phone": "(414) 298-7100",
-    "premium_savings": 10
+    "phone": "(414) 298-7100"
   },
   {
     "id": 423,
@@ -4649,8 +4227,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13800 W NORTH AVE, STE 100",
-    "phone": "(262) 754-4488",
-    "premium_savings": 15
+    "phone": "(262) 754-4488"
   },
   {
     "id": 424,
@@ -4660,8 +4237,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "N112W17975 MEQUON RD",
-    "phone": "(262) 532-7600",
-    "premium_savings": 20
+    "phone": "(262) 532-7600"
   },
   {
     "id": 425,
@@ -4671,8 +4247,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "215 WASHINGTON ST",
-    "phone": "(262) 375-3700",
-    "premium_savings": 0
+    "phone": "(262) 375-3700"
   },
   {
     "id": 426,
@@ -4682,8 +4257,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "N16W24131 RIVERWOOD DR",
-    "phone": "(262) 696-0808",
-    "premium_savings": 5
+    "phone": "(262) 696-0808"
   },
   {
     "id": 427,
@@ -4693,8 +4267,7 @@
     "city": "MEQUON",
     "state": "WI",
     "address": "12203 CORPORATE PKWY",
-    "phone": "(262) 387-8200",
-    "premium_savings": 10
+    "phone": "(262) 387-8200"
   },
   {
     "id": 428,
@@ -4704,8 +4277,7 @@
     "city": "GREENFIELD",
     "state": "WI",
     "address": "6790 W LAYTON AVE",
-    "phone": "(414) 325-8500",
-    "premium_savings": 15
+    "phone": "(414) 325-8500"
   },
   {
     "id": 429,
@@ -4715,8 +4287,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "10000 W BLUEMOUND RD",
-    "phone": "(414) 454-8000",
-    "premium_savings": 20
+    "phone": "(414) 454-8000"
   },
   {
     "id": 430,
@@ -4726,8 +4297,7 @@
     "city": "GREENFIELD",
     "state": "WI",
     "address": "6790 W LAYTON AVE",
-    "phone": "(414) 325-8500",
-    "premium_savings": 0
+    "phone": "(414) 325-8500"
   },
   {
     "id": 431,
@@ -4737,8 +4307,7 @@
     "city": "FRANKLIN",
     "state": "WI",
     "address": "10500 W LOOMIS RD, SUITE 110",
-    "phone": "(262) 898-4400",
-    "premium_savings": 5
+    "phone": "(262) 898-4400"
   },
   {
     "id": 432,
@@ -4748,8 +4317,7 @@
     "city": "GREENFIELD",
     "state": "WI",
     "address": "6901 W EDGERTON AVE",
-    "phone": "(414) 421-8400",
-    "premium_savings": 10
+    "phone": "(414) 421-8400"
   },
   {
     "id": 433,
@@ -4759,8 +4327,7 @@
     "city": "SUSSEX",
     "state": "WI",
     "address": "N57W24950 N CORPORATE CIR",
-    "phone": "(262) 820-3093",
-    "premium_savings": 15
+    "phone": "(262) 820-3093"
   },
   {
     "id": 434,
@@ -4770,8 +4337,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "N16W24131 RIVERWOOD DR, PEWAUKEE CLINIC",
-    "phone": "(262) 696-0808",
-    "premium_savings": 20
+    "phone": "(262) 696-0808"
   },
   {
     "id": 435,
@@ -4781,8 +4347,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "10000 W BLUEMOUND RD",
-    "phone": "(414) 454-4321",
-    "premium_savings": 0
+    "phone": "(414) 454-4321"
   },
   {
     "id": 436,
@@ -4792,8 +4357,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 5
+    "phone": "(414) 352-3100"
   },
   {
     "id": 437,
@@ -4803,8 +4367,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2323 S 102ND ST",
-    "phone": "(414) 541-9900",
-    "premium_savings": 10
+    "phone": "(414) 541-9900"
   },
   {
     "id": 438,
@@ -4814,8 +4377,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF ENDOCRINOLOGY",
-    "phone": "(414) 456-6722",
-    "premium_savings": 15
+    "phone": "(414) 456-6722"
   },
   {
     "id": 439,
@@ -4825,8 +4387,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W129N7055 NORTHFIELD DR, ENDOCRINOLOGY CLINIC",
-    "phone": "(262) 253-7155",
-    "premium_savings": 20
+    "phone": "(262) 253-7155"
   },
   {
     "id": 440,
@@ -4836,8 +4397,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "788 N JEFFERSON ST STE 300",
-    "phone": "(414) 272-8950",
-    "premium_savings": 0
+    "phone": "(414) 272-8950"
   },
   {
     "id": 441,
@@ -4847,8 +4407,7 @@
     "city": "HARTLAND",
     "state": "WI",
     "address": "600 WALNUT RIDGE DR",
-    "phone": "(262) 369-7040",
-    "premium_savings": 5
+    "phone": "(262) 369-7040"
   },
   {
     "id": 442,
@@ -4858,8 +4417,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF ENDOCRINOLOGY",
-    "phone": "(414) 955-6724",
-    "premium_savings": 10
+    "phone": "(414) 955-6724"
   },
   {
     "id": 443,
@@ -4869,8 +4427,7 @@
     "city": "PORT WASHINGTON",
     "state": "WI",
     "address": "1475 W GRAND AVE",
-    "phone": "(262) 268-5100",
-    "premium_savings": 15
+    "phone": "(262) 268-5100"
   },
   {
     "id": 444,
@@ -4880,8 +4437,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "788 N JEFFERSON ST, SUITE 201",
-    "phone": "(414) 226-4010",
-    "premium_savings": 20
+    "phone": "(414) 226-4010"
   },
   {
     "id": 445,
@@ -4891,8 +4447,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "201 N MAYFAIR ROAD",
-    "phone": "(414) 771-8228",
-    "premium_savings": 0
+    "phone": "(414) 771-8228"
   },
   {
     "id": 446,
@@ -4902,8 +4457,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "201 N MAYFAIR RD, 2ND F",
-    "phone": "(414) 771-8228",
-    "premium_savings": 5
+    "phone": "(414) 771-8228"
   },
   {
     "id": 447,
@@ -4913,8 +4467,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W129N7055 NORTHFIELD DR, DIVISION OF ENDOCRINOLOGY",
-    "phone": "(262) 253-7155",
-    "premium_savings": 10
+    "phone": "(262) 253-7155"
   },
   {
     "id": 448,
@@ -4924,8 +4477,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "788 N JEFFERSON ST, SUITE 201",
-    "phone": "(414) 226-4010",
-    "premium_savings": 15
+    "phone": "(414) 226-4010"
   },
   {
     "id": 449,
@@ -4935,8 +4487,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY",
-    "phone": "(414) 649-6780",
-    "premium_savings": 20
+    "phone": "(414) 649-6780"
   },
   {
     "id": 450,
@@ -4946,8 +4497,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVENUE, DIVISION OF ENDOCRINOLOGY",
-    "phone": "(414) 955-6723",
-    "premium_savings": 0
+    "phone": "(414) 955-6723"
   },
   {
     "id": 451,
@@ -4957,8 +4507,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W129N7055 NORTHFIELD DR",
-    "phone": "(262) 253-7155",
-    "premium_savings": 5
+    "phone": "(262) 253-7155"
   },
   {
     "id": 452,
@@ -4968,8 +4517,7 @@
     "city": "EAU CLAIRE",
     "state": "WI",
     "address": "3802 OAKWOOD MALL DR",
-    "phone": "(715) 839-9280",
-    "premium_savings": 10
+    "phone": "(715) 839-9280"
   },
   {
     "id": 453,
@@ -4979,8 +4527,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "N84W16889 MENOMONEE AVE",
-    "phone": "(262) 251-7500",
-    "premium_savings": 15
+    "phone": "(262) 251-7500"
   },
   {
     "id": 454,
@@ -4990,8 +4537,7 @@
     "city": "CUDAHY",
     "state": "WI",
     "address": "5900 S LAKE DR",
-    "phone": "(414) 489-4190",
-    "premium_savings": 20
+    "phone": "(414) 489-4190"
   },
   {
     "id": 455,
@@ -5001,8 +4547,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "1111 DELAFIELD ST, SUITE 212",
-    "phone": "(262) 544-8622",
-    "premium_savings": 0
+    "phone": "(262) 544-8622"
   },
   {
     "id": 456,
@@ -5012,8 +4557,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6601",
-    "premium_savings": 5
+    "phone": "(414) 908-6601"
   },
   {
     "id": 457,
@@ -5023,8 +4567,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "N84W16889 MENOMONEE AVE",
-    "phone": "(262) 251-7500",
-    "premium_savings": 10
+    "phone": "(262) 251-7500"
   },
   {
     "id": 458,
@@ -5034,8 +4577,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "1700 W PARADISE DR",
-    "phone": "(262) 334-3451",
-    "premium_savings": 15
+    "phone": "(262) 334-3451"
   },
   {
     "id": 459,
@@ -5045,8 +4587,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KK RIVER PKWY STE 1080",
-    "phone": "(414) 908-6500",
-    "premium_savings": 20
+    "phone": "(414) 908-6500"
   },
   {
     "id": 460,
@@ -5056,8 +4597,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-3310",
-    "premium_savings": 0
+    "phone": "(414) 805-3310"
   },
   {
     "id": 461,
@@ -5067,8 +4607,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 5
+    "phone": "(414) 352-3100"
   },
   {
     "id": 462,
@@ -5078,8 +4617,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 10
+    "phone": null
   },
   {
     "id": 463,
@@ -5089,8 +4627,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KK RIVER PKWY, SUITE 1030",
-    "phone": "(414) 908-6500",
-    "premium_savings": 15
+    "phone": "(414) 908-6500"
   },
   {
     "id": 464,
@@ -5100,8 +4637,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W129N7055 NORTHFIELD DR, GASTROENTEROLOGY",
-    "phone": "(262) 253-5400",
-    "premium_savings": 20
+    "phone": "(262) 253-5400"
   },
   {
     "id": 465,
@@ -5111,8 +4647,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6615",
-    "premium_savings": 0
+    "phone": "(414) 908-6615"
   },
   {
     "id": 466,
@@ -5122,8 +4657,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KK RIVER PKWY STE 1080",
-    "phone": "(414) 908-6500",
-    "premium_savings": 5
+    "phone": "(414) 908-6500"
   },
   {
     "id": 467,
@@ -5133,8 +4667,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6615",
-    "premium_savings": 10
+    "phone": "(414) 908-6615"
   },
   {
     "id": 468,
@@ -5144,8 +4677,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6500",
-    "premium_savings": 15
+    "phone": "(414) 908-6500"
   },
   {
     "id": 469,
@@ -5155,8 +4687,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2350 N LAKE DR STE 500",
-    "phone": "(414) 226-4020",
-    "premium_savings": 20
+    "phone": "(414) 226-4020"
   },
   {
     "id": 470,
@@ -5166,8 +4697,7 @@
     "city": "MEQUON",
     "state": "WI",
     "address": "13133 N PORT WASHINGTON RD STE G16",
-    "phone": "(847) 909-2695",
-    "premium_savings": 0
+    "phone": "(847) 909-2695"
   },
   {
     "id": 471,
@@ -5177,8 +4707,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "1033 N MAYFAIR RD, SUITE 101",
-    "phone": "(414) 454-0500",
-    "premium_savings": 5
+    "phone": "(414) 454-0500"
   },
   {
     "id": 472,
@@ -5188,8 +4717,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "1111 DELAFIELD ST, SUITE 212",
-    "phone": "(262) 544-8622",
-    "premium_savings": 10
+    "phone": "(262) 544-8622"
   },
   {
     "id": 473,
@@ -5199,8 +4727,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 955-6830",
-    "premium_savings": 15
+    "phone": "(414) 955-6830"
   },
   {
     "id": 474,
@@ -5210,8 +4737,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6615",
-    "premium_savings": 20
+    "phone": "(414) 908-6615"
   },
   {
     "id": 475,
@@ -5221,8 +4747,7 @@
     "city": "MEQUON",
     "state": "WI",
     "address": "13133 N. PORT WASHINGTON ROAD, SUITE G-16",
-    "phone": "(262) 243-2500",
-    "premium_savings": 0
+    "phone": "(262) 243-2500"
   },
   {
     "id": 476,
@@ -5232,8 +4757,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6601",
-    "premium_savings": 5
+    "phone": "(414) 908-6601"
   },
   {
     "id": 477,
@@ -5243,8 +4767,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2311 N PROSPECT AVE",
-    "phone": "(414) 319-3000",
-    "premium_savings": 10
+    "phone": "(414) 319-3000"
   },
   {
     "id": 478,
@@ -5254,8 +4777,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "1033 N MAYFAIR RD, SUITE 101",
-    "phone": "(414) 454-0600",
-    "premium_savings": 15
+    "phone": "(414) 454-0600"
   },
   {
     "id": 479,
@@ -5265,8 +4787,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF GASTROENTEROLOGY AND HEPATOLOGY",
-    "phone": "(414) 805-0516",
-    "premium_savings": 20
+    "phone": "(414) 805-0516"
   },
   {
     "id": 480,
@@ -5276,8 +4797,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6601",
-    "premium_savings": 0
+    "phone": "(414) 908-6601"
   },
   {
     "id": 481,
@@ -5287,8 +4807,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6601",
-    "premium_savings": 5
+    "phone": "(414) 908-6601"
   },
   {
     "id": 482,
@@ -5298,8 +4817,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "2414 KOHLER MEMORIAL DR",
-    "phone": "(920) 457-4461",
-    "premium_savings": 10
+    "phone": "(920) 457-4461"
   },
   {
     "id": 483,
@@ -5309,8 +4827,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-3310",
-    "premium_savings": 15
+    "phone": "(414) 805-3310"
   },
   {
     "id": 484,
@@ -5320,8 +4837,7 @@
     "city": "CUDAHY",
     "state": "WI",
     "address": "3501 E RAMSEY AVE",
-    "phone": "(262) 243-2500",
-    "premium_savings": 20
+    "phone": "(262) 243-2500"
   },
   {
     "id": 485,
@@ -5331,8 +4847,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, SUITE 930",
-    "phone": "(262) 857-5750",
-    "premium_savings": 0
+    "phone": "(262) 857-5750"
   },
   {
     "id": 486,
@@ -5342,8 +4857,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, CLCC - FIFTH FLOOR",
-    "phone": "(414) 805-0509",
-    "premium_savings": 5
+    "phone": "(414) 805-0509"
   },
   {
     "id": 487,
@@ -5353,8 +4867,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON RD",
-    "phone": "(262) 329-1000",
-    "premium_savings": 10
+    "phone": "(262) 329-1000"
   },
   {
     "id": 488,
@@ -5364,8 +4877,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2900 W OKLAHOMA AVE",
-    "phone": "(414) 649-6380",
-    "premium_savings": 15
+    "phone": "(414) 649-6380"
   },
   {
     "id": 489,
@@ -5375,8 +4887,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2900 W OKLAHOMA AVE",
-    "phone": "(414) 649-6380",
-    "premium_savings": 20
+    "phone": "(414) 649-6380"
   },
   {
     "id": 490,
@@ -5386,8 +4897,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "8901 W LINCOLN AVE",
-    "phone": "(414) 329-5950",
-    "premium_savings": 0
+    "phone": "(414) 329-5950"
   },
   {
     "id": 491,
@@ -5397,8 +4907,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-0505",
-    "premium_savings": 5
+    "phone": "(414) 805-0505"
   },
   {
     "id": 492,
@@ -5408,8 +4917,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "1055 N MAYFAIR RD",
-    "phone": "(262) 857-5750",
-    "premium_savings": 10
+    "phone": "(262) 857-5750"
   },
   {
     "id": 493,
@@ -5419,8 +4927,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "N16W24131 RIVERWOOD DR",
-    "phone": "(262) 696-5690",
-    "premium_savings": 15
+    "phone": "(262) 696-5690"
   },
   {
     "id": 494,
@@ -5430,8 +4937,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-4600",
-    "premium_savings": 20
+    "phone": "(414) 805-4600"
   },
   {
     "id": 495,
@@ -5441,8 +4947,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "1218 W KILBOURN AVE, SUITE 200",
-    "phone": "(414) 219-7370",
-    "premium_savings": 0
+    "phone": "(414) 219-7370"
   },
   {
     "id": 496,
@@ -5452,8 +4957,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, SUITE 930",
-    "phone": "(414) 384-5111",
-    "premium_savings": 5
+    "phone": "(414) 384-5111"
   },
   {
     "id": 497,
@@ -5463,8 +4967,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "3200 PLEASANT VALLEY RD, ALYCE & ELMORE KRAEMER CANCER CARE CTR",
-    "phone": "(262) 836-7200",
-    "premium_savings": 10
+    "phone": "(262) 836-7200"
   },
   {
     "id": 498,
@@ -5474,8 +4977,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 15
+    "phone": "(414) 352-3100"
   },
   {
     "id": 499,
@@ -5485,8 +4987,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LN",
-    "phone": "(262) 535-8400",
-    "premium_savings": 20
+    "phone": "(262) 535-8400"
   },
   {
     "id": 500,
@@ -5496,8 +4997,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, NEOPLASTIC DISEASES",
-    "phone": "(414) 805-6800",
-    "premium_savings": 0
+    "phone": "(414) 805-6800"
   },
   {
     "id": 501,
@@ -5507,8 +5007,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, NEOPLASTIC DISEASES",
-    "phone": "(414) 805-4600",
-    "premium_savings": 5
+    "phone": "(414) 805-4600"
   },
   {
     "id": 502,
@@ -5518,8 +5017,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "8901 W LINCOLN AVE",
-    "phone": "(262) 857-5750",
-    "premium_savings": 10
+    "phone": "(262) 857-5750"
   },
   {
     "id": 503,
@@ -5529,8 +5027,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF NEOPLASTIC DISEASES",
-    "phone": "(414) 805-4600",
-    "premium_savings": 15
+    "phone": "(414) 805-4600"
   },
   {
     "id": 504,
@@ -5540,8 +5037,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2350 N LAKE DR, SUITE 100",
-    "phone": "(414) 298-7250",
-    "premium_savings": 20
+    "phone": "(414) 298-7250"
   },
   {
     "id": 505,
@@ -5551,8 +5047,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 0
+    "phone": "(414) 352-3100"
   },
   {
     "id": 506,
@@ -5562,8 +5057,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W180N7950 TOWN HALL RD",
-    "phone": "(262) 255-2500",
-    "premium_savings": 5
+    "phone": "(262) 255-2500"
   },
   {
     "id": 507,
@@ -5573,8 +5067,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DEPARTMENT OF NEUROLOGY",
-    "phone": "(414) 805-5200",
-    "premium_savings": 10
+    "phone": "(414) 805-5200"
   },
   {
     "id": 508,
@@ -5584,8 +5077,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DEPARTMENT OF NEUROLOGY, MCW",
-    "phone": "(414) 805-5200",
-    "premium_savings": 15
+    "phone": "(414) 805-5200"
   },
   {
     "id": 509,
@@ -5595,8 +5087,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "N84W16889 MENOMONEE AVE",
-    "phone": "(262) 251-7500",
-    "premium_savings": 20
+    "phone": "(262) 251-7500"
   },
   {
     "id": 510,
@@ -5606,8 +5097,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 550",
-    "phone": "(414) 385-8780",
-    "premium_savings": 0
+    "phone": "(414) 385-8780"
   },
   {
     "id": 511,
@@ -5617,8 +5107,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-5200",
-    "premium_savings": 5
+    "phone": "(414) 805-5200"
   },
   {
     "id": 512,
@@ -5628,8 +5117,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 10
+    "phone": "(414) 352-3100"
   },
   {
     "id": 513,
@@ -5639,8 +5127,7 @@
     "city": "OAK CREEK",
     "state": "WI",
     "address": "2603 W RAWSON AVE, SUITE 128",
-    "phone": "(414) 431-6760",
-    "premium_savings": 15
+    "phone": "(414) 431-6760"
   },
   {
     "id": 514,
@@ -5650,8 +5137,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "13950 W CAPITOL DRIVE",
-    "phone": "(414) 302-5400",
-    "premium_savings": 20
+    "phone": "(414) 302-5400"
   },
   {
     "id": 515,
@@ -5661,8 +5147,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2025 W OKLAHOMA AVE, SUITE 120",
-    "phone": "(414) 382-8960",
-    "premium_savings": 0
+    "phone": "(414) 382-8960"
   },
   {
     "id": 516,
@@ -5672,8 +5157,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "6026 W LISBON AVE",
-    "phone": "(414) 442-3630",
-    "premium_savings": 5
+    "phone": "(414) 442-3630"
   },
   {
     "id": 517,
@@ -5683,8 +5167,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "1100 GATEWAY CT",
-    "phone": "(262) 335-8600",
-    "premium_savings": 10
+    "phone": "(262) 335-8600"
   },
   {
     "id": 518,
@@ -5694,8 +5177,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "W129N7055 NORTHFIELD DR",
-    "phone": "(414) 805-5235",
-    "premium_savings": 15
+    "phone": "(414) 805-5235"
   },
   {
     "id": 519,
@@ -5705,8 +5187,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY, STE 630",
-    "phone": "(414) 385-1922",
-    "premium_savings": 20
+    "phone": "(414) 385-1922"
   },
   {
     "id": 520,
@@ -5716,8 +5197,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2900 W OKLAHOMA AVE",
-    "phone": "(414) 649-6000",
-    "premium_savings": 0
+    "phone": "(414) 649-6000"
   },
   {
     "id": 521,
@@ -5727,8 +5207,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "3200 PLEASANT VALLEY RD",
-    "phone": "(262) 836-7300",
-    "premium_savings": 5
+    "phone": "(262) 836-7300"
   },
   {
     "id": 522,
@@ -5738,8 +5217,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC PKWY, SUITE 570",
-    "phone": "(414) 385-8780",
-    "premium_savings": 10
+    "phone": "(414) 385-8780"
   },
   {
     "id": 523,
@@ -5749,8 +5227,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DEPARTMENT OF NEUROLOGY",
-    "phone": "(414) 805-5200",
-    "premium_savings": 15
+    "phone": "(414) 805-5200"
   },
   {
     "id": 524,
@@ -5760,8 +5237,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-8710",
-    "premium_savings": 20
+    "phone": "(414) 805-8710"
   },
   {
     "id": 525,
@@ -5771,8 +5247,7 @@
     "city": "MENOMONEE FALLS",
     "state": "WI",
     "address": "N84W16889 MENOMONEE AVE",
-    "phone": "(262) 251-7500",
-    "premium_savings": 0
+    "phone": "(262) 251-7500"
   },
   {
     "id": 526,
@@ -5782,8 +5257,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DEPT OF NEUROLOGY",
-    "phone": "(414) 805-5200",
-    "premium_savings": 5
+    "phone": "(414) 805-5200"
   },
   {
     "id": 527,
@@ -5793,8 +5267,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY",
-    "phone": "(414) 385-1922",
-    "premium_savings": 10
+    "phone": "(414) 385-1922"
   },
   {
     "id": 528,
@@ -5804,8 +5277,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 680",
-    "phone": "(414) 385-1922",
-    "premium_savings": 15
+    "phone": "(414) 385-1922"
   },
   {
     "id": 529,
@@ -5815,8 +5287,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 20
+    "phone": "(414) 352-3100"
   },
   {
     "id": 530,
@@ -5826,8 +5297,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 0
+    "phone": null
   },
   {
     "id": 531,
@@ -5837,8 +5307,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "3200 PLEASANT VALLEY RD",
-    "phone": "(262) 836-7300",
-    "premium_savings": 5
+    "phone": "(262) 836-7300"
   },
   {
     "id": 532,
@@ -5848,8 +5317,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LN",
-    "phone": "(262) 535-8400",
-    "premium_savings": 10
+    "phone": "(262) 535-8400"
   },
   {
     "id": 533,
@@ -5859,8 +5327,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, GYNECOLOGIC ONCOLOGY",
-    "phone": "(414) 805-6600",
-    "premium_savings": 15
+    "phone": "(414) 805-6600"
   },
   {
     "id": 534,
@@ -5870,8 +5337,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "1111 DELAFIELD ST STE 120",
-    "phone": "(262) 544-4411",
-    "premium_savings": 20
+    "phone": "(262) 544-4411"
   },
   {
     "id": 535,
@@ -5881,8 +5347,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-6644",
-    "premium_savings": 0
+    "phone": "(414) 805-6644"
   },
   {
     "id": 536,
@@ -5892,8 +5357,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LN",
-    "phone": "(262) 535-8400",
-    "premium_savings": 5
+    "phone": "(262) 535-8400"
   },
   {
     "id": 537,
@@ -5903,8 +5367,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3003 W GOOD HOPE RD",
-    "phone": "(414) 352-3100",
-    "premium_savings": 10
+    "phone": "(414) 352-3100"
   },
   {
     "id": 538,
@@ -5914,8 +5377,7 @@
     "city": "WAUKESHA",
     "state": "WI",
     "address": "1111 DELAFIELD ST STE 120",
-    "phone": "(262) 544-4411",
-    "premium_savings": 15
+    "phone": "(262) 544-4411"
   },
   {
     "id": 539,
@@ -5925,8 +5387,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, GYNECOLOGIC ONCOLOGY",
-    "phone": "(414) 805-6600",
-    "premium_savings": 20
+    "phone": "(414) 805-6600"
   },
   {
     "id": 540,
@@ -5936,8 +5397,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "8905 W LINCOLN AVE",
-    "phone": "(414) 328-6000",
-    "premium_savings": 0
+    "phone": "(414) 328-6000"
   },
   {
     "id": 541,
@@ -5947,8 +5407,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "8905 W LINCOLN AVE, STE 405",
-    "phone": "(414) 329-5650",
-    "premium_savings": 5
+    "phone": "(414) 329-5650"
   },
   {
     "id": 542,
@@ -5958,8 +5417,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7400",
-    "premium_savings": 10
+    "phone": "(414) 805-7400"
   },
   {
     "id": 543,
@@ -5969,8 +5427,7 @@
     "city": "HARTFORD",
     "state": "WI",
     "address": "1640 E SUMNER ST",
-    "phone": "(262) 670-4000",
-    "premium_savings": 15
+    "phone": "(262) 670-4000"
   },
   {
     "id": 544,
@@ -5980,8 +5437,7 @@
     "city": "GREENFIELD",
     "state": "WI",
     "address": "9000 W SURA LN",
-    "phone": "(262) 329-2225",
-    "premium_savings": 20
+    "phone": "(262) 329-2225"
   },
   {
     "id": 545,
@@ -5991,8 +5447,7 @@
     "city": "NEW BERLIN",
     "state": "WI",
     "address": "4805 S MOORLAND RD",
-    "phone": "(262) 798-7200",
-    "premium_savings": 0
+    "phone": "(262) 798-7200"
   },
   {
     "id": 546,
@@ -6002,8 +5457,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON RD",
-    "phone": "(262) 329-8300",
-    "premium_savings": 5
+    "phone": "(262) 329-8300"
   },
   {
     "id": 547,
@@ -6013,8 +5467,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5055",
-    "premium_savings": 10
+    "phone": "(262) 303-5055"
   },
   {
     "id": 548,
@@ -6024,8 +5477,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LN",
-    "phone": "(262) 532-9700",
-    "premium_savings": 15
+    "phone": "(262) 532-9700"
   },
   {
     "id": 549,
@@ -6035,8 +5487,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5055",
-    "premium_savings": 20
+    "phone": "(262) 303-5055"
   },
   {
     "id": 550,
@@ -6046,8 +5497,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PARKWAY, STE 130",
-    "phone": "(414) 961-0304",
-    "premium_savings": 0
+    "phone": "(414) 961-0304"
   },
   {
     "id": 551,
@@ -6057,8 +5507,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7410",
-    "premium_savings": 5
+    "phone": "(414) 805-7410"
   },
   {
     "id": 552,
@@ -6068,8 +5517,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 544-5311",
-    "premium_savings": 10
+    "phone": "(262) 544-5311"
   },
   {
     "id": 553,
@@ -6079,8 +5527,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PKWY STE 100",
-    "phone": "(414) 332-6262",
-    "premium_savings": 15
+    "phone": "(414) 332-6262"
   },
   {
     "id": 554,
@@ -6090,8 +5537,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "2500 N MAYFAIR RD, STE 500",
-    "phone": "(414) 257-2525",
-    "premium_savings": 20
+    "phone": "(414) 257-2525"
   },
   {
     "id": 555,
@@ -6101,8 +5547,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2323 N MAYFAIR RD, SUITE 300",
-    "phone": "(414) 384-6700",
-    "premium_savings": 0
+    "phone": "(414) 384-6700"
   },
   {
     "id": 556,
@@ -6112,8 +5557,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5055",
-    "premium_savings": 5
+    "phone": "(262) 303-5055"
   },
   {
     "id": 557,
@@ -6123,8 +5567,7 @@
     "city": "GERMANTOWN",
     "state": "WI",
     "address": "W180N11070 RIVER LN",
-    "phone": "(262) 532-9700",
-    "premium_savings": 10
+    "phone": "(262) 532-9700"
   },
   {
     "id": 558,
@@ -6134,8 +5577,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7100",
-    "premium_savings": 15
+    "phone": "(414) 805-7100"
   },
   {
     "id": 559,
@@ -6145,8 +5587,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON RD",
-    "phone": "(262) 329-1000",
-    "premium_savings": 20
+    "phone": "(262) 329-1000"
   },
   {
     "id": 560,
@@ -6156,8 +5597,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2424 S 90TH ST STE 500",
-    "phone": "(414) 321-2255",
-    "premium_savings": 0
+    "phone": "(414) 321-2255"
   },
   {
     "id": 561,
@@ -6167,8 +5607,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "3077 N MAYFAIR RD STE 100",
-    "phone": "(414) 384-6700",
-    "premium_savings": 5
+    "phone": "(414) 384-6700"
   },
   {
     "id": 562,
@@ -6178,8 +5617,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 544-5311",
-    "premium_savings": 10
+    "phone": "(262) 544-5311"
   },
   {
     "id": 563,
@@ -6189,8 +5627,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 544-5311",
-    "premium_savings": 15
+    "phone": "(262) 544-5311"
   },
   {
     "id": 564,
@@ -6200,8 +5637,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "19475 W NORTH AVE, SUITE 201",
-    "phone": "(262) 395-4160",
-    "premium_savings": 20
+    "phone": "(262) 395-4160"
   },
   {
     "id": 565,
@@ -6211,8 +5647,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PKWY STE 100",
-    "phone": "(414) 332-6262",
-    "premium_savings": 0
+    "phone": "(414) 332-6262"
   },
   {
     "id": 566,
@@ -6222,8 +5657,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5055",
-    "premium_savings": 5
+    "phone": "(262) 303-5055"
   },
   {
     "id": 567,
@@ -6233,8 +5667,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON RD",
-    "phone": "(262) 329-1000",
-    "premium_savings": 10
+    "phone": "(262) 329-1000"
   },
   {
     "id": 568,
@@ -6244,8 +5677,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PARKWAY, STE 130",
-    "phone": "(414) 961-0304",
-    "premium_savings": 15
+    "phone": "(414) 961-0304"
   },
   {
     "id": 569,
@@ -6255,8 +5687,7 @@
     "city": "GRAFTON",
     "state": "WI",
     "address": "975 PORT WASHINGTON ROAD, SUITE 110",
-    "phone": "(262) 387-8300",
-    "premium_savings": 20
+    "phone": "(262) 387-8300"
   },
   {
     "id": 570,
@@ -6266,8 +5697,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 370",
-    "phone": "(414) 649-7900",
-    "premium_savings": 0
+    "phone": "(414) 649-7900"
   },
   {
     "id": 571,
@@ -6277,8 +5707,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PKWY STE 100",
-    "phone": "(414) 332-6262",
-    "premium_savings": 5
+    "phone": "(414) 332-6262"
   },
   {
     "id": 572,
@@ -6288,8 +5717,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7400",
-    "premium_savings": 10
+    "phone": "(414) 805-7400"
   },
   {
     "id": 573,
@@ -6299,8 +5727,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2424 S 90TH ST, SUITE 500",
-    "phone": "(414) 328-8600",
-    "premium_savings": 15
+    "phone": "(414) 328-8600"
   },
   {
     "id": 574,
@@ -6310,8 +5737,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3237 S 16TH ST, SUITE 210",
-    "phone": "(414) 384-6700",
-    "premium_savings": 20
+    "phone": "(414) 384-6700"
   },
   {
     "id": 575,
@@ -6321,8 +5747,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PARKWAY, STE 130",
-    "phone": "(414) 961-0304",
-    "premium_savings": 0
+    "phone": "(414) 961-0304"
   },
   {
     "id": 576,
@@ -6332,8 +5757,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 544-5311",
-    "premium_savings": 5
+    "phone": "(262) 544-5311"
   },
   {
     "id": 577,
@@ -6343,8 +5767,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5055",
-    "premium_savings": 10
+    "phone": "(262) 303-5055"
   },
   {
     "id": 578,
@@ -6354,8 +5777,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 544-5311",
-    "premium_savings": 15
+    "phone": "(262) 544-5311"
   },
   {
     "id": 579,
@@ -6365,8 +5787,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "2500 N MAYFAIR RD, SUITE 500",
-    "phone": "(414) 257-2525",
-    "premium_savings": 20
+    "phone": "(414) 257-2525"
   },
   {
     "id": 580,
@@ -6376,8 +5797,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 345",
-    "phone": "(414) 649-7900",
-    "premium_savings": 0
+    "phone": "(414) 649-7900"
   },
   {
     "id": 581,
@@ -6387,8 +5807,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7400",
-    "premium_savings": 5
+    "phone": "(414) 805-7400"
   },
   {
     "id": 582,
@@ -6398,8 +5817,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PARKWAY, STE 130",
-    "phone": "(414) 961-0304",
-    "premium_savings": 10
+    "phone": "(414) 961-0304"
   },
   {
     "id": 583,
@@ -6409,8 +5827,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "525 W RIVER WOODS PKWY, SUITE 230",
-    "phone": "(414) 453-7418",
-    "premium_savings": 15
+    "phone": "(414) 453-7418"
   },
   {
     "id": 584,
@@ -6420,8 +5837,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 955-3222",
-    "premium_savings": 20
+    "phone": "(414) 955-3222"
   },
   {
     "id": 585,
@@ -6431,8 +5847,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 303-5055",
-    "premium_savings": 0
+    "phone": "(262) 303-5055"
   },
   {
     "id": 586,
@@ -6442,8 +5857,7 @@
     "city": "WEST ALLIS",
     "state": "WI",
     "address": "2424 S 90TH ST",
-    "phone": "(414) 321-2255",
-    "premium_savings": 5
+    "phone": "(414) 321-2255"
   },
   {
     "id": 587,
@@ -6453,8 +5867,7 @@
     "city": "WAUWATOSA",
     "state": "WI",
     "address": "3077 N MAYFAIR RD STE 100",
-    "phone": "(414) 384-6700",
-    "premium_savings": 10
+    "phone": "(414) 384-6700"
   },
   {
     "id": 588,
@@ -6464,8 +5877,7 @@
     "city": "PEWAUKEE",
     "state": "WI",
     "address": "N15W28300 GOLF RD",
-    "phone": "(262) 544-5311",
-    "premium_savings": 15
+    "phone": "(262) 544-5311"
   },
   {
     "id": 589,
@@ -6475,8 +5887,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "3237 S 16TH ST, SUITE 210",
-    "phone": "(414) 384-6700",
-    "premium_savings": 20
+    "phone": "(414) 384-6700"
   },
   {
     "id": 590,
@@ -6486,8 +5897,7 @@
     "city": "WEST BEND",
     "state": "WI",
     "address": "1700 W PARADISE DR, ORTHOPAEDIC SURGERY",
-    "phone": "(262) 334-3451",
-    "premium_savings": 0
+    "phone": "(262) 334-3451"
   },
   {
     "id": 591,
@@ -6497,8 +5907,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 5
+    "phone": null
   },
   {
     "id": 592,
@@ -6508,8 +5917,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "1414 N TAYLOR DR STE 110",
-    "phone": "(920) 320-5241",
-    "premium_savings": 10
+    "phone": "(920) 320-5241"
   },
   {
     "id": 593,
@@ -6519,8 +5927,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE, DIVISION OF RHEUMATOLOGY",
-    "phone": "(414) 805-6655",
-    "premium_savings": 15
+    "phone": "(414) 805-6655"
   },
   {
     "id": 594,
@@ -6530,8 +5937,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "7080 N PORT WASHINGTON ROAD",
-    "phone": "(414) 351-4009",
-    "premium_savings": 20
+    "phone": "(414) 351-4009"
   },
   {
     "id": 595,
@@ -6541,8 +5947,7 @@
     "city": "FRANKLIN",
     "state": "WI",
     "address": "4225 W OAKWOOD PARK CT",
-    "phone": "(414) 435-0025",
-    "premium_savings": 0
+    "phone": "(414) 435-0025"
   },
   {
     "id": 596,
@@ -6552,8 +5957,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "7080 N PORT WASHINGTON RD, RHEUMATIC DISEASE CENTER",
-    "phone": "(414) 351-4009",
-    "premium_savings": 5
+    "phone": "(414) 351-4009"
   },
   {
     "id": 597,
@@ -6563,8 +5967,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9200 W WISCONSIN AVE",
-    "phone": "(414) 805-7390",
-    "premium_savings": 10
+    "phone": "(414) 805-7390"
   },
   {
     "id": 598,
@@ -6574,8 +5977,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "601 N BARKER RD, 110",
-    "phone": "(262) 785-0777",
-    "premium_savings": 15
+    "phone": "(262) 785-0777"
   },
   {
     "id": 599,
@@ -6585,8 +5987,7 @@
     "city": "FRANKLIN",
     "state": "WI",
     "address": "4225 W. OAKWOOD PARK CT",
-    "phone": "(414) 435-0025",
-    "premium_savings": 20
+    "phone": "(414) 435-0025"
   },
   {
     "id": 600,
@@ -6596,8 +5997,7 @@
     "city": "BROOKFIELD",
     "state": "WI",
     "address": "601 N BARKER RD, 110",
-    "phone": "(262) 785-0777",
-    "premium_savings": 0
+    "phone": "(262) 785-0777"
   },
   {
     "id": 601,
@@ -6607,8 +6007,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "7080 N PORT WASHINGTON RD",
-    "phone": "(414) 351-4009",
-    "premium_savings": 5
+    "phone": "(414) 351-4009"
   },
   {
     "id": 602,
@@ -6618,8 +6017,7 @@
     "city": "GLENDALE",
     "state": "WI",
     "address": "7080 N PORT WASHINGTON RD",
-    "phone": "(414) 351-4009",
-    "premium_savings": 10
+    "phone": "(414) 351-4009"
   },
   {
     "id": 603,
@@ -6629,8 +6027,7 @@
     "city": "HUDSON",
     "state": "WI",
     "address": "2651 HILLCREST DR STE 301",
-    "phone": "(651) 333-2190",
-    "premium_savings": 15
+    "phone": "(651) 333-2190"
   },
   {
     "id": 604,
@@ -6640,8 +6037,7 @@
     "city": "GREEN BAY",
     "state": "WI",
     "address": "3263 EATON RD",
-    "phone": "(920) 433-6700",
-    "premium_savings": 20
+    "phone": "(920) 433-6700"
   },
   {
     "id": 605,
@@ -6651,8 +6047,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "1265 W AMERICAN DR STE 200",
-    "phone": "(920) 722-7747",
-    "premium_savings": 0
+    "phone": "(920) 722-7747"
   },
   {
     "id": 606,
@@ -6662,8 +6057,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "1205 W AMERICAN DR",
-    "phone": "(920) 965-6382",
-    "premium_savings": 5
+    "phone": "(920) 965-6382"
   },
   {
     "id": 607,
@@ -6673,8 +6067,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "1506 S ONEIDA ST",
-    "phone": "(920) 730-2640",
-    "premium_savings": 10
+    "phone": "(920) 730-2640"
   },
   {
     "id": 608,
@@ -6684,8 +6077,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE, STE 106",
-    "phone": "(920) 236-1750",
-    "premium_savings": 15
+    "phone": "(920) 236-1750"
   },
   {
     "id": 609,
@@ -6695,8 +6087,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "515 S WASHBURN ST, SUITE 204",
-    "phone": "(920) 232-1130",
-    "premium_savings": 20
+    "phone": "(920) 232-1130"
   },
   {
     "id": 610,
@@ -6706,8 +6097,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 0
+    "phone": null
   },
   {
     "id": 611,
@@ -6717,8 +6107,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "515 S WASHBURN ST, SUITE 204",
-    "phone": "(920) 232-1130",
-    "premium_savings": 5
+    "phone": "(920) 232-1130"
   },
   {
     "id": 612,
@@ -6728,8 +6117,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2351 STATE ROAD 44",
-    "phone": "(920) 651-8855",
-    "premium_savings": 10
+    "phone": "(920) 651-8855"
   },
   {
     "id": 613,
@@ -6739,8 +6127,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 15
+    "phone": "(920) 303-8700"
   },
   {
     "id": 614,
@@ -6750,8 +6137,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE, SUITE 300",
-    "phone": "(920) 223-0490",
-    "premium_savings": 20
+    "phone": "(920) 223-0490"
   },
   {
     "id": 615,
@@ -6761,8 +6147,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE, SUITE315A",
-    "phone": "(920) 236-1630",
-    "premium_savings": 0
+    "phone": "(920) 236-1630"
   },
   {
     "id": 616,
@@ -6772,8 +6157,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 5
+    "phone": null
   },
   {
     "id": 617,
@@ -6783,8 +6167,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 10
+    "phone": "(920) 303-8700"
   },
   {
     "id": 618,
@@ -6794,8 +6177,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "2500 E CAPITOL DR",
-    "phone": "(920) 364-3600",
-    "premium_savings": 15
+    "phone": "(920) 364-3600"
   },
   {
     "id": 619,
@@ -6805,8 +6187,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "1305 W AMERICAN DR",
-    "phone": "(920) 725-9373",
-    "premium_savings": 20
+    "phone": "(920) 725-9373"
   },
   {
     "id": 620,
@@ -6816,8 +6197,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE, SUITE 203",
-    "phone": "(920) 223-2727",
-    "premium_savings": 0
+    "phone": "(920) 223-2727"
   },
   {
     "id": 621,
@@ -6827,8 +6207,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 5
+    "phone": "(920) 303-8700"
   },
   {
     "id": 622,
@@ -6838,8 +6217,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 10
+    "phone": null
   },
   {
     "id": 623,
@@ -6849,8 +6227,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 15
+    "phone": "(920) 303-8700"
   },
   {
     "id": 624,
@@ -6860,8 +6237,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE STE 125",
-    "phone": "(800) 322-2141",
-    "premium_savings": 20
+    "phone": "(800) 322-2141"
   },
   {
     "id": 625,
@@ -6871,8 +6247,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "1205 W AMERICAN DR",
-    "phone": "(920) 430-8113",
-    "premium_savings": 0
+    "phone": "(920) 430-8113"
   },
   {
     "id": 626,
@@ -6882,8 +6257,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 5
+    "phone": "(920) 303-8700"
   },
   {
     "id": 627,
@@ -6893,8 +6267,7 @@
     "city": "APPLETON",
     "state": "WI",
     "address": "5320 W MICHAELS DR",
-    "phone": "(920) 882-8200",
-    "premium_savings": 10
+    "phone": "(920) 882-8200"
   },
   {
     "id": 628,
@@ -6904,8 +6277,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE STE 125",
-    "phone": "(920) 430-8113",
-    "premium_savings": 15
+    "phone": "(920) 430-8113"
   },
   {
     "id": 629,
@@ -6915,8 +6287,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 20
+    "phone": "(920) 303-8700"
   },
   {
     "id": 630,
@@ -6926,8 +6297,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "1205 WEST AMERICAN DRIVE",
-    "phone": "(920) 430-8113",
-    "premium_savings": 0
+    "phone": "(920) 430-8113"
   },
   {
     "id": 631,
@@ -6937,8 +6307,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "2700 W 9TH AVE STE 125",
-    "phone": "(920) 430-8113",
-    "premium_savings": 5
+    "phone": "(920) 430-8113"
   },
   {
     "id": 632,
@@ -6948,8 +6317,7 @@
     "city": "NEENAH",
     "state": "WI",
     "address": "200 THEDA CLARK MEDICAL PLZ STE 240",
-    "phone": "(920) 729-2710",
-    "premium_savings": 10
+    "phone": "(920) 729-2710"
   },
   {
     "id": 633,
@@ -6959,8 +6327,7 @@
     "city": "OSHKOSH",
     "state": "WI",
     "address": "855 N WESTHAVEN DR",
-    "phone": "(920) 303-8700",
-    "premium_savings": 15
+    "phone": "(920) 303-8700"
   },
   {
     "id": 634,
@@ -6970,8 +6337,7 @@
     "city": "STURTEVANT",
     "state": "WI",
     "address": "10340 WASHINGTON AVE STE 100",
-    "phone": "(414) 908-6500",
-    "premium_savings": 20
+    "phone": "(414) 908-6500"
   },
   {
     "id": 635,
@@ -6981,8 +6347,7 @@
     "city": "MUKWONAGO",
     "state": "WI",
     "address": "240 MAPLE AVE STE 2220",
-    "phone": "(414) 454-0600",
-    "premium_savings": 0
+    "phone": "(414) 454-0600"
   },
   {
     "id": 636,
@@ -6992,8 +6357,7 @@
     "city": "RACINE",
     "state": "WI",
     "address": "3803 SPRING ST",
-    "phone": "(262) 687-3973",
-    "premium_savings": 5
+    "phone": "(262) 687-3973"
   },
   {
     "id": 637,
@@ -7003,8 +6367,7 @@
     "city": "MUKWONAGO",
     "state": "WI",
     "address": "240 MAPLE AVE",
-    "phone": "(262) 928-8800",
-    "premium_savings": 10
+    "phone": "(262) 928-8800"
   },
   {
     "id": 638,
@@ -7014,8 +6377,7 @@
     "city": "RACINE",
     "state": "WI",
     "address": "1151 WARWICK WAY",
-    "phone": "(262) 321-6300",
-    "premium_savings": 15
+    "phone": "(262) 321-6300"
   },
   {
     "id": 639,
@@ -7025,8 +6387,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "1300 S GREEN BAY RD STE 100",
-    "phone": "(262) 619-4191",
-    "premium_savings": 20
+    "phone": "(262) 619-4191"
   },
   {
     "id": 640,
@@ -7036,8 +6397,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "1300 S GREEN BAY RD, SUITE 100",
-    "phone": "(262) 619-4191",
-    "premium_savings": 0
+    "phone": "(262) 619-4191"
   },
   {
     "id": 641,
@@ -7047,8 +6407,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "3807 SPRING ST STE 310",
-    "phone": "(262) 687-8115",
-    "premium_savings": 5
+    "phone": "(262) 687-8115"
   },
   {
     "id": 642,
@@ -7058,8 +6417,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "3805A SPRING ST",
-    "phone": "(262) 687-8115",
-    "premium_savings": 10
+    "phone": "(262) 687-8115"
   },
   {
     "id": 643,
@@ -7069,8 +6427,7 @@
     "city": "KENOSHA",
     "state": "WI",
     "address": "10400 75TH ST",
-    "phone": "(262) 948-7000",
-    "premium_savings": 15
+    "phone": "(262) 948-7000"
   },
   {
     "id": 644,
@@ -7080,8 +6437,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "2801 W KINNICKINNIC RIVER PKWY STE 1080",
-    "phone": "(414) 908-6601",
-    "premium_savings": 20
+    "phone": "(414) 908-6601"
   },
   {
     "id": 645,
@@ -7091,8 +6447,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "8400 WASHINGTON AVE",
-    "phone": "(262) 884-8340",
-    "premium_savings": 0
+    "phone": "(262) 884-8340"
   },
   {
     "id": 646,
@@ -7102,8 +6457,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "8400 WASHINGTON AVE",
-    "phone": "(262) 884-8340",
-    "premium_savings": 5
+    "phone": "(262) 884-8340"
   },
   {
     "id": 647,
@@ -7113,8 +6467,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "3805B SPRING ST",
-    "phone": "(262) 687-8322",
-    "premium_savings": 10
+    "phone": "(262) 687-8322"
   },
   {
     "id": 648,
@@ -7124,8 +6477,7 @@
     "city": "MOUNT PLEASANT",
     "state": "WI",
     "address": "13250 WASHINGTON AVE",
-    "phone": "(888) 720-2012",
-    "premium_savings": 15
+    "phone": "(888) 720-2012"
   },
   {
     "id": 649,
@@ -7135,8 +6487,7 @@
     "city": "OAK CREEK",
     "state": "WI",
     "address": "200 E RYAN RD",
-    "phone": "(414) 570-3590",
-    "premium_savings": 20
+    "phone": "(414) 570-3590"
   },
   {
     "id": 650,
@@ -7146,8 +6497,7 @@
     "city": "OCONOMOWOC",
     "state": "WI",
     "address": "1185 CORPORATE CTR DR",
-    "phone": "(262) 785-0777",
-    "premium_savings": 0
+    "phone": "(262) 785-0777"
   },
   {
     "id": 651,
@@ -7157,8 +6507,7 @@
     "city": "PLYMOUTH",
     "state": "WI",
     "address": "2631 EASTERN AVE",
-    "phone": "(920) 476-6350",
-    "premium_savings": 5
+    "phone": "(920) 476-6350"
   },
   {
     "id": 652,
@@ -7168,8 +6517,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "1414 N TAYLOR DR",
-    "phone": "(920) 458-9800",
-    "premium_savings": 10
+    "phone": "(920) 458-9800"
   },
   {
     "id": 653,
@@ -7179,8 +6527,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "2414 KOHLER MEMORIAL DR",
-    "phone": "(920) 457-4461",
-    "premium_savings": 15
+    "phone": "(920) 457-4461"
   },
   {
     "id": 654,
@@ -7190,8 +6537,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "2414 KOHLER MEMORIAL DR",
-    "phone": "(920) 457-4461",
-    "premium_savings": 20
+    "phone": "(920) 457-4461"
   },
   {
     "id": 655,
@@ -7201,8 +6547,7 @@
     "city": "MADISON",
     "state": "WI",
     "address": "451 JUNCTION RD",
-    "phone": "(608) 263-5010",
-    "premium_savings": 0
+    "phone": "(608) 263-5010"
   },
   {
     "id": 656,
@@ -7212,8 +6557,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "2414 KOHLER MEMORIAL DR",
-    "phone": "(920) 457-4461",
-    "premium_savings": 5
+    "phone": "(920) 457-4461"
   },
   {
     "id": 657,
@@ -7223,8 +6567,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "1222 N 23RD ST",
-    "phone": "(920) 457-6800",
-    "premium_savings": 10
+    "phone": "(920) 457-6800"
   },
   {
     "id": 658,
@@ -7234,8 +6577,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "1621 N TAYLOR DR, SUITE 100",
-    "phone": "(920) 458-7433",
-    "premium_savings": 15
+    "phone": "(920) 458-7433"
   },
   {
     "id": 659,
@@ -7245,8 +6587,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "1222 N 23RD ST",
-    "phone": "(920) 457-6800",
-    "premium_savings": 20
+    "phone": "(920) 457-6800"
   },
   {
     "id": 660,
@@ -7256,8 +6597,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "2414 KOHLER MEMORIAL DR",
-    "phone": "(920) 457-4461",
-    "premium_savings": 0
+    "phone": "(920) 457-4461"
   },
   {
     "id": 661,
@@ -7267,8 +6607,7 @@
     "city": "SHEBOYGAN",
     "state": "WI",
     "address": "2414 KOHLER MEMORIAL DR",
-    "phone": "(920) 457-4461",
-    "premium_savings": 5
+    "phone": "(920) 457-4461"
   },
   {
     "id": 662,
@@ -7278,8 +6617,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "225000 HUMMINGBIRD RD STE 300",
-    "phone": "(715) 359-7592",
-    "premium_savings": 10
+    "phone": "(715) 359-7592"
   },
   {
     "id": 663,
@@ -7289,8 +6627,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "2727 PLAZA DR",
-    "phone": "(715) 847-3000",
-    "premium_savings": 15
+    "phone": "(715) 847-3000"
   },
   {
     "id": 664,
@@ -7300,8 +6637,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 20
+    "phone": "(715) 847-2558"
   },
   {
     "id": 665,
@@ -7311,8 +6647,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "2727 PLAZA DR",
-    "phone": "(715) 847-3000",
-    "premium_savings": 0
+    "phone": "(715) 847-3000"
   },
   {
     "id": 666,
@@ -7322,8 +6657,7 @@
     "city": "WESTON",
     "state": "WI",
     "address": "3400 MINISTRY PKWY",
-    "phone": "(715) 393-1220",
-    "premium_savings": 5
+    "phone": "(715) 393-1220"
   },
   {
     "id": 667,
@@ -7333,8 +6667,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "500 WIND RIDGE DR",
-    "phone": "(715) 847-2611",
-    "premium_savings": 10
+    "phone": "(715) 847-2611"
   },
   {
     "id": 668,
@@ -7344,8 +6677,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "425 PINE RIDGE BLVD STE 305A",
-    "phone": "(715) 847-2626",
-    "premium_savings": 15
+    "phone": "(715) 847-2626"
   },
   {
     "id": 669,
@@ -7355,8 +6687,7 @@
     "city": "RHINELANDER",
     "state": "WI",
     "address": "550 E TIMBER DR",
-    "phone": "(715) 369-4500",
-    "premium_savings": 20
+    "phone": "(715) 369-4500"
   },
   {
     "id": 670,
@@ -7366,8 +6697,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "510 N 17TH AVE STE C",
-    "phone": "(715) 849-5333",
-    "premium_savings": 0
+    "phone": "(715) 849-5333"
   },
   {
     "id": 671,
@@ -7377,8 +6707,7 @@
     "city": "WESTON",
     "state": "WI",
     "address": "3501 CRANBERRY BLVD",
-    "phone": "(715) 393-1000",
-    "premium_savings": 5
+    "phone": "(715) 393-1000"
   },
   {
     "id": 672,
@@ -7388,8 +6717,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 10
+    "phone": "(715) 847-2558"
   },
   {
     "id": 673,
@@ -7399,8 +6727,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 15
+    "phone": "(715) 847-2558"
   },
   {
     "id": 674,
@@ -7410,8 +6737,7 @@
     "city": "WESTON",
     "state": "WI",
     "address": "3501 CRANBERRY BLVD",
-    "phone": "(715) 393-1000",
-    "premium_savings": 20
+    "phone": "(715) 393-1000"
   },
   {
     "id": 675,
@@ -7421,8 +6747,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 0
+    "phone": "(715) 847-2558"
   },
   {
     "id": 676,
@@ -7432,8 +6757,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 5
+    "phone": "(715) 847-2558"
   },
   {
     "id": 677,
@@ -7443,8 +6767,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "411 WESTWOOD DR",
-    "phone": "(715) 847-2558",
-    "premium_savings": 10
+    "phone": "(715) 847-2558"
   },
   {
     "id": 678,
@@ -7454,8 +6777,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "333 PINE RIDGE BLVD",
-    "phone": "(715) 847-2866",
-    "premium_savings": 15
+    "phone": "(715) 847-2866"
   },
   {
     "id": 679,
@@ -7465,8 +6787,7 @@
     "city": "WESTON",
     "state": "WI",
     "address": "3501 CRANBERRY BLVD",
-    "phone": "(715) 393-1000",
-    "premium_savings": 20
+    "phone": "(715) 393-1000"
   },
   {
     "id": 680,
@@ -7476,8 +6797,7 @@
     "city": "MILWAUKEE",
     "state": "WI",
     "address": "9000 W WISCONSIN AVE",
-    "phone": "(414) 266-3464",
-    "premium_savings": 0
+    "phone": "(414) 266-3464"
   },
   {
     "id": 681,
@@ -7487,8 +6807,7 @@
     "city": "FORT ATKINSON",
     "state": "WI",
     "address": "650 MCMILLEN ST",
-    "phone": "(920) 563-8900",
-    "premium_savings": 5
+    "phone": "(920) 563-8900"
   },
   {
     "id": 682,
@@ -7498,8 +6817,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "2720 PLAZA DR, SUITE # 2100",
-    "phone": "(715) 847-2475",
-    "premium_savings": 10
+    "phone": "(715) 847-2475"
   },
   {
     "id": 683,
@@ -7509,8 +6827,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "225000 HUMMINGBIRD RD STE 100",
-    "phone": "(715) 359-6442",
-    "premium_savings": 15
+    "phone": "(715) 359-6442"
   },
   {
     "id": 684,
@@ -7520,8 +6837,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "225000 HUMMINGBIRD RD STE 100",
-    "phone": "(715) 359-6442",
-    "premium_savings": 20
+    "phone": "(715) 359-6442"
   },
   {
     "id": 685,
@@ -7531,8 +6847,7 @@
     "city": null,
     "state": null,
     "address": null,
-    "phone": null,
-    "premium_savings": 0
+    "phone": null
   },
   {
     "id": 686,
@@ -7542,8 +6857,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "225000 HUMMINGBIRD RD STE 100",
-    "phone": "(800) 445-6442",
-    "premium_savings": 5
+    "phone": "(800) 445-6442"
   },
   {
     "id": 687,
@@ -7553,8 +6867,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "3901 STEWART AVE",
-    "phone": "(715) 907-0900",
-    "premium_savings": 10
+    "phone": "(715) 907-0900"
   },
   {
     "id": 688,
@@ -7564,8 +6877,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "225000 HUMMINGBIRD RD STE 100",
-    "phone": "(715) 359-6442",
-    "premium_savings": 15
+    "phone": "(715) 359-6442"
   },
   {
     "id": 689,
@@ -7575,8 +6887,7 @@
     "city": "WESTON",
     "state": "WI",
     "address": "3501 CRANBERRY BLVD",
-    "phone": "(715) 387-5202",
-    "premium_savings": 20
+    "phone": "(715) 387-5202"
   },
   {
     "id": 690,
@@ -7586,8 +6897,7 @@
     "city": "RHINELANDER",
     "state": "WI",
     "address": "444 E TIMBER DR",
-    "phone": "(715) 369-2300",
-    "premium_savings": 0
+    "phone": "(715) 369-2300"
   },
   {
     "id": 691,
@@ -7597,8 +6907,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "3901 STEWART AVE",
-    "phone": "(715) 907-0900",
-    "premium_savings": 5
+    "phone": "(715) 907-0900"
   },
   {
     "id": 692,
@@ -7608,8 +6917,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "225000 HUMMINGBIRD RD STE 100",
-    "phone": "(715) 359-6442",
-    "premium_savings": 10
+    "phone": "(715) 359-6442"
   },
   {
     "id": 693,
@@ -7619,8 +6927,7 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "2727 PLAZA DR",
-    "phone": "(715) 847-3563",
-    "premium_savings": 15
+    "phone": "(715) 847-3563"
   },
   {
     "id": 694,
@@ -7630,7 +6937,6 @@
     "city": "WAUSAU",
     "state": "WI",
     "address": "2720 PLAZA DR STE 1400A",
-    "phone": "(715) 847-0426",
-    "premium_savings": 20
+    "phone": "(715) 847-0426"
   }
 ]
