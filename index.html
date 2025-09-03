@@ -73,9 +73,9 @@
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
       <div class="relative z-10 lg:w-1/2">
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
-          <span class="text-saveWine">Earn rewards</span>&nbsp;<span class="text-blackblock">for choosing trusted doctors.</span>
+          <span class="text-saveWine">Patients earn rewards</span>&nbsp;<span class="text-blackblock">when you refer to trusted doctors.</span>
         </h1>
-        <p class="mt-4 text-lg text-slate-600 max-w-xl">Save money on your health plan premium when you receive care from preferred, high-quality doctors in your area.</p>
+        <p class="mt-4 text-lg text-slate-600 max-w-xl">Patients save money on health plan premiums when they receive care from preferred, high-quality doctors in your area.</p>
 
         <!-- Search Bar -->
         <form action="results.html" method="get" class="mt-8 bg-white/95 border border-slate-200 rounded-2xl shadow-sm p-3 md:p-4 flex flex-col md:flex-row gap-3">
@@ -107,22 +107,46 @@
     </div>
   </section>
 
+  <!-- Why SaveWell Carousel -->
+  <section aria-labelledby="why-savewell" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="why-savewell" class="text-2xl sm:text-3xl font-bold">Why Refer Patients to SaveWell Providers?</h2>
+      <!-- instead of a few bullets below, revert back to buckets with text inside them to support the arguments -->
+      <div class="mt-4 text-lg text-slate-600 max-w-3xl">SaveWell providers deliver excellent care and help patients save on Medigap premiums.</div>
+      <!-- include three horizontal buckets with text inside them to support the arguments -->
+      <!-- format the icons such that they are purple #3d2e4d with a white background -->
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="rounded-2xl border bg-slate-50 p-5 text-center">
+          <div class="w-12 h-12 bg-[#3d2e4d] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-star"></i></div>
+          <strong>Top-rated doctors</strong>
+          <p>SaveWell providers rank highly for value-based care cost and quality metrics.</p>
+        </div>
+        <div class="rounded-2xl border bg-slate-50 p-5 text-center">
+          <div class="w-12 h-12 bg-[#3d2e4d] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-dollar-sign"></i></div>
+          <strong>Patient and ACO savings</strong>
+          <p>Patients and ACOs may receive savings for care from SaveWell providers.</p>
+        </div>
+        <div class="rounded-2xl border bg-slate-50 p-5 text-center">
+          <div class="w-12 h-12 bg-[#3d2e4d] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-user-md"></i></div>
+          <strong>Choice & flexibility</strong>
+          <p>Patients retain the freedom to see any Medicare-accepting provider.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Featured Providers Carousel -->
-  <section aria-labelledby="featured" class="py-14 bg-white">
+  <section aria-labelledby="featured" class="py-14 bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between gap-6">
         <div>
-          <h2 id="featured" class="text-2xl sm:text-3xl font-bold">Meet the doctors patients trust</h2>
-          <p class="text-slate-600 mt-1">Unlock savings each time you receive care from a SaveWell provider.</p>
+          <h2 id="featured" class="text-2xl sm:text-3xl font-bold">Featured providers</h2>
+          <p class="text-slate-600 mt-1">Help patients unlock savings each time they receive care from a SaveWell provider.</p>
         </div>
         <div class="flex items-center gap-2">
           <button class="p-2 rounded-lg border hover:bg-slate-50" id="prevSlide" aria-label="Previous"><span aria-hidden>‹</span></button>
           <button class="p-2 rounded-lg border hover:bg-slate-50" id="nextSlide" aria-label="Next"><span aria-hidden>›</span></button>
         </div>
-      </div>
-
-      <!-- Script to update navbar for 'belong' subdomain -->
-  <!-- Removed script that changes text for 'belong' subdomain -->
       </div>
 
       <div class="mt-6 overflow-hidden">
@@ -134,67 +158,68 @@
   </section>
 
   <!-- Specialty list -->
-  <section aria-labelledby="specialties" class="py-16 bg-slate-50">
+  <section aria-labelledby="specialties" class="py-16 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 id="specialties" class="text-2xl sm:text-3xl font-bold">Earn rewards with these specialties</h2>
+      <h2 id="specialties" class="text-2xl sm:text-3xl font-bold">Consider SaveWell for these specialties</h2>
+      <!-- make each of these buckets with a slate-50 background and icons that have a teal #50c1b2 background -->
       <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         <a class="group" href="results.html?specialty=Ambulatory%20Surgical%20Center">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-hospital"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-hospital"></i></div>
             Ambulatory Surgical Center
           </div>
         </a>
         <a class="group" href="results.html?specialty=Cardiology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-heart"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-heart"></i></div>
             Cardiology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Dermatology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-sun"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-sun"></i></div>
             Dermatology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Endocrinology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-vial"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-vial"></i></div>
             Endocrinology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Gastroenterology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-utensils"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-utensils"></i></div>
             Gastroenterology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Hematology%20%26%20Oncology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-droplet"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-droplet"></i></div>
             Hematology &amp; Oncology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Neurology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-brain"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-brain"></i></div>
             Neurology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Obstetrics%20%26%20Gynecology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-person-pregnant"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-person-pregnant"></i></div>
             Obstetrics &amp; Gynecology
           </div>
         </a>
         <a class="group" href="results.html?specialty=Orthopedic%20Surgery">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-bone"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-bone"></i></div>
             Orthopedic Surgery
           </div>
         </a>
         <a class="group" href="results.html?specialty=Rheumatology">
-          <div class="rounded-2xl border bg-white p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center text-gray-600 text-xl"><i class="fa-solid fa-hands"></i></div>
+          <div class="rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-hands"></i></div>
             Rheumatology
           </div>
         </a>
