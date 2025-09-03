@@ -137,6 +137,20 @@
             if (mobileProviderLink) mobileProviderLink.textContent = 'Join the Network';
             var mobileBrokerLink = Array.from(document.querySelectorAll('#mobileMenu a')).find(a => a.textContent.trim() === 'For Brokers');
             if (mobileBrokerLink) mobileBrokerLink.style.display = 'none';
+
+            // Hero text changes
+            var heroTitle = document.querySelector('h1 span.text-saveWine');
+            if (heroTitle) heroTitle.textContent = 'Patients earn rewards';
+            var heroSubtitle = document.querySelector('h1 + p');
+            if (heroSubtitle && heroSubtitle.textContent.includes('for choosing trusted doctors')) {
+              heroSubtitle.textContent = heroSubtitle.textContent.replace('for choosing trusted doctors.', 'for referrals to trusted doctors.');
+            }
+
+            // Footer text changes
+            var footerText = Array.from(document.querySelectorAll('footer p.text-sm')).find(p => p.textContent.includes('Earn rewards for choosing trusted doctors'));
+            if (footerText) {
+              footerText.textContent = 'Patients earn rewards for referrals to trusted doctors';
+            }
           }
         })();
       </script>
