@@ -120,11 +120,7 @@
           <button class="p-2 rounded-lg border hover:bg-slate-50" id="nextSlide" aria-label="Next"><span aria-hidden>›</span></button>
         </div>
       </div>
-
-      <!-- Script to update navbar for 'belong' subdomain -->
-  <!-- Removed script that changes text for 'belong' subdomain -->
-      </div>
-
+      <div>
       <div class="mt-6 overflow-hidden">
         <ul id="carousel" class="flex transition-transform duration-500 will-change-transform">
           <!-- Slides injected by JS -->
@@ -286,16 +282,6 @@
     // Footer year
     const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 
-    // Check subdomain for second logo
-    const subdomain = window.location.hostname.split('.')[0];
-    if (subdomain.includes('belong')) {
-      const logoContainer = document.querySelector('header a');
-      const secondLogo = document.createElement('img');
-      secondLogo.src = 'assets/belong-health-logo-trim2.png';
-      secondLogo.alt = 'Second Logo';
-      secondLogo.className = 'h-8 w-auto';
-      logoContainer.appendChild(secondLogo);
-    }
   </script>
 </body>
 </html>
