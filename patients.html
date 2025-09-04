@@ -199,8 +199,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-50 border-t border-slate-200" id="site-footer">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <footer class="relative bg-slate-50 border-t border-slate-200" id="site-footer">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
@@ -209,9 +209,9 @@
         <div>
           <h3 class="font-semibold mb-3">Learn</h3>
           <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="providers.html">For Providers</a></li>
+            <li><a class="hover:text-saveWine" href="providers.html">Join the Network</a></li>
             <!-- <li><a class="hover:text-saveWine" href="payers.html">For Payers</a></li> -->
-            <li><a class="hover:text-saveWine" href="brokers.html">For Brokers</a></li>
+            <!-- <li><a class="hover:text-saveWine" href="brokers.html">For Brokers</a></li> -->
           </ul>
         </div>
         <div>
@@ -231,8 +231,12 @@
         </div>
       </div>
       <p class="text-xs text-slate-500 mt-8">© <span id="year"></span> SaveWell. All rights reserved.</p>
+      <div class="w-full flex justify-center mt-8">
+  <img src="assets/medicare-people.png" alt="Medicare People" class="w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none mb-0" style="display:block; margin-top:-4rem;" />
+      </div>
     </div>
   </footer>
+
 
   <!-- Scripts -->
   <script>
