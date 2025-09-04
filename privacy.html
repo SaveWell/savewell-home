@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SaveWell for Brokers</title>
+  <title>Privacy Policy - SaveWell</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{colors:{saveTeal:'#0b7a7c',saveWine:'#8a0052',saveTealDark:'#065e60'},fontFamily:{sans:["Inter","ui-sans-serif","system-ui"]}}}}</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png" />
 </head>
 <body class="font-sans text-slate-800">
+  <!-- Navbar -->
   <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
       <a href="index.html" class="flex items-center gap-3"><img src="assets/savewell-logo.png" class="h-8" alt="SaveWell"/></a>
       <div class="flex items-center gap-6">
         <nav class="hidden md:flex items-center gap-6 text-[15px]">
           <a class="hover:text-saveWine" href="providers.html">Join the Network</a>
-          <!-- <a class="hover:text-saveWine" href="payers.html">For Payers</a> -->
-          <!-- <a class="text-saveWine font-semibold" href="brokers.html">For Brokers</a> -->
         </nav>
         <div class="flex items-center gap-2">
           <a href="login.html" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</a>
@@ -30,9 +29,7 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
       <div class="px-4 py-3 space-y-2">
-  <a class="block py-2" href="providers.html">Join the Network</a>
-        <!-- <a class="block py-2" href="payers.html">For Payers</a> -->
-  <!-- <a class="block py-2 text-saveWine font-semibold" href="brokers.html">For Brokers</a> -->
+        <a class="block py-2" href="providers.html">Join the Network</a>
       </div>
     </div>
   </header>
@@ -40,14 +37,11 @@
   <main>
     <section class="bg-gradient-to-b from-white to-slate-50 border-b">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-3xl sm:text-4xl font-extrabold">Delight members, differentiate your MedSupp plans</h1>
-        <p class="mt-3 text-lg text-slate-600 max-w-3xl">Offer clients a simple way to save: members receive $5 premium savings for visiting SaveWell providers, with zero disruption to PCP relationships.</p>
-        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">Member‑friendly</h3><p class="text-sm text-slate-600 mt-1">Searchable network with clear savings—no referrals required.</p></div>
-          <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">Retention & growth</h3><p class="text-sm text-slate-600 mt-1">Savings increase plan affinity and reduce churn.</p></div>
-          <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">Easy to explain</h3><p class="text-sm text-slate-600 mt-1">Straightforward value proposition for sales conversations.</p></div>
-        </div>
-        <a href="mailto:hello@savewellnow.com?subject=Broker%20interest" class="inline-flex mt-8 rounded-xl bg-saveTeal px-5 py-3 text-white font-semibold hover:bg-saveTealDark">Get materials</a>
+        <h1 class="text-3xl sm:text-4xl font-extrabold">Privacy Policy</h1>
+        <p class="mt-3 text-lg text-slate-600 max-w-3xl">We respect your privacy and are committed to protecting your personal information. This policy explains what data we collect when you use SaveWell, how we use it, and your rights.</p>
+        <p class="mt-3 text-lg text-slate-600 max-w-3xl">We collect basic contact details when you create an account or reach out to us. We use this information solely to provide our services and communicate with you. We do not sell your personal data.</p>
+        <p class="mt-3 text-lg text-slate-600 max-w-3xl">Cookies may be used to remember your preferences and analyze site traffic. You can adjust your browser settings to refuse cookies, but some features may not function properly.</p>
+        <p class="mt-3 text-lg text-slate-600 max-w-3xl">If you have any questions about this policy or would like to request deletion of your data, please contact us at hello@savewellnow.com.</p>
       </div>
     </section>
   </main>
@@ -63,15 +57,13 @@
           <h3 class="font-semibold mb-3">Learn</h3>
           <ul class="space-y-2 text-sm">
             <li><a class="hover:text-saveWine" href="providers.html">Join the Network</a></li>
-            <!-- <li><a class="hover:text-saveWine" href="payers.html">For Payers</a></li> -->
-            <!-- <li><a class="hover:text-saveWine" href="brokers.html">For Brokers</a></li> -->
           </ul>
         </div>
         <div>
           <h3 class="font-semibold mb-3">Company</h3>
           <ul class="space-y-2 text-sm">
             <li><a class="hover:text-saveWine" href="about.html">About</a></li>
-            <li><a class="hover:text-saveWine" href="terms.html" id="footer-terms">Terms & Conditions</a></li>
+            <li><a class="hover:text-saveWine" href="terms.html" id="footer-terms">Terms &amp; Conditions</a></li>
             <li><a class="hover:text-saveWine" href="privacy.html" id="footer-privacy">Privacy</a></li>
           </ul>
         </div>
@@ -86,8 +78,7 @@
       <p class="text-xs text-slate-500 mt-8">© <span id="year"></span> SaveWell. All rights reserved.</p>
     </div>
   </footer>
-  <!-- Script to update navbar for 'belong' subdomain -->
-  <!-- Removed script that changes text for 'belong' subdomain -->
+
   <script>
     const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
     const menuBtn = document.getElementById('menuBtn');
