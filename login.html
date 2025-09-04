@@ -33,8 +33,9 @@
   <!-- Navbar -->
   <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <a href="index.html" class="flex items-center gap-3">
+      <a href="index.html" class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3">
         <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
+        <img src="assets/belong-health-logo-trim2.png" alt="Belong Health" class="h-5 sm:h-6 w-auto" />
       </a>
       <div class="flex items-center gap-6">
         <nav class="hidden md:flex items-center gap-6 text-[15px]">
@@ -60,8 +61,6 @@
     </div>
   </header>
   
-    <!-- Script to update navbar for 'belong' subdomain -->
-  <!-- Removed script that changes text for 'belong' subdomain -->
 
   <main class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-saveTeal/10 px-4">
     <div class="w-full max-w-sm">
@@ -139,16 +138,6 @@
     // Footer year
     const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 
-    // Check subdomain for second logo
-    const subdomain = window.location.hostname.split('.')[0];
-    if (subdomain.includes('belong')) {
-      const logoContainer = document.querySelector('header a');
-      const secondLogo = document.createElement('img');
-      secondLogo.src = 'assets/belong-health-logo-trim2.png';
-      secondLogo.alt = 'Second Logo';
-      secondLogo.className = 'h-8 w-auto';
-      logoContainer.appendChild(secondLogo);
-    }
 
     // Login form handler
     const loginForm = document.getElementById('loginForm');

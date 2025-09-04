@@ -12,7 +12,10 @@
 <body class="font-sans text-slate-800">
   <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <a href="index.html" class="flex items-center gap-3"><img src="assets/savewell-logo.png" class="h-8" alt="SaveWell"/></a>
+      <a href="index.html" class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3">
+        <img src="assets/savewell-logo.png" class="h-8 w-auto" alt="SaveWell"/>
+        <img src="assets/belong-health-logo-trim2.png" class="h-5 sm:h-6 w-auto" alt="Belong Health"/>
+      </a>
       <div class="flex items-center gap-6">
         <nav class="hidden md:flex items-center gap-6 text-[15px]">
           <a class="hover:text-saveWine" href="providers.html">Join the Network</a>
@@ -90,22 +93,11 @@
     </div>
   </footer>
 
-  <!-- Script to update navbar for 'belong' subdomain -->
-  <!-- Removed script that changes text for 'belong' subdomain -->
   <script>
     const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-    const subdomain = window.location.hostname.split('.')[0];
-    if (subdomain.includes('belong')) {
-      const logoContainer = document.querySelector('header a');
-      const secondLogo = document.createElement('img');
-      secondLogo.src = 'assets/belong-health-logo-trim2.png';
-      secondLogo.alt = 'Second Logo';
-      secondLogo.className = 'h-8 w-auto';
-      logoContainer.appendChild(secondLogo);
-    }
   </script>
 </body>
 </html>
