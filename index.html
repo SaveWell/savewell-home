@@ -274,41 +274,45 @@
     if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
     // Featured doctors carousel
-    const featured = [
-      { name: 'Dr. Aisha Chen', specialty: 'Cardiology', city: 'Oakland, CA', headshot: 'https://placehold.co/400x400?text=AC', savings: 5 },
-      { name: 'Dr. Mateo Ruiz', specialty: 'Rheumatology', city: 'Austin, TX', headshot: 'https://placehold.co/400x400?text=MR', savings: 5 },
-      { name: 'Dr. Priya Patel', specialty: 'Imaging', city: 'Chicago, IL', headshot: 'https://placehold.co/400x400?text=PP', savings: 5 },
-      { name: 'Dr. Daniel Lee', specialty: 'Physical Therapy', city: 'Seattle, WA', headshot: 'https://placehold.co/400x400?text=DL', savings: 5 },
-      { name: 'Dr. Grace Kim', specialty: 'Orthopedics', city: 'New York, NY', headshot: 'https://placehold.co/400x400?text=GK', savings: 5 },
-    ];
+    const providerIds = [175, 5, 423, 547, 48, 443, 65];
+
     const carousel = document.getElementById('carousel');
     if (carousel) {
-      featured.forEach((d, i) => {
-        const li = document.createElement('li');
-        li.className = 'shrink-0 w-72 sm:w-80 mr-4 last:mr-0';
-        li.innerHTML = `
+      fetch('data/providers.json')
+        .then(res => res.json())
+        .then(data => {
+          const featured = providerIds
+            .map(id => data.find(p => p.id === id))
+            .filter(Boolean);
+
+          featured.forEach(d => {
+            const li = document.createElement('li');
+            li.className = 'shrink-0 w-72 sm:w-80 mr-4 last:mr-0';
+            const initials = d.name.split(/\s+/).map(n => n[0]).join('').substring(0, 2);
+            const headshot = `https://placehold.co/400x400?text=${encodeURIComponent(initials)}`;
+            li.innerHTML = `
           <article class="relative h-full rounded-2xl border bg-white shadow-sm overflow-hidden">
-            <img src="${d.headshot}" alt="${d.name}" class="h-40 w-full object-cover"/>
+            <img src="${headshot}" alt="${d.name}" class="h-40 w-full object-cover"/>
             <div class="p-5">
               <h3 class="font-semibold text-lg">${d.name}</h3>
               <p class="text-sm text-slate-600">${d.specialty}</p>
-              <p class="text-sm text-slate-500">${d.city}</p>
+              <p class="text-sm text-slate-500">${d.city}, ${d.state}</p>
             </div>
-            <!-- <div class="absolute top-3 right-3 bg-saveWine text-white text-xs font-semibold px-3 py-1 rounded-full">$${d.savings} premium savings</div> -->
           </article>`;
-        carousel.appendChild(li);
-      });
+            carousel.appendChild(li);
+          });
 
-      let index = 0;
-      const update = () => {
-        const width = carousel.children[0]?.getBoundingClientRect().width || 300;
-        carousel.style.transform = `translateX(${-index * (width + 16)}px)`; // 16px = mr-4 gap
-      };
-      document.getElementById('nextSlide').addEventListener('click', () => { index = (index + 1) % featured.length; update(); });
-      document.getElementById('prevSlide').addEventListener('click', () => { index = (index - 1 + featured.length) % featured.length; update(); });
-      setInterval(() => { index = (index + 1) % featured.length; update(); }, 6000);
-      window.addEventListener('resize', update);
-      update();
+          let index = 0;
+          const update = () => {
+            const width = carousel.children[0]?.getBoundingClientRect().width || 300;
+            carousel.style.transform = `translateX(${-index * (width + 16)}px)`; // 16px = mr-4 gap
+          };
+          document.getElementById('nextSlide').addEventListener('click', () => { index = (index + 1) % featured.length; update(); });
+          document.getElementById('prevSlide').addEventListener('click', () => { index = (index - 1 + featured.length) % featured.length; update(); });
+          setInterval(() => { index = (index + 1) % featured.length; update(); }, 6000);
+          window.addEventListener('resize', update);
+          update();
+        });
     }
 
     // Footer year
