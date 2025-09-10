@@ -60,7 +60,7 @@
     <section class="py-6">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mt-0">
-          <iframe class="airtable-embed" src="https://airtable.com/embed/appr2aG77pczfXm9d/pagcO2l9Zhqlp6pxl/form" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 0px solid #ccc; margin: 0; padding: 0;"></iframe>
+          <iframe class="airtable-embed" src="https://airtable.com/embed/appr2aG77pczfXm9d/pagcO2l9Zhqlp6pxl/form" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 1px solid #ccc; margin: 0; padding: 0;"></iframe>
         </div>
       </div>
     </section>
@@ -130,10 +130,11 @@
         try {
           const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
           const height = iframeDoc.body.scrollHeight;
-          iframe.style.height = height + 'px';
+          iframe.style.height = (height - 200) + 'px'; // Reduce by 1 inch (96px)
+          
         } catch (e) {
           // Fallback for cross-origin
-          iframe.style.height = '1000px';
+          iframe.style.height = '904px'; // 1000 - 96
         }
       });
     }
