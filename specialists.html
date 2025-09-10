@@ -130,11 +130,11 @@
         try {
           const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
           const height = iframeDoc.body.scrollHeight;
-          iframe.style.height = (height - 180) + 'px'; // Reduce by 1 inch (96px)
+          iframe.style.height = (height - 160) + 'px'; // Reduce by 1 inch (96px)
           iframe.style.overflow = 'hidden'; // Disable scrolling
         } catch (e) {
           // Fallback for cross-origin
-          iframe.style.height = '820px'; // 1000 - 96
+          iframe.style.height = '840px'; // 1000 - 96
           iframe.style.overflow = 'hidden'; // Disable scrolling
         }
       });
