@@ -34,7 +34,7 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
       <div class="px-4 py-3 space-y-2">
-  <a class="block py-2" href="specialists.html">Join the Network</a>
+  <a class="block py-2" href="specialists.html">Join the SaveWell Network</a>
         <!-- <a class="block py-2 text-saveWine font-semibold" href="payers.html">For Payers</a> -->
   <!-- <a class="block py-2" href="brokers.html">For Brokers</a> -->
   <a class="block py-2" href="acos.html">For ACOs</a>
@@ -52,7 +52,19 @@
           <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">Member savings</h3><p class="text-sm text-slate-600 mt-1">$5 premium reduction per visit to SaveWell providers.</p></div>
           <div class="rounded-2xl border bg-white p-5"><h3 class="font-semibold">No disruption</h3><p class="text-sm text-slate-600 mt-1">Members keep existing PCP relationships; no referrals required.</p></div>
         </div>
-        <a href="mailto:hello@savewellnow.com?subject=Payer%20partnership" class="inline-flex mt-8 rounded-xl bg-saveTeal px-5 py-3 text-white font-semibold hover:bg-saveTealDark">Talk to our team</a>
+        <!-- <a href="mailto:hello@savewellnow.com?subject=Payer%20partnership" class="inline-flex mt-8 rounded-xl bg-saveTeal px-5 py-3 text-white font-semibold hover:bg-saveTealDark">Talk to our team</a> -->
+      </div>
+    </section>
+
+    <!-- add a new section here. within this section, embed a form in an iframe -->
+     
+
+
+    <section class="py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mt-6">
+          <iframe class="airtable-embed" src="https://airtable.com/embed/appr2aG77pczfXm9d/pagcO2l9Zhqlp6pxl/form" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
       </div>
     </section>
 
@@ -113,6 +125,21 @@
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Adjust iframe height to content
+    const iframe = document.querySelector('.airtable-embed');
+    if (iframe) {
+      iframe.addEventListener('load', function() {
+        try {
+          const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+          const height = iframeDoc.body.scrollHeight;
+          iframe.style.height = height + 'px';
+        } catch (e) {
+          // Fallback for cross-origin
+          iframe.style.height = '1000px';
+        }
+      });
+    }
   </script>
 </body>
 </html>
