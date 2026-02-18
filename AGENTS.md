@@ -10,7 +10,7 @@ No build step is required because Tailwind loads via CDN. For local preview run 
 Author HTML with semantic tags, 2-space indentation, and lowercase filenames using hyphens when multiple words are needed (e.g., `preferred-specialists.html`). Organize Tailwind utility classes from layout → spacing → color to match existing pages. Put any custom CSS in a scoped `<style>` block near the head and keep inline scripts minimal and vanilla JS.
 
 ## Testing & QA
-There is no automated test suite. After changes, load the page in both desktop and mobile widths, click the homepage carousel, and verify the `results.html` specialty/ZIP filter still works with the updated data. 
+There is no automated test suite. After changes, load the page in both desktop and mobile widths, click the homepage carousel, and verify the `search.html` specialty/ZIP filter still works with the updated data.
 
 ## Commit & Pull Request Guidelines
 Recent history uses short descriptive messages; continue that pattern but prefer present-tense imperatives such as `Update results filters`. Group related asset and content updates into one commit. PRs should include: bullet summary of changes, affected pages, screenshots or screen recordings for visual tweaks, and links to any tracking tickets. Note manual test steps in the description so reviewers can replay them quickly.
