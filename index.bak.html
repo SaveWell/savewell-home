@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SaveWell - Earn Rewards for Choosing Trusted Doctors</title>
+  <meta name="description" content="Patient‑friendly site to find high‑quality, preferred specialists in the SaveWell Network and save on Medigap premiums." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saveTeal: '#0b7a7c',
+            saveWine: '#8a0052',
+            saveWineDark: '#6c0041',
+            saveTealDark: '#065e60',
+          },
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="assets/favicon.png" />
+  <style>
+    .hero-bg { 
+      background-image: radial-gradient(1000px 500px at 10% -20%, rgba(11,122,124,0.25), transparent),
+                        radial-gradient(800px 400px at 90% -30%, rgba(138,0,82,0.18), transparent);
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3">
+    <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
+      </a>
+      <div class="flex items-center gap-6">
+        <nav class="hidden md:flex items-center gap-6 text-[15px]">
+          <a class="hover:text-saveWine" href="how-it-works.html">How it Works</a>
+          <a class="hover:text-saveWine" href="search.html">Search Providers</a>
+          <a class="hover:text-saveWine" href="contact.html">Contact Us</a>
+                            </nav>
+        <div class="flex items-center gap-2">
+          <a href="tel:5107364332" class="inline-flex items-center gap-2 rounded-md px-1 py-1 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2" aria-label="Call SaveWell at (510) 736-4332"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>(510) 736-4332</span></a>
+          <button class="md:hidden inline-flex items-center p-2" id="menuBtn" aria-label="Open Menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="px-4 py-3 space-y-2">
+  <a class="block py-2" href="how-it-works.html">How it Works</a>
+  <a class="block py-2" href="search.html">Search Providers</a>
+  <a class="block py-2" href="contact.html">Contact Us</a>
+          </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative hero-bg bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+      <div class="relative z-10 lg:w-1/2">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
+          <span class="text-saveWine">Earn rewards</span>&nbsp;<span class="text-blackblock">for choosing trusted doctors.</span>
+        </h1>
+        <p class="mt-4 text-lg text-slate-600 max-w-xl">Save money on health plan premiums when you receive care from preferred, high-quality doctors in your area.</p>
+
+        <!-- Search Bar -->
+        <form id="searchForm" action="results.html" method="get" class="mt-8 bg-white/95 border border-slate-200 rounded-2xl shadow-sm p-3 md:p-4 flex flex-col md:flex-row gap-3">
+          <label class="sr-only" for="specialty">Specialty</label>
+          <select id="specialty" name="specialty" class="w-full md:w-1/3 rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-[15px] py-3">
+            <option value="" selected>Choose a specialty</option>
+            <option>Ambulatory Surgical Center</option>
+            <option>Cardiology</option>
+            <option>Dermatology</option>
+            <option>Endocrinology</option>
+            <option>Gastroenterology</option>
+            <option>Hematology & Oncology</option>
+            <option>Neurology</option>
+            <option>Obstetrics & Gynecology</option>
+            <option>Orthopedic Surgery</option>
+            <option>Rheumatology</option>
+          </select>
+
+          <label class="sr-only" for="zip">ZIP code</label>
+          <input id="zip" name="zip" inputmode="numeric" pattern="\d{5}" placeholder="ZIP code" class="w-full md:flex-1 rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-[15px] py-3 px-3" />
+
+          <button type="submit" class="inline-flex justify-center items-center rounded-xl bg-saveTeal text-white font-semibold px-5 py-3 hover:bg-saveTealDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveTeal">Search</button>
+        </form>
+
+        <p class="mt-3 text-sm text-slate-500">By searching, you agree to our <a class="underline hover:text-saveWine" href="privacy.html">Privacy</a> and <a class="underline hover:text-saveWine" href="terms.html">Terms</a>.</p>
+        <p class="mt-3 text-sm text-slate-500">ACO Provider? <a class="underline hover:text-saveWine" href="pcp.html">Click here</a> to include ACO-specific results.</p>
+      </div>
+
+      <img src="assets/hero/pennywise-peter-waist.png" alt="Pennywise Peter" class="hidden lg:block absolute top-0 right-24 w-[346px] pointer-events-none" />
+    </div>
+  </section>
+
+  <!-- Featured Providers Carousel -->
+  <section aria-labelledby="featured" class="py-14 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 id="featured" class="text-2xl sm:text-3xl font-bold">Meet the doctors patients trust</h2>
+          <p class="text-slate-600 mt-1">Unlock savings each time you receive care from a SaveWell provider.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="p-2 rounded-lg border hover:bg-slate-50" id="prevSlide" aria-label="Previous"><span aria-hidden>‹</span></button>
+          <button class="p-2 rounded-lg border hover:bg-slate-50" id="nextSlide" aria-label="Next"><span aria-hidden>›</span></button>
+        </div>
+      </div>
+
+      <div class="mt-6 overflow-hidden">
+        <ul id="carousel" class="flex transition-transform duration-500 will-change-transform">
+          <!-- Slides injected by JS -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialty list -->
+  <section aria-labelledby="specialties" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 id="specialties" class="text-2xl sm:text-3xl font-bold">Earn rewards across these specialties</h2>
+      <!-- make each of these buckets with a slate-50 background and icons that have a teal #50c1b2 background -->
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <a class="group block h-full" href="results.html?specialty=Ambulatory%20Surgical%20Center">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-hospital"></i></div>
+            <div>Ambulatory Surgical Center</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Cardiology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-heart"></i></div>
+            <div>Cardiology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Dermatology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-sun"></i></div>
+            <div>Dermatology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Endocrinology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-vial"></i></div>
+            <div>Endocrinology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Gastroenterology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-utensils"></i></div>
+            <div>Gastroenterology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Hematology%20%26%20Oncology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-droplet"></i></div>
+            <div>Hematology &amp; Oncology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Neurology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-brain"></i></div>
+            <div>Neurology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Obstetrics%20%26%20Gynecology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-person-pregnant"></i></div>
+            <div>Obstetrics &amp; Gynecology</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Orthopedic%20Surgery">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-bone"></i></div>
+            <div>Orthopedic Surgery</div>
+          </div>
+        </a>
+        <a class="group block h-full" href="results.html?specialty=Rheumatology">
+          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
+            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-hands"></i></div>
+            <div>Rheumatology</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-slate-50 border-t border-slate-200" id="site-footer">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
+          <p class="text-sm text-slate-600 mt-3 max-w-xs">Helping Medicare beneficiaries save money on premiums while accessing quality healthcare.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Learn</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-saveWine" href="how-it-works.html">How it Works</a></li>
+            <li><a class="hover:text-saveWine" href="search.html">Search Providers</a></li>
+</ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Legal</h3>
+          <ul class="space-y-2 text-sm"><li><a class="hover:text-saveWine" href="terms.html" id="footer-terms">Terms & Conditions</a></li>
+            <li><a class="hover:text-saveWine" href="privacy.html" id="footer-privacy">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Contact</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-saveWine" href="contact.html">Contact Us</a></li>
+            <li><a href="mailto:hello@savewellnow.com" class="hover:text-saveWine">hello@savewellnow.com</a></li>
+            <li>(510) 736-4332</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500 mt-8">&copy; <span id="year"></span> SaveWell. All rights reserved.</p>
+      <div class="w-full flex justify-center mt-8">
+  <img src="assets/medicare-people.png" alt="Medicare People" class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0" />
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Require at least one field before searching
+    const searchForm = document.getElementById('searchForm');
+    if (searchForm) {
+      searchForm.addEventListener('submit', e => {
+        const spec = searchForm.specialty.value.trim();
+        const zip = searchForm.zip.value.trim();
+        if (!spec && !zip) {
+          e.preventDefault();
+          alert('Please enter a specialty or ZIP code.');
+        }
+      });
+    }
+
+    // Featured doctors carousel
+    const providerIds = [175, 5, 423, 547, 48, 443, 65];
+
+    const carousel = document.getElementById('carousel');
+    if (carousel) {
+      fetch('data/providers.json')
+        .then(res => res.json())
+        .then(data => {
+          const featured = providerIds
+            .map(id => data.find(p => p.id === id))
+            .filter(Boolean);
+
+          featured.forEach(d => {
+            const li = document.createElement('li');
+            li.className = 'shrink-0 w-72 sm:w-80 mr-4 last:mr-0';
+            const initials = d.name.split(/\s+/).map(n => n[0]).join('').substring(0, 2);
+            const headshot = `https://placehold.co/400x400?text=${encodeURIComponent(initials)}`;
+            li.innerHTML = `
+          <article class="relative h-full rounded-2xl border bg-white shadow-sm overflow-hidden">
+            <img src="${headshot}" alt="${d.name}" class="h-40 w-full object-cover"/>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg">${d.name}</h3>
+              <p class="text-sm text-slate-600">${d.specialty}</p>
+              <p class="text-sm text-slate-500">${d.city}, ${d.state}</p>
+            </div>
+          </article>`;
+            carousel.appendChild(li);
+          });
+
+          let index = 0;
+          const update = () => {
+            const width = carousel.children[0]?.getBoundingClientRect().width || 300;
+            carousel.style.transform = `translateX(${-index * (width + 16)}px)`; // 16px = mr-4 gap
+          };
+          document.getElementById('nextSlide').addEventListener('click', () => { index = (index + 1) % featured.length; update(); });
+          document.getElementById('prevSlide').addEventListener('click', () => { index = (index - 1 + featured.length) % featured.length; update(); });
+          setInterval(() => { index = (index + 1) % featured.length; update(); }, 6000);
+          window.addEventListener('resize', update);
+          update();
+        });
+    }
+
+    // Footer year
+    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+  </script>
+</body>
+</html>
