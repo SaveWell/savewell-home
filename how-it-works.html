@@ -1,289 +1,601 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How SaveWell Works</title>
-  <meta name="description" content="Learn how the SaveWell Medicare rewards program works and how rewards are applied to premium savings." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            saveTeal: '#0b7a7c',
-            saveWine: '#8a0052',
-            saveWineDark: '#6c0041',
-            saveTealDark: '#065e60'
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How SaveWell Works</title>
+    <meta
+      name="description"
+      content="Learn how the SaveWell Medicare rewards program works and how rewards are applied to premium savings."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saveTeal: "#0b7a7c",
+              saveWine: "#8a0052",
+              saveWineDark: "#6c0041",
+              saveTealDark: "#065e60",
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
           },
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui']
-          }
-        }
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <style>
+      .timeline {
+        position: relative;
+        margin-left: 0.5rem;
+        padding-left: 1.5rem;
       }
-    };
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="assets/favicon.png" />
-  <style>
-    .timeline {
-      position: relative;
-      margin-left: 0.5rem;
-      padding-left: 1.5rem;
-    }
 
-    .timeline::before {
-      content: '';
-      position: absolute;
-      top: 0.25rem;
-      bottom: 0.25rem;
-      left: 0;
-      width: 3px;
-      border-radius: 999px;
-      background: linear-gradient(180deg, #0b7a7c 0%, #8a0052 100%);
-    }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0.25rem;
+        bottom: 0.25rem;
+        left: 0;
+        width: 3px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #0b7a7c 0%, #8a0052 100%);
+      }
 
-    .timeline-item {
-      position: relative;
-      margin-bottom: 1.75rem;
-    }
+      .timeline-item {
+        position: relative;
+        margin-bottom: 1.75rem;
+      }
 
-    .timeline-item:last-child {
-      margin-bottom: 0;
-    }
+      .timeline-item:last-child {
+        margin-bottom: 0;
+      }
 
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      top: 0.35rem;
-      left: -1.94rem;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 999px;
-      background-color: #0b7a7c;
-      box-shadow: 0 0 0 3px #ffffff;
-    }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 0.35rem;
+        left: -1.94rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 999px;
+        background-color: #0b7a7c;
+        box-shadow: 0 0 0 3px #ffffff;
+      }
 
-    .timeline-item:nth-child(even)::before {
-      background-color: #8a0052;
-    }
-  </style>
-</head>
-<body class="font-sans text-slate-800">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-      <a href="index.html" class="flex flex-col items-start gap-1 sm:flex-row sm:items-end sm:gap-3">
-        <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
-      </a>
-      <div class="flex items-center gap-6">
-        <nav class="hidden items-center gap-6 text-[15px] md:flex">
-          <a class="hover:text-saveWine" href="how-it-works.html">How it Works</a>
-          <a class="hover:text-saveWine" href="search.html">Search Providers</a>
-          <a class="hover:text-saveWine" href="contact.html">Contact Us</a>
-                            </nav>
-        <div class="flex items-center gap-2">
-          <a href="tel:5107364332" class="inline-flex items-center gap-2 rounded-md px-1 py-1 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2" aria-label="Call SaveWell at (510) 736-4332"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>(510) 736-4332</span></a>
-          <button class="inline-flex items-center p-2 md:hidden" id="menuBtn" aria-label="Open Menu">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="hidden border-t border-slate-200 md:hidden">
-      <div class="space-y-2 px-4 py-3">
-        <a class="block py-2" href="how-it-works.html">How it Works</a>
-  <a class="block py-2" href="search.html">Search Providers</a>
-        <a class="block py-2" href="contact.html">Contact Us</a>
-                      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="border-b bg-gradient-to-br from-saveTeal to-saveTealDark">
-      <div class="mx-auto max-w-7xl px-4 py-14 text-center text-white sm:px-6 lg:px-8 lg:py-20">
-        <h1 class="text-3xl font-extrabold sm:text-5xl">How SaveWell Works</h1>
-        <p class="mx-auto mt-4 max-w-3xl text-lg text-teal-50 sm:text-xl">A simple, automatic way to lower your Medicare Supplement premiums while getting excellent care.</p>
-      </div>
-    </section>
-
-    <section class="bg-white">
-      <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div class="space-y-6">
-          <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">The SaveWell Rewards Program</h2>
-          <p class="text-lg leading-relaxed text-slate-600">SaveWell is a free rewards program for Medicare beneficiaries with Medicare Supplement (Medigap) plans. When you choose doctors in the SaveWell network for specialist care, you automatically earn rewards that reduce your monthly premiums.</p>
-          <div class="rounded-2xl border-l-4 border-saveTeal bg-slate-50 p-6">
-            <h3 class="text-lg font-bold text-saveTealDark">What You Save</h3>
-            <p class="mt-2 leading-relaxed text-slate-600">Rewards are automatically applied as annual premium credits to your Medicare Supplement plan. These will show up at the end of the year.</p>
-          </div>
-          <p class="text-lg leading-relaxed text-slate-600">There's no paperwork, no forms to fill out, and nothing you need to do except choose a SaveWell provider when you need care. It's that simple.</p>
-        </div>
-
-        <div class="mt-12 space-y-6">
-          <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">Step-by-Step: How It Works</h2>
-          <div class="timeline mt-6">
-            <div class="timeline-item">
-              <h3 class="text-xl font-bold text-slate-900">1. You Need Specialist Care</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Your primary care doctor recommends you see a specialist, like a cardiologist, dermatologist, or orthopedic surgeon.</p>
-            </div>
-            <div class="timeline-item">
-              <h3 class="text-xl font-bold text-slate-900">2. Search SaveWell Network</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Use our website or call us to find high-quality specialists in your area who are part of the SaveWell network. We make it easy to search by specialty and location.</p>
-            </div>
-            <div class="timeline-item">
-              <h3 class="text-xl font-bold text-slate-900">3. Schedule Your Appointment</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Contact the provider directly to schedule your appointment, just like you would with any doctor. Your Medicare coverage works exactly the same way.</p>
-            </div>
-            <div class="timeline-item">
-              <h3 class="text-xl font-bold text-slate-900">4. Visit Your Doctor</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Go to your appointment and receive the care you need. There's nothing special you need to do or mention, just a normal doctor's visit.</p>
-            </div>
-            <div class="timeline-item">
-              <h3 class="text-xl font-bold text-slate-900">5. Earn Your Reward Automatically</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">After your visit, we verify it with the provider and your insurance. Your reward is automatically calculated and credited to reduce your Medicare Supplement premium.</p>
-            </div>
-            <div class="timeline-item">
-              <h3 class="text-xl font-bold text-slate-900">6. See Your Savings</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">SaveWell will send you notices when you've earned a reward. Your premium savings will be applied at the end of the year to your Medicare Supplement (Medigap) premium.</p>
-            </div>
+      .timeline-item:nth-child(even)::before {
+        background-color: #8a0052;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-slate-800">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur"
+    >
+      <div
+        class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+      >
+        <a
+          href="index.html"
+          class="flex flex-col items-start gap-1 sm:flex-row sm:items-end sm:gap-3"
+        >
+          <img
+            src="assets/savewell-logo.png"
+            alt="SaveWell"
+            class="h-8 w-auto"
+          />
+        </a>
+        <div class="flex items-center gap-6">
+          <nav class="hidden items-center gap-6 text-[15px] md:flex">
+            <a class="hover:text-saveWine" href="how-it-works.html"
+              >How it Works</a
+            >
+            <a class="hover:text-saveWine" href="search.html"
+              >Search Providers</a
+            >
+            <a class="hover:text-saveWine" href="contact.html">Contact Us</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <a
+              href="tel:5107364332"
+              class="inline-flex items-center gap-2 rounded-md px-1 py-1 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2"
+              aria-label="Call SaveWell at (510) 736-4332"
+              ><svg
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+              ><span>(510) 736-4332</span></a
+            >
+            <button
+              class="inline-flex items-center p-2 md:hidden"
+              id="menuBtn"
+              aria-label="Open Menu"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-
-        <div class="mt-12 space-y-6">
-          <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">What Services Are Covered?</h2>
-          <p class="text-lg leading-relaxed text-slate-600">SaveWell focuses on 10 key medical specialties where Medicare beneficiaries commonly need care:</p>
-          <ul class="list-disc space-y-2 pl-6 text-slate-600">
-            <li><strong class="text-slate-900">Cardiology</strong> - Heart and cardiovascular care</li>
-            <li><strong class="text-slate-900">Dermatology</strong> - Skin conditions and treatments</li>
-            <li><strong class="text-slate-900">Endocrinology</strong> - Diabetes, thyroid, hormone care</li>
-            <li><strong class="text-slate-900">Gastroenterology</strong> - Digestive system health</li>
-            <li><strong class="text-slate-900">Hematology &amp; Oncology</strong> - Blood disorders and cancer care</li>
-            <li><strong class="text-slate-900">Neurology</strong> - Brain and nervous system conditions</li>
-            <li><strong class="text-slate-900">Obstetrics &amp; Gynecology</strong> - Women's health</li>
-            <li><strong class="text-slate-900">Orthopedic Surgery</strong> - Bones, joints, and muscles</li>
-            <li><strong class="text-slate-900">Rheumatology</strong> - Arthritis and autoimmune conditions</li>
-            <li><strong class="text-slate-900">Ambulatory Surgical Centers</strong> - Outpatient procedures</li>
-          </ul>
-          <div class="rounded-2xl border-l-4 border-saveWine bg-slate-50 p-6">
-            <h3 class="text-lg font-bold text-saveWineDark">What About My Primary Care Doctor?</h3>
-            <p class="mt-2 leading-relaxed text-slate-600">SaveWell focuses on specialist care only. You can continue seeing your regular primary care doctor. That doesn't change. SaveWell rewards are earned when you visit specialists for these 10 types of care.</p>
-          </div>
-        </div>
-
-        <div class="mt-12 space-y-6">
-          <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">Who Qualifies for SaveWell?</h2>
-          <p class="text-lg leading-relaxed text-slate-600">SaveWell is currently available to Medicare beneficiaries who:</p>
-          <ul class="list-disc space-y-2 pl-6 text-slate-600">
-            <li>Have Medicare Part A and Part B</li>
-            <li>Have a Medicare Supplement (Medigap) plan</li>
-            <li>Live in an area where SaveWell has network providers</li>
-          </ul>
-          <p class="text-lg leading-relaxed text-slate-600">We're rapidly expanding to new areas. If SaveWell isn't available in your location yet, you can join our waitlist and we'll notify you when we expand to your area. <a href="mailto:hello@savewellnow.com" class="font-semibold text-saveTeal hover:text-saveTealDark">Join the waitlist by contacting us.</a></p>
-          <div class="rounded-2xl border-l-4 border-saveTeal bg-slate-50 p-6">
-            <h3 class="text-lg font-bold text-saveTealDark">100% Free to Join</h3>
-            <p class="mt-2 leading-relaxed text-slate-600">There are absolutely no fees to join SaveWell. No enrollment costs, no monthly charges, and no hidden fees. The program is completely free for Medicare beneficiaries.</p>
-          </div>
-        </div>
-
-        <div class="mt-12 space-y-6">
-          <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">How We Select Our Providers</h2>
-          <p class="text-lg leading-relaxed text-slate-600">Quality matters. We carefully select every doctor in the SaveWell network based on:</p>
-          <ul class="list-disc space-y-2 pl-6 text-slate-600">
-            <li><strong class="text-slate-900">Clinical Quality Measures</strong> - Evidence-based standards of care</li>
-            <li><strong class="text-slate-900">Patient Outcomes</strong> - Track record of successful treatment</li>
-            <li><strong class="text-slate-900">Patient Satisfaction</strong> - Positive reviews and feedback</li>
-            <li><strong class="text-slate-900">Board Certification</strong> - Current credentials and specialization</li>
-          </ul>
-          <p class="text-lg leading-relaxed text-slate-600">Every provider in our network is committed to delivering high-quality, patient-centered care.</p>
-        </div>
-
-        <div class="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8">
-          <h2 class="text-center text-2xl font-extrabold text-slate-900 sm:text-3xl">Frequently Asked Questions</h2>
-          <div class="mt-6 divide-y divide-slate-200">
-            <div class="py-5">
-              <h3 class="text-lg font-bold text-slate-900">How much can I save with SaveWell?</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Savings vary based on the type of care you receive and how often you visit SaveWell providers. Your rewards are automatically credited to reduce your Medicare Supplement premiums, and there's no limit to how much you can earn.</p>
-            </div>
-            <div class="py-5">
-              <h3 class="text-lg font-bold text-slate-900">Do I need to do anything special at my appointment?</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">No! Just visit your SaveWell provider like you would any other doctor. Everything happens automatically behind the scenes. Your Medicare coverage works exactly the same way.</p>
-            </div>
-            <div class="py-5">
-              <h3 class="text-lg font-bold text-slate-900">How long does it take to receive my rewards?</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Most rewards are processed and credited within 2 weeks to 2 months after your visit. The timing depends on when we receive confirmation from your provider and insurance company.</p>
-            </div>
-            <div class="py-5">
-              <h3 class="text-lg font-bold text-slate-900">Can I still see doctors outside the SaveWell network?</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">Absolutely! SaveWell is completely optional. You can see any Medicare-accepting provider you choose. You simply earn rewards when you choose SaveWell network providers.</p>
-            </div>
-            <div class="py-5">
-              <h3 class="text-lg font-bold text-slate-900">What if SaveWell is not available in my area?</h3>
-              <p class="mt-2 leading-relaxed text-slate-600"><a href="mailto:hello@savewellnow.com" class="font-semibold text-saveTeal hover:text-saveTealDark">Join our waitlist!</a> We're expanding to new areas regularly. When SaveWell becomes available in your location, we'll notify you by email so you can start earning rewards.</p>
-            </div>
-            <div class="py-5">
-              <h3 class="text-lg font-bold text-slate-900">Is there any paperwork or forms to fill out?</h3>
-              <p class="mt-2 leading-relaxed text-slate-600">No paperwork needed! Once you're enrolled in SaveWell, everything is automatic. We verify your visits with providers and your insurance, calculate your rewards, and apply the credits to your premiums all without any action required from you.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-12 rounded-2xl bg-gradient-to-br from-saveTeal to-saveTealDark p-8 text-center text-white sm:p-10">
-          <h2 class="text-2xl font-extrabold sm:text-3xl">Ready to Start Earning Rewards?</h2>
-          <p class="mx-auto mt-3 max-w-2xl text-lg text-teal-50">Search SaveWell providers in your area and start saving today.</p>
-          <a href="results.html" class="mt-6 inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold text-saveTealDark hover:bg-slate-100">Search Providers Now</a>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="hidden border-t border-slate-200 md:hidden">
+        <div class="space-y-2 px-4 py-3">
+          <a class="block py-2" href="how-it-works.html">How it Works</a>
+          <a class="block py-2" href="search.html">Search Providers</a>
+          <a class="block py-2" href="contact.html">Contact Us</a>
         </div>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer class="relative bg-slate-50 border-t border-slate-200" id="site-footer">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div>
-          <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
-          <p class="text-sm text-slate-600 mt-3 max-w-xs">Helping Medicare beneficiaries save money on premiums while accessing quality healthcare.</p>
+    <main>
+      <section class="border-b bg-gradient-to-br from-saveTeal to-saveTealDark">
+        <div
+          class="mx-auto max-w-7xl px-4 py-14 text-center text-white sm:px-6 lg:px-8 lg:py-20"
+        >
+          <h1 class="text-3xl font-extrabold sm:text-5xl">
+            How SaveWell Works
+          </h1>
+          <p class="mx-auto mt-4 max-w-3xl text-lg text-teal-50 sm:text-xl">
+            A simple, automatic way to lower your Medicare Supplement premiums
+            while getting excellent care.
+          </p>
         </div>
-        <div>
-          <h3 class="font-semibold mb-3">Learn</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="how-it-works.html">How it Works</a></li>
-            <li><a class="hover:text-saveWine" href="search.html">Search Providers</a></li>
-            <li><a class="hover:text-saveWine" href="contact.html">Contact Us</a></li>
-          </ul>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <div class="space-y-6">
+            <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+              The SaveWell Rewards Program
+            </h2>
+            <p class="text-lg leading-relaxed text-slate-600">
+              SaveWell is a free rewards program for Medicare beneficiaries with
+              Medicare Supplement (Medigap) plans. When you choose doctors in
+              the SaveWell network for specialist care, you automatically earn
+              rewards that reduce your monthly premiums.
+            </p>
+            <div class="rounded-2xl border-l-4 border-saveTeal bg-slate-50 p-6">
+              <h3 class="text-lg font-bold text-saveTealDark">What You Save</h3>
+              <p class="mt-2 leading-relaxed text-slate-600">
+                Rewards are automatically applied as annual premium credits to
+                your Medicare Supplement plan. These will show up at the end of
+                the year.
+              </p>
+            </div>
+            <p class="text-lg leading-relaxed text-slate-600">
+              There's no paperwork, no forms to fill out, and nothing you need
+              to do except choose a SaveWell provider when you need care. It's
+              that simple.
+            </p>
+          </div>
+
+          <div class="mt-12 space-y-6">
+            <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+              Step-by-Step: How It Works
+            </h2>
+            <div class="timeline mt-6">
+              <div class="timeline-item">
+                <h3 class="text-xl font-bold text-slate-900">
+                  1. You Need Specialist Care
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Your primary care doctor recommends you see a specialist, like
+                  a cardiologist, dermatologist, or orthopedic surgeon.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="text-xl font-bold text-slate-900">
+                  2. Search SaveWell Network
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Use our website or call us to find high-quality specialists in
+                  your area who are part of the SaveWell network. We make it
+                  easy to search by specialty and location.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="text-xl font-bold text-slate-900">
+                  3. Schedule Your Appointment
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Contact the provider directly to schedule your appointment,
+                  just like you would with any doctor. Your Medicare coverage
+                  works exactly the same way.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="text-xl font-bold text-slate-900">
+                  4. Visit Your Doctor
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Go to your appointment and receive the care you need. There's
+                  nothing special you need to do or mention, just a normal
+                  doctor's visit.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="text-xl font-bold text-slate-900">
+                  5. Earn Your Reward Automatically
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  After your visit, we verify it with the provider and your
+                  insurance. Your reward is automatically calculated and
+                  credited to reduce your Medicare Supplement premium.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3 class="text-xl font-bold text-slate-900">
+                  6. See Your Savings
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  SaveWell will send you notices when you've earned a reward.
+                  Your premium savings will be applied at the end of the year to
+                  your Medicare Supplement (Medigap) premium.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 space-y-6">
+            <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+              What Services Are Covered?
+            </h2>
+            <p class="text-lg leading-relaxed text-slate-600">
+              SaveWell focuses on 10 key medical specialties where Medicare
+              beneficiaries commonly need care:
+            </p>
+            <ul class="list-disc space-y-2 pl-6 text-slate-600">
+              <li>
+                <strong class="text-slate-900">Cardiology</strong> - Heart and
+                cardiovascular care
+              </li>
+              <li>
+                <strong class="text-slate-900">Dermatology</strong> - Skin
+                conditions and treatments
+              </li>
+              <li>
+                <strong class="text-slate-900">Endocrinology</strong> -
+                Diabetes, thyroid, hormone care
+              </li>
+              <li>
+                <strong class="text-slate-900">Gastroenterology</strong> -
+                Digestive system health
+              </li>
+              <li>
+                <strong class="text-slate-900"
+                  >Hematology &amp; Oncology</strong
+                >
+                - Blood disorders and cancer care
+              </li>
+              <li>
+                <strong class="text-slate-900">Neurology</strong> - Brain and
+                nervous system conditions
+              </li>
+              <li>
+                <strong class="text-slate-900"
+                  >Obstetrics &amp; Gynecology</strong
+                >
+                - Women's health
+              </li>
+              <li>
+                <strong class="text-slate-900">Orthopedic Surgery</strong> -
+                Bones, joints, and muscles
+              </li>
+              <li>
+                <strong class="text-slate-900">Rheumatology</strong> - Arthritis
+                and autoimmune conditions
+              </li>
+              <li>
+                <strong class="text-slate-900"
+                  >Ambulatory Surgical Centers</strong
+                >
+                - Outpatient procedures
+              </li>
+            </ul>
+            <div class="rounded-2xl border-l-4 border-saveWine bg-slate-50 p-6">
+              <h3 class="text-lg font-bold text-saveWineDark">
+                What About My Primary Care Doctor?
+              </h3>
+              <p class="mt-2 leading-relaxed text-slate-600">
+                SaveWell focuses on specialist care only. You can continue
+                seeing your regular primary care doctor. That doesn't change.
+                SaveWell rewards are earned when you visit specialists for these
+                10 types of care.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-12 space-y-6">
+            <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+              Who Qualifies for SaveWell?
+            </h2>
+            <p class="text-lg leading-relaxed text-slate-600">
+              SaveWell is currently available to Medicare beneficiaries who:
+            </p>
+            <ul class="list-disc space-y-2 pl-6 text-slate-600">
+              <li>Have Medicare Part A and Part B</li>
+              <li>Have a Medicare Supplement (Medigap) plan</li>
+              <li>Live in an area where SaveWell has network providers</li>
+            </ul>
+            <p class="text-lg leading-relaxed text-slate-600">
+              We're rapidly expanding to new areas. If SaveWell isn't available
+              in your location yet, you can join our waitlist and we'll notify
+              you when we expand to your area.
+              <a
+                href="mailto:hello@savewellnow.com"
+                class="font-semibold text-saveTeal hover:text-saveTealDark"
+                >Join the waitlist by contacting us.</a
+              >
+            </p>
+            <div class="rounded-2xl border-l-4 border-saveTeal bg-slate-50 p-6">
+              <h3 class="text-lg font-bold text-saveTealDark">
+                100% Free to Join
+              </h3>
+              <p class="mt-2 leading-relaxed text-slate-600">
+                There are absolutely no fees to join SaveWell. No enrollment
+                costs, no monthly charges, and no hidden fees. The program is
+                completely free for Medicare beneficiaries.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-12 space-y-6">
+            <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+              How We Select Our Providers
+            </h2>
+            <p class="text-lg leading-relaxed text-slate-600">
+              Quality matters. We carefully select every doctor in the SaveWell
+              network based on:
+            </p>
+            <ul class="list-disc space-y-2 pl-6 text-slate-600">
+              <li>
+                <strong class="text-slate-900"
+                  >Clinical Quality Measures</strong
+                >
+                - Evidence-based standards of care
+              </li>
+              <li>
+                <strong class="text-slate-900">Patient Outcomes</strong> - Track
+                record of successful treatment
+              </li>
+              <li>
+                <strong class="text-slate-900">Patient Satisfaction</strong> -
+                Positive reviews and feedback
+              </li>
+              <li>
+                <strong class="text-slate-900">Board Certification</strong> -
+                Current credentials and specialization
+              </li>
+            </ul>
+            <p class="text-lg leading-relaxed text-slate-600">
+              Every provider in our network is committed to delivering
+              high-quality, patient-centered care.
+            </p>
+          </div>
+
+          <div class="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8">
+            <h2
+              class="text-center text-2xl font-extrabold text-slate-900 sm:text-3xl"
+            >
+              Frequently Asked Questions
+            </h2>
+            <div class="mt-6 divide-y divide-slate-200">
+              <div class="py-5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  How much can I save with SaveWell?
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Savings vary based on the type of care you receive and how
+                  often you visit SaveWell providers. Your rewards are
+                  automatically credited to reduce your Medicare Supplement
+                  premiums, and there's no limit to how much you can earn.
+                </p>
+              </div>
+              <div class="py-5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  Do I need to do anything special at my appointment?
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  No! Just visit your SaveWell provider like you would any other
+                  doctor. Everything happens automatically behind the scenes.
+                  Your Medicare coverage works exactly the same way.
+                </p>
+              </div>
+              <div class="py-5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  How long does it take to receive my rewards?
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Most rewards are processed and credited within 2 weeks to 2
+                  months after your visit. The timing depends on when we receive
+                  confirmation from your provider and insurance company.
+                </p>
+              </div>
+              <div class="py-5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  Can I still see doctors outside the SaveWell network?
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  Absolutely! SaveWell is completely optional. You can see any
+                  Medicare-accepting provider you choose. You simply earn
+                  rewards when you choose SaveWell network providers.
+                </p>
+              </div>
+              <div class="py-5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  What if SaveWell is not available in my area?
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  <a
+                    href="mailto:hello@savewellnow.com"
+                    class="font-semibold text-saveTeal hover:text-saveTealDark"
+                    >Join our waitlist!</a
+                  >
+                  We're expanding to new areas regularly. When SaveWell becomes
+                  available in your location, we'll notify you by email so you
+                  can start earning rewards.
+                </p>
+              </div>
+              <div class="py-5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  Is there any paperwork or forms to fill out?
+                </h3>
+                <p class="mt-2 leading-relaxed text-slate-600">
+                  No paperwork needed! Once you're enrolled in SaveWell,
+                  everything is automatic. We verify your visits with providers
+                  and your insurance, calculate your rewards, and apply the
+                  credits to your premiums all without any action required from
+                  you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 rounded-2xl bg-gradient-to-br from-saveTeal to-saveTealDark p-8 text-center text-white sm:p-10"
+          >
+            <h2 class="text-2xl font-extrabold sm:text-3xl">
+              Ready to Start Earning Rewards?
+            </h2>
+            <p class="mx-auto mt-3 max-w-2xl text-lg text-teal-50">
+              Search SaveWell providers in your area and start saving today.
+            </p>
+            <a
+              href="search.html"
+              class="mt-6 inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold text-saveTealDark hover:bg-slate-100"
+              >Search Providers Now</a
+            >
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold mb-3">Company</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="about.html">About</a></li>
-            <li><a class="hover:text-saveWine" href="terms.html" id="footer-terms">Terms & Conditions</a></li>
-            <li><a class="hover:text-saveWine" href="privacy.html" id="footer-privacy">Privacy</a></li>
-          </ul>
+      </section>
+    </main>
+
+    <footer
+      class="relative bg-slate-50 border-t border-slate-200"
+      id="site-footer"
+    >
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10"
+      >
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <img
+              src="assets/savewell-logo.png"
+              alt="SaveWell"
+              class="h-8 w-auto"
+            />
+            <p class="text-sm text-slate-600 mt-3 max-w-xs">
+              Helping Medicare beneficiaries save money on premiums while
+              accessing quality healthcare.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Learn</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-saveWine" href="how-it-works.html"
+                  >How it Works</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saveWine" href="search.html"
+                  >Search Providers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saveWine" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Company</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-saveWine" href="about.html">About</a>
+              </li>
+              <li>
+                <a
+                  class="hover:text-saveWine"
+                  href="terms.html"
+                  id="footer-terms"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-saveWine"
+                  href="privacy.html"
+                  id="footer-privacy"
+                  >Privacy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Contact</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="mailto:hello@savewellnow.com"
+                  class="hover:text-saveWine"
+                  >hello@savewellnow.com</a
+                >
+              </li>
+              <li>(510) 736-4332</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold mb-3">Contact</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="mailto:hello@savewellnow.com" class="hover:text-saveWine">hello@savewellnow.com</a></li>
-            <li>(510) 736-4332</li>
-          </ul>
+        <p class="text-xs text-slate-500 mt-8">
+          &copy; <span id="year"></span> SaveWell. All rights reserved.
+        </p>
+        <div class="w-full flex justify-center mt-8">
+          <img
+            src="assets/medicare-people.png"
+            alt="Medicare People"
+            class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0"
+          />
         </div>
       </div>
-      <p class="text-xs text-slate-500 mt-8">&copy; <span id="year"></span> SaveWell. All rights reserved.</p>
-      <div class="w-full flex justify-center mt-8">
-  <img src="assets/medicare-people.png" alt="Medicare People" class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0" />
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    const y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
 
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn) {
-      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-    }
-  </script>
-</body>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn) {
+        menuBtn.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden"),
+        );
+      }
+    </script>
+  </body>
 </html>
