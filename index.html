@@ -1,309 +1,1085 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SaveWell - Earn Rewards for Choosing Trusted Doctors</title>
-  <meta name="description" content="Patient‑friendly site to find high‑quality, preferred specialists in the SaveWell Network and save on Medigap premiums." />
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            saveTeal: '#0b7a7c',
-            saveWine: '#8a0052',
-            saveWineDark: '#6c0041',
-            saveTealDark: '#065e60',
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      SaveWell - Earn Rewards for Choosing Trusted Doctors | Medicare Rewards
+    </title>
+    <meta
+      name="description"
+      content="SaveWell helps Medicare beneficiaries earn rewards by choosing trusted doctors. Use the SaveWell network and start earning rewards today."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saveTeal: "#0b7a7c",
+              saveWine: "#8a0052",
+              saveWineDark: "#6c0041",
+              saveTealDark: "#065e60",
+            },
+            fontFamily: {
+              sans: [
+                "Inter",
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica Neue",
+                "Arial",
+                "Noto Sans",
+                "sans-serif",
+              ],
+            },
           },
-          fontFamily: {
-            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
-          }
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <style>
+      :root {
+        --teal-pale: #e6f7f7;
+        --mint-light: #ecfdf5;
+        --mint: #d1fae5;
+        --magenta-pale: #fce8f0;
+        --navy: #1e3a5f;
+        --gray-100: #f3f4f6;
+        --gray-200: #e5e7eb;
+        --gray-500: #6b7280;
+        --gray-600: #4b5563;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .hero-home {
+        padding: 3rem 1.5rem 4rem;
+        background: linear-gradient(180deg, #fff 0%, var(--teal-pale) 100%);
+      }
+
+      .hero-home-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--mint-light);
+        color: #065e60;
+        padding: 0.5rem 0.9rem;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .hero-home h1 {
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        font-weight: 800;
+        line-height: 1.08;
+        color: var(--navy);
+        margin-bottom: 1rem;
+      }
+
+      .hero-home h1 .highlight {
+        color: #0b7a7c;
+      }
+
+      .hero-home p {
+        color: var(--gray-600);
+        font-size: 1.15rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        max-width: 42rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-trust {
+        margin-top: 1.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--gray-200);
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+      }
+
+      .trust-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--gray-600);
+        font-size: 0.95rem;
+      }
+
+      .trust-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: #0b7a7c;
+        flex-shrink: 0;
+      }
+
+      .hero-image-card {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+        min-height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+      }
+
+      .hero-image-card img {
+        width: min(82%, 360px);
+        height: auto;
+        display: block;
+      }
+
+      .section-shell {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 46rem;
+        margin: 0 auto 2.75rem;
+      }
+
+      .section-label {
+        display: inline-flex;
+        align-items: center;
+        background: var(--teal-pale);
+        color: #065e60;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0.5rem 0.9rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .section-title {
+        font-size: clamp(1.85rem, 4vw, 2.65rem);
+        font-weight: 800;
+        line-height: 1.15;
+        color: var(--navy);
+        margin-bottom: 0.8rem;
+      }
+
+      .section-subtitle {
+        color: var(--gray-600);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      .how-home {
+        padding: 5.5rem 0;
+        background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+      }
+
+      .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .step-card {
+        background: #fff;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        text-align: center;
+      }
+
+      .step-number {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 999px;
+        margin: 0 auto 0.9rem;
+        background: linear-gradient(135deg, #0b7a7c 0%, #00a3a3 100%);
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.35rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .step-card:nth-child(2) .step-number {
+        background: linear-gradient(135deg, #8a0052 0%, #c73a75 100%);
+      }
+
+      .step-card h3 {
+        color: var(--navy);
+        font-size: 1.18rem;
+        font-weight: 700;
+        margin-bottom: 0.65rem;
+      }
+
+      .step-card p {
+        color: var(--gray-600);
+        font-size: 0.98rem;
+        line-height: 1.6;
+      }
+
+      .specialties-home {
+        padding: 5.5rem 0;
+        background: #f9fafb;
+      }
+
+      .specialties-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 0.95rem;
+      }
+
+      .specialty-card {
+        background: #fff;
+        border: 1px solid var(--gray-100);
+        border-radius: 1rem;
+        padding: 1.1rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        min-height: 4.25rem;
+        transition:
+          box-shadow 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .specialty-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      }
+
+      .specialty-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 0.7rem;
+        background: var(--teal-pale);
+        color: #0b7a7c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .specialty-card:nth-child(even) .specialty-icon {
+        background: var(--magenta-pale);
+        color: #8a0052;
+      }
+
+      .specialty-icon svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+      }
+
+      .specialty-card span {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1.35;
+      }
+
+      .benefits-home {
+        padding: 5.5rem 0;
+        background: var(--navy);
+        color: #fff;
+      }
+
+      .benefits-home .section-title,
+      .benefits-home .section-subtitle,
+      .benefits-home .section-label {
+        color: #fff;
+      }
+
+      .benefits-home .section-label {
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .benefit-card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      .benefit-icon {
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.14);
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .benefit-icon svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        stroke: #5ad1d2;
+        fill: none;
+        stroke-width: 1.9;
+      }
+
+      .benefit-card h3 {
+        font-size: 1.28rem;
+        font-weight: 700;
+        margin-bottom: 0.65rem;
+      }
+
+      .benefit-card p {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.98rem;
+        line-height: 1.6;
+      }
+
+      .testimonials-home {
+        padding: 5.5rem 0;
+        background: #fff;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 0.95rem;
+      }
+
+      .testimonial-card {
+        background: #f9fafb;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        position: relative;
+      }
+
+      .testimonial-card::before {
+        content: '"';
+        position: absolute;
+        top: 0.45rem;
+        left: 1rem;
+        font-size: 3rem;
+        color: var(--teal-pale);
+        line-height: 1;
+        font-family: Georgia, serif;
+      }
+
+      .testimonial-text {
+        font-size: 1rem;
+        color: var(--navy);
+        line-height: 1.7;
+        margin: 0.6rem 0 1rem;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+      }
+
+      .testimonial-avatar {
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 999px;
+        background: linear-gradient(
+          135deg,
+          var(--teal-pale) 0%,
+          var(--mint) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #065e60;
+        font-weight: 700;
+        font-size: 0.82rem;
+        flex-shrink: 0;
+      }
+
+      .testimonial-name {
+        color: var(--navy);
+        font-size: 0.95rem;
+        font-weight: 600;
+        display: block;
+      }
+
+      .testimonial-location {
+        color: var(--gray-500);
+        font-size: 0.84rem;
+        display: block;
+      }
+
+      .cta-home {
+        padding: 5rem 0;
+        background: linear-gradient(135deg, #0b7a7c 0%, #065e60 100%);
+        text-align: center;
+        color: #fff;
+      }
+
+      .cta-home h2 {
+        font-size: clamp(2rem, 4vw, 2.65rem);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 0.8rem;
+      }
+
+      .cta-home p {
+        max-width: 40rem;
+        margin: 0 auto 1.35rem;
+        opacity: 0.95;
+        font-size: 1.12rem;
+      }
+
+      @media (max-width: 1024px) {
+        .hero-home-wrap {
+          grid-template-columns: 1fr;
+        }
+        .hero-image-card {
+          order: -1;
+          min-height: auto;
         }
       }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="assets/favicon.png" />
-  <style>
-    .hero-bg { 
-      background-image: radial-gradient(1000px 500px at 10% -20%, rgba(11,122,124,0.25), transparent),
-                        radial-gradient(800px 400px at 90% -30%, rgba(138,0,82,0.18), transparent);
-    }
-  </style>
-</head>
-<body class="font-sans text-slate-800 antialiased">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <a href="index.html" class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3">
-    <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
-      </a>
-      <div class="flex items-center gap-6">
-        <nav class="hidden md:flex items-center gap-6 text-[15px]">
-          <a class="hover:text-saveWine" href="specialists.html">Join the Network</a>
-          <a class="hover:text-saveWine" href="brokers.html">For Brokers</a>
-          <a class="hover:text-saveWine" href="acos.html">For ACOs</a>
-        </nav>
-        <div class="flex items-center gap-2">
-          <a href="login.html" class="inline-flex items-center rounded-xl bg-saveWine px-4 py-2 text-white text-sm font-semibold hover:bg-saveWineDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveWine">Login</a>
-          <button class="md:hidden inline-flex items-center p-2" id="menuBtn" aria-label="Open Menu">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
-      <div class="px-4 py-3 space-y-2">
-  <a class="block py-2" href="specialists.html">Join the Network</a>
-  <a class="block py-2" href="brokers.html">For Brokers</a>
-  <a class="block py-2" href="acos.html">For ACOs</a>
-      </div>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="relative hero-bg bg-gradient-to-b from-white to-slate-50 overflow-hidden">
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-      <div class="relative z-10 lg:w-1/2">
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
-          <span class="text-saveWine">Earn rewards</span>&nbsp;<span class="text-blackblock">for choosing trusted doctors.</span>
-        </h1>
-        <p class="mt-4 text-lg text-slate-600 max-w-xl">Save money on health plan premiums when you receive care from preferred, high-quality doctors in your area.</p>
-
-        <!-- Search Bar -->
-        <form id="searchForm" action="results.html" method="get" class="mt-8 bg-white/95 border border-slate-200 rounded-2xl shadow-sm p-3 md:p-4 flex flex-col md:flex-row gap-3">
-          <label class="sr-only" for="specialty">Specialty</label>
-          <select id="specialty" name="specialty" class="w-full md:w-1/3 rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-[15px] py-3">
-            <option value="" selected>Choose a specialty</option>
-            <option>Ambulatory Surgical Center</option>
-            <option>Cardiology</option>
-            <option>Dermatology</option>
-            <option>Endocrinology</option>
-            <option>Gastroenterology</option>
-            <option>Hematology & Oncology</option>
-            <option>Neurology</option>
-            <option>Obstetrics & Gynecology</option>
-            <option>Orthopedic Surgery</option>
-            <option>Rheumatology</option>
-          </select>
-
-          <label class="sr-only" for="zip">ZIP code</label>
-          <input id="zip" name="zip" inputmode="numeric" pattern="\d{5}" placeholder="ZIP code" class="w-full md:flex-1 rounded-xl border-slate-300 focus:border-saveWine focus:ring-saveWine text-[15px] py-3 px-3" />
-
-          <button type="submit" class="inline-flex justify-center items-center rounded-xl bg-saveTeal text-white font-semibold px-5 py-3 hover:bg-saveTealDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-saveTeal">Search</button>
-        </form>
-
-        <p class="mt-3 text-sm text-slate-500">By searching, you agree to our <a class="underline hover:text-saveWine" href="privacy.html">Privacy</a> and <a class="underline hover:text-saveWine" href="terms.html">Terms</a>.</p>
-        <p class="mt-3 text-sm text-slate-500">ACO Provider? <a class="underline hover:text-saveWine" href="pcp.html">Click here</a> to include ACO-specific results.</p>
-      </div>
-
-      <img src="assets/hero/pennywise-peter-waist.png" alt="Pennywise Peter" class="hidden lg:block absolute top-0 right-24 w-[346px] pointer-events-none" />
-    </div>
-  </section>
-
-  <!-- Featured Providers Carousel -->
-  <section aria-labelledby="featured" class="py-14 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex items-end justify-between gap-6">
-        <div>
-          <h2 id="featured" class="text-2xl sm:text-3xl font-bold">Meet the doctors patients trust</h2>
-          <p class="text-slate-600 mt-1">Unlock savings each time you receive care from a SaveWell provider.</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <button class="p-2 rounded-lg border hover:bg-slate-50" id="prevSlide" aria-label="Previous"><span aria-hidden>‹</span></button>
-          <button class="p-2 rounded-lg border hover:bg-slate-50" id="nextSlide" aria-label="Next"><span aria-hidden>›</span></button>
-        </div>
-      </div>
-
-      <div class="mt-6 overflow-hidden">
-        <ul id="carousel" class="flex transition-transform duration-500 will-change-transform">
-          <!-- Slides injected by JS -->
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Specialty list -->
-  <section aria-labelledby="specialties" class="py-16 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 id="specialties" class="text-2xl sm:text-3xl font-bold">Earn rewards across these specialties</h2>
-      <!-- make each of these buckets with a slate-50 background and icons that have a teal #50c1b2 background -->
-      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-        <a class="group block h-full" href="results.html?specialty=Ambulatory%20Surgical%20Center">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-hospital"></i></div>
-            <div>Ambulatory Surgical Center</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Cardiology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-heart"></i></div>
-            <div>Cardiology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Dermatology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-sun"></i></div>
-            <div>Dermatology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Endocrinology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-vial"></i></div>
-            <div>Endocrinology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Gastroenterology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-utensils"></i></div>
-            <div>Gastroenterology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Hematology%20%26%20Oncology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-droplet"></i></div>
-            <div>Hematology &amp; Oncology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Neurology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-brain"></i></div>
-            <div>Neurology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Obstetrics%20%26%20Gynecology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-person-pregnant"></i></div>
-            <div>Obstetrics &amp; Gynecology</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Orthopedic%20Surgery">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-bone"></i></div>
-            <div>Orthopedic Surgery</div>
-          </div>
-        </a>
-        <a class="group block h-full" href="results.html?specialty=Rheumatology">
-          <div class="flex flex-col items-center justify-center h-full rounded-2xl border bg-slate-50 p-5 text-center group-hover:border-saveWine">
-            <div class="w-12 h-12 bg-[#0c6c78] rounded-full mx-auto mb-3 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-hands"></i></div>
-            <div>Rheumatology</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="relative bg-slate-50 border-t border-slate-200" id="site-footer">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div>
-          <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
-          <p class="text-sm text-slate-600 mt-3 max-w-xs">Earn rewards for choosing trusted doctors</p>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-3">Learn</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="specialists.html">Join the Network</a></li>
-            <li><a class="hover:text-saveWine" href="brokers.html">For Brokers</a></li>
-            <li><a class="hover:text-saveWine" href="acos.html">For ACOs</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-3">Company</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="about.html">About</a></li>
-            <li><a class="hover:text-saveWine" href="terms.html" id="footer-terms">Terms & Conditions</a></li>
-            <li><a class="hover:text-saveWine" href="privacy.html" id="footer-privacy">Privacy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-3">Contact</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="mailto:hello@savewellnow.com" class="hover:text-saveWine">hello@savewellnow.com</a></li>
-            <li>(510) 736‑4332</li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-xs text-slate-500 mt-8">© <span id="year"></span> SaveWell. All rights reserved.</p>
-      <div class="w-full flex justify-center mt-8">
-  <img src="assets/medicare-people.png" alt="Medicare People" class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0" />
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-
-    // Require at least one field before searching
-    const searchForm = document.getElementById('searchForm');
-    if (searchForm) {
-      searchForm.addEventListener('submit', e => {
-        const spec = searchForm.specialty.value.trim();
-        const zip = searchForm.zip.value.trim();
-        if (!spec && !zip) {
-          e.preventDefault();
-          alert('Please enter a specialty or ZIP code.');
+      @media (max-width: 768px) {
+        .hero-home {
+          padding: 4.5rem 1rem 3rem;
         }
-      });
-    }
+        .hero-image-card {
+          display: none;
+        }
+        .section-shell {
+          padding: 0 1rem;
+        }
+        .how-home,
+        .specialties-home,
+        .benefits-home,
+        .testimonials-home {
+          padding: 4rem 0;
+        }
+        .steps-grid,
+        .benefits-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-actions a {
+          width: 100%;
+        }
+        .specialties-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .specialty-card {
+          min-height: 5rem;
+          align-items: start;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans text-slate-800 antialiased">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200"
+    >
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+      >
+        <a
+          href="index.html"
+          class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3"
+        >
+          <img
+            src="assets/savewell-logo.png"
+            alt="SaveWell"
+            class="h-8 w-auto"
+          />
+        </a>
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:flex items-center gap-6 text-[15px]">
+            <a class="hover:text-saveWine" href="how-it-works.html"
+              >How it Works</a
+            >
+            <a class="hover:text-saveWine" href="search.html"
+              >Search Providers</a
+            >
+            <a class="hover:text-saveWine" href="contact.html">Contact Us</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <a
+              href="tel:5107364332"
+              class="inline-flex items-center gap-2 rounded-md px-1 py-1 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2"
+              aria-label="Call SaveWell at (510) 736-4332"
+            >
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <span>(510) 736-4332</span>
+            </a>
+            <button
+              class="md:hidden inline-flex items-center p-2"
+              id="menuBtn"
+              aria-label="Open Menu"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+        <div class="px-4 py-3 space-y-2">
+          <a class="block py-2" href="how-it-works.html">How it Works</a>
+          <a class="block py-2" href="search.html">Search Providers</a>
+          <a class="block py-2" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
 
-    // Featured doctors carousel
-    const providerIds = [175, 5, 423, 547, 48, 443, 65];
-
-    const carousel = document.getElementById('carousel');
-    if (carousel) {
-      fetch('data/providers.json')
-        .then(res => res.json())
-        .then(data => {
-          const featured = providerIds
-            .map(id => data.find(p => p.id === id))
-            .filter(Boolean);
-
-          featured.forEach(d => {
-            const li = document.createElement('li');
-            li.className = 'shrink-0 w-72 sm:w-80 mr-4 last:mr-0';
-            const initials = d.name.split(/\s+/).map(n => n[0]).join('').substring(0, 2);
-            const headshot = `https://placehold.co/400x400?text=${encodeURIComponent(initials)}`;
-            li.innerHTML = `
-          <article class="relative h-full rounded-2xl border bg-white shadow-sm overflow-hidden">
-            <img src="${headshot}" alt="${d.name}" class="h-40 w-full object-cover"/>
-            <div class="p-5">
-              <h3 class="font-semibold text-lg">${d.name}</h3>
-              <p class="text-sm text-slate-600">${d.specialty}</p>
-              <p class="text-sm text-slate-500">${d.city}, ${d.state}</p>
+    <main>
+      <section class="hero-home">
+        <div class="hero-home-wrap">
+          <div>
+            <span class="eyebrow">Free Medicare Rewards Program</span>
+            <h1>
+              Earn rewards for choosing
+              <span class="highlight">trusted doctors</span>
+            </h1>
+            <p>
+              When you visit high-quality doctors in the SaveWell network, you
+              earn rewards that go directly toward reducing your Medicare
+              Supplement premiums. It's that simple.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="search.html"
+                class="inline-flex items-center justify-center rounded-xl bg-saveTeal px-6 py-3 text-white font-semibold hover:bg-saveTealDark"
+                >Search Providers</a
+              >
+              <a
+                href="#how-it-works"
+                class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-slate-700 font-semibold hover:text-saveTeal hover:border-saveTeal"
+                >How it Works</a
+              >
             </div>
-          </article>`;
-            carousel.appendChild(li);
-          });
+            <div class="hero-trust">
+              <div class="trust-item">
+                <svg
+                  class="trust-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Quality-Vetted Providers
+              </div>
+              <div class="trust-item">
+                <svg
+                  class="trust-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v12" />
+                  <path
+                    d="M15 9.5c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5"
+                  />
+                </svg>
+                No Cost to Join
+              </div>
+              <div class="trust-item">
+                <svg
+                  class="trust-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+                Keep Your Doctor
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-card">
+            <img
+              src="assets/hero/pennywise-peter-waist.png"
+              alt="SaveWell member Peter"
+            />
+          </div>
+        </div>
+      </section>
 
-          let index = 0;
-          const update = () => {
-            const width = carousel.children[0]?.getBoundingClientRect().width || 300;
-            carousel.style.transform = `translateX(${-index * (width + 16)}px)`; // 16px = mr-4 gap
-          };
-          document.getElementById('nextSlide').addEventListener('click', () => { index = (index + 1) % featured.length; update(); });
-          document.getElementById('prevSlide').addEventListener('click', () => { index = (index - 1 + featured.length) % featured.length; update(); });
-          setInterval(() => { index = (index + 1) % featured.length; update(); }, 6000);
-          window.addEventListener('resize', update);
-          update();
-        });
-    }
+      <section class="how-home" id="how-it-works">
+        <div class="section-shell">
+          <div class="section-header">
+            <span class="section-label">Simple &amp; Automatic</span>
+            <h2 class="section-title">How SaveWell Works</h2>
+            <p class="section-subtitle">
+              When you need care, choose a SaveWell provider, and save money.
+            </p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h3>Find a doctor or treatment center</h3>
+              <p>
+                Search our network of high-quality specialists and facilities in
+                your area. We've carefully selected providers and facilities who
+                provide excellent care.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h3>Get Care</h3>
+              <p>
+                Visit your chosen SaveWell provider just like any other doctor
+                visit. Your Medicare coverage works the same way.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h3>Save Money</h3>
+              <p>
+                Your rewards are automatically credited at the end of the year
+                to reduce your Medicare Supplement premiums. No forms, no
+                hassle.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    // Footer year
-    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+      <section class="specialties-home" id="providers">
+        <div class="section-shell">
+          <div class="section-header">
+            <span class="section-label">Coverage Across Key Specialties</span>
+            <h2 class="section-title">Earn Rewards for These Services</h2>
+            <p class="section-subtitle">
+              SaveWell includes procedures and providers across multiple
+              specialties, so you can earn rewards for the care you need most.
+            </p>
+          </div>
+          <div class="specialties-grid">
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <span>Cardiology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <span>Dermatology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="8" rx="3" ry="4" />
+                  <path
+                    d="M9 12c-2 1-3 3-3 5 0 2.5 2.5 5 6 5s6-2.5 6-5c0-2-1-4-3-5"
+                  />
+                </svg>
+              </div>
+              <span>Endocrinology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2c-3 0-6 2-6 6 0 3 1.5 5 3 7 1 1.5 1.5 3 1.5 5h3c0-2 .5-3.5 1.5-5 1.5-2 3-4 3-7 0-4-3-6-6-6z"
+                  />
+                </svg>
+              </div>
+              <span>Gastroenterology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z" />
+                </svg>
+              </div>
+              <span>Hematology &amp; Oncology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"
+                  />
+                </svg>
+              </div>
+              <span>Neurology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 4v8" />
+                  <path d="M8 8c-2 0-4 1-4 4s2 4 4 4" />
+                  <path d="M16 8c2 0 4 1 4 4s-2 4-4 4" />
+                </svg>
+              </div>
+              <span>OB/GYN</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 6l-6 6-6-6" />
+                  <path d="M6 18l6-6 6 6" />
+                </svg>
+              </div>
+              <span>Orthopedic Surgery</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 2v7" />
+                  <path d="M12 15v7" />
+                </svg>
+              </div>
+              <span>Rheumatology</span>
+            </div>
+            <div class="specialty-card">
+              <div class="specialty-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="2" width="16" height="20" rx="2" />
+                  <path d="M9 22v-4h6v4" />
+                </svg>
+              </div>
+              <span>Surgical Centers</span>
+            </div>
+          </div>
+          <div class="mt-10 text-center">
+            <a
+              href="search.html"
+              class="inline-flex items-center justify-center rounded-xl bg-saveTeal px-6 py-3 text-white font-semibold hover:bg-saveTealDark"
+              >Search Providers Now</a
+            >
+          </div>
+        </div>
+      </section>
 
-  </script>
-</body>
+      <section class="benefits-home">
+        <div class="section-shell">
+          <div class="section-header">
+            <span class="section-label">Why Use SaveWell</span>
+            <h2 class="section-title">Get Rewarded for Medicare</h2>
+            <p class="section-subtitle">
+              SaveWell makes it easy to save money while getting excellent care
+              from trusted doctors.
+            </p>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <h3>100% Free to Join</h3>
+              <p>
+                There are no enrollment fees, no hidden costs, and no catches.
+                SaveWell is completely free for Medicare beneficiaries.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v12" />
+                  <path
+                    d="M15 9.5c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5"
+                  />
+                </svg>
+              </div>
+              <h3>Automatic Rewards</h3>
+              <p>
+                Your premium credits are applied automatically, typically within
+                2 weeks to 2 months. No paperwork required.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <h3>Quality Doctors</h3>
+              <p>
+                We partner only with high-quality healthcare providers who meet
+                our standards for excellent patient care.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-home">
+        <div class="section-shell">
+          <div class="section-header">
+            <h2 class="section-title">What Our Members Say</h2>
+            <p class="section-subtitle">
+              Hear from Medicare beneficiaries who are saving with SaveWell.
+            </p>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p class="testimonial-text">
+                SaveWell made it so easy to find a great cardiologist. The
+                rewards were credited to my account automatically. I did not
+                have to do anything.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">MJ</div>
+                <div>
+                  <span class="testimonial-name">Mary J.</span
+                  ><span class="testimonial-location">Milwaukee, WI</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p class="testimonial-text">
+                I was skeptical at first, but SaveWell really delivered. My
+                orthopedic surgery went smoothly and I got a nice credit on my
+                premium.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RK</div>
+                <div>
+                  <span class="testimonial-name">Robert K.</span
+                  ><span class="testimonial-location">Madison, WI</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p class="testimonial-text">
+                The doctors in the SaveWell network are top-notch. I have
+                recommended the program to all my friends at the senior center.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">PL</div>
+                <div>
+                  <span class="testimonial-name">Patricia L.</span
+                  ><span class="testimonial-location">Green Bay, WI</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p class="testimonial-text">
+                Being on a fixed income, every dollar counts. SaveWell helped me
+                save on my premiums while getting the care I needed for my
+                diabetes.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">JM</div>
+                <div>
+                  <span class="testimonial-name">James M.</span
+                  ><span class="testimonial-location">Kenosha, WI</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p class="testimonial-text">
+                I love that there is no paperwork. I just use the SaveWell
+                doctors and the rewards show up at the end of the year. Simple
+                as that.
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">DH</div>
+                <div>
+                  <span class="testimonial-name">Dorothy H.</span
+                  ><span class="testimonial-location">Racine, WI</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-home">
+        <div class="section-shell">
+          <h2>Ready to Start Saving?</h2>
+          <p>Use the SaveWell network and start earning rewards today.</p>
+          <a
+            href="search.html"
+            class="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-saveTealDark font-semibold hover:bg-slate-100"
+            >Search Providers Now</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="relative bg-slate-50 border-t border-slate-200"
+      id="site-footer"
+    >
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10"
+      >
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <img
+              src="assets/savewell-logo.png"
+              alt="SaveWell"
+              class="h-8 w-auto"
+            />
+            <p class="text-sm text-slate-600 mt-3 max-w-xs">
+              Helping Medicare beneficiaries save money on premiums while
+              accessing quality healthcare.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Learn</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-saveWine" href="how-it-works.html"
+                  >How it Works</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saveWine" href="search.html"
+                  >Search Providers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saveWine" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Company</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-saveWine" href="about.html">About</a>
+              </li>
+              <li>
+                <a
+                  class="hover:text-saveWine"
+                  href="terms.html"
+                  id="footer-terms"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-saveWine"
+                  href="privacy.html"
+                  id="footer-privacy"
+                  >Privacy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Contact</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="mailto:hello@savewellnow.com"
+                  class="hover:text-saveWine"
+                  >hello@savewellnow.com</a
+                >
+              </li>
+              <li>(510) 736-4332</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 mt-8">
+          &copy; <span id="year"></span> SaveWell. All rights reserved.
+        </p>
+        <div class="w-full flex justify-center mt-8">
+          <img
+            src="assets/medicare-people.png"
+            alt="Medicare People"
+            class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn)
+        menuBtn.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden"),
+        );
+    </script>
+  </body>
 </html>
