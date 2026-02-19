@@ -1,171 +1,456 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms &amp; Conditions - SaveWell</title>
-  <meta name="description" content="Read the SaveWell Terms and Conditions." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{saveTeal:'#0b7a7c',saveWine:'#8a0052',saveTealDark:'#065e60'},fontFamily:{sans:["Inter","ui-sans-serif","system-ui"]}}}}</script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/favicon.png" />
-  <link rel="canonical" href="https://savewellnow.com/terms.html" />
-  <meta property="og:site_name" content="SaveWell" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Terms &amp; Conditions - SaveWell" />
-  <meta property="og:description" content="Read the SaveWell Terms and Conditions." />
-  <meta property="og:url" content="https://savewellnow.com/terms.html" />
-  <meta property="og:image" content="https://savewellnow.com/assets/savewell-logo.png" />
-  <meta property="og:image:alt" content="SaveWell logo" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Terms &amp; Conditions - SaveWell" />
-  <meta name="twitter:description" content="Read the SaveWell Terms and Conditions." />
-  <meta name="twitter:image" content="https://savewellnow.com/assets/savewell-logo.png" />
-  <meta name="twitter:image:alt" content="SaveWell logo" />
-</head>
-<body class="font-sans text-slate-800">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <a href="index.html" class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3">
-    <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
-      </a>
-      <div class="flex items-center gap-6">
-        <nav class="hidden md:flex items-center gap-6 text-[15px]">
-          <a class="hover:text-saveWine" href="how-it-works.html">How it Works</a>
-          <a class="hover:text-saveWine" href="search.html">Search Providers</a>
-          <a class="hover:text-saveWine" href="contact.html">Contact Us</a>
-                            </nav>
-        <div class="flex items-center gap-2">
-          <a href="tel:5107364332" class="inline-flex items-center gap-2 rounded-md px-1 py-1 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2" aria-label="Call SaveWell at (510) 736-4332"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>(510) 736-4332</span></a>
-          <button class="md:hidden inline-flex items-center p-2" id="menuBtn" aria-label="Open Menu">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
-      <div class="px-4 py-3 space-y-2">
-  <a class="block py-2" href="how-it-works.html">How it Works</a>
-  <a class="block py-2" href="search.html">Search Providers</a>
-  <a class="block py-2" href="contact.html">Contact Us</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms &amp; Conditions - SaveWell</title>
+    <meta
+      name="description"
+      content="Read the SaveWell Terms and Conditions."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              saveTeal: "#0b7a7c",
+              saveWine: "#8a0052",
+              saveTealDark: "#065e60",
+            },
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="canonical" href="https://savewellnow.com/terms.html" />
+    <meta property="og:site_name" content="SaveWell" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Terms &amp; Conditions - SaveWell" />
+    <meta
+      property="og:description"
+      content="Read the SaveWell Terms and Conditions."
+    />
+    <meta property="og:url" content="https://savewellnow.com/terms.html" />
+    <meta
+      property="og:image"
+      content="https://savewellnow.com/assets/savewell-logo.png"
+    />
+    <meta property="og:image:alt" content="SaveWell logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Terms &amp; Conditions - SaveWell" />
+    <meta
+      name="twitter:description"
+      content="Read the SaveWell Terms and Conditions."
+    />
+    <meta
+      name="twitter:image"
+      content="https://savewellnow.com/assets/savewell-logo.png"
+    />
+    <meta name="twitter:image:alt" content="SaveWell logo" />
+  </head>
+  <body class="font-sans text-slate-800">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200"
+    >
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+      >
+        <a
+          href="index.html"
+          class="flex flex-col sm:flex-row items-start sm:items-end gap-1 sm:gap-3"
+        >
+          <img
+            src="assets/savewell-logo.png"
+            alt="SaveWell"
+            class="h-8 w-auto"
+          />
+        </a>
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:flex items-center gap-6 text-[15px]">
+            <a class="hover:text-saveWine" href="how-it-works.html"
+              >How it Works</a
+            >
+            <a class="hover:text-saveWine" href="search.html"
+              >Search Providers</a
+            >
+            <a class="hover:text-saveWine" href="contact.html">Contact Us</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <a
+              href="tel:5107364332"
+              class="inline-flex items-center gap-2 rounded-md px-1 py-1 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2"
+              aria-label="Call SaveWell at (510) 736-4332"
+              ><svg
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+              ><span>(510) 736-4332</span></a
+            >
+            <button
+              class="md:hidden inline-flex items-center p-2"
+              id="menuBtn"
+              aria-label="Open Menu"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
-    </div>
-  </header>
-  
-
-  <main>
-    <section class="bg-gradient-to-b from-white to-slate-50 border-b">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-3xl sm:text-4xl font-extrabold">Terms &amp; Conditions</h1>
-        <div class="mt-6 max-h-96 overflow-y-auto border border-slate-300 rounded-lg p-6 bg-slate-50 text-sm leading-relaxed">
-          <h1 class="text-2xl font-bold mb-4">Terms of Service</h1>
-          <p class="mb-4"><strong>Last Updated: September 3, 2025</strong></p>
-          <p class="mb-4">These Terms of Service ("Terms") govern your use of the services provided by SaveWell, Inc. ("we," "us," or "Company"), including our website, mobile/web applications, and other digital products linking to these Terms (collectively, the "Services"). By accessing or using the Services, you agree to these Terms, which form a binding legal agreement between you and the Company. These Terms include a mandatory arbitration provision (Section 10) requiring individual arbitration for disputes, waiving jury trials and class actions.</p>
-          <p class="mb-4">We may update these Terms periodically. Material changes will be communicated via email or website notice before taking effect. Continued use of the Services after changes constitutes acceptance.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">1. Access and Use</h2>
-          <p class="mb-4">We grant you a limited, revocable license to access and use the Services, subject to these Terms. You must provide accurate, current, and complete information and maintain necessary equipment and third-party services (e.g., internet access) at your expense. We may suspend or terminate your access at our discretion without notice or liability.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">2. Account Registration and Security</h2>
-          <p class="mb-4">Certain Services require an account. You must:</p>
-          <ul class="list-disc list-inside mb-4 ml-4">
-            <li class="mb-2">Provide accurate registration information and keep it updated.</li>
-            <li class="mb-2">Maintain the confidentiality of your account credentials.</li>
-            <li class="mb-2">Notify us immediately at support@savewellnow.com of any unauthorized account use.</li>
-            <li class="mb-2">Not share your account or impersonate others.</li>
-          </ul>
-          <p class="mb-4">We may disable or close accounts at our discretion. You must be at least 13 years old to use the Services.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">3. Prohibited Uses</h2>
-          <p class="mb-4">You agree to use the Services lawfully and in accordance with these Terms. You will not:</p>
-          <ul class="list-disc list-inside mb-4 ml-4">
-            <li class="mb-2">Use the Services for unauthorized commercial purposes.</li>
-            <li class="mb-2">Violate any applicable laws or regulations.</li>
-            <li class="mb-2">Infringe intellectual property, privacy, or other legal rights.</li>
-            <li class="mb-2">Transmit deceptive, harmful, or illegal content.</li>
-            <li class="mb-2">Reverse engineer, modify, or exploit the Services.</li>
-            <li class="mb-2">Use automated tools (e.g., bots, spiders) to access or collect data.</li>
-            <li class="mb-2">Introduce viruses or interfere with Service security or functionality.</li>
-          </ul>
-          <p class="mb-4">Violations may require 30 days' prior written notice to support@savewellnow.com, allowing us to address concerns.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">4. Intellectual Property and Content</h2>
-          <h3 class="text-lg font-medium mb-2 mt-4">a. Company IP</h3>
-          <p class="mb-4">We own all rights to the Services, trademarks, logos, and content we create ("Company Content"). No rights are granted except as expressly stated.</p>
-          <h3 class="text-lg font-medium mb-2 mt-4">b. Your Content</h3>
-          <p class="mb-4">You are responsible for content you submit ("Your Content"), including its accuracy and legality. You represent that you have necessary rights to Your Content and that it complies with these Terms. We may update inaccurate contact information but disclaim liability for communication issues due to inaccurate data. You indemnify us against losses from such issues.</p>
-          <h3 class="text-lg font-medium mb-2 mt-4">c. Electronic Communications</h3>
-          <p class="mb-4">You consent to electronic communications (e.g., email, SMS) from us, satisfying legal writing requirements. You may opt out of SMS communications by texting STOP, but this may affect Service functionality. Standard message and data rates may apply.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">5. Third-Party Links</h2>
-          <p class="mb-4">The Services may link to third-party websites. We are not responsible for their content or any resulting loss or damage. Use them at your own risk.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">6. Service Availability</h2>
-          <p class="mb-4">We do not guarantee uninterrupted Service availability. Services may be modified, suspended, or discontinued without notice or liability. Device compatibility is your responsibility.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">7. Data Privacy</h2>
-          <p class="mb-4">We comply with applicable data protection laws (e.g., GDPR, CCPA). Our Privacy Policy, incorporated herein, details how we collect, use, and protect your data. You consent to data processing as described therein.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">8. Disclaimer of Warranties</h2>
-          <p class="mb-4">The Services are provided "as is" without warranties, express or implied, including merchantability, fitness for a particular purpose, or non-infringement. We disclaim liability for actions taken during investigations or by law enforcement. California residents waive California Civil Code Section 1542, and New Jersey residents waive relevant provisions of the Truth in Consumer Contract, Warranty, and Notice Act.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">9. Limitation of Liability</h2>
-          <p class="mb-4">To the fullest extent permitted by law, we are not liable for indirect, incidental, special, or consequential damages. Our aggregate liability is limited to fees paid by you in the prior six months or $100 if no fees apply.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">10. Indemnification</h2>
-          <p class="mb-4">You will indemnify and hold us harmless from claims, damages, or expenses (including attorneys’ fees) arising from your violation of these Terms, use of the Services, Your Content, third-party rights violations, or negligence.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">11. Governing Law and Arbitration</h2>
-          <h3 class="text-lg font-medium mb-2 mt-4">a. Governing Law</h3>
-          <p class="mb-4">These Terms are governed by California law, excluding conflict of laws principles. You submit to the jurisdiction of Orange County courts.</p>
-          <h3 class="text-lg font-medium mb-2 mt-4">b. Arbitration</h3>
-          <p class="mb-4">Disputes must be resolved through informal negotiation first (contact support@savewellnow.com). Unresolved disputes after 60 days will be settled by binding arbitration via JAMS in Orange County under its Optional Expedited Arbitration Procedures. Each party pays its own fees for commercial use; for non-commercial use, you may recover reasonable costs if awarded. Small claims court is an option without arbitration. We may seek injunctive relief for IP or security violations.</p>
-          <h3 class="text-lg font-medium mb-2 mt-4">c. Class Action Waiver</h3>
-          <p class="mb-4">Claims must be brought individually, not as part of class, collective, or representative actions. You waive jury trial and class action rights.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">12. Termination</h2>
-          <p class="mb-4">We may terminate your access for any reason, including non-compliance with these Terms, with or without notice. Upon termination, your account and rights to access the Services cease. Sections 4, 7-11, and 13 survive termination.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">13. General Terms</h2>
-          <p class="mb-4">These Terms are the entire agreement regarding the Services, superseding prior agreements. No waiver by us constitutes a continuing waiver. Invalid provisions will be modified or eliminated to maintain the Terms’ intent. You may not assign these Terms without our consent; we may assign them freely. Feedback sent to support@savewellnow.com is assigned to us without confidentiality obligations.</p>
-          <h2 class="text-xl font-semibold mb-3 mt-6">14. Contact</h2>
-          <p class="mb-4">Direct feedback or support requests to support@savewellnow.com.</p>
         </div>
       </div>
-    </section>
-  </main>
-
-    <footer class="relative bg-slate-50 border-t border-slate-200" id="site-footer">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div>
-          <img src="assets/savewell-logo.png" alt="SaveWell" class="h-8 w-auto" />
-          <p class="text-sm text-slate-600 mt-3 max-w-xs">Helping Medicare beneficiaries save money on premiums while accessing quality healthcare.</p>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-3">Learn</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="how-it-works.html">How it Works</a></li>
-            <li><a class="hover:text-saveWine" href="search.html">Search Providers</a></li>
-</ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-3">Legal</h3>
-          <ul class="space-y-2 text-sm"><li><a class="hover:text-saveWine" href="terms.html" id="footer-terms">Terms & Conditions</a></li>
-            <li><a class="hover:text-saveWine" href="privacy.html" id="footer-privacy">Privacy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-3">Contact</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-saveWine" href="contact.html">Contact Us</a></li>
-            <li><a href="mailto:hello@savewellnow.com" class="hover:text-saveWine">hello@savewellnow.com</a></li>
-            <li>(510) 736-4332</li>
-          </ul>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+        <div class="px-4 py-3 space-y-2">
+          <a class="block py-2" href="how-it-works.html">How it Works</a>
+          <a class="block py-2" href="search.html">Search Providers</a>
+          <a class="block py-2" href="contact.html">Contact Us</a>
         </div>
       </div>
-      <p class="text-xs text-slate-500 mt-8">&copy; <span id="year"></span> SaveWell. All rights reserved.</p>
-      <div class="w-full flex justify-center mt-8">
-  <img src="assets/medicare-people.png" alt="Medicare People" class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0" />
+    </header>
+
+    <main>
+      <section class="bg-gradient-to-b from-white to-slate-50 border-b">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h1 class="text-3xl sm:text-4xl font-extrabold">
+            Terms &amp; Conditions
+          </h1>
+          <div
+            class="mt-6 max-h-96 overflow-y-auto border border-slate-300 rounded-lg p-6 bg-slate-50 text-sm leading-relaxed"
+          >
+            <h1 class="text-2xl font-bold mb-4">Terms of Service</h1>
+            <p class="mb-4"><strong>Last Updated: September 3, 2025</strong></p>
+            <p class="mb-4">
+              These Terms of Service ("Terms") govern your use of the services
+              provided by SaveWell, Inc. ("we," "us," or "Company"), including
+              our website, mobile/web applications, and other digital products
+              linking to these Terms (collectively, the "Services"). By
+              accessing or using the Services, you agree to these Terms, which
+              form a binding legal agreement between you and the Company. These
+              Terms include a mandatory arbitration provision (Section 10)
+              requiring individual arbitration for disputes, waiving jury trials
+              and class actions.
+            </p>
+            <p class="mb-4">
+              We may update these Terms periodically. Material changes will be
+              communicated via email or website notice before taking effect.
+              Continued use of the Services after changes constitutes
+              acceptance.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">1. Access and Use</h2>
+            <p class="mb-4">
+              We grant you a limited, revocable license to access and use the
+              Services, subject to these Terms. You must provide accurate,
+              current, and complete information and maintain necessary equipment
+              and third-party services (e.g., internet access) at your expense.
+              We may suspend or terminate your access at our discretion without
+              notice or liability.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              2. Account Registration and Security
+            </h2>
+            <p class="mb-4">Certain Services require an account. You must:</p>
+            <ul class="list-disc list-inside mb-4 ml-4">
+              <li class="mb-2">
+                Provide accurate registration information and keep it updated.
+              </li>
+              <li class="mb-2">
+                Maintain the confidentiality of your account credentials.
+              </li>
+              <li class="mb-2">
+                Notify us immediately at support@savewellnow.com of any
+                unauthorized account use.
+              </li>
+              <li class="mb-2">
+                Not share your account or impersonate others.
+              </li>
+            </ul>
+            <p class="mb-4">
+              We may disable or close accounts at our discretion. You must be at
+              least 13 years old to use the Services.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">3. Prohibited Uses</h2>
+            <p class="mb-4">
+              You agree to use the Services lawfully and in accordance with
+              these Terms. You will not:
+            </p>
+            <ul class="list-disc list-inside mb-4 ml-4">
+              <li class="mb-2">
+                Use the Services for unauthorized commercial purposes.
+              </li>
+              <li class="mb-2">Violate any applicable laws or regulations.</li>
+              <li class="mb-2">
+                Infringe intellectual property, privacy, or other legal rights.
+              </li>
+              <li class="mb-2">
+                Transmit deceptive, harmful, or illegal content.
+              </li>
+              <li class="mb-2">
+                Reverse engineer, modify, or exploit the Services.
+              </li>
+              <li class="mb-2">
+                Use automated tools (e.g., bots, spiders) to access or collect
+                data.
+              </li>
+              <li class="mb-2">
+                Introduce viruses or interfere with Service security or
+                functionality.
+              </li>
+            </ul>
+            <p class="mb-4">
+              Violations may require 30 days' prior written notice to
+              support@savewellnow.com, allowing us to address concerns.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              4. Intellectual Property and Content
+            </h2>
+            <h3 class="text-lg font-medium mb-2 mt-4">a. Company IP</h3>
+            <p class="mb-4">
+              We own all rights to the Services, trademarks, logos, and content
+              we create ("Company Content"). No rights are granted except as
+              expressly stated.
+            </p>
+            <h3 class="text-lg font-medium mb-2 mt-4">b. Your Content</h3>
+            <p class="mb-4">
+              You are responsible for content you submit ("Your Content"),
+              including its accuracy and legality. You represent that you have
+              necessary rights to Your Content and that it complies with these
+              Terms. We may update inaccurate contact information but disclaim
+              liability for communication issues due to inaccurate data. You
+              indemnify us against losses from such issues.
+            </p>
+            <h3 class="text-lg font-medium mb-2 mt-4">
+              c. Electronic Communications
+            </h3>
+            <p class="mb-4">
+              You consent to electronic communications (e.g., email, SMS) from
+              us, satisfying legal writing requirements. You may opt out of SMS
+              communications by texting STOP, but this may affect Service
+              functionality. Standard message and data rates may apply.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              5. Third-Party Links
+            </h2>
+            <p class="mb-4">
+              The Services may link to third-party websites. We are not
+              responsible for their content or any resulting loss or damage. Use
+              them at your own risk.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              6. Service Availability
+            </h2>
+            <p class="mb-4">
+              We do not guarantee uninterrupted Service availability. Services
+              may be modified, suspended, or discontinued without notice or
+              liability. Device compatibility is your responsibility.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">7. Data Privacy</h2>
+            <p class="mb-4">
+              We comply with applicable data protection laws (e.g., GDPR, CCPA).
+              Our Privacy Policy, incorporated herein, details how we collect,
+              use, and protect your data. You consent to data processing as
+              described therein.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              8. Disclaimer of Warranties
+            </h2>
+            <p class="mb-4">
+              The Services are provided "as is" without warranties, express or
+              implied, including merchantability, fitness for a particular
+              purpose, or non-infringement. We disclaim liability for actions
+              taken during investigations or by law enforcement. California
+              residents waive California Civil Code Section 1542, and New Jersey
+              residents waive relevant provisions of the Truth in Consumer
+              Contract, Warranty, and Notice Act.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              9. Limitation of Liability
+            </h2>
+            <p class="mb-4">
+              To the fullest extent permitted by law, we are not liable for
+              indirect, incidental, special, or consequential damages. Our
+              aggregate liability is limited to fees paid by you in the prior
+              six months or $100 if no fees apply.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">10. Indemnification</h2>
+            <p class="mb-4">
+              You will indemnify and hold us harmless from claims, damages, or
+              expenses (including attorneys’ fees) arising from your violation
+              of these Terms, use of the Services, Your Content, third-party
+              rights violations, or negligence.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">
+              11. Governing Law and Arbitration
+            </h2>
+            <h3 class="text-lg font-medium mb-2 mt-4">a. Governing Law</h3>
+            <p class="mb-4">
+              These Terms are governed by California law, excluding conflict of
+              laws principles. You submit to the jurisdiction of Orange County
+              courts.
+            </p>
+            <h3 class="text-lg font-medium mb-2 mt-4">b. Arbitration</h3>
+            <p class="mb-4">
+              Disputes must be resolved through informal negotiation first
+              (contact support@savewellnow.com). Unresolved disputes after 60
+              days will be settled by binding arbitration via JAMS in Orange
+              County under its Optional Expedited Arbitration Procedures. Each
+              party pays its own fees for commercial use; for non-commercial
+              use, you may recover reasonable costs if awarded. Small claims
+              court is an option without arbitration. We may seek injunctive
+              relief for IP or security violations.
+            </p>
+            <h3 class="text-lg font-medium mb-2 mt-4">
+              c. Class Action Waiver
+            </h3>
+            <p class="mb-4">
+              Claims must be brought individually, not as part of class,
+              collective, or representative actions. You waive jury trial and
+              class action rights.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">12. Termination</h2>
+            <p class="mb-4">
+              We may terminate your access for any reason, including
+              non-compliance with these Terms, with or without notice. Upon
+              termination, your account and rights to access the Services cease.
+              Sections 4, 7-11, and 13 survive termination.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">13. General Terms</h2>
+            <p class="mb-4">
+              These Terms are the entire agreement regarding the Services,
+              superseding prior agreements. No waiver by us constitutes a
+              continuing waiver. Invalid provisions will be modified or
+              eliminated to maintain the Terms’ intent. You may not assign these
+              Terms without our consent; we may assign them freely. Feedback
+              sent to support@savewellnow.com is assigned to us without
+              confidentiality obligations.
+            </p>
+            <h2 class="text-xl font-semibold mb-3 mt-6">14. Contact</h2>
+            <p class="mb-4">
+              Direct feedback or support requests to support@savewellnow.com.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="relative bg-slate-50 border-t border-slate-200"
+      id="site-footer"
+    >
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-0 pt-12 relative z-10"
+      >
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <img
+              src="assets/savewell-logo.png"
+              alt="SaveWell"
+              class="h-8 w-auto"
+            />
+            <p class="text-sm text-slate-600 mt-3 max-w-xs">
+              Helping Medicare beneficiaries save money on premiums while
+              accessing quality healthcare.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Learn</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-saveWine" href="how-it-works.html"
+                  >How it Works</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-saveWine" href="search.html"
+                  >Search Providers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Legal</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  class="hover:text-saveWine"
+                  href="terms.html"
+                  id="footer-terms"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-saveWine"
+                  href="privacy.html"
+                  id="footer-privacy"
+                  >Privacy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-3">Contact</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a class="hover:text-saveWine" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:hello@savewellnow.com"
+                  class="hover:text-saveWine"
+                  >hello@savewellnow.com</a
+                >
+              </li>
+              <li>(510) 736-4332</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 mt-8">
+          &copy; <span id="year"></span> SaveWell. All rights reserved.
+        </p>
+        <div class="w-full flex justify-center mt-8">
+          <img
+            src="assets/medicare-people.png"
+            alt="Medicare People"
+            class="block w-full max-h-40 sm:max-h-56 lg:max-h-72 object-cover pointer-events-none select-none sm:-mt-16 mb-0"
+          />
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-
-  <script>
-    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-  </script>
-</body>
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn)
+        menuBtn.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden"),
+        );
+    </script>
+  </body>
 </html>
