@@ -384,35 +384,6 @@
         menuBtn.addEventListener("click", () =>
           mobileMenu.classList.toggle("hidden"),
         );
-
-      const phoneInput = document.getElementById("phone");
-      if (phoneInput) {
-        phoneInput.addEventListener("input", (e) => {
-          let value = e.target.value.replace(/\D/g, "");
-          if (value.length > 0) {
-            if (value.length <= 3) value = `(${value}`;
-            else if (value.length <= 6)
-              value = `(${value.slice(0, 3)}) ${value.slice(3)}`;
-            else
-              value = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6, 10)}`;
-          }
-          e.target.value = value;
-        });
-      }
-
-      const contactForm = document.getElementById("contactForm");
-      const successMessage = document.getElementById("successMessage");
-      if (contactForm && successMessage) {
-        contactForm.addEventListener("submit", (e) => {
-          e.preventDefault();
-          contactForm.classList.add("hidden");
-          successMessage.classList.remove("hidden");
-          successMessage.scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-          });
-        });
-      }
     </script>
   </body>
 </html>
