@@ -1,0 +1,74 @@
+ For testing new colors and design systems:
+  - UI UX Pro Max — generates complete design systems (colors, typography, spacing) for free. Works with Tailwind/shadcn. Per @heynavtoor, it automates what designers charge
+  $5K+ for
+  - Khroma — AI color palette generator mentioned by @TheUltimate_AI. Learns your preferences and suggests palettes
+  - Google Stitch — use its "Redesign" mode: upload a screenshot of your current site, and it generates redesigned versions with new color schemes and layouts. Completely free
+  right now
+
+  For design iteration without rebuilding:
+  - Figma (with Make Kits) — screenshot your current pages into Figma, iterate on colors/layout/typography, then export specs. The new Make Kits feature lets you build a design
+   system you can reuse
+  - Stitch → DESIGN.md — per @dr_cintas, you can generate a DESIGN.md file that captures your design system, then have Claude Code apply it to your existing codebase
+
+  For your specific situation (static site + Claude Code):
+  The most practical workflow from the research:
+  1. Use Stitch's Redesign mode to explore new looks (free, instant)
+  2. Pick the direction you like
+  3. Use DESIGN.md to codify those design decisions
+  4. Have Claude Code apply the changes directly to your HTML/CSS
+
+  Design inspiration — @UiSavior's curated lists (2.4K likes) are great for browsing what's trending: craftwork.design, curated.design, navbar.gallery
+
+  Want me to help you try one of these? I could:
+  - Pull up your current savewellnow.com and suggest a DESIGN.md for it
+  - Walk through setting up Stitch's Redesign mode with a screenshot
+  - Generate a new color palette direction right here in code
+
+
+    🏆 Most mentioned tools for improving an existing site's design:
+
+  Coolors.co — 3x mentions
+  The go-to. Spacebar to generate, lock colors you like. The Palette Visualizer feature lets you upload YOUR design and see it recolored instantly — perfect for testing new
+  palettes on your existing site.
+  Sources: @AlbiaHossain, @aecyydesign, @kreoHQ, Muzli
+
+  Realtime Colors — 2x mentions
+  Preview any color combination on a live website mockup before committing. Bridges the gap between palette theory and how it actually looks on a page.
+  Sources: Muzli, Toolsbox
+
+  Kigen — 1x mention
+  "Maybe one of the most beautiful palette generators I've seen recently. Generates complete color palettes and exports directly to CSS," per @CamilleRoux (770 likes).
+  Copy-paste ready.
+
+  OKLCH FYI — 1x mention
+  "One of the most interesting color tools I've come across recently — helps you generate, explore, and preview colors using the OKLCH color space," per @Abmankendrick (442
+  likes). The modern color space that CSS now natively supports.
+
+  Huemint — 2x mentions
+  AI generates palettes AND shows them applied to actual website templates — not just swatches. See how your palette looks on a real layout.
+  Sources: @eamin_ux, Muzli
+
+  Palettemaker — 1x mention
+  Test color palettes on pre-made design examples (logos, UI, posters, patterns). Great for seeing how a palette works across contexts.
+
+  AI Redesign Tools (paste your URL, get a new design):
+
+  GlowSite — "The best pitch for a website redesign is showing the client their own site, rebuilt and gorgeous. GlowSite does that automatically," per @polsia
+
+  Shuffle — Paste a URL, describe your vision, watch multiple AI models redesign it side by side. Exports production-ready code (Next.js, HTML/CSS, WordPress).
+
+  Macaly — AI analyzes your site and creates a modern, responsive redesign. Handles layout, typography, and structure automatically.
+
+  CSS Studio — "Edit your website in browser and your agent can start implementing those changes in one command. Change colour, size, padding. Add animations," per
+  @ivaavimusic. This one is closest to what you're asking — edit live, then push to code.
+
+  Claude Code Skill — @thechaicoder built a Claude Skill that generates "a complete color system in OKLCH" and "a pixel-perfect landing page spec" for websites. Worth looking
+  into.
+
+  Notable: @_heyrico's design cheatsheet (577 likes) — quick rules: only 2 font weights, TailwindCSS neutral palette for colors, stick to 8-12px border radius.
+
+  KEY PATTERNS from the research:
+  1. Preview before committing — the best tools (Realtime Colors, Coolors Visualizer, Huemint) show palettes ON actual layouts, not just swatches, per @AlbiaHossain
+  2. OKLCH is the new standard — multiple posts recommend OKLCH color space over hex/HSL for better perceptual uniformity, per @Abmankendrick
+  3. CSS export matters — tools like Kigen that export directly to CSS variables save the most time for static sites, per @CamilleRoux
+  4. AI redesign from URL is now real — paste your URL into Shuffle, Macaly, or GlowSite and get a full redesign in minutes, per @polsia
