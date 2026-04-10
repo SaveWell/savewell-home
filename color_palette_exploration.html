@@ -262,17 +262,19 @@
         white-space: nowrap;
       }
 
-      .fav-btn {
+      .card-btn {
         width: 2rem; height: 2rem;
         border: none; background: none; cursor: pointer;
         color: var(--page-border);
-        transition: color 0.15s ease;
+        transition: color 0.15s ease, background 0.15s ease;
         display: flex; align-items: center; justify-content: center;
         border-radius: 50%; flex-shrink: 0;
       }
-      .fav-btn:hover { color: var(--page-primary); background: var(--page-surface); }
-      .fav-btn.favorited { color: oklch(0.55 0.18 25); }
-      .fav-btn svg { width: 1rem; height: 1rem; }
+      .card-btn:hover { color: var(--page-primary); background: var(--page-surface); }
+      .card-btn.favorited { color: oklch(0.55 0.18 25); }
+      .card-btn svg { width: 1rem; height: 1rem; }
+      .shuffle-btn:active svg { transform: rotate(180deg); }
+      .shuffle-btn svg { transition: transform 0.25s ease; }
 
       /* Token readout */
       .pal-tokens {
@@ -597,9 +599,75 @@
         ).join('');
       }
 
-      // ---- Favorites ----
+      // ---- State ----
       const favs = new Set(JSON.parse(localStorage.getItem("sw-color-favs2") || "[]"));
       function saveFavs() { localStorage.setItem("sw-color-favs2", JSON.stringify([...favs])); }
+
+      // Track shuffled color orders per palette (keyed by palette number)
+      const shuffledColors = {};
+
+      function getColors(p) {
+        return shuffledColors[p.n] || p.colors;
+      }
+
+      function shuffleArray(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+
+      // ---- Build a single card ----
+      function buildCard(p) {
+        const colors = getColors(p);
+        const theme = deriveTheme(colors);
+        const card = document.createElement("div");
+        card.className = "pal-card";
+        card.dataset.num = p.n;
+
+        const swatches = colors.map(c => `<div class="pal-swatch" style="background:${c};" title="${c}"></div>`).join('');
+
+        card.innerHTML = `
+          <div class="mini-site">${miniSiteHTML(theme)}</div>
+          <div class="pal-tokens">${tokenReadout(theme)}</div>
+          <div class="pal-footer">
+            <span class="pal-num">${String(p.n).padStart(2,'0')}</span>
+            <div class="pal-swatches">${swatches}</div>
+            <span class="pal-name">${p.name}</span>
+            <button class="card-btn shuffle-btn" data-num="${p.n}" aria-label="Shuffle colors" title="Shuffle colors">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/>
+                <polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/>
+                <line x1="4" y1="4" x2="9" y2="9"/>
+              </svg>
+            </button>
+            <button class="card-btn ${favs.has(p.n) ? 'favorited' : ''}" data-num="${p.n}" data-action="fav" aria-label="Toggle favorite">
+              <svg viewBox="0 0 24 24" fill="${favs.has(p.n) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+        `;
+
+        // Bind shuffle
+        card.querySelector(".shuffle-btn").addEventListener("click", () => {
+          shuffledColors[p.n] = shuffleArray(p.colors);
+          const newCard = buildCard(p);
+          card.replaceWith(newCard);
+        });
+
+        // Bind fav
+        card.querySelector('[data-action="fav"]').addEventListener("click", () => {
+          if (favs.has(p.n)) favs.delete(p.n); else favs.add(p.n);
+          saveFavs();
+          const newCard = buildCard(p);
+          card.replaceWith(newCard);
+        });
+
+        return card;
+      }
 
       function render(filter) {
         const grid = document.getElementById("grid");
@@ -616,38 +684,7 @@
           return;
         }
 
-        list.forEach(p => {
-          const theme = deriveTheme(p.colors);
-          const card = document.createElement("div");
-          card.className = "pal-card";
-
-          const swatches = p.colors.map(c => `<div class="pal-swatch" style="background:${c};" title="${c}"></div>`).join('');
-
-          card.innerHTML = `
-            <div class="mini-site">${miniSiteHTML(theme)}</div>
-            <div class="pal-tokens">${tokenReadout(theme)}</div>
-            <div class="pal-footer">
-              <span class="pal-num">${String(p.n).padStart(2,'0')}</span>
-              <div class="pal-swatches">${swatches}</div>
-              <span class="pal-name">${p.name}</span>
-              <button class="fav-btn ${favs.has(p.n) ? 'favorited' : ''}" data-num="${p.n}" aria-label="Toggle favorite">
-                <svg viewBox="0 0 24 24" fill="${favs.has(p.n) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                </svg>
-              </button>
-            </div>
-          `;
-          grid.appendChild(card);
-        });
-
-        grid.querySelectorAll(".fav-btn").forEach(btn => {
-          btn.addEventListener("click", () => {
-            const num = parseInt(btn.dataset.num);
-            if (favs.has(num)) favs.delete(num); else favs.add(num);
-            saveFavs();
-            render(currentFilter);
-          });
-        });
+        list.forEach(p => grid.appendChild(buildCard(p)));
       }
 
       let currentFilter = "all";
