@@ -23,7 +23,6 @@
       html { font-size: 16px; -webkit-font-smoothing: antialiased; }
       body { background: var(--page-bg); color: var(--page-text); font-family: 'Nunito', system-ui, sans-serif; line-height: 1.6; }
 
-      /* ---- Page header ---- */
       .page-header {
         max-width: 1200px;
         margin: 0 auto;
@@ -53,7 +52,6 @@
         line-height: 1.65;
       }
 
-      /* ---- Controls ---- */
       .controls {
         max-width: 1200px;
         margin: 0 auto;
@@ -81,7 +79,6 @@
         border-color: var(--page-primary);
       }
 
-      /* ---- Grid ---- */
       .palette-grid {
         max-width: 1200px;
         margin: 1.5rem auto 4rem;
@@ -91,7 +88,6 @@
         gap: 1.25rem;
       }
 
-      /* ---- Palette Card ---- */
       .pal-card {
         background: white;
         border-radius: 1rem;
@@ -106,20 +102,16 @@
 
       /* Mini homepage snapshot */
       .mini-site {
-        padding: 0;
-        overflow: hidden;
         font-size: 10px;
         line-height: 1.4;
-        position: relative;
+        overflow: hidden;
       }
 
-      /* -- Nav -- */
       .mini-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0.6em 1.4em;
-        border-bottom: 1px solid rgba(0,0,0,0.06);
       }
       .mini-nav-logo {
         font-family: 'Bitter', serif;
@@ -133,7 +125,6 @@
         opacity: 0.6;
       }
 
-      /* -- Hero -- */
       .mini-hero {
         padding: 2em 1.4em 2.2em;
         display: grid;
@@ -151,11 +142,7 @@
         font-weight: 600;
         margin-bottom: 0.6em;
       }
-      .mini-badge svg {
-        width: 0.9em;
-        height: 0.9em;
-        flex-shrink: 0;
-      }
+      .mini-badge svg { width: 0.9em; height: 0.9em; flex-shrink: 0; }
       .mini-hero h2 {
         font-family: 'Bitter', Georgia, serif;
         font-size: 1.8em;
@@ -168,12 +155,8 @@
         font-size: 0.95em;
         line-height: 1.6;
         margin-bottom: 1em;
-        opacity: 0.8;
       }
-      .mini-hero-actions {
-        display: flex;
-        gap: 0.5em;
-      }
+      .mini-hero-actions { display: flex; gap: 0.5em; }
       .mini-btn {
         padding: 0.5em 1em;
         border-radius: 0.6em;
@@ -182,38 +165,22 @@
         text-align: center;
         white-space: nowrap;
       }
-      .mini-btn-outline {
-        border: 1px solid rgba(0,0,0,0.15);
-      }
-      .mini-hero-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      .mini-hero-img { display: flex; align-items: center; justify-content: center; }
       .mini-hero-img-placeholder {
         width: 7em;
         height: 8em;
         border-radius: 1em;
-        opacity: 0.15;
+        opacity: 0.18;
       }
       .mini-trust {
         display: flex;
         gap: 1em;
         margin-top: 0.8em;
         font-size: 0.75em;
-        opacity: 0.6;
       }
-      .mini-trust span {
-        display: flex;
-        align-items: center;
-        gap: 0.3em;
-      }
-      .mini-trust svg {
-        width: 1em;
-        height: 1em;
-      }
+      .mini-trust span { display: flex; align-items: center; gap: 0.3em; }
+      .mini-trust svg { width: 1em; height: 1em; }
 
-      /* -- Promise section -- */
       .mini-promise {
         padding: 1.6em 1.4em;
       }
@@ -226,7 +193,6 @@
       }
       .mini-promise-sub {
         font-size: 0.85em;
-        opacity: 0.7;
         margin-bottom: 1em;
         line-height: 1.55;
       }
@@ -235,11 +201,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 0.6em;
       }
-      .mini-promise-item {
-        display: flex;
-        gap: 0.5em;
-        align-items: flex-start;
-      }
+      .mini-promise-item { display: flex; gap: 0.5em; align-items: flex-start; }
       .mini-promise-icon {
         width: 2em;
         height: 2em;
@@ -249,17 +211,9 @@
         justify-content: center;
         flex-shrink: 0;
       }
-      .mini-promise-icon svg {
-        width: 1em;
-        height: 1em;
-      }
-      .mini-promise-item-title {
-        font-weight: 700;
-        font-size: 0.85em;
-        line-height: 1.3;
-      }
+      .mini-promise-icon svg { width: 1em; height: 1em; }
+      .mini-promise-item-title { font-weight: 700; font-size: 0.85em; line-height: 1.3; }
 
-      /* -- CTA bar -- */
       .mini-cta {
         padding: 1.2em 1.4em;
         display: flex;
@@ -278,7 +232,6 @@
         font-weight: 700;
       }
 
-      /* ---- Card footer with palette info ---- */
       .pal-footer {
         padding: 1rem 1.25rem;
         display: flex;
@@ -293,11 +246,7 @@
         color: var(--page-border);
         min-width: 2rem;
       }
-      .pal-swatches {
-        display: flex;
-        gap: 3px;
-        flex: 1;
-      }
+      .pal-swatches { display: flex; gap: 3px; flex: 1; }
       .pal-swatch {
         flex: 1;
         height: 1.75rem;
@@ -306,7 +255,6 @@
       }
       .pal-swatch:first-child { border-radius: 4px 2px 2px 4px; }
       .pal-swatch:last-child { border-radius: 2px 4px 4px 2px; }
-
       .pal-name {
         font-size: 0.75rem;
         font-weight: 600;
@@ -315,24 +263,43 @@
       }
 
       .fav-btn {
-        width: 2rem;
-        height: 2rem;
-        border: none;
-        background: none;
-        cursor: pointer;
+        width: 2rem; height: 2rem;
+        border: none; background: none; cursor: pointer;
         color: var(--page-border);
         transition: color 0.15s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        flex-shrink: 0;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%; flex-shrink: 0;
       }
       .fav-btn:hover { color: var(--page-primary); background: var(--page-surface); }
       .fav-btn.favorited { color: oklch(0.55 0.18 25); }
       .fav-btn svg { width: 1rem; height: 1rem; }
 
-      /* ---- Responsive ---- */
+      /* Token readout */
+      .pal-tokens {
+        padding: 0 1.25rem 0.75rem;
+        display: flex;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+      }
+      .pal-token {
+        font-size: 0.625rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 0.15rem 0.4rem;
+        border-radius: 3px;
+        border: 1px solid var(--page-border);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+      .pal-token-swatch {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+
       @media (max-width: 720px) {
         .page-header, .controls { padding-left: 1.25rem; padding-right: 1.25rem; }
         .palette-grid { padding: 0 1rem; grid-template-columns: 1fr; }
@@ -343,7 +310,7 @@
     <div class="page-header">
       <span class="tag">Color Exploration</span>
       <h1>30 Palettes from Coolors.co — Applied to the Homepage</h1>
-      <p>Each card shows a mini snapshot of the SaveWell homepage with a different color palette applied. Star your favorites to compare.</p>
+      <p>Each card maps a Coolors palette to the homepage's semantic token system: --bg, --bg-alt, --bg-subtle, --primary, --heading, --text. Star your favorites to compare.</p>
     </div>
 
     <div class="controls">
@@ -356,7 +323,6 @@
     <div class="palette-grid" id="grid"></div>
 
     <script>
-      // Top 30 trending palettes from Coolors.co (scraped April 2026)
       const PALETTES = [
         { n:1,  name:"Fiery Ocean",            colors:["#780000","#c1121f","#fdf0d5","#003049","#669bbc"] },
         { n:2,  name:"Olive Garden Feast",      colors:["#606c38","#283618","#fefae0","#dda15e","#bc6c25"] },
@@ -390,58 +356,178 @@
         { n:30, name:"Rose Gradient",           colors:["#590d22","#800f2f","#a4133c","#c9184a","#ff4d6d","#ff758f","#ff8fa3","#ffb3c1","#ffccd5","#fff0f3"], extended:true },
       ];
 
-      // -- Color utilities --
+      // ---- Color utilities ----
       function hexToRgb(hex) {
         const h = hex.replace('#','');
         return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
       }
+
       function luminance(hex) {
         const [r,g,b] = hexToRgb(hex).map(c => { c /= 255; return c <= 0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4); });
         return 0.2126*r + 0.7152*g + 0.0722*b;
       }
-      function isLight(hex) { return luminance(hex) > 0.4; }
 
-      // Derive a semantic theme from a raw palette
-      function deriveTheme(colors) {
-        const c = colors.length <= 5 ? colors : colors.slice(0, 5);
-        const sorted = [...c].sort((a,b) => luminance(b) - luminance(a));
-        // Lightest = background, darkest = heading, middle = primary accent
-        const bg = sorted[0];
-        const heading = sorted[sorted.length - 1];
-        const body = sorted.length > 2 ? sorted[sorted.length - 2] : heading;
-        // Primary = most saturated middle color
-        const mid = c.filter(x => x !== bg && x !== heading);
-        const primary = mid.length > 0 ? mid[Math.floor(mid.length/2)] : c[Math.floor(c.length/2)];
-        const accent = mid.length > 1 ? mid[0] : primary;
-        const surface = sorted.length > 1 ? sorted[1] : bg;
-        const ctaBg = heading;
-        const btnText = isLight(primary) ? heading : bg;
-        const ctaBtnBg = isLight(ctaBg) ? heading : bg;
-        const ctaBtnText = isLight(ctaBtnBg) ? heading : bg;
+      function isLight(hex) { return luminance(hex) > 0.35; }
 
-        return { bg, heading, body, primary, accent, surface, ctaBg, btnText, ctaBtnBg, ctaBtnText, badgeBg: surface, badgeText: primary };
+      function contrastRatio(hex1, hex2) {
+        const l1 = luminance(hex1), l2 = luminance(hex2);
+        const lighter = Math.max(l1, l2), darker = Math.min(l1, l2);
+        return (lighter + 0.05) / (darker + 0.05);
       }
 
-      function miniSiteHTML(theme) {
-        const t = theme;
+      // Perceived saturation (simple HSL-based)
+      function saturation(hex) {
+        const [r,g,b] = hexToRgb(hex).map(c => c/255);
+        const max = Math.max(r,g,b), min = Math.min(r,g,b);
+        if (max === min) return 0;
+        const l = (max+min)/2;
+        return l > 0.5 ? (max-min)/(2-max-min) : (max-min)/(max+min);
+      }
+
+      // Mix two hex colors
+      function mixHex(hex1, hex2, weight) {
+        const [r1,g1,b1] = hexToRgb(hex1);
+        const [r2,g2,b2] = hexToRgb(hex2);
+        const w = weight;
+        const r = Math.round(r1*w + r2*(1-w));
+        const g = Math.round(g1*w + g2*(1-w));
+        const b = Math.round(b1*w + b2*(1-w));
+        return '#' + [r,g,b].map(c => Math.min(255,Math.max(0,c)).toString(16).padStart(2,'0')).join('');
+      }
+
+      // Lighten a color toward white
+      function lighten(hex, amount) { return mixHex('#ffffff', hex, amount); }
+
+      // Darken a color toward black
+      function darken(hex, amount) { return mixHex('#000000', hex, amount); }
+
+      /*
+       * Smart theme derivation.
+       *
+       * Strategy: SaveWell is a light-mode healthcare site for 65+ users.
+       * We need:
+       *   --bg:         very light (luminance > 0.85)
+       *   --bg-alt:     slightly different from bg
+       *   --bg-subtle:  tinted light tone for badges/icons
+       *   --primary:    mid-range, saturated, good contrast on white (~4.5:1+)
+       *   --primary-dark: darker variant for hover/CTA
+       *   --accent:     secondary color, different hue from primary
+       *   --heading:    very dark, high contrast on bg
+       *   --text:       dark but softer than heading
+       *   --text-muted: lighter text for secondary info
+       *   --border:     light gray, tinted toward primary
+       */
+      function deriveTheme(colors) {
+        // Work with first 5-7 colors max
+        const c = colors.slice(0, Math.min(colors.length, 7));
+
+        // Sort all by luminance
+        const byLum = [...c].sort((a,b) => luminance(b) - luminance(a));
+
+        // Sort by saturation
+        const bySat = [...c].sort((a,b) => saturation(b) - saturation(a));
+
+        // 1. Find the best PRIMARY: most saturated color with good contrast on white
+        let primary = null;
+        for (const col of bySat) {
+          if (contrastRatio(col, '#ffffff') >= 3.0 && saturation(col) > 0.15) {
+            primary = col;
+            break;
+          }
+        }
+        // Fallback: darkest saturated color
+        if (!primary) {
+          const darkSaturated = bySat.filter(c => luminance(c) < 0.4);
+          primary = darkSaturated[0] || byLum[byLum.length - 1];
+        }
+
+        // 2. Find ACCENT: second most saturated, different enough from primary
+        let accent = null;
+        for (const col of bySat) {
+          if (col === primary) continue;
+          const lDiff = Math.abs(luminance(col) - luminance(primary));
+          if (saturation(col) > 0.1 && (lDiff > 0.1 || bySat.indexOf(col) > 0)) {
+            accent = col;
+            break;
+          }
+        }
+        if (!accent) accent = primary;
+
+        // 3. HEADING: darkest color in the palette
+        const heading = byLum[byLum.length - 1];
+
+        // 4. BG: lightest color. If it's not light enough, lighten it.
+        let bg = byLum[0];
+        if (luminance(bg) < 0.75) bg = lighten(bg, 0.88);
+
+        // 5. BG-ALT: second lightest, or derive from bg
+        let bgAlt = byLum.length > 1 ? byLum[1] : bg;
+        if (luminance(bgAlt) < 0.7) bgAlt = lighten(primary, 0.92);
+        // Make sure bg and bgAlt are visibly different
+        if (Math.abs(luminance(bg) - luminance(bgAlt)) < 0.03) {
+          bgAlt = darken(bg, 0.06);
+        }
+
+        // 6. BG-SUBTLE: lightly tinted toward primary
+        const bgSubtle = lighten(primary, 0.88);
+
+        // 7. PRIMARY-DARK: darken primary
+        const primaryDark = darken(primary, 0.25);
+
+        // 8. TEXT: derive from heading, slightly lighter
+        let text = heading;
+        if (contrastRatio(heading, bg) > 12) {
+          text = lighten(heading, 0.25);
+        }
+
+        // 9. TEXT-MUTED: lighter still
+        const textMuted = lighten(heading, 0.4);
+
+        // 10. BORDER: very light, tinted toward primary
+        const border = lighten(primary, 0.82);
+
+        // 11. CTA section
+        const ctaBg = primaryDark;
+        const ctaText = bg;
+        const ctaTextMuted = lighten(primary, 0.7);
+
+        // Ensure key contrasts meet WCAG AA
+        // primary on bg: needs 4.5:1 for text, 3:1 for large text
+        let finalPrimary = primary;
+        let attempts = 0;
+        while (contrastRatio(finalPrimary, bg) < 3.0 && attempts < 10) {
+          finalPrimary = darken(finalPrimary, 0.1);
+          attempts++;
+        }
+
+        return {
+          bg, bgAlt, bgSubtle, border,
+          primary: finalPrimary, primaryDark,
+          accent: contrastRatio(accent, bg) < 3 ? darken(accent, 0.2) : accent,
+          heading, text, textMuted,
+          ctaBg, ctaText, ctaTextMuted
+        };
+      }
+
+      function miniSiteHTML(t) {
         return `
-          <div class="mini-nav" style="background:${t.bg};color:${t.heading};">
+          <div class="mini-nav" style="background:${t.bg};color:${t.heading};border-bottom:1px solid ${t.border};">
             <div class="mini-nav-logo">SaveWell</div>
-            <div class="mini-nav-links" style="color:${t.body};"><span>How it Works</span><span>Search</span><span>Contact</span></div>
+            <div class="mini-nav-links" style="color:${t.textMuted};"><span>How it Works</span><span>Search</span><span>Contact</span></div>
           </div>
-          <div class="mini-hero" style="background:linear-gradient(180deg, ${t.bg} 0%, ${t.surface} 100%);color:${t.body};">
+          <div class="mini-hero" style="background:linear-gradient(180deg, ${t.bg} 0%, ${t.bgSubtle} 100%);color:${t.text};">
             <div>
-              <div class="mini-badge" style="background:${t.badgeBg};color:${t.badgeText};">
+              <div class="mini-badge" style="background:${t.bgSubtle};color:${t.primaryDark};">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
                 100% Free
               </div>
               <h2 style="color:${t.heading};">Earn rewards for choosing <span style="color:${t.primary};">trusted doctors</span></h2>
-              <div class="mini-hero-sub">Visit high-quality doctors in the SaveWell network and earn rewards toward your premiums.</div>
+              <div class="mini-hero-sub" style="color:${t.text};">Visit high-quality doctors in the SaveWell network and earn rewards toward your premiums.</div>
               <div class="mini-hero-actions">
-                <div class="mini-btn" style="background:${t.primary};color:${t.btnText};">Search Providers</div>
-                <div class="mini-btn mini-btn-outline" style="color:${t.heading};border-color:${t.body}40;">Call Us</div>
+                <div class="mini-btn" style="background:${t.primary};color:${t.bg};">Search Providers</div>
+                <div class="mini-btn" style="color:${t.heading};border:1px solid ${t.border};background:${t.bg};">Call Us</div>
               </div>
-              <div class="mini-trust" style="color:${t.body};">
+              <div class="mini-trust" style="color:${t.textMuted};">
                 <span><svg viewBox="0 0 24 24" fill="none" stroke="${t.primary}" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>Quality-Vetted</span>
                 <span><svg viewBox="0 0 24 24" fill="none" stroke="${t.primary}" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Keep Your Doctors</span>
               </div>
@@ -450,48 +536,57 @@
               <div class="mini-hero-img-placeholder" style="background:${t.primary};"></div>
             </div>
           </div>
-          <div class="mini-promise" style="background:${t.bg};color:${t.body};">
+          <div class="mini-promise" style="background:${t.bg};color:${t.text};">
             <h3 style="color:${t.heading};">What's the catch?</h3>
-            <div class="mini-promise-sub">There isn't one. SaveWell is completely free for Medicare beneficiaries.</div>
+            <div class="mini-promise-sub" style="color:${t.textMuted};">There isn't one. SaveWell is completely free for Medicare beneficiaries.</div>
             <div class="mini-promise-grid">
               <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12"/><path d="M15 9.5c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5"/></svg>
                 </div>
                 <div class="mini-promise-item-title" style="color:${t.heading};">No fees, ever</div>
               </div>
               <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
                 </div>
                 <div class="mini-promise-item-title" style="color:${t.heading};">Trusted doctors</div>
               </div>
               <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
                 </div>
                 <div class="mini-promise-item-title" style="color:${t.heading};">Auto rewards</div>
               </div>
               <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                 </div>
                 <div class="mini-promise-item-title" style="color:${t.heading};">Medicare unchanged</div>
               </div>
             </div>
           </div>
-          <div class="mini-cta" style="background:${t.ctaBg};color:${isLight(t.ctaBg) ? t.heading : '#fff'};">
+          <div class="mini-cta" style="background:${t.ctaBg};color:${t.ctaText};">
             <h4>Ready to start saving?</h4>
-            <div class="mini-cta-btn" style="background:${t.ctaBtnBg};color:${isLight(t.ctaBtnBg) ? t.heading : '#fff'};">Search Providers</div>
+            <div class="mini-cta-btn" style="background:${t.bg};color:${t.primaryDark};">Search Providers</div>
           </div>
         `;
       }
 
-      // -- Favorites --
-      const favs = new Set(JSON.parse(localStorage.getItem("sw-color-favs") || "[]"));
-      function saveFavs() { localStorage.setItem("sw-color-favs", JSON.stringify([...favs])); }
+      function tokenReadout(t) {
+        const tokens = [
+          ['bg', t.bg], ['bg-alt', t.bgAlt], ['primary', t.primary],
+          ['heading', t.heading], ['text', t.text], ['accent', t.accent]
+        ];
+        return tokens.map(([name, color]) =>
+          `<span class="pal-token"><span class="pal-token-swatch" style="background:${color};"></span>${name}</span>`
+        ).join('');
+      }
 
-      // -- Render --
+      // ---- Favorites ----
+      const favs = new Set(JSON.parse(localStorage.getItem("sw-color-favs2") || "[]"));
+      function saveFavs() { localStorage.setItem("sw-color-favs2", JSON.stringify([...favs])); }
+
       function render(filter) {
         const grid = document.getElementById("grid");
         grid.innerHTML = "";
@@ -516,6 +611,7 @@
 
           card.innerHTML = `
             <div class="mini-site">${miniSiteHTML(theme)}</div>
+            <div class="pal-tokens">${tokenReadout(theme)}</div>
             <div class="pal-footer">
               <span class="pal-num">${String(p.n).padStart(2,'0')}</span>
               <div class="pal-swatches">${swatches}</div>

@@ -46,12 +46,6 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              saveTeal: "#0b7a7c",
-              saveWine: "#8a4f60",
-              saveWineDark: "#6e3d4c",
-              saveTealDark: "#07635e",
-            },
             fontFamily: {
               sans: [
                 "Nunito",
@@ -146,20 +140,25 @@
       :root {
         /* Brand */
         --primary: #0b7a7c;
-        --primary-dark: #1a5c52;
-        --cta-from: #0a706d;
-        --cta-to: #085c58;
+        --primary-dark: #07635e;
+        --accent: #8a4f60;
+        --accent-dark: #6e3d4c;
 
-        /* Warm sage neutrals — tinted toward brand hue */
-        --sage-pale: #eaf1ec;
-        --sage-light: #f0f5f1;
-        --sage-accent: #c8ddd0;
-        --cream: #faf8f6;
-        --heading: #243837;
-        --surface: #f2f4f2;
+        /* Neutrals — tinted toward brand hue */
+        --bg: #faf8f6;
+        --bg-alt: #f2f4f2;
+        --bg-subtle: #eaf1ec;
         --border: #dce2dd;
-        --text-body: #4d5753;
+
+        /* Text */
+        --heading: #243837;
+        --text: #4d5753;
         --text-muted: #697568;
+
+        /* Derived — CTA section */
+        --cta-bg: var(--primary-dark);
+        --cta-text: #fff;
+        --cta-text-muted: #c8ddd0;
       }
 
       @media (prefers-reduced-motion: no-preference) {
@@ -171,7 +170,7 @@
       /* ---- Hero ---- */
       .hero-home {
         padding: 4rem 1.5rem 5rem;
-        background: linear-gradient(180deg, var(--cream) 0%, var(--sage-pale) 100%);
+        background: linear-gradient(180deg, var(--bg) 0%, var(--bg-subtle) 100%);
       }
 
       .hero-home-wrap {
@@ -198,7 +197,7 @@
       }
 
       .hero-home .hero-lead {
-        color: var(--text-body);
+        color: var(--text);
         font-size: 1.125rem;
         line-height: 1.7;
         margin-bottom: 2rem;
@@ -209,7 +208,7 @@
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
-        background: var(--sage-light);
+        background: var(--bg-subtle);
         color: var(--primary-dark);
         padding: 0.6rem 1rem;
         border-radius: 999px;
@@ -235,7 +234,7 @@
         display: inline-flex;
         align-items: center;
         gap: 0.45rem;
-        color: var(--text-body);
+        color: var(--text);
         font-size: 0.875rem;
       }
 
@@ -268,7 +267,7 @@
       /* ---- Promise section ---- */
       .promise-section {
         padding: 5rem 0 5.5rem;
-        background: var(--cream);
+        background: var(--bg);
       }
 
       .promise-header {
@@ -287,7 +286,7 @@
       }
 
       .promise-header p {
-        color: var(--text-body);
+        color: var(--text);
         font-size: 1.125rem;
         line-height: 1.7;
       }
@@ -308,7 +307,7 @@
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 0.65rem;
-        background: var(--sage-pale);
+        background: var(--bg-subtle);
         color: var(--primary);
         display: flex;
         align-items: center;
@@ -335,14 +334,14 @@
 
       .promise-point p {
         font-size: 1.0625rem;
-        color: var(--text-body);
+        color: var(--text);
         line-height: 1.7;
       }
 
       /* ---- Steps section ---- */
       .steps-section {
         padding: 5.5rem 0;
-        background: var(--surface);
+        background: var(--bg-alt);
       }
 
       .steps-header {
@@ -387,7 +386,7 @@
         width: 3rem;
         height: 3rem;
         border-radius: 999px;
-        background: var(--sage-pale);
+        background: var(--bg-subtle);
         color: var(--primary);
         font-family: Bitter, Georgia, Cambria, serif;
         font-weight: 700;
@@ -408,7 +407,7 @@
 
       .step-content p {
         font-size: 1.0625rem;
-        color: var(--text-body);
+        color: var(--text);
         line-height: 1.7;
         max-width: 38rem;
       }
@@ -416,7 +415,7 @@
       /* ---- Testimonial section ---- */
       .testimonial-section {
         padding: 5.5rem 0;
-        background: var(--cream);
+        background: var(--bg);
       }
 
       .testimonial-feature {
@@ -438,7 +437,7 @@
         top: 0.25rem;
         bottom: 0.25rem;
         width: 3px;
-        background: var(--sage-accent);
+        background: var(--border);
         border-radius: 2px;
       }
 
@@ -464,8 +463,8 @@
         border-radius: 999px;
         background: linear-gradient(
           135deg,
-          var(--sage-pale) 0%,
-          var(--sage-accent) 100%
+          var(--bg-subtle) 0%,
+          var(--border) 100%
         );
         display: flex;
         align-items: center;
@@ -496,7 +495,7 @@
       }
 
       .testimonial-small {
-        background: var(--surface);
+        background: var(--bg-alt);
         border-radius: 0.85rem;
         padding: 1.5rem;
       }
@@ -518,7 +517,7 @@
         width: 2rem;
         height: 2rem;
         border-radius: 999px;
-        background: var(--sage-pale);
+        background: var(--bg-subtle);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -542,7 +541,7 @@
       /* ---- FAQ section ---- */
       .faq-section {
         padding: 5.5rem 0;
-        background: var(--surface);
+        background: var(--bg-alt);
       }
 
       .faq-layout {
@@ -564,7 +563,7 @@
 
       .faq-header p {
         font-size: 1.0625rem;
-        color: var(--text-body);
+        color: var(--text);
         line-height: 1.7;
       }
 
@@ -624,7 +623,7 @@
         display: none;
         padding-bottom: 1.25rem;
         font-size: 1.0625rem;
-        color: var(--text-body);
+        color: var(--text);
         line-height: 1.7;
         max-width: 40rem;
       }
@@ -636,8 +635,8 @@
       /* ---- CTA section ---- */
       .cta-section {
         padding: 5rem 0;
-        background: linear-gradient(135deg, var(--cta-from) 0%, var(--cta-to) 100%);
-        color: #fff;
+        background: var(--cta-bg);
+        color: var(--cta-text);
       }
 
       .cta-inner {
@@ -658,7 +657,7 @@
       }
 
       .cta-text p {
-        color: #e2eeeb;
+        color: var(--cta-text-muted);
         font-size: 1.125rem;
       }
 
@@ -669,6 +668,43 @@
         flex-shrink: 0;
       }
 
+      /* ---- Buttons & links (unified via CSS vars) ---- */
+      .nav-link { transition: color 0.15s ease; }
+      .nav-link:hover { color: var(--accent); }
+
+      .btn-primary {
+        background: var(--primary);
+        color: var(--bg);
+        --tw-ring-color: var(--primary);
+      }
+      .btn-primary:hover { background: var(--primary-dark); }
+
+      .btn-secondary {
+        background: var(--bg);
+        color: var(--heading);
+        border-color: var(--border);
+        --tw-ring-color: var(--primary);
+      }
+      .btn-secondary:hover {
+        color: var(--primary);
+        border-color: var(--primary);
+      }
+
+      .btn-cta-primary {
+        background: var(--bg);
+        color: var(--primary-dark);
+      }
+      .btn-cta-primary:hover { opacity: 0.92; }
+
+      .btn-cta-secondary {
+        background: transparent;
+        color: var(--cta-text);
+        border-color: color-mix(in srgb, var(--cta-text) 30%, transparent);
+      }
+      .btn-cta-secondary:hover {
+        background: color-mix(in srgb, var(--cta-text) 10%, transparent);
+      }
+
       /* ---- Skip link ---- */
       .skip-link {
         position: absolute;
@@ -677,7 +713,7 @@
         z-index: 100;
         padding: 0.75rem 1.25rem;
         background: var(--heading);
-        color: #fff;
+        color: var(--bg);
         font-weight: 600;
         border-radius: 0 0 0.5rem 0.5rem;
         text-decoration: none;
@@ -749,12 +785,12 @@
       }
     </style>
   </head>
-  <body class="font-sans antialiased" style="color: var(--text-body); background: var(--cream)">
+  <body class="font-sans antialiased" style="color: var(--text); background: var(--bg)">
     <a href="#main" class="skip-link">Skip to content</a>
 
     <!-- Navbar -->
     <header
-      class="sticky top-0 z-30 backdrop-blur border-b" style="background: rgba(250, 248, 246, 0.92); border-color: var(--border)"
+      class="sticky top-0 z-30 backdrop-blur border-b" style="background: color-mix(in srgb, var(--bg) 92%, transparent); border-color: var(--border)"
     >
       <div
         class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
@@ -768,18 +804,18 @@
         </a>
         <div class="flex items-center gap-6">
           <nav class="hidden md:flex items-center gap-1 text-[15px]">
-            <a class="hover:text-saveWine py-2 px-3 rounded-md" href="how-it-works.html"
+            <a class="nav-link py-2 px-3 rounded-md" href="how-it-works.html"
               >How it Works</a
             >
-            <a class="hover:text-saveWine py-2 px-3 rounded-md" href="search.html"
+            <a class="nav-link py-2 px-3 rounded-md" href="search.html"
               >Search Providers</a
             >
-            <a class="hover:text-saveWine py-2 px-3 rounded-md" href="contact.html">Contact Us</a>
+            <a class="nav-link py-2 px-3 rounded-md" href="contact.html">Contact Us</a>
           </nav>
           <div class="flex items-center gap-2">
             <a
               href="tel:5107364332"
-              class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-saveTeal hover:text-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2"
+              class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2" style="color: var(--primary); --tw-ring-color: var(--primary);"
               aria-label="Call SaveWell at (510) 736-4332"
             >
               <svg
@@ -852,12 +888,12 @@
             <div class="hero-actions">
               <a
                 href="search.html"
-                class="inline-flex items-center justify-center rounded-xl bg-saveTeal px-6 py-3 text-white font-semibold hover:bg-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2"
+                class="btn-primary inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >Search Providers</a
               >
               <a
                 href="tel:5107364332"
-                class="inline-flex items-center justify-center rounded-xl border bg-white px-6 py-3 font-semibold hover:text-saveTeal hover:border-saveTeal focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2" style="border-color: var(--border); color: var(--heading)"
+                class="btn-secondary inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >Call Us: (510) 736-4332</a
               >
             </div>
@@ -1000,7 +1036,7 @@
           <div class="mt-10">
             <a
               href="search.html"
-              class="inline-flex items-center justify-center rounded-xl bg-saveTeal px-6 py-3 text-white font-semibold hover:bg-saveTealDark focus:outline-none focus:ring-2 focus:ring-saveTeal focus:ring-offset-2"
+              class="btn-primary inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
               >Search Providers</a
             >
           </div>
@@ -1121,7 +1157,7 @@
                   cardiology, orthopedic surgery, dermatology, gastroenterology,
                   endocrinology, neurology, rheumatology, hematology &amp;
                   oncology, OB/GYN, and ambulatory surgery centers.
-                  <a href="search.html" class="text-saveTeal font-semibold hover:underline ml-1">Search providers &rarr;</a>
+                  <a href="search.html" class="font-semibold hover:underline ml-1" style="color: var(--primary);">Search providers &rarr;</a>
                 </div>
               </div>
               <div class="faq-item">
@@ -1154,12 +1190,12 @@
             <div class="cta-actions">
               <a
                 href="search.html"
-                class="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-saveTealDark font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saveTeal"
+                class="btn-cta-primary inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >Search Providers</a
               >
               <a
                 href="tel:5107364332"
-                class="inline-flex items-center justify-center rounded-xl border border-white/30 px-6 py-3 text-white font-semibold hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-saveTeal"
+                class="btn-cta-secondary inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >Call (510) 736-4332</a
               >
             </div>
@@ -1169,7 +1205,7 @@
     </main>
 
     <footer
-      class="relative border-t" style="background: var(--surface); border-color: var(--border)"
+      class="relative border-t" style="background: var(--bg-alt); border-color: var(--border)"
       id="site-footer"
     >
       <div
@@ -1191,12 +1227,12 @@
             <h3 class="font-semibold mb-3" style="color: var(--heading)">Learn</h3>
             <ul class="space-y-2 text-sm">
               <li>
-                <a class="hover:text-saveWine inline-block py-1" href="how-it-works.html"
+                <a class="nav-link inline-block py-1" href="how-it-works.html"
                   >How it Works</a
                 >
               </li>
               <li>
-                <a class="hover:text-saveWine inline-block py-1" href="search.html"
+                <a class="nav-link inline-block py-1" href="search.html"
                   >Search Providers</a
                 >
               </li>
@@ -1207,7 +1243,7 @@
             <ul class="space-y-2 text-sm">
               <li>
                 <a
-                  class="hover:text-saveWine inline-block py-1"
+                  class="nav-link inline-block py-1"
                   href="terms.html"
                   id="footer-terms"
                   >Terms & Conditions</a
@@ -1215,7 +1251,7 @@
               </li>
               <li>
                 <a
-                  class="hover:text-saveWine inline-block py-1"
+                  class="nav-link inline-block py-1"
                   href="privacy.html"
                   id="footer-privacy"
                   >Privacy</a
@@ -1227,14 +1263,14 @@
             <h3 class="font-semibold mb-3" style="color: var(--heading)">Contact</h3>
             <ul class="space-y-2 text-sm">
               <li>
-                <a class="hover:text-saveWine inline-block py-1" href="contact.html"
+                <a class="nav-link inline-block py-1" href="contact.html"
                   >Contact Us</a
                 >
               </li>
               <li>
                 <a
                   href="mailto:hello@savewellnow.com"
-                  class="hover:text-saveWine inline-block py-1"
+                  class="nav-link inline-block py-1"
                   >hello@savewellnow.com</a
                 >
               </li>
