@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SaveWell — Font Exploration (30 Pairings)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Albert+Sans:wght@400;500&family=Atkinson+Hyperlegible:wght@400;700&family=Barlow:wght@400;500&family=Bodoni+Moda:ital,wght@0,700;1,400&family=Bree+Serif&family=Brygada+1918:wght@400;700&family=Cabin:wght@400;500&family=Cardo:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;500&family=Gelasio:wght@400;700&family=Karla:wght@400;500&family=Lexend:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Literata:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Display:wght@400;700&family=Petrona:wght@400;700&family=Piazzolla:wght@400;700&family=Public+Sans:wght@400;500&family=Red+Hat+Text:wght@400;500&family=Rubik:wght@400;500&family=Source+Sans+3:wght@400;500&family=Source+Serif+4:wght@400;700&family=Vollkorn:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500&family=Young+Serif&family=Zilla+Slab:wght@400;700&family=Bitter:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: oklch(0.48 0.1 180);
+        --heading: oklch(0.22 0.02 170);
+        --body: oklch(0.4 0.02 155);
+        --muted: oklch(0.5 0.015 155);
+        --surface: oklch(0.97 0.005 155);
+        --cream: oklch(0.98 0.005 80);
+        --border: oklch(0.88 0.01 155);
+        --sage-pale: oklch(0.94 0.015 155);
+        --accent-bg: oklch(0.95 0.02 180);
+      }
+
+      html {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        background: var(--cream);
+        color: var(--body);
+        line-height: 1.6;
+        font-family: "Source Sans 3", system-ui, sans-serif;
+      }
+
+      /* ---- Page header ---- */
+      .page-header {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 3.5rem 2rem 1rem;
+      }
+
+      .page-header h1 {
+        font-family: "Literata", Georgia, serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading);
+        letter-spacing: -0.01em;
+        margin-bottom: 0.5rem;
+      }
+
+      .page-header p {
+        font-size: 1.0625rem;
+        color: var(--muted);
+        max-width: 52ch;
+        line-height: 1.65;
+      }
+
+      .page-header .tag {
+        display: inline-block;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--primary);
+        margin-bottom: 0.75rem;
+      }
+
+      /* ---- Controls ---- */
+      .controls {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 1rem 2rem 0;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .controls button {
+        font-family: inherit;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        padding: 0.4rem 0.85rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--cream);
+        color: var(--muted);
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+
+      .controls button:hover,
+      .controls button.active {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+      }
+
+      /* ---- Grid ---- */
+      .grid {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+      }
+
+      /* ---- Card ---- */
+      .card {
+        background: var(--cream);
+        padding: 2.5rem 2.5rem 2.25rem;
+        display: grid;
+        grid-template-columns: 3rem 1fr;
+        gap: 0 2rem;
+        align-items: start;
+        position: relative;
+      }
+
+      .card:hover {
+        background: white;
+      }
+
+      .card-num {
+        font-family: "Literata", Georgia, serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--border);
+        line-height: 1;
+        padding-top: 0.15rem;
+        text-align: right;
+      }
+
+      .card-content {
+        min-width: 0;
+      }
+
+      .card-meta {
+        display: flex;
+        gap: 0.5rem;
+        align-items: baseline;
+        margin-bottom: 1.25rem;
+        flex-wrap: wrap;
+      }
+
+      .font-label {
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 0.2rem 0.55rem;
+        border-radius: 4px;
+        white-space: nowrap;
+      }
+
+      .font-label.heading-label {
+        background: var(--accent-bg);
+        color: var(--primary);
+      }
+
+      .font-label.body-label {
+        background: var(--sage-pale);
+        color: var(--muted);
+      }
+
+      .card-category {
+        font-size: 0.6875rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--border);
+        margin-left: auto;
+      }
+
+      .sample-headline {
+        color: var(--heading);
+        font-size: clamp(1.75rem, 3vw, 2.25rem);
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.6rem;
+      }
+
+      .sample-sub {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        max-width: 56ch;
+      }
+
+      /* ---- Favorites ---- */
+      .fav-btn {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--border);
+        transition: color 0.15s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .fav-btn:hover {
+        color: var(--primary);
+        background: var(--sage-pale);
+      }
+
+      .fav-btn.favorited {
+        color: oklch(0.55 0.18 25);
+      }
+
+      .fav-btn svg {
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+
+      /* ---- Responsive ---- */
+      @media (max-width: 640px) {
+        .page-header,
+        .controls {
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+        }
+        .grid {
+          margin-left: 1rem;
+          margin-right: 1rem;
+          border-radius: 0.75rem;
+        }
+        .card {
+          grid-template-columns: 1fr;
+          padding: 1.75rem 1.5rem;
+        }
+        .card-num {
+          text-align: left;
+          font-size: 1rem;
+          margin-bottom: 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-header">
+      <span class="tag">Font Exploration</span>
+      <h1>30 Heading + Body Pairings</h1>
+      <p>
+        Each pairing is shown with SaveWell's actual headline and body copy.
+        Star your favorites, then filter to compare them side by side.
+      </p>
+    </div>
+
+    <div class="controls">
+      <button class="active" data-filter="all">All 30</button>
+      <button data-filter="serif-head">Serif Headings</button>
+      <button data-filter="slab-head">Slab Headings</button>
+      <button data-filter="display-head">Display Headings</button>
+      <button data-filter="favorites">Favorites</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <script>
+      const PAIRINGS = [
+        // ---- Serif Headings ----
+        { n: 1,  h: "Young Serif",         b: "Figtree",                   cat: "serif-head" },
+        { n: 2,  h: "Vollkorn",            b: "Source Sans 3",             cat: "serif-head" },
+        { n: 3,  h: "Literata",            b: "Karla",                     cat: "serif-head" },
+        { n: 4,  h: "Merriweather",        b: "Atkinson Hyperlegible",     cat: "serif-head" },
+        { n: 5,  h: "Libre Baskerville",   b: "Public Sans",               cat: "serif-head" },
+        { n: 6,  h: "Cardo",               b: "Rubik",                     cat: "serif-head" },
+        { n: 7,  h: "Source Serif 4",       b: "Work Sans",                cat: "serif-head" },
+        { n: 8,  h: "Brygada 1918",        b: "Barlow",                    cat: "serif-head" },
+        { n: 9,  h: "Piazzolla",           b: "Red Hat Text",              cat: "serif-head" },
+        { n: 10, h: "Petrona",             b: "Albert Sans",               cat: "serif-head" },
+        { n: 11, h: "Gelasio",             b: "Figtree",                   cat: "serif-head" },
+        { n: 12, h: "Young Serif",         b: "Public Sans",               cat: "serif-head" },
+        { n: 13, h: "Vollkorn",            b: "Rubik",                     cat: "serif-head" },
+        { n: 14, h: "Literata",            b: "Lexend",                    cat: "serif-head" },
+        { n: 15, h: "Noto Serif Display",  b: "Cabin",                     cat: "serif-head" },
+        { n: 16, h: "Libre Baskerville",   b: "Albert Sans",               cat: "serif-head" },
+        { n: 17, h: "Merriweather",        b: "Figtree",                   cat: "serif-head" },
+        { n: 18, h: "Source Serif 4",       b: "Atkinson Hyperlegible",    cat: "serif-head" },
+        { n: 19, h: "Literata",            b: "Public Sans",               cat: "serif-head" },
+        { n: 20, h: "Vollkorn",            b: "Cabin",                     cat: "serif-head" },
+
+        // ---- Slab Headings ----
+        { n: 21, h: "Zilla Slab",          b: "Cabin",                     cat: "slab-head" },
+        { n: 22, h: "Aleo",                b: "Lexend",                    cat: "slab-head" },
+        { n: 23, h: "Bree Serif",          b: "Karla",                     cat: "slab-head" },
+        { n: 24, h: "Zilla Slab",          b: "Red Hat Text",              cat: "slab-head" },
+        { n: 25, h: "Aleo",                b: "Figtree",                   cat: "slab-head" },
+
+        // ---- Display / Contrast Headings ----
+        { n: 26, h: "Bodoni Moda",         b: "Source Sans 3",             cat: "display-head" },
+        { n: 27, h: "Cardo",               b: "Barlow",                    cat: "display-head" },
+        { n: 28, h: "Noto Serif Display",  b: "Lexend",                    cat: "display-head" },
+        { n: 29, h: "Bodoni Moda",         b: "Atkinson Hyperlegible",     cat: "display-head" },
+
+        // ---- Current baseline ----
+        { n: 30, h: "Bitter",              b: "Nunito",                    cat: "serif-head", baseline: true },
+      ];
+
+      const HEADLINE = "Earn rewards for choosing trusted doctors";
+      const SUB = "Visit high-quality doctors in the SaveWell network and earn rewards that go directly toward reducing your Medicare Supplement premiums. It\u2019s that simple.";
+
+      const favs = new Set(JSON.parse(localStorage.getItem("sw-font-favs") || "[]"));
+      function saveFavs() { localStorage.setItem("sw-font-favs", JSON.stringify([...favs])); }
+
+      function render(filter) {
+        const grid = document.getElementById("grid");
+        grid.innerHTML = "";
+
+        const list = filter === "favorites"
+          ? PAIRINGS.filter(p => favs.has(p.n))
+          : filter === "all"
+            ? PAIRINGS
+            : PAIRINGS.filter(p => p.cat === filter);
+
+        if (filter === "favorites" && list.length === 0) {
+          grid.innerHTML = '<div style="background:var(--cream);padding:3rem 2.5rem;color:var(--muted);font-size:1.0625rem;">No favorites yet. Click the heart icon on any pairing to save it.</div>';
+          return;
+        }
+
+        list.forEach(p => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.dataset.cat = p.cat;
+          card.dataset.num = p.n;
+
+          const catLabel = p.baseline ? "Current" : p.cat === "slab-head" ? "Slab" : p.cat === "display-head" ? "Display" : "Serif";
+
+          card.innerHTML = `
+            <div class="card-num">${String(p.n).padStart(2, "0")}</div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="font-label heading-label">${p.h}</span>
+                <span class="font-label body-label">${p.b}</span>
+                <span class="card-category">${catLabel}</span>
+              </div>
+              <h2 class="sample-headline" style="font-family:'${p.h}',Georgia,serif;font-weight:700;">${HEADLINE}</h2>
+              <p class="sample-sub" style="font-family:'${p.b}',system-ui,sans-serif;font-weight:400;">${SUB}</p>
+            </div>
+            <button class="fav-btn ${favs.has(p.n) ? "favorited" : ""}" data-num="${p.n}" aria-label="Toggle favorite">
+              <svg viewBox="0 0 24 24" fill="${favs.has(p.n) ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          `;
+          grid.appendChild(card);
+        });
+
+        // Bind fav buttons
+        grid.querySelectorAll(".fav-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const num = parseInt(btn.dataset.num);
+            if (favs.has(num)) { favs.delete(num); } else { favs.add(num); }
+            saveFavs();
+            render(currentFilter);
+          });
+        });
+      }
+
+      // Filter controls
+      let currentFilter = "all";
+      document.querySelectorAll(".controls button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".controls button").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentFilter = btn.dataset.filter;
+          render(currentFilter);
+        });
+      });
+
+      render("all");
+    </script>
+  </body>
+</html>
