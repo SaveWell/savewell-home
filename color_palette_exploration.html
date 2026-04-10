@@ -456,20 +456,14 @@
         // 3. HEADING: darkest color in the palette
         const heading = byLum[byLum.length - 1];
 
-        // 4. BG: lightest color. If it's not light enough, lighten it.
-        let bg = byLum[0];
-        if (luminance(bg) < 0.75) bg = lighten(bg, 0.88);
+        // 4. BG: fixed off-white matching index.html (rgb 250, 248, 246)
+        const bg = '#faf8f6';
 
-        // 5. BG-ALT: second lightest, or derive from bg
-        let bgAlt = byLum.length > 1 ? byLum[1] : bg;
-        if (luminance(bgAlt) < 0.7) bgAlt = lighten(primary, 0.92);
-        // Make sure bg and bgAlt are visibly different
-        if (Math.abs(luminance(bg) - luminance(bgAlt)) < 0.03) {
-          bgAlt = darken(bg, 0.06);
-        }
+        // 5. BG-ALT: slightly darker, tinted toward primary
+        const bgAlt = mixHex(lighten(primary, 0.95), bg, 0.5);
 
         // 6. BG-SUBTLE: lightly tinted toward primary
-        const bgSubtle = lighten(primary, 0.88);
+        const bgSubtle = mixHex(lighten(primary, 0.88), bg, 0.5);
 
         // 7. PRIMARY-DARK: darken primary
         const primaryDark = darken(primary, 0.25);
@@ -488,7 +482,7 @@
 
         // 11. CTA section
         const ctaBg = primaryDark;
-        const ctaText = bg;
+        const ctaText = '#faf8f6';
         const ctaTextMuted = lighten(primary, 0.7);
 
         // Ensure key contrasts meet WCAG AA
