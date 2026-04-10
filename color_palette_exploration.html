@@ -424,91 +424,76 @@
       function darken(hex, amount) { return mixHex('#000000', hex, amount); }
 
       /*
-       * Smart theme derivation.
+       * Order-aware theme derivation.
        *
-       * Strategy: SaveWell is a light-mode healthcare site for 65+ users.
-       * We need:
-       *   --bg:         very light (luminance > 0.85)
-       *   --bg-alt:     slightly different from bg
-       *   --bg-subtle:  tinted light tone for badges/icons
-       *   --primary:    mid-range, saturated, good contrast on white (~4.5:1+)
-       *   --primary-dark: darker variant for hover/CTA
-       *   --accent:     secondary color, different hue from primary
-       *   --heading:    very dark, high contrast on bg
-       *   --text:       dark but softer than heading
-       *   --text-muted: lighter text for secondary info
-       *   --border:     light gray, tinted toward primary
+       * Walks the colors in INPUT ORDER and assigns the first suitable
+       * match to each role. Shuffling the input produces a different theme.
+       *
+       * Roles:
+       *   --primary:    first color with saturation > 0.15 and contrast >= 3:1 on bg
+       *   --accent:     next color with saturation > 0.1, not already used
+       *   --heading:    first remaining dark color (luminance < 0.15)
+       *   Neutrals derived from primary; bg is fixed off-white.
        */
       function deriveTheme(colors) {
-        // Work with first 5-7 colors max
         const c = colors.slice(0, Math.min(colors.length, 7));
+        const bg = '#faf8f6';
+        const used = new Set();
 
-        // Sort all by luminance
-        const byLum = [...c].sort((a,b) => luminance(b) - luminance(a));
-
-        // Sort by saturation
-        const bySat = [...c].sort((a,b) => saturation(b) - saturation(a));
-
-        // 1. Find the best PRIMARY: most saturated color with good contrast on white
+        // 1. PRIMARY: first color in order that is saturated + has contrast on bg
         let primary = null;
-        for (const col of bySat) {
-          if (contrastRatio(col, '#ffffff') >= 3.0 && saturation(col) > 0.15) {
+        for (const col of c) {
+          if (saturation(col) > 0.15 && contrastRatio(col, bg) >= 3.0) {
             primary = col;
+            used.add(col);
             break;
           }
         }
-        // Fallback: darkest saturated color
+        // Fallback: first color with any contrast
         if (!primary) {
-          const darkSaturated = bySat.filter(c => luminance(c) < 0.4);
-          primary = darkSaturated[0] || byLum[byLum.length - 1];
+          for (const col of c) {
+            if (contrastRatio(col, bg) >= 2.5) {
+              primary = col;
+              used.add(col);
+              break;
+            }
+          }
         }
+        if (!primary) { primary = c[0]; used.add(primary); }
 
-        // 2. Find ACCENT: second most saturated, different enough from primary
+        // 2. ACCENT: next unused color with some saturation
         let accent = null;
-        for (const col of bySat) {
-          if (col === primary) continue;
-          const lDiff = Math.abs(luminance(col) - luminance(primary));
-          if (saturation(col) > 0.1 && (lDiff > 0.1 || bySat.indexOf(col) > 0)) {
+        for (const col of c) {
+          if (used.has(col)) continue;
+          if (saturation(col) > 0.1) {
             accent = col;
+            used.add(col);
             break;
           }
         }
         if (!accent) accent = primary;
 
-        // 3. HEADING: darkest color in the palette
-        const heading = byLum[byLum.length - 1];
-
-        // 4. BG: fixed off-white matching index.html (rgb 250, 248, 246)
-        const bg = '#faf8f6';
-
-        // 5. BG-ALT: slightly darker, tinted toward primary
-        const bgAlt = mixHex(lighten(primary, 0.95), bg, 0.5);
-
-        // 6. BG-SUBTLE: lightly tinted toward primary
-        const bgSubtle = mixHex(lighten(primary, 0.88), bg, 0.5);
-
-        // 7. PRIMARY-DARK: darken primary
-        const primaryDark = darken(primary, 0.25);
-
-        // 8. TEXT: derive from heading, slightly lighter
-        let text = heading;
-        if (contrastRatio(heading, bg) > 12) {
-          text = lighten(heading, 0.25);
+        // 3. HEADING: first unused dark color, or darkest remaining
+        let heading = null;
+        for (const col of c) {
+          if (used.has(col)) continue;
+          if (luminance(col) < 0.15) {
+            heading = col;
+            used.add(col);
+            break;
+          }
+        }
+        if (!heading) {
+          // Pick darkest unused
+          const unused = c.filter(x => !used.has(x));
+          if (unused.length > 0) {
+            heading = unused.reduce((a, b) => luminance(a) < luminance(b) ? a : b);
+          } else {
+            heading = [...c].sort((a,b) => luminance(a) - luminance(b))[0];
+          }
         }
 
-        // 9. TEXT-MUTED: lighter still
-        const textMuted = lighten(heading, 0.4);
-
-        // 10. BORDER: very light, tinted toward primary
-        const border = lighten(primary, 0.82);
-
-        // 11. CTA section
-        const ctaBg = primaryDark;
-        const ctaText = '#faf8f6';
-        const ctaTextMuted = lighten(primary, 0.7);
-
-        // Ensure key contrasts meet WCAG AA
-        // primary on bg: needs 4.5:1 for text, 3:1 for large text
+        // Ensure primary has enough contrast — darken if needed
         let finalPrimary = primary;
         let attempts = 0;
         while (contrastRatio(finalPrimary, bg) < 3.0 && attempts < 10) {
@@ -516,12 +501,38 @@
           attempts++;
         }
 
+        // Ensure heading is dark enough for readability
+        let finalHeading = heading;
+        attempts = 0;
+        while (contrastRatio(finalHeading, bg) < 4.5 && attempts < 10) {
+          finalHeading = darken(finalHeading, 0.12);
+          attempts++;
+        }
+
+        // Derive neutrals from primary
+        const primaryDark = darken(finalPrimary, 0.25);
+        const bgAlt = mixHex(lighten(finalPrimary, 0.95), bg, 0.5);
+        const bgSubtle = mixHex(lighten(finalPrimary, 0.88), bg, 0.5);
+        const border = lighten(finalPrimary, 0.82);
+
+        // Text from heading
+        let text = finalHeading;
+        if (contrastRatio(finalHeading, bg) > 12) {
+          text = lighten(finalHeading, 0.25);
+        }
+        const textMuted = lighten(finalHeading, 0.4);
+
+        // Ensure accent has enough contrast
+        let finalAccent = accent;
+        if (contrastRatio(finalAccent, bg) < 3) finalAccent = darken(finalAccent, 0.2);
+
         return {
           bg, bgAlt, bgSubtle, border,
           primary: finalPrimary, primaryDark,
-          accent: contrastRatio(accent, bg) < 3 ? darken(accent, 0.2) : accent,
-          heading, text, textMuted,
-          ctaBg, ctaText, ctaTextMuted
+          accent: finalAccent,
+          heading: finalHeading, text, textMuted,
+          ctaBg: primaryDark, ctaText: '#faf8f6',
+          ctaTextMuted: lighten(finalPrimary, 0.7)
         };
       }
 
