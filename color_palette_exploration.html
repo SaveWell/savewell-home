@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SaveWell — Color Palette Exploration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+      :root {
+        --page-bg: #f8f7f5;
+        --page-text: #4d5753;
+        --page-heading: #243837;
+        --page-muted: #697568;
+        --page-border: #dce2dd;
+        --page-surface: #f2f4f2;
+        --page-primary: #0b7a7c;
+      }
+
+      html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+      body { background: var(--page-bg); color: var(--page-text); font-family: 'Nunito', system-ui, sans-serif; line-height: 1.6; }
+
+      /* ---- Page header ---- */
+      .page-header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 2rem 0.5rem;
+      }
+      .page-header .tag {
+        display: inline-block;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--page-primary);
+        margin-bottom: 0.75rem;
+      }
+      .page-header h1 {
+        font-family: 'Bitter', Georgia, serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--page-heading);
+        letter-spacing: -0.01em;
+        margin-bottom: 0.5rem;
+      }
+      .page-header p {
+        font-size: 1.0625rem;
+        color: var(--page-muted);
+        max-width: 58ch;
+        line-height: 1.65;
+      }
+
+      /* ---- Controls ---- */
+      .controls {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.25rem 2rem 0;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .controls button {
+        font-family: inherit;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        padding: 0.4rem 0.85rem;
+        border-radius: 999px;
+        border: 1px solid var(--page-border);
+        background: white;
+        color: var(--page-muted);
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+      .controls button:hover, .controls button.active {
+        background: var(--page-primary);
+        color: white;
+        border-color: var(--page-primary);
+      }
+
+      /* ---- Grid ---- */
+      .palette-grid {
+        max-width: 1200px;
+        margin: 1.5rem auto 4rem;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 1.25rem;
+      }
+
+      /* ---- Palette Card ---- */
+      .pal-card {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1px solid var(--page-border);
+        position: relative;
+        transition: box-shadow 0.2s ease;
+      }
+      .pal-card:hover {
+        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      }
+
+      /* Mini homepage snapshot */
+      .mini-site {
+        padding: 0;
+        overflow: hidden;
+        font-size: 10px;
+        line-height: 1.4;
+        position: relative;
+      }
+
+      /* -- Nav -- */
+      .mini-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6em 1.4em;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+      }
+      .mini-nav-logo {
+        font-family: 'Bitter', serif;
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+      .mini-nav-links {
+        display: flex;
+        gap: 1em;
+        font-size: 0.85em;
+        opacity: 0.6;
+      }
+
+      /* -- Hero -- */
+      .mini-hero {
+        padding: 2em 1.4em 2.2em;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1.5em;
+        align-items: center;
+      }
+      .mini-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35em;
+        padding: 0.3em 0.65em;
+        border-radius: 999px;
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-bottom: 0.6em;
+      }
+      .mini-badge svg {
+        width: 0.9em;
+        height: 0.9em;
+        flex-shrink: 0;
+      }
+      .mini-hero h2 {
+        font-family: 'Bitter', Georgia, serif;
+        font-size: 1.8em;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.4em;
+      }
+      .mini-hero-sub {
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin-bottom: 1em;
+        opacity: 0.8;
+      }
+      .mini-hero-actions {
+        display: flex;
+        gap: 0.5em;
+      }
+      .mini-btn {
+        padding: 0.5em 1em;
+        border-radius: 0.6em;
+        font-size: 0.85em;
+        font-weight: 700;
+        text-align: center;
+        white-space: nowrap;
+      }
+      .mini-btn-outline {
+        border: 1px solid rgba(0,0,0,0.15);
+      }
+      .mini-hero-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mini-hero-img-placeholder {
+        width: 7em;
+        height: 8em;
+        border-radius: 1em;
+        opacity: 0.15;
+      }
+      .mini-trust {
+        display: flex;
+        gap: 1em;
+        margin-top: 0.8em;
+        font-size: 0.75em;
+        opacity: 0.6;
+      }
+      .mini-trust span {
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+      }
+      .mini-trust svg {
+        width: 1em;
+        height: 1em;
+      }
+
+      /* -- Promise section -- */
+      .mini-promise {
+        padding: 1.6em 1.4em;
+      }
+      .mini-promise h3 {
+        font-family: 'Bitter', Georgia, serif;
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 0.4em;
+      }
+      .mini-promise-sub {
+        font-size: 0.85em;
+        opacity: 0.7;
+        margin-bottom: 1em;
+        line-height: 1.55;
+      }
+      .mini-promise-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6em;
+      }
+      .mini-promise-item {
+        display: flex;
+        gap: 0.5em;
+        align-items: flex-start;
+      }
+      .mini-promise-icon {
+        width: 2em;
+        height: 2em;
+        border-radius: 0.4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .mini-promise-icon svg {
+        width: 1em;
+        height: 1em;
+      }
+      .mini-promise-item-title {
+        font-weight: 700;
+        font-size: 0.85em;
+        line-height: 1.3;
+      }
+
+      /* -- CTA bar -- */
+      .mini-cta {
+        padding: 1.2em 1.4em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .mini-cta h4 {
+        font-family: 'Bitter', Georgia, serif;
+        font-size: 1.1em;
+        font-weight: 700;
+      }
+      .mini-cta-btn {
+        padding: 0.45em 0.9em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+        font-weight: 700;
+      }
+
+      /* ---- Card footer with palette info ---- */
+      .pal-footer {
+        padding: 1rem 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        border-top: 1px solid var(--page-border);
+      }
+      .pal-num {
+        font-family: 'Bitter', serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--page-border);
+        min-width: 2rem;
+      }
+      .pal-swatches {
+        display: flex;
+        gap: 3px;
+        flex: 1;
+      }
+      .pal-swatch {
+        flex: 1;
+        height: 1.75rem;
+        border-radius: 4px;
+        position: relative;
+      }
+      .pal-swatch:first-child { border-radius: 4px 2px 2px 4px; }
+      .pal-swatch:last-child { border-radius: 2px 4px 4px 2px; }
+
+      .pal-name {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--page-muted);
+        white-space: nowrap;
+      }
+
+      .fav-btn {
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--page-border);
+        transition: color 0.15s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .fav-btn:hover { color: var(--page-primary); background: var(--page-surface); }
+      .fav-btn.favorited { color: oklch(0.55 0.18 25); }
+      .fav-btn svg { width: 1rem; height: 1rem; }
+
+      /* ---- Responsive ---- */
+      @media (max-width: 720px) {
+        .page-header, .controls { padding-left: 1.25rem; padding-right: 1.25rem; }
+        .palette-grid { padding: 0 1rem; grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-header">
+      <span class="tag">Color Exploration</span>
+      <h1>30 Palettes from Coolors.co — Applied to the Homepage</h1>
+      <p>Each card shows a mini snapshot of the SaveWell homepage with a different color palette applied. Star your favorites to compare.</p>
+    </div>
+
+    <div class="controls">
+      <button class="active" data-filter="all">All 30</button>
+      <button data-filter="5">5-Color</button>
+      <button data-filter="large">Extended</button>
+      <button data-filter="favorites">Favorites</button>
+    </div>
+
+    <div class="palette-grid" id="grid"></div>
+
+    <script>
+      // Top 30 trending palettes from Coolors.co (scraped April 2026)
+      const PALETTES = [
+        { n:1,  name:"Fiery Ocean",            colors:["#780000","#c1121f","#fdf0d5","#003049","#669bbc"] },
+        { n:2,  name:"Olive Garden Feast",      colors:["#606c38","#283618","#fefae0","#dda15e","#bc6c25"] },
+        { n:3,  name:"Refreshing Summer",       colors:["#8ecae6","#219ebc","#023047","#ffb703","#fb8500"] },
+        { n:4,  name:"Gradient Blues",           colors:["#03045e","#023e8a","#0077b6","#0096c7","#00b4d8","#48cae4","#90e0ef","#ade8f4","#caf0f8"], extended:true },
+        { n:5,  name:"Warm Earth",              colors:["#ccd5ae","#e9edc9","#fefae0","#faedcd","#d4a373"] },
+        { n:6,  name:"Rustic Leather",          colors:["#6f1d1b","#bb9457","#432818","#99582a","#ffe6a7"] },
+        { n:7,  name:"Muted Rose Garden",       colors:["#edafb8","#f7e1d7","#dedbd2","#b0c4b1","#4a5759"] },
+        { n:8,  name:"Ocean Breeze",            colors:["#03045e","#0077b6","#00b4d8","#90e0ef","#caf0f8"] },
+        { n:9,  name:"Pastel Dreams",           colors:["#cdb4db","#ffc8dd","#ffafcc","#bde0fe","#a2d2ff"] },
+        { n:10, name:"Forest Walk",             colors:["#dad7cd","#a3b18a","#588157","#3a5a40","#344e41"] },
+        { n:11, name:"Navy Slate",              colors:["#0d1b2a","#1b263b","#415a77","#778da9","#e0e1dd"] },
+        { n:12, name:"Earth & Sea",             colors:["#001219","#005f73","#0a9396","#94d2bd","#e9d8a6","#ee9b00","#ca6702","#bb3e03","#ae2012","#9b2226"], extended:true },
+        { n:13, name:"Fire Gradient",           colors:["#03071e","#370617","#6a040f","#9d0208","#d00000","#dc2f02","#e85d04","#f48c06","#faa307","#ffba08"], extended:true },
+        { n:14, name:"Monochrome Gold",         colors:["#000000","#14213d","#fca311","#e5e5e5","#ffffff"] },
+        { n:15, name:"Cotton Candy",            colors:["#ff99c8","#fcf6bd","#d0f4de","#a9def9","#e4c1f9"] },
+        { n:16, name:"Coastal Classic",         colors:["#264653","#2a9d8f","#e9c46a","#f4a261","#e76f51"] },
+        { n:17, name:"Earthy Greens",           colors:["#f0ead2","#dde5b6","#adc178","#a98467","#6c584c"] },
+        { n:18, name:"Dark Parchment",          colors:["#0a0908","#22333b","#eae0d5","#c6ac8f","#5e503f"] },
+        { n:19, name:"Tropical Vibrant",        colors:["#05668d","#028090","#00a896","#02c39a","#f0f3bd"] },
+        { n:20, name:"Burgundy Clay",           colors:["#8c1c13","#bf4342","#e7d7c1","#a78a7f","#735751"] },
+        { n:21, name:"Harvest Festival",        colors:["#8cb369","#f4e285","#f4a259","#5b8e7d","#bc4b51"] },
+        { n:22, name:"Steel Blue",              colors:["#e7ecef","#274c77","#6096ba","#a3cef1","#8b8c89"] },
+        { n:23, name:"Blush Mauve",             colors:["#d8e2dc","#ffe5d9","#ffcad4","#f4acb7","#9d8189"] },
+        { n:24, name:"Garden Harvest",          colors:["#386641","#6a994e","#a7c957","#f2e8cf","#bc4749"] },
+        { n:25, name:"Electric Pop",            colors:["#ffbe0b","#fb5607","#ff006e","#8338ec","#3a86ff"] },
+        { n:26, name:"Warm Linen",              colors:["#edede9","#d6ccc2","#f5ebe0","#e3d5ca","#d5bdaf"] },
+        { n:27, name:"Midnight Gold",           colors:["#000814","#001d3d","#003566","#ffc300","#ffd60a"] },
+        { n:28, name:"Rainbow Spectrum",        colors:["#f94144","#f3722c","#f8961e","#f9844a","#f9c74f","#90be6d","#43aa8b","#4d908e","#577590","#277da1"], extended:true },
+        { n:29, name:"Peach Dusk",              colors:["#ffcdb2","#ffb4a2","#e5989b","#b5838d","#6d6875"] },
+        { n:30, name:"Rose Gradient",           colors:["#590d22","#800f2f","#a4133c","#c9184a","#ff4d6d","#ff758f","#ff8fa3","#ffb3c1","#ffccd5","#fff0f3"], extended:true },
+      ];
+
+      // -- Color utilities --
+      function hexToRgb(hex) {
+        const h = hex.replace('#','');
+        return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+      }
+      function luminance(hex) {
+        const [r,g,b] = hexToRgb(hex).map(c => { c /= 255; return c <= 0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4); });
+        return 0.2126*r + 0.7152*g + 0.0722*b;
+      }
+      function isLight(hex) { return luminance(hex) > 0.4; }
+
+      // Derive a semantic theme from a raw palette
+      function deriveTheme(colors) {
+        const c = colors.length <= 5 ? colors : colors.slice(0, 5);
+        const sorted = [...c].sort((a,b) => luminance(b) - luminance(a));
+        // Lightest = background, darkest = heading, middle = primary accent
+        const bg = sorted[0];
+        const heading = sorted[sorted.length - 1];
+        const body = sorted.length > 2 ? sorted[sorted.length - 2] : heading;
+        // Primary = most saturated middle color
+        const mid = c.filter(x => x !== bg && x !== heading);
+        const primary = mid.length > 0 ? mid[Math.floor(mid.length/2)] : c[Math.floor(c.length/2)];
+        const accent = mid.length > 1 ? mid[0] : primary;
+        const surface = sorted.length > 1 ? sorted[1] : bg;
+        const ctaBg = heading;
+        const btnText = isLight(primary) ? heading : bg;
+        const ctaBtnBg = isLight(ctaBg) ? heading : bg;
+        const ctaBtnText = isLight(ctaBtnBg) ? heading : bg;
+
+        return { bg, heading, body, primary, accent, surface, ctaBg, btnText, ctaBtnBg, ctaBtnText, badgeBg: surface, badgeText: primary };
+      }
+
+      function miniSiteHTML(theme) {
+        const t = theme;
+        return `
+          <div class="mini-nav" style="background:${t.bg};color:${t.heading};">
+            <div class="mini-nav-logo">SaveWell</div>
+            <div class="mini-nav-links" style="color:${t.body};"><span>How it Works</span><span>Search</span><span>Contact</span></div>
+          </div>
+          <div class="mini-hero" style="background:linear-gradient(180deg, ${t.bg} 0%, ${t.surface} 100%);color:${t.body};">
+            <div>
+              <div class="mini-badge" style="background:${t.badgeBg};color:${t.badgeText};">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                100% Free
+              </div>
+              <h2 style="color:${t.heading};">Earn rewards for choosing <span style="color:${t.primary};">trusted doctors</span></h2>
+              <div class="mini-hero-sub">Visit high-quality doctors in the SaveWell network and earn rewards toward your premiums.</div>
+              <div class="mini-hero-actions">
+                <div class="mini-btn" style="background:${t.primary};color:${t.btnText};">Search Providers</div>
+                <div class="mini-btn mini-btn-outline" style="color:${t.heading};border-color:${t.body}40;">Call Us</div>
+              </div>
+              <div class="mini-trust" style="color:${t.body};">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="${t.primary}" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>Quality-Vetted</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="${t.primary}" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Keep Your Doctors</span>
+              </div>
+            </div>
+            <div class="mini-hero-img">
+              <div class="mini-hero-img-placeholder" style="background:${t.primary};"></div>
+            </div>
+          </div>
+          <div class="mini-promise" style="background:${t.bg};color:${t.body};">
+            <h3 style="color:${t.heading};">What's the catch?</h3>
+            <div class="mini-promise-sub">There isn't one. SaveWell is completely free for Medicare beneficiaries.</div>
+            <div class="mini-promise-grid">
+              <div class="mini-promise-item">
+                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12"/><path d="M15 9.5c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5"/></svg>
+                </div>
+                <div class="mini-promise-item-title" style="color:${t.heading};">No fees, ever</div>
+              </div>
+              <div class="mini-promise-item">
+                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div class="mini-promise-item-title" style="color:${t.heading};">Trusted doctors</div>
+              </div>
+              <div class="mini-promise-item">
+                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+                </div>
+                <div class="mini-promise-item-title" style="color:${t.heading};">Auto rewards</div>
+              </div>
+              <div class="mini-promise-item">
+                <div class="mini-promise-icon" style="background:${t.surface};color:${t.primary};">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="mini-promise-item-title" style="color:${t.heading};">Medicare unchanged</div>
+              </div>
+            </div>
+          </div>
+          <div class="mini-cta" style="background:${t.ctaBg};color:${isLight(t.ctaBg) ? t.heading : '#fff'};">
+            <h4>Ready to start saving?</h4>
+            <div class="mini-cta-btn" style="background:${t.ctaBtnBg};color:${isLight(t.ctaBtnBg) ? t.heading : '#fff'};">Search Providers</div>
+          </div>
+        `;
+      }
+
+      // -- Favorites --
+      const favs = new Set(JSON.parse(localStorage.getItem("sw-color-favs") || "[]"));
+      function saveFavs() { localStorage.setItem("sw-color-favs", JSON.stringify([...favs])); }
+
+      // -- Render --
+      function render(filter) {
+        const grid = document.getElementById("grid");
+        grid.innerHTML = "";
+
+        let list;
+        if (filter === "favorites") list = PALETTES.filter(p => favs.has(p.n));
+        else if (filter === "5") list = PALETTES.filter(p => !p.extended);
+        else if (filter === "large") list = PALETTES.filter(p => p.extended);
+        else list = PALETTES;
+
+        if (filter === "favorites" && list.length === 0) {
+          grid.innerHTML = '<div style="grid-column:1/-1;padding:3rem;color:var(--page-muted);font-size:1.0625rem;">No favorites yet. Click the heart icon to save palettes.</div>';
+          return;
+        }
+
+        list.forEach(p => {
+          const theme = deriveTheme(p.colors);
+          const card = document.createElement("div");
+          card.className = "pal-card";
+
+          const swatches = p.colors.map(c => `<div class="pal-swatch" style="background:${c};" title="${c}"></div>`).join('');
+
+          card.innerHTML = `
+            <div class="mini-site">${miniSiteHTML(theme)}</div>
+            <div class="pal-footer">
+              <span class="pal-num">${String(p.n).padStart(2,'0')}</span>
+              <div class="pal-swatches">${swatches}</div>
+              <span class="pal-name">${p.name}</span>
+              <button class="fav-btn ${favs.has(p.n) ? 'favorited' : ''}" data-num="${p.n}" aria-label="Toggle favorite">
+                <svg viewBox="0 0 24 24" fill="${favs.has(p.n) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </button>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+
+        grid.querySelectorAll(".fav-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const num = parseInt(btn.dataset.num);
+            if (favs.has(num)) favs.delete(num); else favs.add(num);
+            saveFavs();
+            render(currentFilter);
+          });
+        });
+      }
+
+      let currentFilter = "all";
+      document.querySelectorAll(".controls button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".controls button").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentFilter = btn.dataset.filter;
+          render(currentFilter);
+        });
+      });
+
+      render("all");
+    </script>
+  </body>
+</html>
