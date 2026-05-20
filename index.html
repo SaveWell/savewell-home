@@ -1,1318 +1,445 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      SaveWell - Earn Rewards for Choosing Trusted Doctors | Medicare Rewards
-    </title>
-    <meta
-      name="description"
-      content="SaveWell helps Medicare beneficiaries earn rewards by choosing trusted doctors. Use the SaveWell network and start earning rewards today."
-    />
-    <link rel="canonical" href="https://savewellnow.com/" />
-    <meta property="og:site_name" content="SaveWell" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="SaveWell - Earn Rewards for Choosing Trusted Doctors | Medicare Rewards"
-    />
-    <meta
-      property="og:description"
-      content="SaveWell helps Medicare beneficiaries earn rewards by choosing trusted doctors. Use the SaveWell network and start earning rewards today."
-    />
-    <meta property="og:url" content="https://savewellnow.com/" />
-    <meta
-      property="og:image"
-      content="https://savewellnow.com/assets/savewell-logo.png"
-    />
-    <meta property="og:image:alt" content="SaveWell logo" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="SaveWell - Earn Rewards for Choosing Trusted Doctors | Medicare Rewards"
-    />
-    <meta
-      name="twitter:description"
-      content="SaveWell helps Medicare beneficiaries earn rewards by choosing trusted doctors. Use the SaveWell network and start earning rewards today."
-    />
-    <meta
-      name="twitter:image"
-      content="https://savewellnow.com/assets/savewell-logo.png"
-    />
-    <meta name="twitter:image:alt" content="SaveWell logo" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: [
-                "Nunito",
-                "ui-sans-serif",
-                "system-ui",
-                "-apple-system",
-                "sans-serif",
-              ],
-              heading: [
-                "Bitter",
-                "Georgia",
-                "Cambria",
-                "serif",
-              ],
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/favicon.png" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "SaveWell",
-          "url": "https://savewellnow.com",
-          "logo": "https://savewellnow.com/assets/savewell-logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-510-736-4332",
-            "contactType": "customer service",
-            "email": "hello@savewellnow.com"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is SaveWell really free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, 100%. There are no enrollment fees, no monthly charges, and no hidden costs. SaveWell is free for all Medicare beneficiaries."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does this change my Medicare coverage?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Not at all. SaveWell works alongside your existing Medicare plan. Your coverage, your benefits, and your current doctors stay exactly the same."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I receive my rewards?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Your rewards are automatically applied as credits toward your Medicare Supplement premiums, typically within 2 weeks to 2 months after your visit."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What specialties are covered?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "SaveWell covers cardiology, orthopedic surgery, dermatology, gastroenterology, endocrinology, neurology, rheumatology, hematology and oncology, OB/GYN, and ambulatory surgery centers."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I still see my current doctor?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely. SaveWell doesn't replace any of your existing doctors. You earn rewards when you choose a SaveWell network provider for specialty care."
-              }
-            }
-          ]
-        }
-      ]
-    }
-    </script>
-    <style>
-      :root {
-        /* Brand */
-        --primary: #0b7a7c;
-        --primary-dark: #07635e;
-        --accent: #8a4f60;
-        --accent-dark: #6e3d4c;
-
-        /* Neutrals — tinted toward brand hue */
-        --bg: #faf8f6;
-        --bg-alt: #f2f4f2;
-        --bg-subtle: #eaf1ec;
-        --border: #dce2dd;
-
-        /* Text */
-        --heading: #243837;
-        --text: #4d5753;
-        --text-muted: #697568;
-
-        /* Derived — CTA section */
-        --cta-bg: var(--primary-dark);
-        --cta-text: #fff;
-        --cta-text-muted: #c8ddd0;
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-        html {
-          scroll-behavior: smooth;
-        }
-      }
-
-      /* ---- Hero ---- */
-      .hero-home {
-        padding: 4rem 1.5rem 5rem;
-        background: linear-gradient(180deg, var(--bg) 0%, var(--bg-subtle) 100%);
-      }
-
-      .hero-home-wrap {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 4rem;
-        align-items: center;
-      }
-
-      .hero-home h1 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: clamp(2.25rem, 5vw, 3.5rem);
-        font-weight: 700;
-        line-height: 1.12;
-        letter-spacing: -0.01em;
-        color: var(--heading);
-        margin-bottom: 1.25rem;
-      }
-
-      .hero-home h1 .highlight {
-        color: var(--primary);
-      }
-
-      .hero-home .hero-lead {
-        color: var(--text);
-        font-size: 1.125rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-        max-width: 38rem;
-      }
-
-      .hero-free-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: var(--bg-subtle);
-        color: var(--primary-dark);
-        padding: 0.6rem 1rem;
-        border-radius: 999px;
-        font-size: 0.9375rem;
-        font-weight: 600;
-        margin-bottom: 1.25rem;
-      }
-
-      .hero-actions {
-        display: flex;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-        margin-bottom: 1.75rem;
-      }
-
-      .hero-trust {
-        display: flex;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-      }
-
-      .trust-item {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        color: var(--text);
-        font-size: 0.875rem;
-      }
-
-      .trust-icon {
-        width: 1.15rem;
-        height: 1.15rem;
-        color: var(--primary);
-        flex-shrink: 0;
-      }
-
-      .hero-image-card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .hero-image-card img {
-        width: min(88%, 380px);
-        height: auto;
-        display: block;
-      }
-
-      /* ---- Shared ---- */
-      .page-shell {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 1.5rem;
-      }
-
-      /* ---- Promise section ---- */
-      .promise-section {
-        padding: 5rem 0 5.5rem;
-        background: var(--bg);
-      }
-
-      .promise-header {
-        max-width: 36rem;
-        margin-bottom: 3rem;
-      }
-
-      .promise-header h2 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-        font-weight: 700;
-        line-height: 1.18;
-        letter-spacing: -0.01em;
-        color: var(--heading);
-        margin-bottom: 1rem;
-      }
-
-      .promise-header p {
-        color: var(--text);
-        font-size: 1.125rem;
-        line-height: 1.7;
-      }
-
-      .promise-points {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem 4rem;
-      }
-
-      .promise-point {
-        display: flex;
-        gap: 1rem;
-        align-items: flex-start;
-      }
-
-      .promise-point-icon {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 0.65rem;
-        background: var(--bg-subtle);
-        color: var(--primary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        margin-top: 0.15rem;
-      }
-
-      .promise-point-icon svg {
-        width: 1.2rem;
-        height: 1.2rem;
-        stroke: currentColor;
-        fill: none;
-        stroke-width: 2;
-      }
-
-      .promise-point h3 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--heading);
-        margin-bottom: 0.35rem;
-      }
-
-      .promise-point p {
-        font-size: 1.0625rem;
-        color: var(--text);
-        line-height: 1.7;
-      }
-
-      /* ---- Steps section ---- */
-      .steps-section {
-        padding: 5.5rem 0;
-        background: var(--bg-alt);
-      }
-
-      .steps-header {
-        max-width: 32rem;
-        margin-bottom: 3.5rem;
-      }
-
-      .steps-header h2 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-        font-weight: 700;
-        line-height: 1.18;
-        letter-spacing: -0.01em;
-        color: var(--heading);
-      }
-
-      .steps-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-
-      .step-row {
-        display: grid;
-        grid-template-columns: 3.5rem 1fr;
-        gap: 1.5rem;
-        padding: 2rem 0;
-        border-bottom: 1px solid var(--border);
-        align-items: start;
-      }
-
-      .step-row:first-child {
-        padding-top: 0;
-      }
-
-      .step-row:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-
-      .step-num {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 999px;
-        background: var(--bg-subtle);
-        color: var(--primary);
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-weight: 700;
-        font-size: 1.25rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-      }
-
-      .step-content h3 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--heading);
-        margin-bottom: 0.4rem;
-      }
-
-      .step-content p {
-        font-size: 1.0625rem;
-        color: var(--text);
-        line-height: 1.7;
-        max-width: 38rem;
-      }
-
-      /* ---- Testimonial section ---- */
-      .testimonial-section {
-        padding: 5.5rem 0;
-        background: var(--bg);
-      }
-
-      .testimonial-feature {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-      }
-
-      .testimonial-quote {
-        position: relative;
-        padding-left: 1.5rem;
-      }
-
-      .testimonial-quote::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0.25rem;
-        bottom: 0.25rem;
-        width: 3px;
-        background: var(--border);
-        border-radius: 2px;
-      }
-
-      .testimonial-quote blockquote {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: 1.375rem;
-        font-weight: 400;
-        color: var(--heading);
-        line-height: 1.65;
-        margin-bottom: 1.25rem;
-        font-style: italic;
-      }
-
-      .testimonial-attribution {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-
-      .testimonial-avatar {
-        width: 2.75rem;
-        height: 2.75rem;
-        border-radius: 999px;
-        background: linear-gradient(
-          135deg,
-          var(--bg-subtle) 0%,
-          var(--border) 100%
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--primary-dark);
-        font-weight: 700;
-        font-size: 0.9rem;
-        flex-shrink: 0;
-      }
-
-      .testimonial-name {
-        color: var(--heading);
-        font-size: 1rem;
-        font-weight: 600;
-        display: block;
-      }
-
-      .testimonial-location {
-        color: var(--text-muted);
-        font-size: 0.88rem;
-        display: block;
-      }
-
-      .testimonial-secondary {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .testimonial-small {
-        background: var(--bg-alt);
-        border-radius: 0.85rem;
-        padding: 1.5rem;
-      }
-
-      .testimonial-small p {
-        font-size: 1.0625rem;
-        color: var(--heading);
-        line-height: 1.7;
-        margin-bottom: 0.75rem;
-      }
-
-      .testimonial-small-author {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .testimonial-small-avatar {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 999px;
-        background: var(--bg-subtle);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--primary-dark);
-        font-weight: 700;
-        font-size: 0.72rem;
-        flex-shrink: 0;
-      }
-
-      .testimonial-small-name {
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--heading);
-      }
-
-      .testimonial-small-loc {
-        font-size: 0.82rem;
-        color: var(--text-muted);
-      }
-
-      /* ---- FAQ section ---- */
-      .faq-section {
-        padding: 5.5rem 0;
-        background: var(--bg-alt);
-      }
-
-      .faq-layout {
-        display: grid;
-        grid-template-columns: 0.4fr 0.6fr;
-        gap: 4rem;
-        align-items: start;
-      }
-
-      .faq-header h2 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-        font-weight: 700;
-        line-height: 1.18;
-        letter-spacing: -0.01em;
-        color: var(--heading);
-        margin-bottom: 1rem;
-      }
-
-      .faq-header p {
-        font-size: 1.0625rem;
-        color: var(--text);
-        line-height: 1.7;
-      }
-
-      .faq-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-
-      .faq-item {
-        border-bottom: 1px solid var(--border);
-      }
-
-      .faq-item:last-child {
-        border-bottom: none;
-      }
-
-      .faq-question {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem 0;
-        background: none;
-        border: none;
-        cursor: pointer;
-        text-align: left;
-        font-family: inherit;
-        font-size: 1.125rem;
-        font-weight: 600;
-        color: var(--heading);
-        gap: 1rem;
-      }
-
-      .faq-question:hover {
-        color: var(--primary);
-      }
-
-      .faq-chevron {
-        width: 1.25rem;
-        height: 1.25rem;
-        flex-shrink: 0;
-        color: var(--text-muted);
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-        .faq-chevron {
-          transition: transform 0.2s ease;
-        }
-      }
-
-      .faq-item.open .faq-chevron {
-        transform: rotate(180deg);
-      }
-
-      .faq-answer {
-        display: none;
-        padding-bottom: 1.25rem;
-        font-size: 1.0625rem;
-        color: var(--text);
-        line-height: 1.7;
-        max-width: 40rem;
-      }
-
-      .faq-item.open .faq-answer {
-        display: block;
-      }
-
-      /* ---- CTA section ---- */
-      .cta-section {
-        padding: 5rem 0;
-        background: var(--cta-bg);
-        color: var(--cta-text);
-      }
-
-      .cta-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-
-      .cta-text h2 {
-        font-family: Bitter, Georgia, Cambria, serif;
-        font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-        font-weight: 700;
-        line-height: 1.18;
-        letter-spacing: -0.01em;
-        margin-bottom: 0.5rem;
-      }
-
-      .cta-text p {
-        color: var(--cta-text-muted);
-        font-size: 1.125rem;
-      }
-
-      .cta-actions {
-        display: flex;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-        flex-shrink: 0;
-      }
-
-      /* ---- Buttons & links (unified via CSS vars) ---- */
-      .nav-link { transition: color 0.15s ease; }
-      .nav-link:hover { color: var(--accent); }
-
-      .btn-primary {
-        background: var(--primary);
-        color: var(--bg);
-        --tw-ring-color: var(--primary);
-      }
-      .btn-primary:hover { background: var(--primary-dark); }
-
-      .btn-secondary {
-        background: var(--bg);
-        color: var(--heading);
-        border-color: var(--border);
-        --tw-ring-color: var(--primary);
-      }
-      .btn-secondary:hover {
-        color: var(--primary);
-        border-color: var(--primary);
-      }
-
-      .btn-cta-primary {
-        background: var(--bg);
-        color: var(--primary-dark);
-      }
-      .btn-cta-primary:hover { opacity: 0.92; }
-
-      .btn-cta-secondary {
-        background: transparent;
-        color: var(--cta-text);
-        border-color: color-mix(in srgb, var(--cta-text) 30%, transparent);
-      }
-      .btn-cta-secondary:hover {
-        background: color-mix(in srgb, var(--cta-text) 10%, transparent);
-      }
-
-      /* ---- Skip link ---- */
-      .skip-link {
-        position: absolute;
-        top: -100%;
-        left: 1rem;
-        z-index: 100;
-        padding: 0.75rem 1.25rem;
-        background: var(--heading);
-        color: var(--bg);
-        font-weight: 600;
-        border-radius: 0 0 0.5rem 0.5rem;
-        text-decoration: none;
-      }
-
-      .skip-link:focus {
-        top: 0;
-      }
-
-      /* ---- Responsive ---- */
-      @media (max-width: 1024px) {
-        .hero-home-wrap {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-        .hero-image-card {
-          order: -1;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .hero-home {
-          padding: 3rem 1rem 3.5rem;
-        }
-        .hero-image-card {
-          justify-content: flex-start;
-        }
-        .hero-image-card img {
-          width: 140px;
-        }
-        .hero-actions {
-          flex-direction: column;
-        }
-        .hero-actions a {
-          width: 100%;
-        }
-        .page-shell {
-          padding: 0 1rem;
-        }
-        .promise-section,
-        .steps-section,
-        .testimonial-section,
-        .faq-section {
-          padding: 3.5rem 0;
-        }
-        .promise-points {
-          grid-template-columns: 1fr;
-          gap: 1.75rem;
-        }
-        .testimonial-feature {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-        .faq-layout {
-          grid-template-columns: 1fr;
-          gap: 1.5rem;
-        }
-        .cta-inner {
-          flex-direction: column;
-          text-align: center;
-        }
-        .cta-actions {
-          width: 100%;
-          flex-direction: column;
-        }
-        .cta-actions a {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body class="font-sans antialiased" style="color: var(--text); background: var(--bg)">
-    <a href="#main" class="skip-link">Skip to content</a>
-
-    <!-- Navbar -->
-    <header
-      class="sticky top-0 z-30 backdrop-blur border-b" style="background: color-mix(in srgb, var(--bg) 92%, transparent); border-color: var(--border)"
-    >
-      <div
-        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
-      >
-        <a href="index.html" class="flex items-center">
-          <img
-            src="assets/savewell-logo.png"
-            alt="SaveWell"
-            class="h-8 w-auto"
-          />
-        </a>
-        <div class="flex items-center gap-6">
-          <nav class="hidden md:flex items-center gap-1 text-[15px]">
-            <a class="nav-link py-2 px-3 rounded-md" href="how-it-works.html"
-              >How it Works</a
-            >
-            <a class="nav-link py-2 px-3 rounded-md" href="search.html"
-              >Search Providers</a
-            >
-            <a class="nav-link py-2 px-3 rounded-md" href="contact.html">Contact Us</a>
-          </nav>
-          <div class="flex items-center gap-2">
-            <a
-              href="tel:5107364332"
-              class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2" style="color: var(--primary); --tw-ring-color: var(--primary);"
-              aria-label="Call SaveWell at (510) 736-4332"
-            >
-              <svg
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                ></path>
-              </svg>
-              <span>(510) 736-4332</span>
-            </a>
-            <button
-              class="md:hidden inline-flex items-center p-2"
-              id="menuBtn"
-              aria-label="Menu"
-              aria-expanded="false"
-              aria-controls="mobileMenu"
-            >
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B2B4E;--teal:#1A7F74;--teal-lt:#E6F4F2;--teal-md:#B2DDD9;--white:#FFFFFF;--text:#1A1A2E;--muted:#5A6478;--border:#E2E8EF;--r:12px;--rl:20px;--sage:#4A7C6F;--slate:#f0f5f8;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;font-weight:400;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{display:none;}.page.active{display:block;}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.97);border-bottom:1px solid var(--border);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.logo{display:flex;align-items:center;cursor:pointer;height:100%;}
+.logo img{height:43px;width:auto;display:block;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links button{background:none;border:none;cursor:pointer;font-size:14px;font-weight:500;color:var(--muted);font-family:'DM Sans',sans-serif;padding:0;text-decoration:underline;text-decoration-color:transparent;transition:color .2s,text-decoration-color .2s;}
+.nav-links button:hover,.nav-links button.active{color:var(--teal);text-decoration-color:var(--teal);}
+.nav-phone{color:var(--teal)!important;text-decoration:underline!important;text-decoration-color:var(--teal)!important;}
+
+.hero{background:var(--navy);padding:88px 5% 80px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 120%,rgba(178,221,217,.14) 0%,transparent 65%);pointer-events:none;}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.5vw,54px);line-height:1.15;color:white;margin-bottom:20px;letter-spacing:-.5px;max-width:880px;margin-left:auto;margin-right:auto;text-wrap:pretty;}
+.hero h1 em{font-style:italic;color:var(--teal-md);}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:32px;max-width:600px;margin-left:auto;margin-right:auto;text-wrap:pretty;}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+.btn-primary{background:var(--teal);color:white;padding:13px 26px;border-radius:8px;font-size:15px;font-weight:500;border:2px solid var(--teal);cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s,color .2s;}
+.btn-primary:hover{background:transparent;color:var(--teal);}
+.btn-ghost{color:var(--navy);background:white;border:2px solid white;padding:13px 26px;border-radius:8px;font-size:15px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s,color .2s,border-color .2s;}
+.btn-ghost:hover{background:var(--teal-lt);border-color:var(--teal-lt);color:var(--navy);}
+.btn-white{background:white;color:var(--teal);padding:13px 28px;border-radius:8px;font-size:15px;font-weight:500;border:2px solid white;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s,color .2s;}
+.btn-white:hover{background:transparent;color:white;}
+.btn-teal-outline{background:transparent;color:var(--teal);padding:11px 24px;border-radius:8px;font-size:14px;font-weight:500;border:2px solid var(--teal);cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s,color .2s;margin-top:32px;}
+.btn-teal-outline:hover{background:var(--teal);color:white;}
+
+.trust-bar{background:var(--teal-lt);border-bottom:1px solid var(--teal-md);padding:16px 5%;display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:var(--sage);}
+.trust-check{width:16px;height:16px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.trust-check svg{width:9px;height:9px;stroke:white;fill:none;stroke-width:2.5;}
+
+section{padding:72px 5%;}
+.section-eyebrow{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+.section-title{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,36px);color:var(--navy);line-height:1.2;letter-spacing:-.3px;}
+.section-sub{font-size:16px;color:var(--muted);margin-top:10px;line-height:1.75;}
+.section-header{margin-bottom:44px;}
+
+.what-we-do{background:var(--white);}
+.benefits-2col{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.benefit-card{border:1px solid var(--border);border-radius:var(--rl);padding:28px;display:flex;gap:18px;align-items:flex-start;}
+.benefit-icon{width:48px;height:48px;flex-shrink:0;border-radius:12px;background:var(--teal-lt);border:1px solid var(--teal-md);display:flex;align-items:center;justify-content:center;}
+.benefit-icon svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:1.8;}
+.benefit-card h3{font-size:16px;font-weight:500;color:var(--navy);margin-bottom:7px;}
+.benefit-card p{font-size:14px;color:var(--muted);line-height:1.7;}
+.learn-more-wrap{text-align:center;margin-top:36px;}
+
+.proc-section{background:var(--slate);}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.proc-card{background:white;border:1px solid var(--border);border-radius:var(--r);padding:22px 18px;transition:border-color .2s,box-shadow .2s;display:flex;flex-direction:column;gap:14px;}
+.proc-card:hover{border-color:var(--teal-md);box-shadow:0 4px 16px rgba(26,127,116,.1);}
+.proc-svg-wrap{width:40px;height:40px;background:var(--teal-lt);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.proc-svg-wrap svg{width:24px;height:24px;stroke:var(--teal);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;}
+.proc-card h4{font-size:13px;font-weight:500;color:var(--navy);line-height:1.35;margin:0;}
+.proc-card p{font-size:11px;color:var(--muted);line-height:1.5;margin:0;}
+.proc-more{grid-column:1/-1;background:var(--teal-lt);border:1px dashed var(--teal-md);border-radius:var(--r);padding:14px;text-align:center;font-size:13px;color:var(--sage);font-weight:500;}
+
+.testi-section{background:var(--white);}
+.testi-scroll{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.testi-card{background:var(--slate);border:1px solid var(--border);border-radius:var(--rl);padding:24px;display:flex;flex-direction:column;justify-content:space-between;}
+.testi-stars{color:#D4943A;font-size:14px;margin-bottom:10px;letter-spacing:1px;}
+.testi-quote{font-size:14px;color:var(--text);line-height:1.75;font-style:italic;flex:1;}
+.testi-divider{border:none;border-top:1px solid var(--border);margin:16px 0;}
+.testi-author{display:flex;align-items:center;gap:10px;}
+.testi-avatar{width:36px;height:36px;border-radius:50%;background:var(--navy);color:white;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;flex-shrink:0;}
+.testi-name{font-size:13px;font-weight:500;color:var(--navy);}
+.testi-detail{font-size:11px;color:var(--muted);margin-top:1px;}
+.testi-proc{display:inline-block;margin-top:4px;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;background:var(--teal-lt);color:var(--teal);border:1px solid var(--teal-md);padding:2px 7px;border-radius:10px;}
+
+.cta-band{background:var(--teal);padding:64px 5%;text-align:center;}
+.cta-band h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);color:white;margin-bottom:14px;}
+.cta-band p{font-size:16px;color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 28px;line-height:1.75;}
+
+footer{background:var(--navy);padding:48px 5% 28px;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:36px;}
+.footer-logo{display:block;margin-bottom:14px;cursor:pointer;}
+.footer-logo img{height:43px;width:auto;display:block;}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.48);line-height:1.7;}
+.footer-col h4{font-size:11px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:12px;}
+.footer-col a,.footer-col button{display:block;font-size:13px;color:rgba(255,255,255,.58);text-decoration:none;margin-bottom:8px;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;padding:0;text-align:left;transition:color .2s;text-decoration:underline;text-decoration-color:transparent;}
+.footer-col a:hover,.footer-col button:hover{color:rgba(255,255,255,.92);background:none;text-decoration-color:rgba(255,255,255,.5);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.3);flex-wrap:wrap;gap:8px;}
+.footer-disclaimer{font-size:11px;color:rgba(255,255,255,.28);line-height:1.6;margin-top:16px;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+
+.hiw-hero{background:linear-gradient(135deg,#0d3a5c 0%,#1a5f54 100%);padding:60px 5%;text-align:center;}
+.hiw-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(28px,3.5vw,42px);color:white;margin-bottom:12px;}
+.hiw-hero p{font-size:16px;color:rgba(255,255,255,.75);max-width:560px;margin:0 auto;line-height:1.75;}
+
+.savings-section{background:var(--navy);padding:72px 5%;position:relative;overflow:hidden;}
+.savings-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 70% at 100% 50%,rgba(26,127,116,.2) 0%,transparent 65%);pointer-events:none;}
+.savings-section .section-eyebrow{color:var(--teal-md);}
+.savings-section .section-title{color:white;}
+.savings-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.savings-text p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.8;margin-top:14px;}
+.savings-text p+p{margin-top:12px;}
+.savings-text strong{color:rgba(255,255,255,.9);font-weight:500;}
+.savings-stats{display:flex;flex-direction:column;gap:16px;}
+.savings-stat-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--rl);padding:24px 28px;display:flex;align-items:center;gap:20px;}
+.savings-stat-val{font-family:'DM Serif Display',serif;font-size:44px;color:var(--teal-md);line-height:1;flex-shrink:0;min-width:80px;}
+.savings-stat-label{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6;}
+
+.steps-section{background:var(--white);}
+.hiw-steps{display:flex;flex-direction:column;gap:0;max-width:700px;margin:0 auto;}
+.hiw-step{display:flex;gap:20px;padding:28px 0;border-bottom:1px solid var(--border);}
+.hiw-step:last-child{border-bottom:none;}
+.step-circle{width:40px;height:40px;min-width:40px;background:var(--teal);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:18px;margin-top:2px;}
+.step-body h3{font-size:17px;font-weight:500;color:var(--navy);margin-bottom:6px;}
+.step-body p{font-size:14px;color:var(--muted);line-height:1.75;}
+
+.why-section{background:var(--slate);}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;}
+.stat-box{background:var(--navy);border:1px solid rgba(255,255,255,.1);border-radius:var(--rl);padding:28px;text-align:center;}
+.stat-box-val{font-family:'DM Serif Display',serif;font-size:40px;color:var(--teal-md);line-height:1;}
+.stat-box-label{font-size:13px;color:rgba(255,255,255,.6);margin-top:8px;line-height:1.5;}
+.compare-table{background:white;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+.compare-row{display:grid;grid-template-columns:1.3fr 1fr 1fr;border-bottom:1px solid var(--border);}
+.compare-row:last-child{border-bottom:none;}
+.compare-cell{padding:13px 18px;font-size:14px;color:var(--muted);}
+.compare-row.head .compare-cell{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;background:var(--slate);color:var(--muted);}
+.compare-row.head .compare-cell.asc{color:var(--teal);font-weight:500;}
+.compare-cell:first-child{color:var(--navy);font-weight:500;}
+.compare-cell.asc{color:var(--teal);font-weight:500;}
+.compare-row.reward-row{background:var(--teal-lt);outline:2px solid var(--teal-md);}
+.compare-row.reward-row .compare-cell:first-child{color:var(--navy);font-weight:500;}
+.compare-row.reward-row .compare-cell.asc{color:var(--teal);font-weight:500;}
+.compare-row.reward-row .compare-cell.hosp{color:var(--muted);}
+
+.providers-section{background:var(--white);}
+.quality-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.quality-card{background:var(--slate);border:1px solid var(--border);border-radius:var(--rl);padding:24px;display:flex;gap:16px;}
+.quality-num{font-family:'DM Serif Display',serif;font-size:32px;color:var(--teal);opacity:.4;flex-shrink:0;line-height:1;margin-top:2px;}
+.quality-card h3{font-size:15px;font-weight:500;color:var(--navy);margin-bottom:6px;}
+.quality-card p{font-size:13px;color:var(--muted);line-height:1.7;}
+
+.contact-page{background:var(--slate);}
+.contact-inner{max-width:800px;margin:0 auto;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.contact-card{background:white;border:1px solid var(--border);border-radius:var(--rl);padding:28px;}
+.contact-card h3{font-size:17px;font-weight:500;color:var(--navy);margin-bottom:8px;}
+.contact-card p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px;}
+.contact-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:500;color:var(--teal);}
+.contact-email{font-size:15px;color:var(--teal);margin-top:8px;display:block;}
+.cf{display:flex;flex-direction:column;gap:10px;}
+.cf input,.cf textarea,.cf select{font-family:'DM Sans',sans-serif;font-size:14px;padding:9px 12px;border:1px solid var(--border);border-radius:8px;background:white;color:var(--text);width:100%;resize:none;}
+.cf textarea{height:90px;}
+.cf .sub-btn{background:var(--teal);color:white;border:none;border-radius:8px;padding:11px;font-size:14px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.cf .sub-btn:hover{background:#155f56;}
+.cf-note{font-size:11px;color:var(--muted);}
+.success-msg{display:none;background:var(--teal-lt);color:var(--sage);border-radius:8px;padding:14px;font-size:14px;text-align:center;border:1px solid var(--teal-md);}
+</style>
+
+<nav>
+  <div class="logo" onclick="showPage('home')"><img src="assets/logo/savewell-logo.png" alt="SaveWell"></div>
+  <div class="nav-links">
+    <button onclick="showPage('home')" id="nav-home" class="active">Home</button>
+    <button onclick="showPage('hiw')" id="nav-hiw">How it works</button>
+    <button onclick="showPage('contact')" id="nav-contact">Contact us</button>
+    <button class="nav-phone" onclick="showPage('contact')">855-507-7283</button>
+  </div>
+</nav>
+
+<div id="page-home" class="page active">
+  <section class="hero">
+    <h1>Health care is complicated.<br><em>Finding great care</em> shouldn't be.</h1>
+    <p class="hero-sub">SaveWell connects Medicare patients with top-rated specialists and facilities nearby — and rewards you for choosing quality care.*</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="showPage('hiw')">See how it works</button>
+      <button class="btn-ghost" onclick="showPage('contact')">Talk to a care guide</button>
+    </div>
+  </section>
+
+  <div class="trust-bar">
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 8"><polyline points="1 4 4 7 9 1"/></svg></div>Free for Medicare patients</div>
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 8"><polyline points="1 4 4 7 9 1"/></svg></div>High-quality specialists and facilities</div>
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 8"><polyline points="1 4 4 7 9 1"/></svg></div>Earn rewards automatically*</div>
+  </div>
+
+  <section class="what-we-do">
+    <div class="section-header">
+      <div class="section-eyebrow">What we do</div>
+      <h2 class="section-title">Your care, made simpler</h2>
+      <p class="section-sub">Whether you're considering a colonoscopy, cataract surgery, joint replacement, or another procedure, SaveWell connects you with trusted specialists and outpatient facilities in your area — so you don't have to navigate it alone.</p>
+    </div>
+    <div class="benefits-2col">
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div><h3>Personal care guides</h3><p>A SaveWell care guide works with you one-on-one to find the right specialists and facilities for your specific procedure — at no cost to you.</p></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h3>Trusted, high-quality care</h3><p>We connect you only with vetted outpatient centers and specialists known for quality care and patient satisfaction.</p></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><h3>Less waiting, less hassle</h3><p>Outpatient surgical centers typically schedule faster than hospitals, have shorter day-of wait times, and offer a calmer, more focused environment.</p></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div><h3>Earn rewards*</h3><p>Medicare Supplement members may be eligible for a credit applied directly to their premium automatically — just for choosing top-rated care.</p></div>
+      </div>
+    </div>
+    <div class="learn-more-wrap">
+      <button class="btn-teal-outline" onclick="showPage('hiw')">Learn more</button>
+    </div>
+  </section>
+
+  <section class="proc-section">
+    <div class="section-header">
+      <div class="section-eyebrow">Where we can help</div>
+      <h2 class="section-title">Upcoming procedure? Let us support you.</h2>
+      <p class="section-sub">SaveWell works with patients considering a wide range of common outpatient procedures.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 40 40"><line x1="13" y1="3" x2="13" y2="14"/><line x1="27" y1="3" x2="27" y2="14"/><path d="M11 14 Q11 11 13 13 Q17 16 20 16.5 Q23 16 27 13 Q29 11 29 14"/><path d="M11 14 Q8 15.5 8 17.5 Q8 20 11 21 Q15 22 20 22.5 Q25 22 29 21 Q32 20 32 17.5 Q32 15.5 29 14"/><path d="M11 21 Q9 23 9 25"/><path d="M29 21 Q31 23 31 25"/><path d="M8 26 Q10 24 15 24 L15 37"/><path d="M32 26 Q30 24 25 24 L25 37"/><path d="M15 24 Q20 25.5 25 24"/><line x1="17" y1="24.5" x2="17" y2="37"/><line x1="23" y1="24.5" x2="23" y2="37"/></svg></div>
+        <div><h4>Joint replacement</h4><p>Hip, knee, shoulder, or ankle replacement, incl. revision</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 40 40"><path d="M17 4 Q14 4 13 6 L13 9 Q13 11 15 12 L18 12.5 L18 14 L15 14.5 Q13 15 13 17 L13 20 Q13 22 15 23 L18 23.5 L18 25 L15 25.5 Q13 26 13 28 L13 31 Q13 33 16 33 L18 33 L18 35"/><path d="M17 4 L23 4 Q26 4 27 6 L27 9 Q27 11 25 12 L22 12.5 L22 14 L25 14.5 Q27 15 27 17 L27 20 Q27 22 25 23 L22 23.5 L22 25 L25 25.5 Q27 26 27 28 L27 31 Q27 33 24 33 L22 33 L22 35"/><path d="M18 35 Q20 36 22 35"/></svg></div>
+        <div><h4>Joint procedure (scope/repair)</h4><p>Knee or shoulder scope, rotator cuff repair</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 32 32"><path d="M12 3 Q10 3 10 5 L10 7 Q10 9 12 9 L14 9 Q14 9 15 9.5 L15 10.5 Q14 11 12 11 L10 11 Q9 11 9 13 L9 15 Q9 17 11 17 L13 17 Q14 17 15 17.5 L15 18.5 Q14 19 12 19 L10 19 Q9 19 9 21 L9 23 Q9 25 11 25 L14 25 Q15 25 15 26 L15 28 Q15 29 14 29 L12 29"/><path d="M12 3 L20 3 Q22 3 22 5 L22 7 Q22 9 20 9 L17 9 Q16 9 15 9.5"/><path d="M20 11 Q22 11 22 13 L22 15 Q22 17 20 17 L17 17 Q16 17 15 17.5"/><path d="M20 19 Q22 19 22 21 L22 23 Q22 25 20 25 L17 25 Q16 25 15 26"/></svg></div>
+        <div><h4>Back or neck surgery</h4><p>Spinal fusion, herniated disc surgery, or neck pain surgery</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 40 40"><path d="M15 7 L15 10 Q15 11 16 11 L17 11 Q18 11 18 12 L18 13 Q18 14 19 14 L21 14 Q22 14 22 13 L22 12 Q22 11 23 11 L24 11 Q25 11 25 10 L25 7"/><path d="M12 11 Q9 13 8 17 Q7 21 9 25 Q12 30 16 33 Q18 35 20 36 Q22 35 24 33 Q28 30 31 25 Q33 21 32 17 Q31 13 28 11"/><path d="M12 11 Q13 10 15 11"/><path d="M28 11 Q27 10 25 11"/><path d="M11 23 L14 23 L16 19 L18 27 L21 18 L23 23 L26 23 L29 23"/></svg></div>
+        <div><h4>Heart condition procedure</h4><p>Heart catheterization, stent, pacemaker, or defibrillator placement</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 40 40"><line x1="20" y1="4" x2="20" y2="36"/><path d="M20 10 Q24 12 28 10"/><path d="M20 16 Q24 18 28 16"/><path d="M20 22 Q24 24 28 22"/><path d="M20 28 Q24 30 28 28"/><path d="M20 10 Q16 12 12 10"/><path d="M20 16 Q16 18 12 16"/><path d="M20 22 Q16 24 12 22"/><path d="M20 28 Q16 30 12 28"/><ellipse cx="20" cy="4" rx="4" ry="2.5"/><ellipse cx="20" cy="36" rx="4" ry="2.5"/></svg></div>
+        <div><h4>Blood vessel / circulation issue</h4><p>Blocked leg arteries, varicose veins, carotid blockage, dialysis access</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 40 40"><path d="M14 12 Q12 9 10 6"/><path d="M26 12 Q28 9 30 6"/><path d="M14 12 Q9 15 8 20 Q7 25 9 29 Q11 33 15 36 Q17 38 20 38 Q23 38 25 36 Q29 33 31 29 Q33 25 32 20 Q31 15 26 12"/><path d="M14 12 Q17 11 20 11 Q23 11 26 12"/><path d="M17 35 L17 39"/><path d="M23 35 L23 39"/></svg></div>
+        <div><h4>Bladder or urinary issue</h4><p>Bladder scope or urinary tract exam</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 40 40"><path d="M10 10 Q10 6 14 6 L26 6 Q30 6 30 10 Q30 14 26 14 L14 14 Q10 14 10 18 Q10 22 14 22 L26 22 Q30 22 30 26 Q30 30 26 30 L14 30 Q10 30 10 34 Q10 37 13 37"/></svg></div>
+        <div><h4>Colonoscopy or upper endoscopy</h4><p>Screening colonoscopy, EGD, or upper endoscopy</p></div>
+      </div>
+      <div class="proc-card">
+        <div class="proc-svg-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/></svg></div>
+        <div><h4>Eye condition procedure</h4><p>Cataract removal, glaucoma treatment, or retina procedure</p></div>
+      </div>
+      <div class="proc-more">Not sure if your procedure qualifies? <button onclick="showPage('contact')" style="background:none;border:none;color:var(--teal);font-size:13px;cursor:pointer;font-weight:500;font-family:'DM Sans',sans-serif;padding:0;">Talk to a care guide →</button></div>
+    </div>
+  </section>
+
+  <section class="testi-section">
+    <div class="section-header">
+      <div class="section-eyebrow">Patient stories</div>
+      <h2 class="section-title">What Medicare patients are saying</h2>
+    </div>
+    <div class="testi-scroll">
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">I had been putting off my knee replacement for years because I didn't know where to start. My SaveWell care guide found me a board-certified surgeon with excellent reviews. Life-changing.</p><hr class="testi-divider"><div class="testi-author"><div class="testi-avatar">GL</div><div><div class="testi-name">George L.</div><div class="testi-detail">Henderson, NV</div><div class="testi-proc">Knee replacement</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">My care guide took all the stress out of finding a surgeon. She found me a top-rated center five minutes from my home. I had no idea there were options like this available to me.</p><hr class="testi-divider"><div class="testi-author"><div class="testi-avatar">BM</div><div><div class="testi-name">Barbara M.</div><div class="testi-detail">Las Vegas, NV</div><div class="testi-proc">Joint replacement</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">I was dreading dealing with insurance and hospitals. SaveWell made everything simple. My care guide called me and walked me through my options.</p><hr class="testi-divider"><div class="testi-author"><div class="testi-avatar">RJ</div><div><div class="testi-name">Robert J.</div><div class="testi-detail">Orlando, FL</div><div class="testi-proc">Colonoscopy</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">The outpatient center was so much better than my last hospital experience. In and out the same day, and the staff knew me by name. I also got a premium credit I wasn't expecting.</p><hr class="testi-divider"><div class="testi-author"><div class="testi-avatar">DT</div><div><div class="testi-name">Dorothy T.</div><div class="testi-detail">Houston, TX</div><div class="testi-proc">Cataract surgery</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">I couldn't believe how fast everything moved. Scheduled within days, minimal wait at the center, and home by noon. I wish I had known about SaveWell sooner.</p><hr class="testi-divider"><div class="testi-author"><div class="testi-avatar">PM</div><div><div class="testi-name">Patricia M.</div><div class="testi-detail">Tampa, FL</div><div class="testi-proc">Back surgery</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">My care guide was incredibly patient with all my questions. She explained everything clearly and helped me feel confident about my decision. Exceptional service from start to finish.</p><hr class="testi-divider"><div class="testi-author"><div class="testi-avatar">CE</div><div><div class="testi-name">Carol E.</div><div class="testi-detail">Austin, TX</div><div class="testi-proc">Upper endoscopy</div></div></div></div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <h2>Ready to find the right care?</h2>
+    <p>Let SaveWell care guides help you find top-rated specialists and facilities in your area — at no cost to you.</p>
+    <button class="btn-white" onclick="showPage('contact')">Get in touch</button>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo" onclick="showPage('home')"><img src="assets/logo/savewell-logo-light.png" alt="SaveWell"></div>
+        <p class="footer-desc">SaveWell helps Medicare patients find trusted, high-quality specialists for upcoming procedures — and rewards eligible members for choosing high-value care.</p>
+        <p class="footer-disclaimer">*Reward eligibility requires a qualifying Medicare Supplement (Medigap) plan. SaveWell is not a Medicare plan and does not replace your existing coverage.</p>
+      </div>
+      <div class="footer-col"><h4>Learn</h4><button onclick="showPage('hiw')">How it works</button></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="footer-col"><h4>Contact</h4><button onclick="showPage('contact')">Submit a form</button><a href="mailto:hello@savewellnow.com">hello@savewellnow.com</a><a href="tel:8555077283">855-507-7283</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 SaveWell. All rights reserved.</span><span>savewellnow.com</span></div>
+  </footer>
+</div>
+
+<div id="page-hiw" class="page">
+  <div class="hiw-hero">
+    <div class="section-eyebrow" style="color:var(--teal-md);margin-bottom:10px;">How it works</div>
+    <h1>Simple steps to better care — <em style="font-style:italic;color:var(--teal-md);">and a reward</em></h1>
+    <p>SaveWell makes it easy to find the right care for your upcoming procedure. Here's what to expect.</p>
+  </div>
+
+  <section class="savings-section">
+    <div class="savings-inner" style="display:block;max-width:780px;margin:0 auto;">
+      <div class="savings-text">
+        <div class="section-eyebrow">Why it matters</div>
+        <h2 class="section-title">The same procedure — for a lot less</h2>
+        <p>Many common procedures — like colonoscopies, cataract surgeries, and joint replacements — can be performed at an outpatient surgical center (ASC) instead of a hospital. Both settings deliver high-quality care, but outpatient centers cost Medicare significantly less.</p>
+        <p>The difference in cost is what SaveWell passes back to you. When you choose a SaveWell top-rated specialist and outpatient center for your procedure, it saves the healthcare system money, which we pass on to you as a reward.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-section">
+    <div class="section-header" style="text-align:center;">
+      <div class="section-eyebrow">The process</div>
+      <h2 class="section-title">How SaveWell works</h2>
+      <p class="section-sub">When you need a procedure, a SaveWell care guide is here to help you find the right care — and make the most of your benefits.</p>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step"><div class="step-circle">1</div><div class="step-body"><h3>Reach out to SaveWell</h3><p>Call us or submit a contact form. A SaveWell care guide will connect with you to learn more about your upcoming procedure, location, and coverage — so we can start finding the right match.</p></div></div>
+      <div class="hiw-step"><div class="step-circle">2</div><div class="step-body"><h3>We identify your best options</h3><p>Your care guide researches trusted, accredited outpatient surgical centers and board-certified specialists in your area that match your specific procedure — and explains your options in plain language.</p></div></div>
+      <div class="hiw-step"><div class="step-circle">3</div><div class="step-body"><h3>Choose the right care for you</h3><p>The choice is always yours. You're never obligated to use any particular provider. Your care guide is simply here to make the decision easier and ensure you feel confident about your care.</p></div></div>
+      <div class="hiw-step"><div class="step-circle">4</div><div class="step-body"><h3>Complete your procedure and earn your reward</h3><p>If you have a qualifying Medicare Supplement (Medigap) plan and complete your procedure at a recommended outpatient center, a credit is automatically applied to your Medicare Supplement premium at the end of the year — no claim to file, no hoops to jump through.</p></div></div>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="section-header">
+      <div class="section-eyebrow">Why outpatient centers</div>
+      <h2 class="section-title">Better care, less waiting, lower cost</h2>
+      <p class="section-sub">Ambulatory Surgery Centers (ASCs) deliver on every level that matters most to you as a Medicare patient.</p>
+    </div>
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-box-val">#1</div><div class="stat-box-label">ASCs rank highest in patient satisfaction among all surgical settings</div></div>
+      <div class="stat-box"><div class="stat-box-val">&lt;24hr</div><div class="stat-box-label">Most patients go home same day, back to daily life faster</div></div>
+      <div class="stat-box"><div class="stat-box-val">45%</div><div class="stat-box-label">Lower facility fee at outpatient centers vs. hospital outpatient departments</div></div>
+    </div>
+    <div class="compare-table">
+      <div class="compare-row head"><div class="compare-cell">What matters to you</div><div class="compare-cell asc">Outpatient surgical center</div><div class="compare-cell">Hospital outpatient dept.</div></div>
+      <div class="compare-row"><div class="compare-cell">Your Medicare out-of-pocket cost</div><div class="compare-cell asc">Significantly lower copays</div><div class="compare-cell">Higher facility fees</div></div>
+      <div class="compare-row"><div class="compare-cell">Wait time to schedule surgery</div><div class="compare-cell asc">Days to weeks</div><div class="compare-cell">Weeks to months</div></div>
+      <div class="compare-row"><div class="compare-cell">Day-of wait time</div><div class="compare-cell asc">Minimal, on-time starts</div><div class="compare-cell">Longer, shared resources</div></div>
+      <div class="compare-row"><div class="compare-cell">Focus of the facility</div><div class="compare-cell asc">Multiple surgical specialties</div><div class="compare-cell">Emergency &amp; general care mix</div></div>
+      <div class="compare-row"><div class="compare-cell">Infection risk</div><div class="compare-cell asc">Lower — dedicated surgical environment</div><div class="compare-cell">Higher — broader patient mix</div></div>
+      <div class="compare-row"><div class="compare-cell">Your care team</div><div class="compare-cell asc">Same team, start to finish</div><div class="compare-cell">Rotating staff across units</div></div>
+      <div class="compare-row reward-row"><div class="compare-cell">SaveWell reward eligible</div><div class="compare-cell asc">✓ Yes, for qualifying plans</div><div class="compare-cell hosp">No</div></div>
+    </div>
+  </section>
+
+  <section class="providers-section">
+    <div class="section-header">
+      <div class="section-eyebrow">Our standards</div>
+      <h2 class="section-title">How we select our providers</h2>
+      <p class="section-sub">Quality matters. We carefully select every provider in the SaveWell network based on four criteria.</p>
+    </div>
+    <div class="quality-grid">
+      <div class="quality-card"><div class="quality-num">01</div><div><h3>Clinical quality measures</h3><p>Evidence-based standards of care — we look at whether providers follow established best practices for your specific procedure.</p></div></div>
+      <div class="quality-card"><div class="quality-num">02</div><div><h3>Patient outcomes</h3><p>A track record of successful treatment — we evaluate results, complication rates, and readmission data where available.</p></div></div>
+      <div class="quality-card"><div class="quality-num">03</div><div><h3>Patient satisfaction</h3><p>Positive reviews and feedback from patients — because how you're treated matters just as much as clinical outcomes.</p></div></div>
+      <div class="quality-card"><div class="quality-num">04</div><div><h3>Board certification</h3><p>Current credentials and specialization — every physician in our network is board-certified and focused on their area of expertise.</p></div></div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <h2>Ready to get started?</h2>
+    <p>Let SaveWell care guides help you find top-rated specialists and facilities in your area — at no cost to you.</p>
+    <button class="btn-white" onclick="showPage('contact')">Get in touch</button>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo" onclick="showPage('home')"><img src="assets/logo/savewell-logo-light.png" alt="SaveWell"></div>
+        <p class="footer-desc">SaveWell helps Medicare patients find trusted, high-quality specialists for upcoming procedures — and rewards eligible members for choosing high-value care.</p>
+        <p class="footer-disclaimer">*Reward eligibility requires a qualifying Medicare Supplement (Medigap) plan. SaveWell is not a Medicare plan and does not replace your existing coverage.</p>
+      </div>
+      <div class="footer-col"><h4>Learn</h4><button onclick="showPage('hiw')">How it works</button></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="footer-col"><h4>Contact</h4><button onclick="showPage('contact')">Submit a form</button><a href="mailto:hello@savewellnow.com">hello@savewellnow.com</a><a href="tel:8555077283">855-507-7283</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 SaveWell. All rights reserved.</span><span>savewellnow.com</span></div>
+  </footer>
+</div>
+
+<div id="page-contact" class="page">
+  <section class="contact-page">
+    <div class="contact-inner">
+      <div class="section-header">
+        <div class="section-eyebrow">Contact us</div>
+        <h2 class="section-title">We're here to help</h2>
+        <p class="section-sub">Have questions about SaveWell, your upcoming procedure, or whether you qualify for a reward? Our care guides are ready to help — at no cost to you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Call or email us</h3>
+          <p>Speak directly with a SaveWell care guide. We're available Monday–Friday, 8am–6pm.</p>
+          <div class="contact-phone">855-507-7283</div>
+          <a class="contact-email" href="mailto:hello@savewellnow.com">hello@savewellnow.com</a>
+        </div>
+        <div class="contact-card">
+          <h3>Send us a message</h3>
+          <p>Fill out the form and a care guide will follow up within 1 to 3 business days.</p>
+          <div id="cf-wrap">
+            <div class="cf">
+              <input type="text" placeholder="Your name" id="cf-name">
+              <input type="tel" placeholder="Phone number" id="cf-phone">
+              <input type="email" placeholder="Email address (optional)" id="cf-email">
+              <select id="cf-topic"><option value="" disabled selected>What can we help you with?</option><option>I have an upcoming procedure</option><option>I want to learn about the reward</option><option>I received outreach from my doctor's office</option><option>Something else</option></select>
+              <textarea placeholder="Any additional details (optional)" id="cf-msg"></textarea>
+              <button class="sub-btn" onclick="submitForm()">Send message</button>
+              <p class="cf-note">By submitting, you agree to be contacted by a SaveWell care guide at the number or email provided. Message and data rates may apply.</p>
+            </div>
           </div>
+          <div class="success-msg" id="success-msg">Thanks! A care guide will be in touch within 1 to 3 business days.</div>
         </div>
       </div>
-      <div id="mobileMenu" class="md:hidden hidden border-t" style="border-color: var(--border)">
-        <div class="px-4 py-3 space-y-2">
-          <a class="block py-2" href="how-it-works.html">How it Works</a>
-          <a class="block py-2" href="search.html">Search Providers</a>
-          <a class="block py-2" href="contact.html">Contact Us</a>
-        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo" onclick="showPage('home')"><img src="assets/logo/savewell-logo-light.png" alt="SaveWell"></div>
+        <p class="footer-desc">SaveWell helps Medicare patients find trusted, high-quality specialists for upcoming procedures — and rewards eligible members for choosing high-value care.</p>
+        <p class="footer-disclaimer">*Reward eligibility requires a qualifying Medicare Supplement (Medigap) plan. SaveWell is not a Medicare plan and does not replace your existing coverage.</p>
       </div>
-    </header>
+      <div class="footer-col"><h4>Learn</h4><button onclick="showPage('hiw')">How it works</button></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="footer-col"><h4>Contact</h4><button onclick="showPage('contact')">Submit a form</button><a href="mailto:hello@savewellnow.com">hello@savewellnow.com</a><a href="tel:8555077283">855-507-7283</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 SaveWell. All rights reserved.</span><span>savewellnow.com</span></div>
+  </footer>
+</div>
 
-    <main id="main">
-      <!-- Hero -->
-      <section class="hero-home">
-        <div class="hero-home-wrap">
-          <div>
-            <div class="hero-free-badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
-              100% Free &mdash; No Cost, No Catch
-            </div>
-            <h1>
-              Earn rewards for choosing
-              <span class="highlight">trusted doctors</span>
-            </h1>
-            <p class="hero-lead">
-              Visit high-quality doctors in the SaveWell network and earn
-              rewards that go directly toward reducing your Medicare Supplement
-              premiums. It's that simple.
-            </p>
-            <div class="hero-actions">
-              <a
-                href="search.html"
-                class="btn-primary inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
-                >Search Providers</a
-              >
-              <a
-                href="tel:5107364332"
-                class="btn-secondary inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
-                >Call Us: (510) 736-4332</a
-              >
-            </div>
-            <div class="hero-trust">
-              <div class="trust-item">
-                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
-                Quality-Vetted Providers
-              </div>
-              <div class="trust-item">
-                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-                Keep Your Existing Doctors
-              </div>
-              <div class="trust-item">
-                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                  <path d="M16 3h-8v4h8V3z" />
-                </svg>
-                No Paperwork Required
-              </div>
-            </div>
-          </div>
-          <div class="hero-image-card">
-            <img
-              src="assets/hero/pennywise-peter-waist.png"
-              alt="SaveWell member Peter"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- The SaveWell Promise -->
-      <section class="promise-section">
-        <div class="page-shell">
-          <div class="promise-header">
-            <h2>You might be wondering: what's the catch?</h2>
-            <p>
-              There isn't one. SaveWell is completely free for Medicare
-              beneficiaries. Here's what you should know.
-            </p>
-          </div>
-          <div class="promise-points">
-            <div class="promise-point">
-              <div class="promise-point-icon">
-                <svg viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v12" />
-                  <path d="M15 9.5c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5" />
-                </svg>
-              </div>
-              <div>
-                <h3>No enrollment fees, ever</h3>
-                <p>No hidden costs, no membership fees, no fine print. SaveWell is free because the savings come from our provider partnerships, not from you.</p>
-              </div>
-            </div>
-            <div class="promise-point">
-              <div class="promise-point-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
-              </div>
-              <div>
-                <h3>Doctors you can trust</h3>
-                <p>Every provider in our network meets quality standards for excellent patient care. We only partner with doctors we'd send our own family to.</p>
-              </div>
-            </div>
-            <div class="promise-point">
-              <div class="promise-point-icon">
-                <svg viewBox="0 0 24 24">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <path d="M16 2v4" />
-                  <path d="M8 2v4" />
-                  <path d="M3 10h18" />
-                  <path d="M9 16l2 2 4-4" />
-                </svg>
-              </div>
-              <div>
-                <h3>Rewards happen automatically</h3>
-                <p>Your premium credits are applied at the end of the year — no forms to fill out, no claims to file, no paperwork at all.</p>
-              </div>
-            </div>
-            <div class="promise-point">
-              <div class="promise-point-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-              </div>
-              <div>
-                <h3>Your Medicare doesn't change</h3>
-                <p>SaveWell works alongside your existing Medicare coverage. Nothing changes about your plan, your benefits, or your current doctors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- How It Works -->
-      <section class="steps-section" id="how-it-works">
-        <div class="page-shell">
-          <div class="steps-header">
-            <h2>Three steps. That's it.</h2>
-          </div>
-          <div class="steps-list">
-            <div class="step-row">
-              <div class="step-num">1</div>
-              <div class="step-content">
-                <h3>Find a doctor or facility</h3>
-                <p>
-                  Search our network of specialists and surgery centers in your area.
-                  We cover cardiology, orthopedics, dermatology, and many more specialties.
-                </p>
-              </div>
-            </div>
-            <div class="step-row">
-              <div class="step-num">2</div>
-              <div class="step-content">
-                <h3>Get the care you need</h3>
-                <p>
-                  Visit your chosen provider just like any other doctor visit.
-                  Your Medicare coverage works exactly the same way — nothing changes.
-                </p>
-              </div>
-            </div>
-            <div class="step-row">
-              <div class="step-num">3</div>
-              <div class="step-content">
-                <h3>Save money on your premiums</h3>
-                <p>
-                  Your rewards are automatically credited to reduce your Medicare
-                  Supplement premiums. No forms, no hassle, no waiting.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-10">
-            <a
-              href="search.html"
-              class="btn-primary inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
-              >Search Providers</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section class="testimonial-section">
-        <div class="page-shell">
-          <div class="testimonial-feature">
-            <div class="testimonial-quote">
-              <blockquote>
-                I was skeptical at first — I thought there had to be a catch.
-                But SaveWell really delivered. My orthopedic surgery went
-                smoothly and I got a nice credit on my premium. I tell everyone
-                about it now.
-              </blockquote>
-              <div class="testimonial-attribution">
-                <div class="testimonial-avatar">RK</div>
-                <div>
-                  <span class="testimonial-name">Robert K.</span>
-                  <span class="testimonial-location">Las Vegas, NV</span>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-secondary">
-              <div class="testimonial-small">
-                <p>
-                  SaveWell made it so easy to find a great cardiologist. The
-                  rewards were credited to my account automatically — I didn't
-                  have to do a thing.
-                </p>
-                <div class="testimonial-small-author">
-                  <div class="testimonial-small-avatar">MJ</div>
-                  <span class="testimonial-small-name">Mary J.</span>
-                  <span class="testimonial-small-loc">&middot; Henderson, NV</span>
-                </div>
-              </div>
-              <div class="testimonial-small">
-                <p>
-                  Being on a fixed income, every dollar counts. SaveWell helped
-                  me save on my premiums while getting the care I needed for my
-                  diabetes.
-                </p>
-                <div class="testimonial-small-author">
-                  <div class="testimonial-small-avatar">JM</div>
-                  <span class="testimonial-small-name">James M.</span>
-                  <span class="testimonial-small-loc">&middot; Las Vegas, NV</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="faq-section">
-        <div class="page-shell">
-          <div class="faq-layout">
-            <div class="faq-header">
-              <h2>Common questions</h2>
-              <p>
-                Still not sure? Here are the questions we hear most often.
-              </p>
-            </div>
-            <div class="faq-list">
-              <div class="faq-item">
-                <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
-                  <span>Is SaveWell really free?</span>
-                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </button>
-                <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
-                  Yes, 100%. There are no enrollment fees, no monthly charges,
-                  and no hidden costs. SaveWell is free for all Medicare
-                  beneficiaries. Our savings come from our partnerships with
-                  healthcare providers — not from you.
-                </div>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
-                  <span>Does this change my Medicare coverage?</span>
-                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </button>
-                <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
-                  Not at all. SaveWell works alongside your existing Medicare
-                  plan. Your coverage, your benefits, and your current doctors
-                  stay exactly the same. We simply provide additional savings
-                  when you use our network providers.
-                </div>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
-                  <span>How do I receive my rewards?</span>
-                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </button>
-                <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
-                  Your rewards are automatically applied as credits toward your
-                  Medicare Supplement premiums, typically within 2 weeks to 2
-                  months after your visit. You don't need to fill out any forms
-                  or file any claims.
-                </div>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
-                  <span>What specialties are covered?</span>
-                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </button>
-                <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
-                  SaveWell covers a wide range of specialties including
-                  cardiology, orthopedic surgery, dermatology, gastroenterology,
-                  endocrinology, neurology, rheumatology, hematology &amp;
-                  oncology, OB/GYN, and ambulatory surgery centers.
-                  <a href="search.html" class="font-semibold hover:underline ml-1" style="color: var(--primary);">Search providers &rarr;</a>
-                </div>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
-                  <span>Can I still see my current doctor?</span>
-                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </button>
-                <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
-                  Absolutely. SaveWell doesn't replace any of your existing
-                  doctors. You earn rewards when you choose a SaveWell network
-                  provider for specialty care — your primary care and other
-                  doctors stay the same.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="cta-section">
-        <div class="page-shell">
-          <div class="cta-inner">
-            <div class="cta-text">
-              <h2>Ready to start saving?</h2>
-              <p>Find a SaveWell provider in your area and start earning rewards.</p>
-            </div>
-            <div class="cta-actions">
-              <a
-                href="search.html"
-                class="btn-cta-primary inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
-                >Search Providers</a
-              >
-              <a
-                href="tel:5107364332"
-                class="btn-cta-secondary inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2"
-                >Call (510) 736-4332</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer
-      class="relative border-t" style="background: var(--bg-alt); border-color: var(--border)"
-      id="site-footer"
-    >
-      <div
-        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 relative z-10"
-      >
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <img
-              src="assets/savewell-logo.png"
-              alt="SaveWell"
-              class="h-8 w-auto"
-            />
-            <p class="text-sm mt-3 max-w-xs" style="color: var(--text-muted)">
-              Helping Medicare beneficiaries save money on premiums while
-              accessing quality healthcare.
-            </p>
-          </div>
-          <div>
-            <h3 class="font-semibold mb-3" style="color: var(--heading)">Learn</h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a class="nav-link inline-block py-1" href="how-it-works.html"
-                  >How it Works</a
-                >
-              </li>
-              <li>
-                <a class="nav-link inline-block py-1" href="search.html"
-                  >Search Providers</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="font-semibold mb-3" style="color: var(--heading)">Legal</h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a
-                  class="nav-link inline-block py-1"
-                  href="terms.html"
-                  id="footer-terms"
-                  >Terms & Conditions</a
-                >
-              </li>
-              <li>
-                <a
-                  class="nav-link inline-block py-1"
-                  href="privacy.html"
-                  id="footer-privacy"
-                  >Privacy</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="font-semibold mb-3" style="color: var(--heading)">Contact</h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a class="nav-link inline-block py-1" href="contact.html"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:hello@savewellnow.com"
-                  class="nav-link inline-block py-1"
-                  >hello@savewellnow.com</a
-                >
-              </li>
-              <li>(510) 736-4332</li>
-            </ul>
-          </div>
-        </div>
-        <p class="text-xs mt-8" style="color: var(--text-muted)">
-          &copy; <span id="year"></span> SaveWell. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    <script>
-      const y = document.getElementById("year");
-      if (y) y.textContent = new Date().getFullYear();
-
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      if (menuBtn)
-        menuBtn.addEventListener("click", () => {
-          const isHidden = mobileMenu.classList.toggle("hidden");
-          menuBtn.setAttribute("aria-expanded", String(!isHidden));
-        });
-
-      // FAQ accordion
-      document.querySelectorAll(".faq-question").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const item = btn.closest(".faq-item");
-          const isOpen = item.classList.contains("open");
-          // Close all
-          document.querySelectorAll(".faq-item").forEach((i) => {
-            i.classList.remove("open");
-            i.querySelector(".faq-question").setAttribute("aria-expanded", "false");
-          });
-          // Toggle current
-          if (!isOpen) {
-            item.classList.add("open");
-            btn.setAttribute("aria-expanded", "true");
-          }
-        });
-      });
-    </script>
-  </body>
-</html>
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  const nb=document.getElementById('nav-'+id);
+  if(nb)nb.classList.add('active');
+}
+function submitForm(){
+  const n=document.getElementById('cf-name').value.trim();
+  const p=document.getElementById('cf-phone').value.trim();
+  if(!n||!p){alert('Please enter your name and phone number.');return;}
+  document.getElementById('cf-wrap').style.display='none';
+  document.getElementById('success-msg').style.display='block';
+}
+</script>

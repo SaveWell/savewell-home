@@ -6,22 +6,24 @@
     <title>SaveWell — Color Palette Exploration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <style>
       *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
       :root {
-        --page-bg: #f8f7f5;
-        --page-text: #4d5753;
-        --page-heading: #243837;
-        --page-muted: #697568;
-        --page-border: #dce2dd;
-        --page-surface: #f2f4f2;
-        --page-primary: #0b7a7c;
+        --page-bg: #faf8f6;
+        --page-text: #1A1A2E;
+        --page-heading: #0B2B4E;
+        --page-muted: #5A6478;
+        --page-border: #E2E8EF;
+        --page-surface: #f0f5f8;
+        --page-primary: #1A7F74;
+        --page-primary-soft: #E6F4F2;
+        --page-primary-mid: #B2DDD9;
       }
 
       html { font-size: 16px; -webkit-font-smoothing: antialiased; }
-      body { background: var(--page-bg); color: var(--page-text); font-family: 'Nunito', system-ui, sans-serif; line-height: 1.6; }
+      body { background: var(--page-bg); color: var(--page-text); font-family: 'DM Sans', system-ui, sans-serif; line-height: 1.6; font-weight: 400; }
 
       .page-header {
         max-width: 1200px;
@@ -30,26 +32,31 @@
       }
       .page-header .tag {
         display: inline-block;
-        font-size: 0.8125rem;
-        font-weight: 600;
-        letter-spacing: 0.04em;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--page-primary);
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.65rem;
       }
       .page-header h1 {
-        font-family: 'Bitter', Georgia, serif;
-        font-size: 2rem;
-        font-weight: 700;
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 2.125rem;
+        font-weight: 400;
         color: var(--page-heading);
-        letter-spacing: -0.01em;
-        margin-bottom: 0.5rem;
+        letter-spacing: -0.015em;
+        line-height: 1.15;
+        margin-bottom: 0.6rem;
+      }
+      .page-header h1 em {
+        font-style: italic;
+        color: var(--page-primary);
       }
       .page-header p {
-        font-size: 1.0625rem;
+        font-size: 1rem;
         color: var(--page-muted);
-        max-width: 58ch;
-        line-height: 1.65;
+        max-width: 62ch;
+        line-height: 1.7;
       }
 
       .controls {
@@ -64,8 +71,8 @@
       .controls button {
         font-family: inherit;
         font-size: 0.8125rem;
-        font-weight: 600;
-        padding: 0.4rem 0.85rem;
+        font-weight: 500;
+        padding: 0.45rem 0.9rem;
         border-radius: 999px;
         border: 1px solid var(--page-border);
         background: white;
@@ -84,26 +91,63 @@
         margin: 1.5rem auto 4rem;
         padding: 0 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
         gap: 1.25rem;
       }
 
       .pal-card {
         background: white;
-        border-radius: 1rem;
+        border-radius: 1.1rem;
         overflow: hidden;
         border: 1px solid var(--page-border);
         position: relative;
         transition: box-shadow 0.2s ease;
       }
       .pal-card:hover {
-        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        box-shadow: 0 8px 32px rgba(11, 43, 78, 0.08);
+      }
+      .pal-card.is-current {
+        border-color: var(--page-primary);
+        box-shadow: 0 0 0 1px var(--page-primary) inset, 0 4px 18px rgba(26, 127, 116, 0.08);
+      }
+      .pal-card.is-current:hover {
+        box-shadow: 0 0 0 1px var(--page-primary) inset, 0 8px 32px rgba(26, 127, 116, 0.14);
+      }
+      .live-badge {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        z-index: 2;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        background: var(--page-primary);
+        color: white;
+        font-size: 0.625rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        box-shadow: 0 2px 8px rgba(26, 127, 116, 0.25);
+      }
+      .live-badge::before {
+        content: '';
+        width: 0.45rem;
+        height: 0.45rem;
+        border-radius: 50%;
+        background: white;
+        animation: live-pulse 1.8s ease-in-out infinite;
+      }
+      @keyframes live-pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
       }
 
-      /* Mini homepage snapshot */
+      /* Mini homepage snapshot — mirrors index.html structure */
       .mini-site {
         font-size: 10px;
-        line-height: 1.4;
+        line-height: 1.55;
         overflow: hidden;
       }
 
@@ -111,125 +155,171 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.6em 1.4em;
+        padding: 0.55em 1.3em;
+        height: 2.6em;
       }
       .mini-nav-logo {
-        font-family: 'Bitter', serif;
-        font-weight: 700;
-        font-size: 1.2em;
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+        font-size: 1.35em;
+        letter-spacing: -0.01em;
       }
       .mini-nav-links {
         display: flex;
         gap: 1em;
-        font-size: 0.85em;
-        opacity: 0.6;
+        font-size: 0.78em;
+        font-weight: 500;
       }
 
       .mini-hero {
-        padding: 2em 1.4em 2.2em;
-        display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 1.5em;
-        align-items: center;
+        padding: 2.2em 1.3em 2em;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
       }
-      .mini-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35em;
-        padding: 0.3em 0.65em;
-        border-radius: 999px;
-        font-size: 0.8em;
-        font-weight: 600;
-        margin-bottom: 0.6em;
-      }
-      .mini-badge svg { width: 0.9em; height: 0.9em; flex-shrink: 0; }
       .mini-hero h2 {
-        font-family: 'Bitter', Georgia, serif;
-        font-size: 1.8em;
-        font-weight: 700;
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 1.75em;
+        font-weight: 400;
         line-height: 1.15;
-        letter-spacing: -0.01em;
-        margin-bottom: 0.4em;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.55em;
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: auto;
       }
+      .mini-hero h2 em { font-style: italic; }
       .mini-hero-sub {
-        font-size: 0.95em;
-        line-height: 1.6;
-        margin-bottom: 1em;
-      }
-      .mini-hero-actions { display: flex; gap: 0.5em; }
-      .mini-btn {
-        padding: 0.5em 1em;
-        border-radius: 0.6em;
         font-size: 0.85em;
-        font-weight: 700;
+        line-height: 1.65;
+        margin-bottom: 1.1em;
+        max-width: 24em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mini-hero-actions {
+        display: flex;
+        gap: 0.45em;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .mini-btn {
+        padding: 0.55em 1em;
+        border-radius: 0.45em;
+        font-size: 0.82em;
+        font-weight: 500;
         text-align: center;
         white-space: nowrap;
+        font-family: 'DM Sans', sans-serif;
       }
-      .mini-hero-img { display: flex; align-items: center; justify-content: center; }
-      .mini-hero-img-placeholder {
-        width: 7em;
-        height: 8em;
-        border-radius: 1em;
-        opacity: 0.18;
-      }
+
       .mini-trust {
         display: flex;
-        gap: 1em;
-        margin-top: 0.8em;
-        font-size: 0.75em;
+        align-items: center;
+        justify-content: center;
+        gap: 1.4em;
+        padding: 0.7em 1em;
+        font-size: 0.72em;
+        font-weight: 500;
       }
-      .mini-trust span { display: flex; align-items: center; gap: 0.3em; }
-      .mini-trust svg { width: 1em; height: 1em; }
-
-      .mini-promise {
-        padding: 1.6em 1.4em;
-      }
-      .mini-promise h3 {
-        font-family: 'Bitter', Georgia, serif;
-        font-size: 1.3em;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 0.4em;
-      }
-      .mini-promise-sub {
-        font-size: 0.85em;
-        margin-bottom: 1em;
-        line-height: 1.55;
-      }
-      .mini-promise-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.6em;
-      }
-      .mini-promise-item { display: flex; gap: 0.5em; align-items: flex-start; }
-      .mini-promise-icon {
-        width: 2em;
-        height: 2em;
-        border-radius: 0.4em;
+      .mini-trust-item { display: flex; align-items: center; gap: 0.4em; }
+      .mini-trust-check {
+        width: 0.95em;
+        height: 0.95em;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
       }
-      .mini-promise-icon svg { width: 1em; height: 1em; }
-      .mini-promise-item-title { font-weight: 700; font-size: 0.85em; line-height: 1.3; }
+      .mini-trust-check svg { width: 0.55em; height: 0.55em; fill: none; stroke-width: 2.5; }
 
-      .mini-cta {
-        padding: 1.2em 1.4em;
+      .mini-section {
+        padding: 1.5em 1.3em;
+      }
+      .mini-eyebrow {
+        font-size: 0.72em;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.55em;
+      }
+      .mini-section-title {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 1.35em;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.9em;
+      }
+
+      .mini-benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.55em;
+      }
+      .mini-benefit {
+        border: 1px solid;
+        border-radius: 0.7em;
+        padding: 0.7em 0.75em;
+        display: flex;
+        gap: 0.55em;
+        align-items: flex-start;
+      }
+      .mini-benefit-icon {
+        width: 1.7em;
+        height: 1.7em;
+        border-radius: 0.4em;
+        border: 1px solid;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .mini-benefit-icon svg { width: 0.85em; height: 0.85em; fill: none; stroke-width: 1.8; }
+      .mini-benefit-title {
+        font-size: 0.82em;
+        font-weight: 500;
+        line-height: 1.3;
+        margin-bottom: 0.18em;
+      }
+      .mini-benefit-text {
+        font-size: 0.72em;
+        line-height: 1.5;
+      }
+
+      .mini-cta {
+        padding: 1.5em 1.3em;
+        text-align: center;
       }
       .mini-cta h4 {
-        font-family: 'Bitter', Georgia, serif;
-        font-size: 1.1em;
-        font-weight: 700;
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-weight: 400;
+        font-size: 1.25em;
+        line-height: 1.2;
+        margin-bottom: 0.6em;
+      }
+      .mini-cta-sub {
+        font-size: 0.78em;
+        margin-bottom: 0.9em;
+        line-height: 1.6;
+        max-width: 22em;
+        margin-left: auto;
+        margin-right: auto;
       }
       .mini-cta-btn {
-        padding: 0.45em 0.9em;
-        border-radius: 0.5em;
-        font-size: 0.8em;
-        font-weight: 700;
+        display: inline-block;
+        padding: 0.55em 1.1em;
+        border-radius: 0.45em;
+        font-size: 0.82em;
+        font-weight: 500;
+      }
+
+      .mini-footer {
+        padding: 0.85em 1.3em;
+        font-family: 'DM Serif Display', serif;
+        font-size: 0.95em;
+        letter-spacing: -0.01em;
       }
 
       .pal-footer {
@@ -240,9 +330,9 @@
         border-top: 1px solid var(--page-border);
       }
       .pal-num {
-        font-family: 'Bitter', serif;
+        font-family: 'DM Serif Display', serif;
         font-size: 1.125rem;
-        font-weight: 700;
+        font-weight: 400;
         color: var(--page-border);
         min-width: 2rem;
       }
@@ -257,7 +347,7 @@
       .pal-swatch:last-child { border-radius: 2px 4px 4px 2px; }
       .pal-name {
         font-size: 0.75rem;
-        font-weight: 600;
+        font-weight: 500;
         color: var(--page-muted);
         white-space: nowrap;
       }
@@ -265,12 +355,13 @@
       .card-btn {
         width: 2rem; height: 2rem;
         border: none; background: none; cursor: pointer;
-        color: var(--page-border);
-        transition: color 0.15s ease, background 0.15s ease;
+        color: var(--page-muted);
+        opacity: 0.55;
+        transition: color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
         display: flex; align-items: center; justify-content: center;
         border-radius: 50%; flex-shrink: 0;
       }
-      .card-btn:hover { color: var(--page-primary); background: var(--page-surface); }
+      .card-btn:hover { color: var(--page-primary); background: var(--page-surface); opacity: 1; }
       .card-btn.favorited { color: oklch(0.55 0.18 25); }
       .card-btn svg { width: 1rem; height: 1rem; }
       .shuffle-btn:active svg { transform: rotate(180deg); }
@@ -278,14 +369,14 @@
 
       /* Token readout */
       .pal-tokens {
-        padding: 0 1.25rem 0.75rem;
+        padding: 0 1.25rem 0.85rem;
         display: flex;
         gap: 0.35rem;
         flex-wrap: wrap;
       }
       .pal-token {
         font-size: 0.625rem;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         padding: 0.15rem 0.4rem;
@@ -294,6 +385,7 @@
         display: inline-flex;
         align-items: center;
         gap: 0.3rem;
+        color: var(--page-muted);
       }
       .pal-token-swatch {
         width: 0.6rem;
@@ -311,8 +403,8 @@
   <body>
     <div class="page-header">
       <span class="tag">Color Exploration</span>
-      <h1>50 Palettes from Coolors.co — Applied to the Homepage</h1>
-      <p>Each card maps a Coolors palette to the homepage's semantic token system: --bg, --bg-alt, --bg-subtle, --primary, --heading, --text. Star your favorites to compare.</p>
+      <h1>50 palettes from Coolors — <em>applied to the homepage</em></h1>
+      <p>The first card is the <strong>live homepage</strong> — every card after that maps a Coolors palette onto the same token system (navy heading, teal primary, teal-md italic accent, teal-lt soft surfaces, slate alt bg). Shuffle to remix, star to compare.</p>
     </div>
 
     <div class="controls">
@@ -389,15 +481,12 @@
         return 0.2126*r + 0.7152*g + 0.0722*b;
       }
 
-      function isLight(hex) { return luminance(hex) > 0.35; }
-
       function contrastRatio(hex1, hex2) {
         const l1 = luminance(hex1), l2 = luminance(hex2);
         const lighter = Math.max(l1, l2), darker = Math.min(l1, l2);
         return (lighter + 0.05) / (darker + 0.05);
       }
 
-      // Perceived saturation (simple HSL-based)
       function saturation(hex) {
         const [r,g,b] = hexToRgb(hex).map(c => c/255);
         const max = Math.max(r,g,b), min = Math.min(r,g,b);
@@ -406,7 +495,6 @@
         return l > 0.5 ? (max-min)/(2-max-min) : (max-min)/(max+min);
       }
 
-      // Mix two hex colors
       function mixHex(hex1, hex2, weight) {
         const [r1,g1,b1] = hexToRgb(hex1);
         const [r2,g2,b2] = hexToRgb(hex2);
@@ -417,193 +505,220 @@
         return '#' + [r,g,b].map(c => Math.min(255,Math.max(0,c)).toString(16).padStart(2,'0')).join('');
       }
 
-      // Lighten a color toward white
       function lighten(hex, amount) { return mixHex('#ffffff', hex, amount); }
-
-      // Darken a color toward black
       function darken(hex, amount) { return mixHex('#000000', hex, amount); }
 
       /*
-       * Order-aware theme derivation.
+       * Order-aware theme derivation that mirrors the homepage token system:
+       *   --navy:     darkest color from palette (heading + gradient start + footer bg)
+       *   --teal:     most saturated mid-tone (primary CTA, accents)
+       *   --teal-md:  lighter teal (italic em accent, big numbers)
+       *   --teal-lt:  very light teal (trust bar, icon backgrounds, badges)
+       *   --slate:    cool off-white alt background
+       *   --sage:     deeper green-ish tone for trust text (derived from teal)
+       *   --text/muted/border derived from heading.
        *
-       * Walks the colors in INPUT ORDER and assigns the first suitable
-       * match to each role. Shuffling the input produces a different theme.
-       *
-       * Roles:
-       *   --primary:    first color with saturation > 0.15 and contrast >= 3:1 on bg
-       *   --accent:     next color with saturation > 0.1, not already used
-       *   --heading:    first remaining dark color (luminance < 0.15)
-       *   Neutrals derived from primary; bg is fixed off-white.
+       * Walks colors in INPUT ORDER so shuffling changes the result.
        */
       function deriveTheme(colors) {
-        const c = colors.slice(0, Math.min(colors.length, 7));
+        const c = colors.slice(0, Math.min(colors.length, 8));
         const bg = '#faf8f6';
         const used = new Set();
 
-        // 1. PRIMARY: first color in order that is saturated + has contrast on bg
-        let primary = null;
-        for (const col of c) {
-          if (saturation(col) > 0.15 && contrastRatio(col, bg) >= 3.0) {
-            primary = col;
-            used.add(col);
-            break;
-          }
-        }
-        // Fallback: first color with any contrast
-        if (!primary) {
-          for (const col of c) {
-            if (contrastRatio(col, bg) >= 2.5) {
-              primary = col;
-              used.add(col);
-              break;
-            }
-          }
-        }
-        if (!primary) { primary = c[0]; used.add(primary); }
-
-        // 2. ACCENT: next unused color with some saturation
-        let accent = null;
-        for (const col of c) {
-          if (used.has(col)) continue;
-          if (saturation(col) > 0.1) {
-            accent = col;
-            used.add(col);
-            break;
-          }
-        }
-        if (!accent) accent = primary;
-
-        // 3. HEADING: first unused dark color, or darkest remaining
-        let heading = null;
-        for (const col of c) {
-          if (used.has(col)) continue;
-          if (luminance(col) < 0.15) {
-            heading = col;
-            used.add(col);
-            break;
-          }
-        }
-        if (!heading) {
-          // Pick darkest unused
-          const unused = c.filter(x => !used.has(x));
-          if (unused.length > 0) {
-            heading = unused.reduce((a, b) => luminance(a) < luminance(b) ? a : b);
-          } else {
-            heading = [...c].sort((a,b) => luminance(a) - luminance(b))[0];
-          }
-        }
-
-        // Ensure primary has enough contrast — darken if needed
-        let finalPrimary = primary;
+        // 1. NAVY (heading): FIRST color in input order, darkened if needed.
+        // Strictly position-based so every shuffle produces a different navy —
+        // not "first dark color" (which would keep picking the same one when
+        // only one color in the palette is dark enough).
+        let navy = c[0];
+        used.add(navy);
         let attempts = 0;
-        while (contrastRatio(finalPrimary, bg) < 3.0 && attempts < 10) {
-          finalPrimary = darken(finalPrimary, 0.1);
+        while (contrastRatio(navy, '#ffffff') < 7 && attempts < 14) {
+          navy = darken(navy, 0.15);
           attempts++;
         }
 
-        // Ensure heading is dark enough for readability
-        let finalHeading = heading;
+        // 2. TEAL (primary): NEXT unused color in input order, darkened to
+        // reach button-grade contrast on bg. Position-based, same reason.
+        let teal = null;
+        for (const col of c) {
+          if (used.has(col)) continue;
+          teal = col;
+          used.add(col);
+          break;
+        }
+        if (!teal) teal = navy;
         attempts = 0;
-        while (contrastRatio(finalHeading, bg) < 4.5 && attempts < 10) {
-          finalHeading = darken(finalHeading, 0.12);
+        while (contrastRatio(teal, bg) < 3.5 && attempts < 12) {
+          teal = darken(teal, 0.12);
           attempts++;
         }
-
-        // Derive neutrals from primary
-        const primaryDark = darken(finalPrimary, 0.25);
-        const bgAlt = mixHex(lighten(finalPrimary, 0.95), bg, 0.5);
-        const bgSubtle = mixHex(lighten(finalPrimary, 0.88), bg, 0.5);
-        const border = lighten(finalPrimary, 0.82);
-
-        // Text from heading
-        let text = finalHeading;
-        if (contrastRatio(finalHeading, bg) > 12) {
-          text = lighten(finalHeading, 0.25);
+        // If teal ended up nearly grayscale, mix a touch toward navy so it
+        // still reads as a chromatic accent rather than a neutral.
+        if (saturation(teal) < 0.08) {
+          teal = mixHex(teal, navy, 0.7);
         }
-        const textMuted = lighten(finalHeading, 0.4);
 
-        // Ensure accent has enough contrast
-        let finalAccent = accent;
-        if (contrastRatio(finalAccent, bg) < 3) finalAccent = darken(finalAccent, 0.2);
+        // 3. Derived tones
+        const tealMd = lighten(teal, 0.55);            // for italic em on dark gradient
+        const tealLt = mixHex(lighten(teal, 0.88), bg, 0.5); // light surface
+        const slate  = mixHex(lighten(teal, 0.93), '#f0f5f8', 0.5); // alt bg
+        const border = mixHex(lighten(teal, 0.78), '#E2E8EF', 0.5);
+        const sage   = mixHex(teal, '#4A7C6F', 0.35);
+
+        // Text from navy
+        let text = navy;
+        if (contrastRatio(navy, bg) > 14) {
+          text = lighten(navy, 0.18);
+        }
+        const muted = mixHex(navy, '#5A6478', 0.4);
+
+        // Gradient endpoint (slightly tealer navy for hero gradient)
+        const heroGradStart = navy;
+        const heroGradEnd = mixHex(navy, teal, 0.55);
 
         return {
-          bg, bgAlt, bgSubtle, border,
-          primary: finalPrimary, primaryDark,
-          accent: finalAccent,
-          heading: finalHeading, text, textMuted,
-          ctaBg: primaryDark, ctaText: '#faf8f6',
-          ctaTextMuted: lighten(finalPrimary, 0.7)
+          bg,
+          navy,
+          teal,
+          tealDark: darken(teal, 0.2),
+          tealMd,
+          tealLt,
+          slate,
+          border,
+          sage,
+          text,
+          muted,
+          heroGradStart,
+          heroGradEnd,
+          white: '#FFFFFF'
         };
       }
 
+      /*
+       * Hand-tuned theme matching the production homepage (index.html).
+       * Mirrored verbatim from the :root variables and inline gradient values
+       * so the "Current" card represents the real live look — not a derived
+       * approximation. Update this if index.html's tokens change.
+       */
+      const CURRENT_THEME = {
+        bg:             '#FFFFFF',          // --white
+        navy:           '#0B2B4E',          // --navy
+        teal:           '#1A7F74',          // --teal
+        tealDark:       '#155f56',          // .cf .sub-btn:hover
+        tealMd:         '#B2DDD9',          // --teal-md
+        tealLt:         '#E6F4F2',          // --teal-lt
+        slate:          '#f0f5f8',          // --slate
+        border:         '#E2E8EF',          // --border
+        sage:           '#4A7C6F',          // --sage
+        text:           '#1A1A2E',          // --text
+        muted:          '#5A6478',          // --muted
+        heroGradStart:  '#0d3a5c',          // .hero linear-gradient start
+        heroGradEnd:    '#1a5f54',          // .hero linear-gradient end
+        white:          '#FFFFFF'
+      };
+
+      const CURRENT_PALETTE = {
+        n: 0,
+        name: 'Current',
+        current: true,
+        colors: ['#0B2B4E', '#1A7F74', '#B2DDD9', '#E6F4F2', '#f0f5f8', '#FFFFFF']
+      };
+
       function miniSiteHTML(t) {
         return `
-          <div class="mini-nav" style="background:${t.bg};color:${t.heading};border-bottom:1px solid ${t.border};">
-            <div class="mini-nav-logo">SaveWell</div>
-            <div class="mini-nav-links" style="color:${t.textMuted};"><span>How it Works</span><span>Search</span><span>Contact</span></div>
-          </div>
-          <div class="mini-hero" style="background:linear-gradient(180deg, ${t.bg} 0%, ${t.bgSubtle} 100%);color:${t.text};">
-            <div>
-              <div class="mini-badge" style="background:${t.bgSubtle};color:${t.primaryDark};">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-                100% Free
-              </div>
-              <h2 style="color:${t.heading};">Earn rewards for choosing <span style="color:${t.primary};">trusted doctors</span></h2>
-              <div class="mini-hero-sub" style="color:${t.text};">Visit high-quality doctors in the SaveWell network and earn rewards toward your premiums.</div>
-              <div class="mini-hero-actions">
-                <div class="mini-btn" style="background:${t.primary};color:${t.bg};">Search Providers</div>
-                <div class="mini-btn" style="color:${t.heading};border:1px solid ${t.border};background:${t.bg};">Call Us</div>
-              </div>
-              <div class="mini-trust" style="color:${t.textMuted};">
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="${t.primary}" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>Quality-Vetted</span>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="${t.primary}" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Keep Your Doctors</span>
-              </div>
-            </div>
-            <div class="mini-hero-img">
-              <div class="mini-hero-img-placeholder" style="background:${t.primary};"></div>
+          <div class="mini-nav" style="background:${t.bg};border-bottom:1px solid ${t.border};color:${t.muted};">
+            <div class="mini-nav-logo" style="color:${t.navy};">Save<span style="color:${t.teal};">Well</span></div>
+            <div class="mini-nav-links">
+              <span>Home</span><span>How it works</span><span style="color:${t.teal};">Contact</span>
             </div>
           </div>
-          <div class="mini-promise" style="background:${t.bg};color:${t.text};">
-            <h3 style="color:${t.heading};">What's the catch?</h3>
-            <div class="mini-promise-sub" style="color:${t.textMuted};">There isn't one. SaveWell is completely free for Medicare beneficiaries.</div>
-            <div class="mini-promise-grid">
-              <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12"/><path d="M15 9.5c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5"/></svg>
+
+          <div class="mini-hero" style="background:linear-gradient(135deg, ${t.heroGradStart} 0%, ${t.heroGradEnd} 100%);">
+            <h2 style="color:#ffffff;">Health care is complicated.<br><em style="color:${t.tealMd};">Finding great care</em> shouldn't be.</h2>
+            <div class="mini-hero-sub" style="color:rgba(255,255,255,0.75);">SaveWell connects Medicare patients with top-rated specialists — and rewards you for choosing quality care.</div>
+            <div class="mini-hero-actions">
+              <div class="mini-btn" style="background:${t.teal};color:#ffffff;border:1px solid ${t.teal};">See how it works</div>
+              <div class="mini-btn" style="background:#ffffff;color:${t.navy};border:1px solid #ffffff;">Talk to a care guide</div>
+            </div>
+          </div>
+
+          <div class="mini-trust" style="background:${t.tealLt};border-bottom:1px solid ${t.border};color:${t.sage};">
+            <span class="mini-trust-item">
+              <span class="mini-trust-check" style="background:${t.teal};">
+                <svg viewBox="0 0 10 8" stroke="#ffffff"><polyline points="1 4 4 7 9 1" fill="none"/></svg>
+              </span>Free for Medicare
+            </span>
+            <span class="mini-trust-item">
+              <span class="mini-trust-check" style="background:${t.teal};">
+                <svg viewBox="0 0 10 8" stroke="#ffffff"><polyline points="1 4 4 7 9 1" fill="none"/></svg>
+              </span>Top-rated specialists
+            </span>
+            <span class="mini-trust-item">
+              <span class="mini-trust-check" style="background:${t.teal};">
+                <svg viewBox="0 0 10 8" stroke="#ffffff"><polyline points="1 4 4 7 9 1" fill="none"/></svg>
+              </span>Earn rewards
+            </span>
+          </div>
+
+          <div class="mini-section" style="background:${t.bg};">
+            <div class="mini-eyebrow" style="color:${t.teal};">What we do</div>
+            <div class="mini-section-title" style="color:${t.navy};">Your care, made simpler</div>
+            <div class="mini-benefits">
+              <div class="mini-benefit" style="border-color:${t.border};background:#ffffff;">
+                <div class="mini-benefit-icon" style="background:${t.tealLt};border-color:${t.tealMd};color:${t.teal};">
+                  <svg viewBox="0 0 24 24" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
                 </div>
-                <div class="mini-promise-item-title" style="color:${t.heading};">No fees, ever</div>
+                <div>
+                  <div class="mini-benefit-title" style="color:${t.navy};">Personal care guides</div>
+                  <div class="mini-benefit-text" style="color:${t.muted};">One-on-one help finding the right specialist.</div>
+                </div>
               </div>
-              <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              <div class="mini-benefit" style="border-color:${t.border};background:#ffffff;">
+                <div class="mini-benefit-icon" style="background:${t.tealLt};border-color:${t.tealMd};color:${t.teal};">
+                  <svg viewBox="0 0 24 24" stroke="currentColor"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01" fill="none"/></svg>
                 </div>
-                <div class="mini-promise-item-title" style="color:${t.heading};">Trusted doctors</div>
+                <div>
+                  <div class="mini-benefit-title" style="color:${t.navy};">Trusted quality</div>
+                  <div class="mini-benefit-text" style="color:${t.muted};">Vetted outpatient centers near you.</div>
+                </div>
               </div>
-              <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+              <div class="mini-benefit" style="border-color:${t.border};background:#ffffff;">
+                <div class="mini-benefit-icon" style="background:${t.tealLt};border-color:${t.tealMd};color:${t.teal};">
+                  <svg viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14" fill="none"/></svg>
                 </div>
-                <div class="mini-promise-item-title" style="color:${t.heading};">Auto rewards</div>
+                <div>
+                  <div class="mini-benefit-title" style="color:${t.navy};">Less waiting</div>
+                  <div class="mini-benefit-text" style="color:${t.muted};">Faster scheduling, shorter day-of waits.</div>
+                </div>
               </div>
-              <div class="mini-promise-item">
-                <div class="mini-promise-icon" style="background:${t.bgSubtle};color:${t.primary};">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <div class="mini-benefit" style="border-color:${t.border};background:#ffffff;">
+                <div class="mini-benefit-icon" style="background:${t.tealLt};border-color:${t.tealMd};color:${t.teal};">
+                  <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
-                <div class="mini-promise-item-title" style="color:${t.heading};">Medicare unchanged</div>
+                <div>
+                  <div class="mini-benefit-title" style="color:${t.navy};">Earn rewards</div>
+                  <div class="mini-benefit-text" style="color:${t.muted};">Premium credit for choosing quality care.</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="mini-cta" style="background:${t.ctaBg};color:${t.ctaText};">
-            <h4>Ready to start saving?</h4>
-            <div class="mini-cta-btn" style="background:${t.bg};color:${t.primaryDark};">Search Providers</div>
+
+          <div class="mini-cta" style="background:${t.teal};color:#ffffff;">
+            <h4 style="color:#ffffff;">Ready to find the right care?</h4>
+            <div class="mini-cta-sub" style="color:rgba(255,255,255,0.85);">Care guides are ready to help — at no cost to you.</div>
+            <div class="mini-cta-btn" style="background:#ffffff;color:${t.teal};">Get in touch</div>
+          </div>
+
+          <div class="mini-footer" style="background:${t.navy};color:#ffffff;">
+            Save<span style="color:${t.tealMd};">Well</span>
           </div>
         `;
       }
 
       function tokenReadout(t) {
         const tokens = [
-          ['bg', t.bg], ['bg-alt', t.bgAlt], ['primary', t.primary],
-          ['heading', t.heading], ['text', t.text], ['accent', t.accent]
+          ['navy', t.navy], ['teal', t.teal], ['teal-md', t.tealMd],
+          ['teal-lt', t.tealLt], ['slate', t.slate], ['border', t.border]
         ];
         return tokens.map(([name, color]) =>
           `<span class="pal-token"><span class="pal-token-swatch" style="background:${color};"></span>${name}</span>`
@@ -614,7 +729,6 @@
       const favs = new Set(JSON.parse(localStorage.getItem("sw-color-favs2") || "[]"));
       function saveFavs() { localStorage.setItem("sw-color-favs2", JSON.stringify([...favs])); }
 
-      // Track shuffled color orders per palette (keyed by palette number)
       const shuffledColors = {};
 
       function getColors(p) {
@@ -630,30 +744,34 @@
         return a;
       }
 
-      // ---- Build a single card ----
       function buildCard(p) {
         const colors = getColors(p);
-        const theme = deriveTheme(colors);
+        const theme = p.current ? CURRENT_THEME : deriveTheme(colors);
         const card = document.createElement("div");
-        card.className = "pal-card";
+        card.className = "pal-card" + (p.current ? " is-current" : "");
         card.dataset.num = p.n;
 
         const swatches = colors.map(c => `<div class="pal-swatch" style="background:${c};" title="${c}"></div>`).join('');
 
-        card.innerHTML = `
-          <div class="mini-site">${miniSiteHTML(theme)}</div>
-          <div class="pal-tokens">${tokenReadout(theme)}</div>
-          <div class="pal-footer">
-            <span class="pal-num">${String(p.n).padStart(2,'0')}</span>
-            <div class="pal-swatches">${swatches}</div>
-            <span class="pal-name">${p.name}</span>
+        const liveBadge = p.current ? '<span class="live-badge">Live</span>' : '';
+        const shuffleBtn = p.current ? '' : `
             <button class="card-btn shuffle-btn" data-num="${p.n}" aria-label="Shuffle colors" title="Shuffle colors">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/>
                 <polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/>
                 <line x1="4" y1="4" x2="9" y2="9"/>
               </svg>
-            </button>
+            </button>`;
+
+        card.innerHTML = `
+          ${liveBadge}
+          <div class="mini-site">${miniSiteHTML(theme)}</div>
+          <div class="pal-tokens">${tokenReadout(theme)}</div>
+          <div class="pal-footer">
+            <span class="pal-num">${String(p.n).padStart(2,'0')}</span>
+            <div class="pal-swatches">${swatches}</div>
+            <span class="pal-name">${p.name}</span>
+            ${shuffleBtn}
             <button class="card-btn ${favs.has(p.n) ? 'favorited' : ''}" data-num="${p.n}" data-action="fav" aria-label="Toggle favorite">
               <svg viewBox="0 0 24 24" fill="${favs.has(p.n) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
@@ -662,14 +780,14 @@
           </div>
         `;
 
-        // Bind shuffle
-        card.querySelector(".shuffle-btn").addEventListener("click", () => {
-          shuffledColors[p.n] = shuffleArray(p.colors);
-          const newCard = buildCard(p);
-          card.replaceWith(newCard);
-        });
+        if (!p.current) {
+          card.querySelector(".shuffle-btn").addEventListener("click", () => {
+            shuffledColors[p.n] = shuffleArray(p.colors);
+            const newCard = buildCard(p);
+            card.replaceWith(newCard);
+          });
+        }
 
-        // Bind fav
         card.querySelector('[data-action="fav"]').addEventListener("click", () => {
           if (favs.has(p.n)) favs.delete(p.n); else favs.add(p.n);
           saveFavs();
@@ -685,13 +803,16 @@
         grid.innerHTML = "";
 
         let list;
-        if (filter === "favorites") list = PALETTES.filter(p => favs.has(p.n));
+        if (filter === "favorites") {
+          list = PALETTES.filter(p => favs.has(p.n));
+          if (favs.has(0)) list = [CURRENT_PALETTE, ...list];
+        }
         else if (filter === "5") list = PALETTES.filter(p => !p.extended);
         else if (filter === "large") list = PALETTES.filter(p => p.extended);
-        else list = PALETTES;
+        else list = [CURRENT_PALETTE, ...PALETTES];
 
         if (filter === "favorites" && list.length === 0) {
-          grid.innerHTML = '<div style="grid-column:1/-1;padding:3rem;color:var(--page-muted);font-size:1.0625rem;">No favorites yet. Click the heart icon to save palettes.</div>';
+          grid.innerHTML = '<div style="grid-column:1/-1;padding:3rem;color:var(--page-muted);font-size:1rem;">No favorites yet. Click the heart icon to save palettes.</div>';
           return;
         }
 

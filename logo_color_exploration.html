@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SaveWell — Logo Font Exploration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,wght@0,700;1,700&family=Playfair+Display:ital,wght@0,700;1,700&family=Cormorant+Garamond:ital,wght@0,700;1,700&family=EB+Garamond:ital,wght@0,700;1,700&family=Lora:ital,wght@0,700;1,700&family=Crimson+Pro:ital,wght@0,700;1,700&family=Frank+Ruhl+Libre:wght@700&family=Newsreader:wght@600&family=Spectral:wght@700&family=Bitter:wght@700&family=Roboto+Slab:wght@700&family=Zilla+Slab:wght@700&family=Bree+Serif&family=Arvo:wght@700&family=Outfit:wght@700&family=Manrope:wght@700&family=Plus+Jakarta+Sans:wght@700&family=Space+Grotesk:wght@700&family=Sora:wght@600&family=Albert+Sans:wght@700&family=Hanken+Grotesk:wght@700&family=Sen:wght@700&family=Inter:wght@700&family=DM+Sans:wght@700&family=Onest:wght@700&family=Work+Sans:wght@700&family=Public+Sans:wght@700&family=Source+Sans+3:wght@700&family=Mulish:wght@800&family=Be+Vietnam+Pro:wght@700&family=Karla:wght@700&family=Rubik:wght@700&family=Lato:wght@900&family=Open+Sans:wght@800&family=Nunito:wght@800&family=Quicksand:wght@700&family=Comfortaa:wght@700&family=Mukta:wght@800&family=Cabin:wght@700&family=Bricolage+Grotesque:wght@700&family=Big+Shoulders+Display:wght@800&family=Syne:wght@700&family=Unbounded:wght@700&family=Familjen+Grotesk:wght@700&family=Archivo+Black&family=Anton&family=Oswald:wght@700&family=Barlow+Condensed:wght@700&family=Saira+Condensed:wght@700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+      :root {
+        --page-bg: #faf8f6;
+        --page-text: #4d5753;
+        --page-heading: #0B2B4E;
+        --page-muted: #5A6478;
+        --page-border: #E2E8EF;
+        --page-surface: #f0f5f8;
+        --page-primary: #1A7F74;
+        --logo-bg: #faf8f6;
+      }
+
+      html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+      body { background: var(--page-bg); color: var(--page-text); font-family: 'DM Sans', system-ui, sans-serif; line-height: 1.6; }
+
+      .page-header {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem 2rem 0.5rem;
+      }
+      .page-header .tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--page-primary);
+        margin-bottom: 0.65rem;
+      }
+      .page-header h1 {
+        font-family: 'DM Serif Display', Georgia, serif;
+        font-size: 2.125rem;
+        font-weight: 400;
+        color: var(--page-heading);
+        letter-spacing: -0.015em;
+        line-height: 1.15;
+        margin-bottom: 0.6rem;
+      }
+      .page-header h1 em { font-style: italic; color: var(--page-primary); }
+      .page-header p {
+        font-size: 1rem;
+        color: var(--page-muted);
+        max-width: 62ch;
+        line-height: 1.7;
+      }
+      .page-header code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.875em;
+        background: var(--page-surface);
+        padding: 0.05em 0.4em;
+        border-radius: 4px;
+      }
+      .page-header strong { color: var(--page-heading); font-weight: 600; }
+
+      .controls {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 1.25rem 2rem 0;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .controls .group {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+        padding-right: 0.5rem;
+        border-right: 1px solid var(--page-border);
+        margin-right: 0.25rem;
+      }
+      .controls .group:last-child { border-right: none; }
+      .controls .label {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--page-muted);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-right: 0.3rem;
+      }
+      .controls button {
+        font-family: inherit;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        padding: 0.4rem 0.85rem;
+        border-radius: 999px;
+        border: 1px solid var(--page-border);
+        background: white;
+        color: var(--page-muted);
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+      .controls button:hover, .controls button.active {
+        background: var(--page-primary);
+        color: white;
+        border-color: var(--page-primary);
+      }
+      .count {
+        margin-left: auto;
+        font-size: 0.8125rem;
+        color: var(--page-muted);
+        font-weight: 500;
+      }
+
+      .logo-grid {
+        max-width: 1400px;
+        margin: 1.5rem auto 4rem;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1rem;
+      }
+
+      .logo-card {
+        background: var(--logo-bg);
+        border-radius: 0.9rem;
+        border: 1px solid var(--page-border);
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+        --c1: #0B2B4E;
+        --c2: #1A7F74;
+        --wm-family: 'DM Serif Display', Georgia, serif;
+        --wm-weight: 400;
+        --wm-tracking: -0.015em;
+        --wm-size: 2.85rem;
+        --wm-well-style: normal;
+      }
+      .logo-card:hover {
+        box-shadow: 0 8px 28px rgba(11, 43, 78, 0.09);
+        transform: translateY(-1px);
+      }
+
+      .logo-stage {
+        background: var(--logo-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.6rem 1.5rem 2.2rem;
+        min-height: 130px;
+      }
+      .logo-wordmark {
+        font-family: var(--wm-family);
+        font-weight: var(--wm-weight);
+        font-size: var(--wm-size);
+        letter-spacing: var(--wm-tracking);
+        line-height: 1;
+        user-select: none;
+      }
+      .logo-wordmark .save { color: var(--c1); }
+      .logo-wordmark .well { color: var(--c2); font-style: var(--wm-well-style); }
+
+      .logo-meta {
+        padding: 0.75rem 1rem;
+        background: white;
+        border-top: 1px solid var(--page-border);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .logo-meta .idx {
+        font-family: 'DM Serif Display', serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: var(--page-border);
+        min-width: 1.75rem;
+      }
+      .logo-meta .pname {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--page-heading);
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .logo-meta .cat-chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.15rem 0.45rem;
+        border-radius: 999px;
+        background: var(--page-surface);
+        border: 1px solid var(--page-border);
+        font-size: 0.625rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--page-muted);
+      }
+
+      .fav-btn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 1.75rem; height: 1.75rem;
+        border: none;
+        background: rgba(255,255,255,0.8);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        cursor: pointer;
+        color: rgba(0,0,0,0.25);
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%;
+        transition: all 0.15s ease;
+        opacity: 0;
+      }
+      .logo-card:hover .fav-btn { opacity: 1; }
+      .fav-btn:hover { color: oklch(0.55 0.18 25); background: white; }
+      .fav-btn.favorited { opacity: 1; color: oklch(0.55 0.18 25); }
+      .fav-btn svg { width: 0.9rem; height: 0.9rem; }
+
+      @media (max-width: 720px) {
+        .page-header, .controls { padding-left: 1.25rem; padding-right: 1.25rem; }
+        .logo-grid { padding: 0 1rem; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+        .logo-wordmark { font-size: 2rem; }
+        .logo-stage { padding: 1.8rem 0.75rem 1.5rem; min-height: 90px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-header">
+      <span class="tag">Logo Font Exploration</span>
+      <h1>SaveWell Wordmark — <em>50 Google Fonts</em> in Brand Colors</h1>
+      <p>Every card shows <strong>Save</strong> in <code>--navy</code> (#0B2B4E) and <strong>Well</strong> in <code>--teal</code> (#1A7F74) — the colors are fixed. Each card varies the typeface so you can compare 50 Google Fonts head-to-head. Italics on "Well" are enabled for serifs that have great italics, matching the homepage's italic em accent.</p>
+    </div>
+
+    <div class="controls">
+      <div class="group">
+        <span class="label">Show</span>
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="favorites">Favorites</button>
+      </div>
+      <div class="group" id="categoryControls">
+        <span class="label">Category</span>
+        <button class="active" data-cat="all">All</button>
+        <button data-cat="serif">Serif</button>
+        <button data-cat="sans">Sans</button>
+        <button data-cat="display">Display</button>
+        <button data-cat="condensed">Condensed</button>
+      </div>
+      <div class="group">
+        <span class="label">Case</span>
+        <button class="active" data-case="title">SaveWell</button>
+        <button data-case="lower">savewell</button>
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+
+    <div class="logo-grid" id="grid"></div>
+
+    <script>
+      // Locked brand colors — matches index.html :root tokens.
+      const NAVY = '#0B2B4E';
+      const TEAL = '#1A7F74';
+
+      /*
+       * 50 Google Fonts curated for a two-tone wordmark.
+       *
+       * Each entry tunes per-face:
+       *  - weight & tracking & size are calibrated to balance optical weight across faces
+       *    so a 2.85rem geometric sans doesn't dwarf a 3rem condensed.
+       *  - wellStyle: 'italic' on serifs that have great italics — mirrors the
+       *    homepage's italic em accent ("Finding great care"). 'normal' elsewhere.
+       *
+       * The Google Fonts URL at the top of <head> requests these exact weights;
+       * keep the two in sync if you swap a face.
+       */
+      const FONTS = [
+        // Serif — editorial / display
+        { id:'dm-serif',         name:'DM Serif Display', family:"'DM Serif Display',Georgia,serif",    weight:400, tracking:'-0.015em', size:'2.85rem', wellStyle:'italic', category:'serif' },
+        { id:'fraunces',         name:'Fraunces',         family:"'Fraunces',Georgia,serif",            weight:700, tracking:'-0.025em', size:'2.75rem', wellStyle:'italic', category:'serif' },
+        { id:'playfair',         name:'Playfair Display', family:"'Playfair Display',Georgia,serif",    weight:700, tracking:'-0.02em',  size:'2.85rem', wellStyle:'italic', category:'serif' },
+        { id:'cormorant',        name:'Cormorant Garamond', family:"'Cormorant Garamond',Georgia,serif",weight:700, tracking:'-0.01em',  size:'3rem',    wellStyle:'italic', category:'serif' },
+        { id:'eb-garamond',      name:'EB Garamond',      family:"'EB Garamond',Georgia,serif",         weight:700, tracking:'-0.005em', size:'2.85rem', wellStyle:'italic', category:'serif' },
+        { id:'lora',             name:'Lora',             family:"'Lora',Georgia,serif",                weight:700, tracking:'-0.02em',  size:'2.7rem',  wellStyle:'italic', category:'serif' },
+        { id:'crimson-pro',      name:'Crimson Pro',      family:"'Crimson Pro',Georgia,serif",         weight:700, tracking:'-0.015em', size:'2.85rem', wellStyle:'italic', category:'serif' },
+        { id:'frank-ruhl',       name:'Frank Ruhl Libre', family:"'Frank Ruhl Libre',Georgia,serif",    weight:700, tracking:'-0.02em',  size:'2.75rem', wellStyle:'normal', category:'serif' },
+        { id:'newsreader',       name:'Newsreader',       family:"'Newsreader',Georgia,serif",          weight:600, tracking:'-0.015em', size:'2.85rem', wellStyle:'normal', category:'serif' },
+        { id:'spectral',         name:'Spectral',         family:"'Spectral',Georgia,serif",            weight:700, tracking:'-0.015em', size:'2.75rem', wellStyle:'normal', category:'serif' },
+        // Serif — slab
+        { id:'bitter',           name:'Bitter',           family:"'Bitter',Georgia,serif",              weight:700, tracking:'-0.03em',  size:'2.6rem',  wellStyle:'normal', category:'serif' },
+        { id:'roboto-slab',      name:'Roboto Slab',      family:"'Roboto Slab',Georgia,serif",         weight:700, tracking:'-0.025em', size:'2.7rem',  wellStyle:'normal', category:'serif' },
+        { id:'zilla-slab',       name:'Zilla Slab',       family:"'Zilla Slab',Georgia,serif",          weight:700, tracking:'-0.02em',  size:'2.75rem', wellStyle:'normal', category:'serif' },
+        { id:'bree-serif',       name:'Bree Serif',       family:"'Bree Serif',Georgia,serif",          weight:400, tracking:'-0.015em', size:'2.85rem', wellStyle:'normal', category:'serif' },
+        { id:'arvo',             name:'Arvo',             family:"'Arvo',Georgia,serif",                weight:700, tracking:'-0.03em',  size:'2.5rem',  wellStyle:'normal', category:'serif' },
+        // Sans — geometric & modern
+        { id:'outfit',           name:'Outfit',           family:"'Outfit',system-ui,sans-serif",       weight:700, tracking:'-0.035em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'manrope',          name:'Manrope',          family:"'Manrope',system-ui,sans-serif",      weight:700, tracking:'-0.035em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'plus-jakarta',     name:'Plus Jakarta Sans',family:"'Plus Jakarta Sans',system-ui,sans-serif", weight:700, tracking:'-0.03em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'space-grotesk',    name:'Space Grotesk',    family:"'Space Grotesk',system-ui,sans-serif",weight:700, tracking:'-0.025em', size:'2.75rem', wellStyle:'normal', category:'sans' },
+        { id:'sora',             name:'Sora',             family:"'Sora',system-ui,sans-serif",         weight:600, tracking:'-0.03em',  size:'2.75rem', wellStyle:'normal', category:'sans' },
+        { id:'albert-sans',      name:'Albert Sans',      family:"'Albert Sans',system-ui,sans-serif",  weight:700, tracking:'-0.035em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'hanken-grotesk',   name:'Hanken Grotesk',   family:"'Hanken Grotesk',system-ui,sans-serif",weight:700, tracking:'-0.03em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'sen',              name:'Sen',              family:"'Sen',system-ui,sans-serif",          weight:700, tracking:'-0.025em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'inter',            name:'Inter',            family:"'Inter',system-ui,sans-serif",        weight:700, tracking:'-0.035em', size:'2.75rem', wellStyle:'normal', category:'sans' },
+        { id:'dm-sans',          name:'DM Sans',          family:"'DM Sans',system-ui,sans-serif",      weight:700, tracking:'-0.035em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'onest',            name:'Onest',            family:"'Onest',system-ui,sans-serif",        weight:700, tracking:'-0.035em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        // Sans — neo-grotesque
+        { id:'work-sans',        name:'Work Sans',        family:"'Work Sans',system-ui,sans-serif",    weight:700, tracking:'-0.03em',  size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'public-sans',      name:'Public Sans',      family:"'Public Sans',system-ui,sans-serif",  weight:700, tracking:'-0.03em',  size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'source-sans-3',    name:'Source Sans 3',    family:"'Source Sans 3',system-ui,sans-serif",weight:700, tracking:'-0.03em',  size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'mulish',           name:'Mulish',           family:"'Mulish',system-ui,sans-serif",       weight:800, tracking:'-0.035em', size:'2.75rem', wellStyle:'normal', category:'sans' },
+        { id:'be-vietnam-pro',   name:'Be Vietnam Pro',   family:"'Be Vietnam Pro',system-ui,sans-serif",weight:700, tracking:'-0.03em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'karla',            name:'Karla',            family:"'Karla',system-ui,sans-serif",        weight:700, tracking:'-0.025em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'rubik',            name:'Rubik',            family:"'Rubik',system-ui,sans-serif",        weight:700, tracking:'-0.025em', size:'2.75rem', wellStyle:'normal', category:'sans' },
+        { id:'lato',             name:'Lato',             family:"'Lato',system-ui,sans-serif",         weight:900, tracking:'-0.03em',  size:'2.65rem', wellStyle:'normal', category:'sans' },
+        { id:'open-sans',        name:'Open Sans',        family:"'Open Sans',system-ui,sans-serif",    weight:800, tracking:'-0.03em',  size:'2.75rem', wellStyle:'normal', category:'sans' },
+        // Sans — humanist / friendly
+        { id:'nunito',           name:'Nunito',           family:"'Nunito',system-ui,sans-serif",       weight:800, tracking:'-0.03em',  size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'quicksand',        name:'Quicksand',        family:"'Quicksand',system-ui,sans-serif",    weight:700, tracking:'-0.025em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'comfortaa',        name:'Comfortaa',        family:"'Comfortaa',system-ui,sans-serif",    weight:700, tracking:'-0.015em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        { id:'mukta',            name:'Mukta',            family:"'Mukta',system-ui,sans-serif",        weight:800, tracking:'-0.025em', size:'2.75rem', wellStyle:'normal', category:'sans' },
+        { id:'cabin',            name:'Cabin',            family:"'Cabin',system-ui,sans-serif",        weight:700, tracking:'-0.025em', size:'2.85rem', wellStyle:'normal', category:'sans' },
+        // Display — distinctive
+        { id:'bricolage',        name:'Bricolage Grotesque', family:"'Bricolage Grotesque',sans-serif", weight:700, tracking:'-0.035em', size:'2.75rem', wellStyle:'normal', category:'display' },
+        { id:'big-shoulders',    name:'Big Shoulders Display', family:"'Big Shoulders Display',sans-serif", weight:800, tracking:'-0.025em', size:'3.1rem', wellStyle:'normal', category:'display' },
+        { id:'syne',             name:'Syne',             family:"'Syne',sans-serif",                   weight:700, tracking:'-0.02em',  size:'2.75rem', wellStyle:'normal', category:'display' },
+        { id:'unbounded',        name:'Unbounded',        family:"'Unbounded',sans-serif",              weight:700, tracking:'-0.045em', size:'2.3rem',  wellStyle:'normal', category:'display' },
+        { id:'familjen',         name:'Familjen Grotesk', family:"'Familjen Grotesk',sans-serif",       weight:700, tracking:'-0.03em',  size:'2.85rem', wellStyle:'normal', category:'display' },
+        { id:'archivo-black',    name:'Archivo Black',    family:"'Archivo Black',sans-serif",          weight:400, tracking:'-0.035em', size:'2.5rem',  wellStyle:'normal', category:'display' },
+        { id:'anton',            name:'Anton',            family:"'Anton',sans-serif",                  weight:400, tracking:'-0.005em', size:'3rem',    wellStyle:'normal', category:'display' },
+        // Condensed
+        { id:'oswald',           name:'Oswald',           family:"'Oswald',sans-serif",                 weight:700, tracking:'-0.005em', size:'3.1rem',  wellStyle:'normal', category:'condensed' },
+        { id:'barlow-condensed', name:'Barlow Condensed', family:"'Barlow Condensed',sans-serif",       weight:700, tracking:'-0.005em', size:'3.1rem',  wellStyle:'normal', category:'condensed' },
+        { id:'saira-condensed',  name:'Saira Condensed',  family:"'Saira Condensed',sans-serif",        weight:700, tracking:'-0.005em', size:'3.1rem',  wellStyle:'normal', category:'condensed' },
+      ];
+
+      // ---- State ----
+      const state = {
+        filter: 'all',
+        category: 'all',
+        case: localStorage.getItem('sw_logo_case') || 'title',
+        favorites: new Set(),
+      };
+      if (state.case !== 'title' && state.case !== 'lower') state.case = 'title';
+      try {
+        const saved = JSON.parse(localStorage.getItem('sw_logo_favs') || '[]');
+        saved.forEach(k => state.favorites.add(k));
+      } catch(e) {}
+
+      function saveFavs() { localStorage.setItem('sw_logo_favs', JSON.stringify([...state.favorites])); }
+      function saveCase() { localStorage.setItem('sw_logo_case', state.case); }
+      function saveText() { return state.case === 'lower' ? 'save' : 'Save'; }
+      function wellText() { return state.case === 'lower' ? 'well' : 'Well'; }
+
+      // ---- Rendering ----
+      const grid = document.getElementById('grid');
+      const countEl = document.getElementById('count');
+
+      function currentFonts() {
+        let list = FONTS;
+        if (state.category !== 'all') list = list.filter(f => f.category === state.category);
+        if (state.filter === 'favorites') list = list.filter(f => state.favorites.has(f.id));
+        return list;
+      }
+
+      function render() {
+        const list = currentFonts();
+        countEl.textContent = `${list.length} fonts`;
+        grid.innerHTML = '';
+        const frag = document.createDocumentFragment();
+        list.forEach((f, i) => frag.appendChild(buildCard(f, i + 1)));
+        grid.appendChild(frag);
+      }
+
+      function buildCard(f, idx) {
+        const card = document.createElement('div');
+        card.className = 'logo-card';
+        card.style.setProperty('--c1', NAVY);
+        card.style.setProperty('--c2', TEAL);
+        card.style.setProperty('--wm-family', f.family);
+        card.style.setProperty('--wm-weight', String(f.weight));
+        card.style.setProperty('--wm-tracking', f.tracking);
+        card.style.setProperty('--wm-size', f.size);
+        card.style.setProperty('--wm-well-style', f.wellStyle);
+        const isFav = state.favorites.has(f.id);
+
+        card.innerHTML = `
+          <button class="fav-btn ${isFav ? 'favorited' : ''}" title="Favorite" aria-label="Favorite">
+            <svg viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+            </svg>
+          </button>
+          <div class="logo-stage">
+            <div class="logo-wordmark"><span class="save">${saveText()}</span><span class="well">${wellText()}</span></div>
+          </div>
+          <div class="logo-meta">
+            <span class="idx">${String(idx).padStart(2,'0')}</span>
+            <span class="pname" title="${f.name}">${f.name}</span>
+            <span class="cat-chip">${f.category}</span>
+          </div>
+        `;
+
+        card.querySelector('.fav-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (state.favorites.has(f.id)) state.favorites.delete(f.id);
+          else state.favorites.add(f.id);
+          saveFavs();
+          if (state.filter === 'favorites') render();
+          else {
+            const btn = card.querySelector('.fav-btn');
+            const on = state.favorites.has(f.id);
+            btn.classList.toggle('favorited', on);
+            const svg = btn.querySelector('svg');
+            svg.setAttribute('fill', on ? 'currentColor' : 'none');
+          }
+        });
+
+        card.addEventListener('click', () => {
+          navigator.clipboard?.writeText(`font: ${f.name}\nfamily: ${f.family}\nweight: ${f.weight}\ntracking: ${f.tracking}`);
+        });
+
+        return card;
+      }
+
+      // ---- Controls ----
+      document.querySelectorAll('.controls button[data-filter]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.filter = btn.dataset.filter;
+          document.querySelectorAll('.controls button[data-filter]').forEach(b =>
+            b.classList.toggle('active', b.dataset.filter === state.filter)
+          );
+          render();
+        });
+      });
+
+      document.querySelectorAll('.controls button[data-cat]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.category = btn.dataset.cat;
+          document.querySelectorAll('.controls button[data-cat]').forEach(b =>
+            b.classList.toggle('active', b.dataset.cat === state.category)
+          );
+          render();
+        });
+      });
+
+      document.querySelectorAll('.controls button[data-case]').forEach(btn => {
+        if (btn.dataset.case === state.case) btn.classList.add('active');
+        else btn.classList.remove('active');
+        btn.addEventListener('click', () => {
+          state.case = btn.dataset.case;
+          document.querySelectorAll('.controls button[data-case]').forEach(b =>
+            b.classList.toggle('active', b.dataset.case === state.case)
+          );
+          saveCase();
+          render();
+        });
+      });
+
+      render();
+    </script>
+  </body>
+</html>
