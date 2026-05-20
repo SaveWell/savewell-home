@@ -150,7 +150,9 @@ footer{background:var(--navy);padding:48px 5% 28px;}
 .cf textarea{height:90px;}
 .cf .sub-btn{background:var(--teal);color:white;border:none;border-radius:8px;padding:11px;font-size:14px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;}
 .cf .sub-btn:hover{background:#155f56;}
+.cf .sub-btn:disabled{background:var(--teal);opacity:.6;cursor:wait;}
 .cf-note{font-size:11px;color:var(--muted);}
+.cf-error{display:none;font-size:13px;color:#b04646;background:#fdecec;border:1px solid #f3c2c2;border-radius:8px;padding:10px 12px;}
 .success-msg{display:none;background:var(--teal-lt);color:var(--sage);border-radius:8px;padding:14px;font-size:14px;text-align:center;border:1px solid var(--teal-md);}
 </style>
 
@@ -404,6 +406,7 @@ footer{background:var(--navy);padding:48px 5% 28px;}
               <select id="cf-topic"><option value="" disabled selected>What can we help you with?</option><option>I have an upcoming procedure</option><option>I want to learn about the reward</option><option>I received outreach from my doctor's office</option><option>Something else</option></select>
               <textarea placeholder="Any additional details (optional)" id="cf-msg"></textarea>
               <button class="sub-btn" onclick="submitForm()">Send message</button>
+              <div class="cf-error" id="cf-error"></div>
               <p class="cf-note">By submitting, you agree to be contacted by a SaveWell care guide at the number or email provided. Message and data rates may apply.</p>
             </div>
           </div>
@@ -435,11 +438,82 @@ function showPage(id){
   const nb=document.getElementById('nav-'+id);
   if(nb)nb.classList.add('active');
 }
-function submitForm(){
-  const n=document.getElementById('cf-name').value.trim();
-  const p=document.getElementById('cf-phone').value.trim();
-  if(!n||!p){alert('Please enter your name and phone number.');return;}
-  document.getElementById('cf-wrap').style.display='none';
-  document.getElementById('success-msg').style.display='block';
+// HubSpot Forms config — fill in from HubSpot:
+//   Portal ID: Settings → Account Defaults → "Hub ID" (also visible in the HubSpot URL)
+//   Form GUID: Marketing → Forms → open the form → copy the GUID from the URL or "Share" → embed code
+const HUBSPOT_PORTAL_ID='246254116';
+const HUBSPOT_FORM_GUID='5e8d9f82-f28b-4b52-a5bc-88035a4df86c';
+
+async function submitForm(){
+  const nameEl=document.getElementById('cf-name');
+  const phoneEl=document.getElementById('cf-phone');
+  const emailEl=document.getElementById('cf-email');
+  const topicEl=document.getElementById('cf-topic');
+  const msgEl=document.getElementById('cf-msg');
+  const errEl=document.getElementById('cf-error');
+  const btn=document.querySelector('#cf-wrap .sub-btn');
+
+  const name=nameEl.value.trim();
+  const phone=phoneEl.value.trim();
+  const email=emailEl.value.trim();
+  const topic=topicEl.value;
+  const msg=msgEl.value.trim();
+
+  errEl.style.display='none';
+  errEl.textContent='';
+  if(!name||!phone){
+    errEl.textContent='Please enter your name and phone number.';
+    errEl.style.display='block';
+    return;
+  }
+  if(!HUBSPOT_PORTAL_ID||!HUBSPOT_FORM_GUID){
+    console.error('HubSpot form not configured: set HUBSPOT_PORTAL_ID and HUBSPOT_FORM_GUID in index.html');
+    errEl.textContent='Sorry, the form isn’t set up yet. Please call 855-507-7283 or email hello@savewellnow.com.';
+    errEl.style.display='block';
+    return;
+  }
+
+  const parts=name.split(/\s+/);
+  const firstname=parts.shift()||'';
+  const lastname=parts.join(' ');
+
+  const fields=[
+    {objectTypeId:'0-1',name:'firstname',value:firstname},
+    {objectTypeId:'0-1',name:'lastname',value:lastname},
+    {objectTypeId:'0-1',name:'phone',value:phone},
+    {objectTypeId:'0-1',name:'email',value:email},
+    {objectTypeId:'0-1',name:'inquiry_topic',value:topic||''},
+    {objectTypeId:'0-1',name:'message',value:msg}
+  ].filter(f=>f.value);
+
+  const payload={
+    fields,
+    context:{pageUri:window.location.href,pageName:document.title},
+    legalConsentOptions:{consent:{consentToProcess:true,text:'I agree to be contacted by a SaveWell care guide at the number or email provided.'}}
+  };
+
+  btn.disabled=true;
+  const original=btn.textContent;
+  btn.textContent='Sending…';
+  try{
+    const res=await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_GUID}`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    if(!res.ok){
+      const body=await res.json().catch(()=>({}));
+      const detail=(body.errors&&body.errors[0]&&body.errors[0].message)||body.message||`HTTP ${res.status}`;
+      throw new Error(detail);
+    }
+    document.getElementById('cf-wrap').style.display='none';
+    document.getElementById('success-msg').style.display='block';
+  }catch(e){
+    console.error('HubSpot submit failed:',e);
+    btn.disabled=false;
+    btn.textContent=original;
+    errEl.textContent='Sorry, we couldn’t send your message. Please call 855-507-7283 or email hello@savewellnow.com.';
+    errEl.style.display='block';
+  }
 }
 </script>
