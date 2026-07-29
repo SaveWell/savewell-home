@@ -1,3 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SaveWell — Find top-rated specialists near you</title>
+<meta name="description" content="SaveWell connects Medicare patients with top-rated specialists and facilities nearby — and rewards you for choosing quality care.">
+<link rel="canonical" href="https://savewellnow.com/">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG4QDXHR09"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+// send_page_view is off because this page is a client-side SPA — showPage() sends
+// each view manually so home / how-it-works / contact report as separate pages.
+gtag('config','G-GG4QDXHR09',{send_page_view:false});
+</script>
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -155,6 +174,8 @@ footer{background:var(--navy);padding:48px 5% 28px;}
 .cf-error{display:none;font-size:13px;color:#b04646;background:#fdecec;border:1px solid #f3c2c2;border-radius:8px;padding:10px 12px;}
 .success-msg{display:none;background:var(--teal-lt);color:var(--sage);border-radius:8px;padding:14px;font-size:14px;text-align:center;border:1px solid var(--teal-md);}
 </style>
+</head>
+<body>
 
 <nav>
   <div class="logo" onclick="showPage('home')"><img src="assets/logo/savewell-logo.png" alt="SaveWell"></div>
@@ -431,13 +452,34 @@ footer{background:var(--navy);padding:48px 5% 28px;}
 </div>
 
 <script>
+// Analytics: this page swaps divs instead of navigating, so each virtual page is
+// reported to GA4 under its own path/title.
+const GA_PAGES={
+  home:{path:'/',title:'SaveWell — Home'},
+  hiw:{path:'/how-it-works',title:'SaveWell — How it works'},
+  contact:{path:'/contact',title:'SaveWell — Contact us'}
+};
+let gaCurrentPage=null;
+function gaPageView(id){
+  const p=GA_PAGES[id];
+  if(!p||id===gaCurrentPage||typeof gtag!=='function')return;
+  gaCurrentPage=id;
+  gtag('event','page_view',{
+    page_title:p.title,
+    page_location:window.location.origin+p.path,
+    page_path:p.path
+  });
+}
+
 function showPage(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-links button').forEach(b=>b.classList.remove('active'));
   document.getElementById('page-'+id).classList.add('active');
   const nb=document.getElementById('nav-'+id);
   if(nb)nb.classList.add('active');
+  gaPageView(id);
 }
+gaPageView('home');
 // HubSpot Forms config — fill in from HubSpot:
 //   Portal ID: Settings → Account Defaults → "Hub ID" (also visible in the HubSpot URL)
 //   Form GUID: Marketing → Forms → open the form → copy the GUID from the URL or "Share" → embed code
@@ -506,6 +548,7 @@ async function submitForm(){
       const detail=(body.errors&&body.errors[0]&&body.errors[0].message)||body.message||`HTTP ${res.status}`;
       throw new Error(detail);
     }
+    if(typeof gtag==='function')gtag('event','generate_lead',{inquiry_topic:topic||'(none)'});
     document.getElementById('cf-wrap').style.display='none';
     document.getElementById('success-msg').style.display='block';
   }catch(e){
@@ -517,3 +560,6 @@ async function submitForm(){
   }
 }
 </script>
+
+</body>
+</html>
